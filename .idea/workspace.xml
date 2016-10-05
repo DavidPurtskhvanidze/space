@@ -1,9 +1,445 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ce4269e-f0a5-4bca-a826-c664d335927a" name="Default" comment="" />
+    <list default="true" id="6ce4269e-f0a5-4bca-a826-c664d335927a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/468/large/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/468/original/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/468/picture/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/468/thumbnail/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/469/large/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/469/original/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/469/picture/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/469/thumbnail/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/470/large/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/470/original/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/470/picture/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/103/470/thumbnail/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/510/large/swipe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/510/original/swipe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/510/picture/swipe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/510/thumbnail/swipe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/511/large/swipe1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/511/original/swipe1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/511/picture/swipe1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/511/thumbnail/swipe1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/512/large/swipeleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/512/original/swipeleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/512/picture/swipeleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/512/thumbnail/swipeleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/513/large/swiperight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/513/original/swiperight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/513/picture/swiperight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/513/thumbnail/swiperight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/514/large/swiperight1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/514/original/swiperight1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/514/picture/swiperight1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/105/514/thumbnail/swiperight1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/498/large/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/498/original/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/498/picture/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/498/thumbnail/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/499/large/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/499/original/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/499/picture/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/499/thumbnail/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/500/large/93713024_312355a135_b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/500/original/93713024_312355a135_b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/500/picture/93713024_312355a135_b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/500/thumbnail/93713024_312355a135_b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/501/large/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/501/original/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/501/picture/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/501/thumbnail/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/502/large/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/502/original/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/502/picture/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/110/502/thumbnail/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/520/large/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/520/original/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/520/picture/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/520/thumbnail/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/521/large/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/521/original/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/521/picture/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/521/thumbnail/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/522/large/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/522/original/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/522/picture/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/522/thumbnail/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/523/large/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/523/original/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/523/picture/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/523/thumbnail/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/524/large/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/524/original/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/524/picture/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/524/thumbnail/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/525/large/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/525/original/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/525/picture/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/112/525/thumbnail/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/120/479/large/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/120/479/original/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/120/479/picture/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/120/479/thumbnail/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/128/526/large/tunnelbear-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/128/526/original/tunnelbear-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/128/526/picture/tunnelbear-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/128/526/thumbnail/tunnelbear-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/503/large/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/503/original/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/503/picture/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/503/thumbnail/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/504/large/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/504/original/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/504/picture/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/504/thumbnail/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/505/large/Снимок экрана 2016-02-13 в 3.11.36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/505/original/Снимок экрана 2016-02-13 в 3.11.36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/505/picture/Снимок экрана 2016-02-13 в 3.11.36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/144/505/thumbnail/Снимок экрана 2016-02-13 в 3.11.36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/506/large/7crazymomentphoto.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/506/original/7crazymomentphoto.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/506/picture/7crazymomentphoto.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/506/thumbnail/7crazymomentphoto.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/507/large/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/507/original/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/507/picture/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/507/thumbnail/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/508/large/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/508/original/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/508/picture/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/145/508/thumbnail/2011-Indian-Chief-Vintage-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/481/large/1406579404_android-oyun-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/481/original/1406579404_android-oyun-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/481/picture/1406579404_android-oyun-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/481/thumbnail/1406579404_android-oyun-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/482/thumbnail/enheng.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/483/large/Depositphotos_6132502_original.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/483/original/Depositphotos_6132502_original.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/483/picture/Depositphotos_6132502_original.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/170/483/thumbnail/Depositphotos_6132502_original.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/171/472/large/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/171/472/original/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/171/472/picture/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/171/472/thumbnail/13103405_1196886266996760_2154542364721298549_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/473/large/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/473/original/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/473/picture/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/473/thumbnail/apache-motorcycles-41212.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/474/large/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/474/original/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/474/picture/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/173/474/thumbnail/Classic_Indian_Motorcycle_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/177/475/large/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/177/475/original/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/177/475/picture/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/177/475/thumbnail/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/515/large/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/515/original/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/515/picture/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/515/thumbnail/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/516/large/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/516/original/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/516/picture/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/185/516/thumbnail/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/189/467/large/12998648_576931102484077_3705664458264686973_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/189/467/original/12998648_576931102484077_3705664458264686973_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/189/467/picture/12998648_576931102484077_3705664458264686973_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/189/467/thumbnail/12998648_576931102484077_3705664458264686973_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/496/large/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/496/original/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/496/picture/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/496/thumbnail/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/497/large/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/497/original/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/497/picture/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/19/497/thumbnail/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/486/large/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/486/original/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/486/picture/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/486/thumbnail/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/487/large/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/487/original/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/487/picture/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/487/thumbnail/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/488/large/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/488/original/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/488/picture/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/196/488/thumbnail/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/517/large/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/517/original/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/517/picture/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/517/thumbnail/Lowpoly_Landscape.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/518/large/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/518/original/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/518/picture/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/518/thumbnail/phcp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/519/large/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/519/original/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/519/picture/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/198/519/thumbnail/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/489/large/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/489/original/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/489/picture/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/489/thumbnail/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/490/large/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/490/original/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/490/picture/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/490/thumbnail/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/491/large/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/491/original/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/491/picture/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/202/491/thumbnail/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/492/large/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/492/original/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/492/picture/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/492/thumbnail/imob-bb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/493/large/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/493/original/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/493/picture/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/493/thumbnail/Last-Action-Hero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/494/large/loans_girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/494/original/loans_girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/494/picture/loans_girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/494/thumbnail/loans_girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/495/large/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/495/original/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/495/picture/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/203/495/thumbnail/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/234/465/large/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/234/465/original/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/234/465/picture/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/234/465/thumbnail/Red-Hot-Chili-Peppers-1-2-3-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/466/large/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/466/original/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/466/picture/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/466/thumbnail/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/534/large/Patrat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/534/original/Patrat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/534/picture/Patrat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/534/thumbnail/Patrat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/535/large/Squirtle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/535/original/Squirtle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/535/picture/Squirtle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/238/535/thumbnail/Squirtle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/239/463/large/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/239/463/original/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/239/463/picture/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/239/463/thumbnail/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/527/large/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/527/original/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/527/picture/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/527/thumbnail/29d735578a982ec065a9ca4ed120afd9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/528/large/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/528/original/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/528/picture/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/528/thumbnail/13139028_584843331692854_3146927595808950110_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/529/large/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/529/original/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/529/picture/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/529/thumbnail/bmw-92442_1920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/530/large/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/530/original/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/530/picture/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/240/530/thumbnail/bmw-1274292_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/399/532/large/tumblr_nwy98oncB61u6zuvso1_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/399/532/original/tumblr_nwy98oncB61u6zuvso1_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/399/532/picture/tumblr_nwy98oncB61u6zuvso1_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/399/532/thumbnail/tumblr_nwy98oncB61u6zuvso1_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/46/533/large/maxresdefault.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/46/533/original/maxresdefault.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/46/533/picture/maxresdefault.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/46/533/thumbnail/maxresdefault.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/51/471/large/13277684_1007932755949101_533234550_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/51/471/original/13277684_1007932755949101_533234550_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/51/471/picture/13277684_1007932755949101_533234550_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/51/471/thumbnail/13277684_1007932755949101_533234550_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/53/476/large/earth-day-2016-5741289212477440.3-5700735861784576-ror.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/53/476/original/earth-day-2016-5741289212477440.3-5700735861784576-ror.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/53/476/picture/earth-day-2016-5741289212477440.3-5700735861784576-ror.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/53/476/thumbnail/earth-day-2016-5741289212477440.3-5700735861784576-ror.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/8/464/large/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/8/464/original/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/8/464/picture/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/8/464/thumbnail/wow-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/484/large/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/484/original/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/484/picture/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/484/thumbnail/sports-car-1317645_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/485/large/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/485/original/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/485/picture/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/95/485/thumbnail/havana-1395655_640.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/477/large/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/477/original/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/477/picture/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/477/thumbnail/Pavel Morozov.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/478/large/suhpbn7l964.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/478/original/suhpbn7l964.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/478/picture/suhpbn7l964.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/listing/pictures/96/478/thumbnail/suhpbn7l964.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/1/original/8bit.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/1/thumb/8bit.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/2/original/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/2/thumb/13043507_577973009046553_9031902426253149580_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/3/original/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/publications_articles/pictures/3/thumb/car-482683_1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/Logos/212/Logo/nike-sb-logo420.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/Logos/212/original/nike-sb-logo420.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/210/ProfilePicture/user_avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/210/original/user_avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/211/ProfilePicture/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/211/original/13346825_1009179835845705_1180802777678522537_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/212/ProfilePicture/user_avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/212/original/user_avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/216/ProfilePicture/user_avatar_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/216/original/user_avatar_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/217/ProfilePicture/user_avatar_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/pictures/users_users/ProfilePictures/217/original/user_avatar_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/googleAdSense1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/googleAdSense2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/!.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/arrow-select-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/black-wood.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/gallery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/gallery_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/ilister-prod-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/list-icn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/list_gray.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/mail_icn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/phone_icn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/quick-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/search-icn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/slider-arrow-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/slider-arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/tweet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/img/user_icn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/line.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/line_blue.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/slider_image_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/slider_image_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/slider_image_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/business_catalog/business_catalog.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/add_listing.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/add_listing_choose_category.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/add_listing_error.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/add_listing_form.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/author_info.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/browse_by_categories_and_subcategories.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/browse_by_state.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/browse_by_subcategory.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/default_search_result_item.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/default_view.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/gallery_search_result_item.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/listing_details_listing_controls.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/listing_details_search_controls.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/quick_view_button.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/search_result_item_in_modal.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/display/social_network_buttons.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/input/default_input.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/input/display_form_field.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/search/default_refine_search.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/category_templates/search/default_search.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/contact_seller.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/gallery_search_results.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/gallery_search_results_content.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/listing_images.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/objects_per_page_selector.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/quick_search.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_controls.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_controls_listing_details.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_result_gallery_view_option.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_result_header.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_result_list_view_option.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_results.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/search_results_content.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/classifieds/sorting_field_selector.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/_files/ace-elements.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/_files/showInputError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/display/calendar.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/input/date.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/input/file.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/input/multilist.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/input/picture.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/input/video.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/date.from.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/date.to.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/date.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/date_inline.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/geo.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/integer.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/money.max.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/money.min.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/money.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/multilist.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/field_types/search/multilist_bootstrap.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_comments/category_templates/display/listing_details_comments.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_comments/display_comment_controll.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_featured/featured_listing_item.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_featured/featured_listings.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_featured/featured_listings_slider.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_featured/featured_listings_vertical.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_slideshow/image_slideshow.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/listing_feature_sponsored/sponsored_label.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/bootstrap-toggle-master/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/bootstrap-toggle-master/bootstrap-toggle.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/bootstrap-toggle-master/bootstrap-toggle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/design.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/design.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/waves/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/waves/waves.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/waves/waves.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/waves/waves.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/_files/xxs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/default.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/featured_listings.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/google_adsense.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/homepage_main_content.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/homepage_main_content_base.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/page_parts/footer_block.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/page_parts/header_block.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/page_parts/html_head.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/main/users_search.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/menu/top_menu.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/miscellaneous/contact_form.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/miscellaneous/copyright.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/miscellaneous/logo.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/publications/print_articles.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/publications/print_news_box_articles.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/recent_listings/recent_listings.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/recent_tweets/recent_tweets.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/contact_form.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/login.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/login_dialog.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/private_seller_menu.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/user_details.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/user_menu_block.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/user_search_form.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/user_search_result_item.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/custom_theme_space/users/user_search_results.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/install.php" afterPath="$PROJECT_DIR$/install.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/iLister-7.5.0.iml" afterPath="$PROJECT_DIR$/.idea/iLister-7.5.0.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/AdminPanel/config/local.ini" afterPath="$PROJECT_DIR$/apps/AdminPanel/config/local.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/FrontEnd/config/local.ini" afterPath="$PROJECT_DIR$/apps/FrontEnd/config/local.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Functions.php" afterPath="$PROJECT_DIR$/core/Functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ModuleManager.php" afterPath="$PROJECT_DIR$/core/ModuleManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/WebApplication.php" afterPath="$PROJECT_DIR$/core/WebApplication.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ORM/Types/PicturesType.php" afterPath="$PROJECT_DIR$/lib/ORM/Types/PicturesType.php" />
+    </list>
     <ignored path="iLister-7.5.0.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,13 +447,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="iLister-7.5.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="business_catalog.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/custom_theme_space/business_catalog/business_catalog.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/custom_theme_space/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -56,6 +519,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -70,7 +534,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="iLister-7.5.0" />
+              <option name="myItemId" value="space" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -80,35 +544,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="iLister-7.5.0" />
+              <option name="myItemId" value="space" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iLister-7.5.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iLister-7.5.0" />
+              <option name="myItemId" value="files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontEnd" />
+              <option name="myItemId" value="pictures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,6 +565,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/files/pictures" />
+      <recent name="$PROJECT_DIR$/modules/custom_theme_space" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -133,6 +588,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -159,21 +619,21 @@
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47126436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -192,5 +652,39 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/apps/FrontEnd/config/local.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom_theme_space/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom_theme_space/business_catalog/business_catalog.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom_theme_space/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
