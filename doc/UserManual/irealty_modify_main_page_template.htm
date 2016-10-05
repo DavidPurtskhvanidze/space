@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Modify Main Page Template</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="homepage.tpl,Main Page Template" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?irealty_modify_main_page_template.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Modify Main Page Template</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Main page is your home page - it is opened first when your site is opened.</p>
+<p>&nbsp;</p>
+<p>In accordance with default iLister Site Pages settings, main page uses default.tpl as a template, which surrounds the content of the home page.</p>
+<p>&nbsp;</p>
+<p>The home page of iLister has the URI / and the title "home".</p>
+<p>&nbsp;</p>
+<p>In Admin Panel -&gt; Site Pages -&gt; / you can see that the "Template" parameter is empty which means that it uses default.tpl as a template:</p>
+<p><a href="main-page-template.png"><img id="TOGGLE0186A1" class="image-toggle" src="main-page-template.zoom90.png" border="0" alt="main-page-template.zoom90"></a></p>
+<p>&nbsp;</p>
+<p>Below you can see how the page is built on the front-end of the site. Default.tpl includes:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><a href="iauto_header_top_menu_and_slogan.htm">headerMenuBlock with top menu</a>, user greeting and language selector</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>sloganBlock div</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mainContentBlock div including:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>homepage_main_content.tpl - the template file which displays the content for the home page. You can see it is used for the / Site Page: </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>module is 'main'</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>function is 'display_template'</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>template_file is 'homepage_main_content.tpl'</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 13px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>the "quickSearchAndNewsWrapper" div with the <a href="iauto_quick_search_form.htm">Quick Search form</a> and News section</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 13px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>AdsAndFacebookWrapper including:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td><a href="iauto_featured_and_recent_tabs.htm">Featured</a> and <a href="iauto_featured_and_recent_tabs.htm">Recent listings</a> block,</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>the <a href="facebook_like_box.htm">Facebook Like Box</a>,</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td><a href="google_adsense.htm">Google AdSense</a> section and </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td><a href="iauto_cars_by_sections.htm">browsing tabs</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>footerBlock with <a href="iauto_footer_and_copyright.htm">footer_block.tpl, copyright</a>, <a href="iauto_footer_and_copyright.htm">News box and the sections Poll and Share.</a></td></tr></table></div><p>&nbsp;</p>
+<p><a href="home-page-building.png"><img id="TOGGLE0186A2" class="image-toggle" src="home-page-building.zoom60.png" border="0" alt="home-page-building.zoom60"></a></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 6px 5px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can learn more on how iLister builds pages in the "<a href="template_system_and_theme_management.htm#pagebuilding">Page Building</a>" section.</span></p>
+<p class="p_ReferenceBlock"><span class="f_ReferenceBlock">The "<a href="template_system_and_theme_management.htm#templateidentification">Template Identification</a>" feature will help you to find out which template is used to display the parts of any iLister page.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','main-page-template.zoom90.png','hm.src1','main-page-template.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','home-page-building.zoom60.png','hm.src1','home-page-building.png');
+</script>
+</body>
+</html>

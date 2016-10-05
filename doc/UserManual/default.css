@@ -1,0 +1,132 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_Caution /* Caution */
+{
+ color: #ff0000;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-family: 'Courier New';
+ color: #000080;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Components /* Components */
+{
+ font-family: 'Courier New';
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 16pt;
+ font-weight: bold;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_List /* List */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_Notice /* Notice */
+{
+ color: #0000ff;
+}
+span.f_ReferenceBlock /* ReferenceBlock */
+{
+}
+span.f_SubArticlesList /* SubArticlesList */
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.f_SystemMessage /* SystemMessage */
+{
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_Caution /* Caution */
+{
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+}
+.p_Comment /* Comment */
+{
+}
+.p_Components /* Components */
+{
+ white-space: nowrap;
+}
+.p_Heading1 /* Heading1 */
+{
+}
+.p_Heading2 /* Heading2 */
+{
+ margin: 10px 0px 5px 0px;
+}
+.p_Heading3 /* Heading3 */
+{
+ margin: 0px 0px 5px 0px;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_List /* List */
+{
+ margin: 5px 0px 0px 0px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_Notice /* Notice */
+{
+}
+.p_ReferenceBlock /* ReferenceBlock */
+{
+ margin: 6px 0px 6px 5px;
+}
+.p_SubArticlesList /* SubArticlesList */
+{
+ line-height: 1.50;
+ margin: 0px 0px 5px 0px;
+}
+.p_SystemMessage /* SystemMessage */
+{
+ border-color: #808080;
+ border-style: solid;
+ border-width: 1px;
+ background: #ffffb0;
+ padding: 3px 3px 3px 3px;
+ margin: 2px -3px 2px 2px;
+}

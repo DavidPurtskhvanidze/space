@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>How to translate polls</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Internationalization,Polls,Translation" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?how_to_translate_polls.htm"; }
+  else { parent.quicksync('a13.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">How to translate polls?</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="how_to_configure_a_cron_job_for_task_scheduler_php.htm">Previous</a>&nbsp;
+     <a href="how_to_add_a_link_to_video_tour.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Admin Panel -&gt; System Configuration -&gt; System Settings -&gt; Internationalization Settings -&gt; Default Domain -&gt; select PhrasesInTemplates -&gt; click "Save"</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Create new phrases for all questions and answers in Admin Panel -&gt; Language Management -&gt; Manage Phrases -&gt; click "Add new" -&gt; fill in the fields and select PhrasesInTemplates as Domain -&gt; click "Save"</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Poll -&gt; edit poll_answer.tpl:</td></tr></table></div><p style="margin: 0px 0px 0px 17px;">change:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">{$answer.title|escape}</span></p>
+<p style="margin: 0px 0px 0px 17px;">to:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 16px;"><span class="f_CodeExample">[[$answer.title]]</span></p>
+<p style="margin: 0px 0px 0px 17px;">Click "Save".</p>
+<p style="margin: 0px 0px 0px 17px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Poll -&gt; edit poll_block.tpl:</td></tr></table></div><p style="margin: 0px 0px 0px 14px;">change:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 14px;"><span class="f_CodeExample">{$question.title|escape}</span></p>
+<p style="margin: 0px 0px 0px 14px;">to:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 14px;"><span class="f_CodeExample">[[$question.title]]</span></p>
+<p style="margin: 0px 0px 0px 14px;">Click "Save".</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Search Criterion Types</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Criteria,equal,geo,in,includes_all,includes_any,less,like,location,more,not_earlier,not_empty,not_equal,not_later,not_less,not_more,radius,Search Criteria,Search Criterion Types,tree" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?search_criterion_type_reference.htm"; }
+  else { parent.quicksync('a14.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Search Criterion Types</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="field_types.htm">Previous</a>&nbsp;
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Below is the list of criterion types currently supported by iLister and brief information on usage of each criterion type. The description of how criteria are used in iLister can be found on the <a href="search_criteria.htm">dedicated page</a> in the Basic Concepts.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">equal</span></p>
+<p>The equal criterion type is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">State[equal]=Oregon</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the State field has the value of Oregon.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">geo</span></p>
+<p>The geo criterion type is a multi-value criterion. It has two keys:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>location — a name of the known geographic location (managed on the "Geographic Location" page of the Admin Panel);</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>radius — maximum distance from the specified location to search within. Units for the distance are set in System Settings (either miles or kilometers)</td></tr></table></div><p>&nbsp;</p>
+<p>Example: </p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Zip[geo][radius]=100&amp;Zip[geo][location]=90001</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the search results may have the values in the Zip field which are not farther than 100 distance units (miles or kilometers) from the location of 90001.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">in</span></p>
+<p>This is a multi-value criteria, however it does not have any keys. One can specify multiple values for this criteria by adding an empty square brackets, i.e. <span class="f_CodeExample">field[in][]=1&amp;field[in][]=2</span>.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Color[in][]=Green&amp;Color[in][]=Blue</span></p>
+<p>&nbsp;</p>
+<p>Criterion evaluates to true if value of the field matches any of the values specified in the criteria. (the color is either "Green" or "Blue" in the example above).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">includes_all</span></p>
+<p>The includes_all criterion type is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">keywords[includes_all]=park+lake+playground</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the search results must contain all specified keywords, i.e. park and lake and playground.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">includes_any</span></p>
+<p>The includes_any criterion type is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">keywords[includes_any]=park+lake+playground</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the search results may have any of the specified keywords, i.e. either park, or lake, or playground, or all of them.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">less</span></p>
+<p>This is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Baths[less]=3</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Baths field has the value less than 3, i.e. 2, 1 or 0.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">like</span></p>
+<p>This is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Description[like]=new+sport+car</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Description field contains the string "new sport car".</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">more</span></p>
+<p>This is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Doors[more]=2</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Doors field has the value more than 2, i.e. 3, 4 or higher.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">not_earlier</span></p>
+<p>The criterion type not_earlier is a single-value criterion and does not expect any keys. It is used for the fields of the "date" type only; iLister has only two system fields of the type "date": activation_date and expiration_date.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">activation_date[not_earlier]=05-21-2010</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the search results may have the values in the activation_date field of 05-21-2010 and later.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">not_empty</span></p>
+<p>The not_empty criterion type is a single-value criterion and does not expect any keys or value. When this criterion type is present in a query string, it tells the site to search for any value for the specified field.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Rent[not_empty]=</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Rent field has any value: 0, 1, 87000, 0.99 or other.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><a name="notequal"></a><span class="f_Heading2">not_equal</span></p>
+<p>The not_equal criterion type is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">State[equal]=Utah</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the State field can have any value excepting "Utah".</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">not_later</span></p>
+<p>The criterion type not_later is a single-value criterion and does not expect any keys. It is used for the fields of the "date" type only; iLister has only two system fields of the type "date": activation_date and expiration_date.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">expiration_date[not_later]=12-31-2009</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the search results may have the values in the expiration_date field of 12-31-2009 and earlier.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">not_less</span></p>
+<p>This is a single-value criterion.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Beds[not_less]=2</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Beds field has the value not less than 2, i.e. 2, 3 or more.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">not_more</span></p>
+<p>The not_more criterion type is a single-value criterion and does not expect any keys.</p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">Engine[not_more]=5</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the Engine field has the value of 5 and less, i.e. 5, 4, 3 and less.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">tree</span></p>
+<p>&nbsp;</p>
+<p>The tree criterion type is a multi-value criterion. It expects numbers of level as keys and ids of tree nodes and values. </p>
+<p>&nbsp;</p>
+<p>Example: </p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample">MakeModel[tree][0]=291&amp;MakeModel[tree][1]=294</span></p>
+<p>&nbsp;</p>
+<p>This criterion demands that the value in the MakeModel field has the value of 294, while the value's parent should be 291. It looks pretty lame for a human, but it allows for a quicker search restore. Since most of times these criteria are generated by a <span class="f_CodeExample">{search ...}</span> tag in the templates it does not make any additional complexity for the website administrator. Nevertheless, we are working on brining more human-readable criteria for the tree-typed fields which should facilitate usage of tree-based criteria in links and external forms.</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

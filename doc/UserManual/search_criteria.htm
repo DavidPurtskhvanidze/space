@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Search Criteria</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="QUERY_STRING,Search Criteria" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?search_criteria.htm"; }
+  else { parent.quicksync('a4.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Search Criteria</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="template_system_and_theme_management.htm">Previous</a>&nbsp;
+     <a href="managing_site_pages.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>iLister uses a unified criteria sets to pass search criteria from search forms to the search results page. Information given in this section of the manual will help you to understand how unified criteria can be used to build search forms and pass criteria to the search functionality of iLister, which should result in page displaying relevant search results (listings or users). The unified criteria can be applied to both listings and users. After reading this section you should be able to create search forms and links to search results pages using iLister as well as using static HTML or 3rd party software.  </p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading3">How Criteria Are Formed</span></p>
+<p>Criterion, applied to the searchable object (listing or user) is comprised of the following parts:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>id of the field the criterion applies to (can be either listing or user profile field)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>type of the criterion</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>value or key-value pairs associated with the criterion (allowed set of keys are defined by a criterion type)</td></tr></table></div><p>&nbsp;</p>
+<p>These parts are combined in the following way:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>first comes the field id</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>next, the criterion type is concatenated in square brackets</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>then, if it is a single-value criterion there is a equals sign "=" followed by value or</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>if it is a multi-key criterion, criterion type is followed by the key in square brackets, followed by "=" and value pertaining to the key</td></tr></table></div><p>&nbsp;</p>
+<p>Here is an example of single-value criterion: <span class="f_CodeExample">City[equal]=Boston</span>. In this example <span class="f_CodeExample">City</span> is the id of the field, <span class="f_CodeExample">equal</span> is the type of criterion and <span class="f_CodeExample">Boston</span> is the value. This example demands that the object's field <span class="f_CodeExample">City</span> equals to "Boston". </p>
+<p>&nbsp;</p>
+<p>Here is an example of multi-value criterion: <span class="f_CodeExample">Zip[geo][radius]=100&amp;Zip[geo][location]=10001</span>. This criterion set demands that ZIP code (stored in the <span class="f_CodeExample">Zip</span> field of the object) of the object being search should be within 100 miles (or kilometers) from the ZIP code 10001.</p>
+<p>&nbsp;</p>
+<p>Here are more examples:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>category[equal]=HomesForSale</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Zip[geo][radius]=any</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Zip[geo][location]=90001</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Price[not_less]=500</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Price[not_more]=2000</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>keywords[includes_all]=park+lake+playground</td></tr></table></div><p>&nbsp;</p>
+<p>All known criterion type and their keys are listed in the <a href="search_criterion_type_reference.htm">Criterion Type Reference</a> section of the manual.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How Search Criteria Are Passed From Forms To Search Results</span></p>
+<p>The search criteria are passed to search results pages in a form of HTTP GET or POST parameters, either as a part of the <a href="http://en.wikipedia.org/wiki/Query_string" target="_blank" class="weblink" title="Query string article in Wikipedia">query string</a> or part of the the submitted form data. Thus, we can include the criteria in the URL or create them using HTML forms.</p>
+<p>&nbsp;</p>
+<p>Here is an example of the URL of the listings search results page with a bunch of criteria: </p>
+<p class="p_Components"><span class="f_Components">http://demo.worksforweb.com/iRealty/search-results/?City[equal]=New+York&amp;State[equal]=&amp;YearBuilt[not_less]=1995&amp;YearBuilt[not_more]=2011&amp;Basement[equal]=1&amp;action=search</span></p>
+<p>&nbsp;</p>
+<p>Please note the following regarding the URL above: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>There is an <span class="f_CodeExample">action=search</span> parameter in query string. It triggers the search. Thus, it <span style="font-style: italic;">must be</span> included in the URL. (Though not necessarily needs to be the fist parameter) </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>The value of the <span class="f_Components">city[equal]</span> criterion has a "+" instead of the space. This is because the query sting should be <a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank" class="weblink">URL encoded</a>.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>There are empty parameters in the query string (State). These are usually a result of the submitted form had some of its fields left blank. <span style="font-weight: bold;">The blank (and invalid) criteria are ignored</span>.</td></tr></table></div><p>&nbsp;</p>
+<p><span class="f_Heading3">How to Use Search Criteria</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>You can pass search criteria in a <a href="engine_modules_functions.htm#querystring">query string</a> which is a part of a URL that contains data to be passed to web applications like iLister.</td></tr></table></div><p>&nbsp;</p>
+<p>For example, you may want to put a link on your site which leads to a page with all Homes For Rent in New York. It will look as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;a&nbsp;href="{$GLOBALS.site_url}/search_results/?category[equal]=HomesForRent&amp;action=search&amp;City[equal]=New+York"&gt;Rentals&nbsp;in&nbsp;New&nbsp;York&lt;/a&gt;</span></p>
+<p>Please note that the format of the URL is <a href="http://en.wikipedia.org/wiki/Percent-encoding" target="_blank" class="weblink">URL encoded</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Another example is how to create a search form on <span style="font-weight: bold;">another</span> (not iLister-based website). If you sell cars and represent a dealership, you can have a search form on the <span style="font-weight: bold;">dealership site</span> which leads to the specific search results on <span style="font-weight: bold;">your </span>iLister-based site<span style="font-weight: bold;">. </span>The code of the form will be like the following:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">&lt;form&nbsp;action="www.yoursite.com/search_results/"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;input&nbsp;type="hidden"&nbsp;name="action"&nbsp;value="search"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;input&nbsp;type="hidden"&nbsp;name="State[equal]"&nbsp;value="CA"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[[Find&nbsp;listings&nbsp;in]]&nbsp;&lt;input&nbsp;type="text"&nbsp;name="City[equal]"&nbsp;value=""&nbsp;/&gt;,&nbsp;CA</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;input&nbsp;type="submit"&nbsp;class="button"&nbsp;value="Find"/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/form&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>In this case a search form on the dealership site will lead to your site at http://www.yoursite.com/search_results/ and will pass the search criteria specified in HTML <span class="f_CodeExample">&lt;input&gt;</span> tags to the <a href="http://en.wikipedia.org/wiki/Query_string" target="_blank" class="weblink">query string</a>. In this particular case, the criteria are: the state which is set to "CA" in hidden field and the city, which site user are able to type into the text box before clicking the the "Find" button.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>And finally you can create a search form on your iLister-based website using its built-in tools:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>create a template for the search form (you can use default_search.tpl as an example) and specify desired search parameters and criteria there:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">&lt;form&nbsp;method="GET"&nbsp;action="{$GLOBALS.site_url}/search_results/"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;input&nbsp;type="hidden"&nbsp;name="category[equal]"&nbsp;value="{$category_id}"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;input&nbsp;type="hidden"&nbsp;name="action"&nbsp;value="search"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;table&nbsp;border="0"&nbsp;cellpadding="2"&nbsp;cellspacing="0"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;width="45"&gt;[[$form_fields.City.caption]]:&lt;/td&gt;&lt;td&gt;{search&nbsp;property=City}&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;align="right"&nbsp;width="45"&gt;[[$form_fields.State.caption]]:&lt;/td&gt;&lt;td&gt;{search&nbsp;property=State}&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;width="45"&gt;[[$form_fields.Price.caption]]&amp;nbsp;{$GLOBALS.custom_settings.listing_currency}:&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;colspan="3"&gt;{search&nbsp;property=Price}&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;colspan="2"&nbsp;&gt;&lt;a&nbsp;style="font-weight:normal;"&nbsp;href="{$GLOBALS.site_url}/search/"&gt;[[Advanced&nbsp;search]]&lt;/a&gt;&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&nbsp;align="right"&nbsp;colspan="2"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;input&nbsp;type="submit"&nbsp;class="button"&nbsp;value="[[Find:raw]]"/&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/table&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/form&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>In iLister search form you can use the construction<span class="f_Components"> {search property=$fieldID}</span> to specify the field to search by. Depending on the <a href="field_types.htm">type of the field</a> iLister will replace the <span class="f_Components">{search ...}</span> tag with an HTML form elements with the help of search template specified for this field type. For example, the search template for the field type "<a href="field_types.htm#list">list</a>" is list.tpl and search criteria is <span class="f_Components">[equal]</span>:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;select&nbsp;name='{$id}[equal]'&nbsp;class="searchList"&gt;</span></p>
+<p>&nbsp;</p>
+<p>You can override the default search template for the field using the "<span class="f_CodeExample">template</span>" parameter to the <span class="f_CodeExample">{search ...}</span> tag, i.e. <span class="f_CodeExample">{search property=State template=my_list.tpl}</span><span style="color: #0000ff;">. </span>Please mind that template specified in the "<span class="f_CodeExample">template</span>" parameter should be placed into the <span class="f_CodeExample">/modules/field_types/apps/FrontEnd/templates/$ThemeName/search/</span> folder.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td><a href="managing_site_pages.htm#searchformsitepage">create a Site Page</a> for this <a href="search_form.htm">search form</a>. Specify your new template name as a <span class="f_CodeExample">form_template</span> parameter.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>create a Site Page for the <a href="search_results.htm">search results</a></td></tr></table></div><p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

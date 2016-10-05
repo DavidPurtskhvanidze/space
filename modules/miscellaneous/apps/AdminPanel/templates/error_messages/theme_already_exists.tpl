@@ -1,0 +1,1 @@
+[[A theme with the specified name already exists in one of the application interfaces: either in the Admin Panel, or in the Front-End, or in the Mobile Front-End. Please create a theme with another name.]]

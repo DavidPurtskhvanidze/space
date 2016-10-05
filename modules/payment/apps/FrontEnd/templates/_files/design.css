@@ -1,0 +1,27 @@
+.paymentPage .paymentText p
+{
+	margin: 1em 0;
+}
+
+.paymentPage .paymentGateways input[type="submit"]
+{
+	margin: 10px 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 130px;
+}
+
+*[lang="ru"] .paymentPage .paymentGateways input[type="submit"]
+{
+	width: 165px;
+}
+
+.pendingTransactionMessage
+{
+    margin: 10px 0 25px 0 !important;
+}
+
+.transactionsPage input[type="submit"]
+{
+    margin: 0 !important;
+}

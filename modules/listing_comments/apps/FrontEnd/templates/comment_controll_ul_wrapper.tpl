@@ -1,0 +1,3 @@
+<li>
+	{include $commentControlTemplate}
+</li>

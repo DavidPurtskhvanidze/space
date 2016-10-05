@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Integration with Templates</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Internationalization,Internationalization in Templates,Translation,Translation in Templates" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?integration_with_templates.htm"; }
+  else { parent.quicksync('a8.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Integration with Templates</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="domains_and_phrases.htm">Previous</a>&nbsp;
+     <a href="features.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>iLister has specific format for text elements to recognize them as <a href="domains_and_phrases.htm#phrases">phrases</a>.</p>
+<p>&nbsp;</p>
+<p>You can put a text which you want to translate in double square brackets <span class="f_Components">[[ ]]</span> and the text will be ready for <a href="internationalization_and_languages.htm#translation">translation</a>.</p>
+<p>&nbsp;</p>
+<p>You can also force your iLister-based website to use any <a href="domains_and_phrases.htm#domains">domain</a> to translate a phrase. In order to do so you need to specify domain as follows within a phrase:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">[[</span><span class="f_CodeExample" style="font-weight: bold;">Miscellaneous</span><span class="f_CodeExample">!PhraseID]]</span></p>
+<p>&nbsp;</p>
+<p>Please refer to the example below:</p>
+<p>If you want to add a keyword search to a Quick Search form, go to Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; edit “Classifieds Engine” -&gt; edit “quick_search.tpl”</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Add the following lines to where you want to locate this field :</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">&lt;tr&gt;&lt;td&nbsp;align="right"&gt;[[FormFieldCaptions!Keywords]]</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;{search&nbsp;property=keywords}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td><span class="f_Components">"FormFieldCaptions"</span> is the domain (i.e. group of phrases) where <span class="f_Components">"Keywords"</span> belongs to. Square brackets '<span class="f_Components">[['</span> and <span class="f_Components">']]'</span> are opening and closing tags for a phrase that will be translated.</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

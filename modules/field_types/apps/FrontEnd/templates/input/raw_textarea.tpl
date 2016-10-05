@@ -1,0 +1,1 @@
+<textarea placeholder="{$placeholder}" class="form-control {if $hasError}has-error{/if}{if $maxlength > 0} maxlength{/if}" name="{$id}" {if $hasError}data-error="{$error}"{/if} {if $maxlength > 0} maxlength={$maxlength}{/if}{$id_attribute}>{$value}</textarea>

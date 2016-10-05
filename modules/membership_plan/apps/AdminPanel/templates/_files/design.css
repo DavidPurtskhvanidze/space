@@ -1,0 +1,10 @@
+.form.membershipPlan textarea
+{
+	width: 340px;
+	height: 100px;
+}
+
+a.addMembershipPlan
+{
+    display: block;
+}

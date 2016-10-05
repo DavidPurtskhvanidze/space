@@ -1,0 +1,70 @@
+.listingOptionsContents .searchResultItem .details
+{
+	margin: 0 0 0 10px;
+	float: none;
+	width: auto;
+}
+
+.listingOptionsContents .caption
+{
+	display: inline-block;
+	width: 150px;
+}
+
+.listingOptionsContents .subtotal .caption
+{
+    margin-bottom: 10px;
+}
+
+.listingOptionsContents .amount
+{
+	display: inline-block;
+	margin-right: 5px;
+	width: 100px;
+	text-align: right;
+}
+
+.listingOptionsContents .details h1
+{
+    margin-bottom: 10px;
+}
+
+.listingOptionsContents .first .searchResultItem
+{
+    border-top: none;
+}
+
+.listingOptionsContents .subtotal
+{
+	margin-top: 10px;
+}
+
+.listingOptionsContents .subtotal .caption,
+.listingOptionsContents .subtotal .amount
+{
+	font-weight: bold;
+}
+
+.listingOptionsContents .total
+{
+	margin-left: 120px;
+	padding-top: 20px;
+	clear: both;
+
+	font-weight: bolder;
+	font-size: 130%;
+}
+
+.payments .viewContentsLink,
+.creditTransactions .viewContentsLink
+{
+    display: inline-block;
+}
+
+.payments .listingOptionsCaption,
+.creditTransactions .listingOptionsCaption
+{
+    margin-right: 15px;
+    display: inline-block;
+}
+

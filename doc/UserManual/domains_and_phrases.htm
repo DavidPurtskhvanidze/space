@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Basic concepts: Domains and Phrases&nbsp;</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Domains,Phrases,Translation" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?domains_and_phrases.htm"; }
+  else { parent.quicksync('a8.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Basic concepts: Domains and Phrases </span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="internationalization_and_languages.htm">Previous</a>&nbsp;
+     <a href="integration_with_templates.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>In order to translate your site you need to translate phrases. Phrases belong to domains.</p>
+<p>&nbsp;</p>
+<p>Each language file contains domains and phrases which represent the actual translation which is visible on the front-end.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Domain</span> is a category of phrases, which determines their context.</p>
+<p><span style="font-weight: bold;">Phrase</span> is the ID of the text which you want to translate.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><a name="domains"></a><span class="f_Heading2">Domains</span></p>
+<p>When you make a translation you can add it to any domain you like, either existing or a new one.</p>
+<p>&nbsp;</p>
+<p><a name="domainslisttree"></a>However, we strongly recommend for you to add translation for the fields of <a href="field_types.htm#list">list-</a> and <a href="field_types.htm#tree">tree-</a>type fields to their own domains, which must have the mask like <span style="font-weight: bold;">Property_FieldID</span>, e.g.:</p>
+<p>Property_BodyStyle</p>
+<p>Property_MakeModel</p>
+<p>Property_State</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="domains.png" width="533" height="640" border="0" alt="domains"></p>
+<p>&nbsp;</p>
+<p>In this case your iLister-based website will know where (in what domain) it can take the translation for <a href="field_types.htm#list">list-</a> and <a href="field_types.htm#tree">tree-</a>type fields.</p>
+<p>&nbsp;</p>
+<p>However, you can <a href="integration_with_templates.htm">make the site to take the translation for a phrase in a different domain</a>.</p>
+<p>&nbsp;</p>
+<p><a name="addnewdomain"></a><span class="f_Heading3">How to add a new domain</span></p>
+<p>You can add new domain from the Admin Panel -&gt; language Management -&gt; Manage Phrases -&gt; Add Phrase:</p>
+<p><img src="add-domain-link.png" width="1253" height="287" border="0" alt="add-domain-link"></p>
+<p>&nbsp;</p>
+<p>When you click the link "Add new domain", the Admin Panel allows you to type the name for new domain:</p>
+<p><img src="add-new-domain.png" width="707" height="249" border="0" alt="add-new-domain"></p>
+<p>&nbsp;</p>
+<p>Please note that you can add new domain only along with a new phrase.</p>
+<p>&nbsp;</p>
+<p>Alternatively, you can add new domains directly to XML language files:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Open the language file of your default language (you should open it on your server in the folder /languages via FTP client or your hosting Control Panel) and add the following line after the &nbsp;tag <span class="f_Components">&lt;pages&gt;</span> in order to create a new domain:</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 16px;"><span class="f_CodeExample">&lt;page&nbsp;key="Property_FieldID"/&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Then save the langfile on your server.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>Afterwards you will be able to add the values to the “FieldID” phrase (not the FieldID field!) and translate them.</td></tr></table></div><p>&nbsp;</p>
+<p>Please refer to the example below on how to add a new phrase to learn more.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><a name="phrases"></a><span class="f_Heading2">Phrases</span></p>
+<p>Phrases can be very short like "Sell a Home" message or very long containing the whole paragraph of text. The examples are below:</p>
+<p><a href="phrases-domains.png"><img id="TOGGLE0186A1" class="image-toggle" src="phrases-domains.zoom80.png" border="0" alt="phrases-domains.zoom80"></a></p>
+<p>&nbsp;</p>
+<p>Phrases with the translation for  <a href="field_types.htm#list">list-</a> and <a href="field_types.htm#tree">tree-</a>type fields should belong to <a href="domains_and_phrases.htm#domainslisttree">their own domains</a>, which must have the mask like <span style="font-weight: bold;">Property_FieldID.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to add a new phrase</span></p>
+<p>For example, you want to have a new field “Car Condition”.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Create a new list-type field in Admin Panel -&gt;Listing Management -&gt; Categories -&gt; edit “Car” -&gt; click the link "Edit 'Car' Category Fields" -&gt; Add a New Field for the 'Car' Category -&gt; fill in the “Add a New Category Field” form:</td></tr></table></div><p><img src="add-field.png" width="1255" height="435" border="0" alt="add-field"></p>
+<p style="text-indent: 12px;">Click “Add”.</p>
+<p style="text-indent: 12px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Edit a newly created “CarCondition” field there and add values to a list:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Excellent</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Good</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Poor</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Spares</td></tr></table></div><p>&nbsp;</p>
+<p><img src="add-field-values.png" width="700" height="602" border="0" alt="add-field-values"></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>Add the "Car Condition" caption in Admin Panel -&gt; Language Management -&gt; Manage Phrases -&gt; click "Add new":</td></tr></table></div><p style="text-indent: 16px;">Phrase ID = Car Condition</p>
+<p style="text-indent: 16px;">Domain = FormFieldCaptions</p>
+<p style="text-indent: 16px;">Complete the translation for all languages:</p>
+<p style="text-indent: 16px;">&nbsp;</p>
+<p><img src="add-field-caption-translation.png" width="834" height="600" border="0" alt="add-field-caption-translation"></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td><a href="domains_and_phrases.htm#addnewdomain">Create a new domain</a> for the CarCondition field.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">5.</span></td><td>To add and translate the values to the “CarCondition” <span style="font-weight: bold;">phrase</span>, go to Admin Panel -&gt; Language Management -&gt; Manage Phrases -&gt; click the link “Add New” - &gt; fill in the “Add a New Phrase” form:</td></tr></table></div><p style="text-indent: 16px;">Phrase ID = Excellent</p>
+<p style="text-indent: 16px;">Domain = Property_CarCondition</p>
+<p style="text-indent: 16px;">English = Excellent</p>
+<p style="text-indent: 16px;">Complete the translation for all other languages:</p>
+<p>&nbsp;</p>
+<p><img src="add-field-values-translation.png" width="717" height="640" border="0" alt="add-field-values-translation"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>You need to add all values for the “CarCondition” phrase this way.</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><a name="inlinephraseedit"></a><span class="f_Heading3">The Inline Edit of Phrases</span></p>
+<p>There is no need to reload the page to edit a translation of one language. You can easily do this on the fly: type a phrase or its part in the "Phrase ID" field and choose a desired language on the Manage Phrases page and click "Search".</p>
+<p><a href="find-phrase.png"><img id="TOGGLE0186A2" class="image-toggle" src="find-phrase.zoom70.png" border="0" alt="find-phrase.zoom70" style="padding:10px"></a></p>
+<p>&nbsp;</p>
+<p>You can see only one translation of phrases — English. Please note that the translations are underlined. If you roll the mouse over a translation, you'll see the caption "Click to Modify".</p>
+<p><img src="click-to-modify.png" width="500" height="386" border="0" alt="click-to-modify" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>To edit the translation of all available languages, please click the link "Edit".</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','phrases-domains.zoom80.png','hm.src1','phrases-domains.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','find-phrase.zoom70.png','hm.src1','find-phrase.png');
+</script>
+</body>
+</html>

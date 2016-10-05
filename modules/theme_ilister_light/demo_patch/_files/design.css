@@ -1,0 +1,11 @@
+.banners h2
+{
+	font-size: 100%;
+	margin-bottom: 5px;
+	color: #014b91;
+}
+
+.leftBlock .banners
+{
+	margin: 20px 0 0 10px;
+}

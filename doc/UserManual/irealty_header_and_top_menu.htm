@@ -1,0 +1,146 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Header and Top Menu</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Header,Top Menu" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?irealty_header_and_top_menu.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Header and Top Menu</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Header is the upper part of the page. Top and middle menus are parts of the header.</p>
+<p>&nbsp;</p>
+<p><a href="header.png"><img id="TOGGLE0186A1" class="image-toggle" src="header.zoom80.png" border="0" alt="header.zoom80"></a></p>
+<p>&nbsp;</p>
+<p>The header template file can be found in <span class="f_Components">/modules/main/apps/FrontEnd/templates/{theme_name}/page_parts/header_block.tpl</span></p>
+<p>&nbsp;</p>
+<p>The look of the header is specified in the PageHeader div in the CSS file which you can find at <span class="f_Components">/modules/main/apps/FrontEnd/files/{theme_name}/design.css</span></p>
+<p>Header.tpl of different themes uses their own background image to display header picture:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.header</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">background-image:&nbsp;url("header.png");</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">background-position:&nbsp;0&nbsp;39%;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">background-repeat:&nbsp;repeat-x;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">height:&nbsp;166px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>Other components (logo, slogan etc.) are applied on top of the header background.</p>
+<p>&nbsp;</p>
+<p>You can view header.tpl in Admin Panel -&gt; Site Layout -&gt; Page Templates -&gt; page_parts/header_block.tpl.</p>
+<p>There you can see the CSS styles which are used for header section and the name of header image (header_image.png):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.headerImage</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">bottom:&nbsp;0;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">position:&nbsp;absolute;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">right:&nbsp;100px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Change Header</span></p>
+<p>The best way to change the header image is to give your custom header the name of existing header file, e.g. <span class="f_CodeExample">header.png</span> for the irealty_tabs_blue theme, and place your custom header file to &nbsp;the folder <span class="f_Components">/modules/main/apps/FrontEnd/files/irealty_tabs_blue/</span></p>
+<p>&nbsp;</p>
+<p>In order to upload your own header image, you need to connect to your server via <a href="http://customers.worksforweb.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=77" target="_blank" class="weblink" title="FTP protocol and FTP clients">FTP</a> or via Control Panel (please ask your hosting administrator if your Control Panel has the option to work with file transferring).</p>
+<p>&nbsp;</p>
+<p>The blue gradient background is specified as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.header</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">background-image:&nbsp;url("header.png");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Edit Header Size</span></p>
+<p>The hight of header is specified in the CSS style which is fully shown above:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.header&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">height:&nbsp;166px;</span></p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>The width is inherited from the SiteFrame style:</p>
+<p><span class="f_CodeExample">#SiteFrame</span></p>
+<p><span class="f_CodeExample">{</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample">width: 1000px;</span></p>
+<p><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>We do not recommend to change the width, unless your site uses a completely new custom theme which is not inherited from iLister product themes.</p>
+<p>&nbsp;</p>
+<p>You can modify the height of the header picture in the related CSS style.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 6px 5px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">Please check which style is used for the header of your theme in Admin Panel -&gt; Site Layout -&gt; Page Templates -&gt; page_parts/header_block.tpl.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Where to Modify the Top and Middle Menus</span></p>
+<p>You can find the menu templates in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; top_menu.tpl and middle_menu.tpl. There you can add menu items.</p>
+<p>&nbsp;</p>
+<p>CSS style for the top menu is:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.topMenu</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">color:&nbsp;#999999;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">font-family:&nbsp;verdana;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">font-weight:&nbsp;bold;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>The style for the middle menu is:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.middleMenu</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">background:&nbsp;url("middle_menu_background.png")&nbsp;repeat-x&nbsp;scroll&nbsp;0&nbsp;0&nbsp;transparent;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">bottom:&nbsp;10px;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">height:&nbsp;36px;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">left:&nbsp;0;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">line-height:&nbsp;36px;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">position:&nbsp;absolute;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">width:&nbsp;100%;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p><span class="f_Heading3">How to Manage Menu Items</span></p>
+<p>You can remove or add a menu item in menu templates:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>top menu — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; top_menu.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>middle menu — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; middle_menu.tpl</td></tr></table></div><p>&nbsp;</p>
+<p>In order to add a new item, please use the below code as an example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="{$GLOBALS.site_url}/newpage/"&gt;[[New&nbsp;Page]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p>&nbsp;</p>
+<p>When you add a new item to the menu, please make sure that you have the page where this item leads, like the /newpage/ <a href="managing_site_pages.htm">Site Page</a> in the above example.</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','header.zoom80.png','hm.src1','header.png');
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+.quickSearchForm
+{
+	text-align: center;
+}
+.browseByCategories
+{
+	float: left;
+	width: 100%;
+}
+.browseByState
+{
+	float: left;
+	margin: 20px 0 0 0;
+	width: 100%;
+}
+
+/* search results */
+
+.fieldValue .fieldValueSold img
+{
+	margin: 0 0 5px 10px;
+	vertical-align: middle;
+}
+
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper
+{
+	width: 170px;
+}
+
+.featuredListings .fieldValue
+{
+	text-align: left;
+}
+
+.searchForm h1,
+.searchForm h2
+{
+	margin: 10px 0;
+}
+.addListingForm select,
+.searchForm select,
+.myListingsPage select,
+.userSearchPage select
+{
+	width: 155px;
+}
+.addListingForm input[type="text"],
+.searchForm input[type="text"],
+.myListingsPage input[type="text"],
+.userSearchPage input[type="text"]
+{
+	width: 150px;
+}
+.searchForm small
+{
+	margin-left: 5px;
+}
+
+.viewListingPage .searchResultControls
+{
+	float: right;
+	margin: 0;
+}
+
+.form .fieldCaption
+{
+	width: 150px;
+}
+
+.recentListings
+{
+	margin: 20px 0 0;
+}
+.recentListings .item .fieldValue.fieldValuePictures
+{
+	text-align: left;
+}
+
+.searchForm div>.button
+{
+    margin-top: 15px;
+}
+
+.searchResultItem .details
+{
+    margin-right: 135px;
+}
+.searchResultItem .additionalDetailWrapper 
+{
+	width: 130px;
+}
+.itemControls.watch
+{
+	background-image: url(icons/play_button.png);
+}
+.itemControls.modify
+{
+	background-image: url(icons/edit.png);
+}
+
+.requiredFieldForm td
+{
+	padding: 3px 0;
+}
+.requiredFieldForm td.fieldCaption
+{
+	white-space: nowrap;
+	padding-right: 15px;
+}
+.requiredFieldForm .searchTreeLevel1
+{
+	margin-bottom: 6px;
+}
+.requiredFieldForm input[type="text"]
+{
+	width: 250px;
+}
+.requiredFieldForm select
+{
+	width: 255px;
+}
+.requiredFieldForm td.formControls
+{
+	padding: 10px 0 20px 0;
+}
+.viewListingPage .fb-comments iframe {
+    width: 770px !important;
+}

@@ -1,0 +1,3316 @@
+@import url("reset.css");
+
+/* <-- sticky footer */
+html,
+body,
+#SiteFrame
+{
+	height: 100%;
+}
+/* Opera Fix */
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}
+.headerAndCenterWrapper
+{
+	min-height: 100%;
+}
+#PageFooter
+{
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align:center;
+    height: 40px;
+	margin-top: -40px; /* negative value of footer height */
+}
+.colmask
+{
+	padding-bottom: 40px; /* must be same height as the footer */
+}
+
+
+/* sticky footer --> */
+
+/* layout styles */
+body
+{
+    width:100%;
+    font-family:Arial, Helvetica;
+    font-size:80%;
+    min-width:600px;        /* Minimum width of layout */
+}
+
+/* START: Main layout */
+#SiteFrame
+{
+    width:100%;
+}
+
+.editProfilePage #UsernameChangeSwitch,
+.editProfilePage .changeUserGroup
+{
+	display: block;
+    margin-bottom: 10px;
+}
+#PageHeader
+{
+    clear: both;
+    width: 100%;
+    /* if you need margin-bottom define it in the .colmask as margin-top, othwerwise opera 10.62 draw additional space between .colmask and .footer */
+}
+
+/* column container */
+.colmask
+{
+    position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+    clear:both;
+    float:left;
+    width:100%;			/* width of whole page */
+    overflow:hidden;	/* This chops off any overhanging divs */
+}
+
+.leftmenu
+{
+    /* Left column background colour here */
+}
+
+/* --- for 2-column layout -- */
+.leftmenu .colright
+{
+    float:left;
+    width:200%;
+    position:relative;
+    left:200px;
+    background:#fff;
+}
+
+.leftmenu .leftBlockWrap
+{
+    float:right;
+    width:50%;
+    position:relative;
+    right:200px;
+    padding-bottom:1em;
+}
+
+.leftmenu .mainContent
+{
+    margin:0 15px 0 215px;
+    position:relative;
+    right:100%;
+    overflow:hidden;
+}
+
+.leftmenu .leftBlock
+{
+    float:left;
+    width:195px;
+    position:relative;
+    right:185px;
+}
+
+/* --- header's content -- */
+.languageSelector
+{
+    float: right;
+}
+
+.pageHeaderLogo
+{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.slogan{
+    position:absolute;
+    left:230px;
+    top:30px;
+}
+
+/* --- Left Block -- */
+.leftBlock > div
+{
+	margin: 20px 0 0 0;
+}
+.leftBlock > .menu
+{
+	margin: 0;
+}
+
+#SearchBar
+{
+    display:block;
+    clear:both;
+}
+
+/* --- share your site block -- */
+
+.shareBox a
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.shareBox a span
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* --- poll block on the main page -- */
+
+.pollBlock
+{
+	margin: 20px 0 0 0;
+}
+.shareBox h2,
+.pollBlock h2,
+.ownerInfo h2,
+.newsBlock h2
+{
+    font-size: 120%;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.pollBlock ul
+{
+/*    margin:10px 0;*/
+}
+
+.pollBlock input[type="submit"]
+{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+
+/* --- footer -- */
+.copyrights
+{
+    margin-top: 1em;
+    margin: auto;
+    height: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+.linkToMobileSite
+{
+    position: absolute;
+	left: 0;
+    top: 10px;
+}
+
+.calendarDescription
+{
+    padding: 5px 0 10px 0;
+}
+
+.calendarDescription div
+{
+    float: left;
+    position: relative;
+    margin: 0 5px;
+}
+
+.calendarDescriptionReserved,
+.calendarDescriptionFree
+{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.calendarDescriptionReserved,
+.ui-datepicker-calendar td.ui-state-active a
+{
+	background: #cccccc;
+}
+.calendarDescriptionFree
+{
+    background:#eee
+}
+.ui-datepicker-calendar td.ui-state-active
+{
+	border: none;
+}
+.ui-datepicker-calendar td.ui-state-active a
+{
+	border-color: #999999;
+	color: #333333;
+}
+
+/* field-specific properties */
+
+.foundListingInfo .Description
+{
+    display:block;
+}
+
+.foundListingInfo .fieldValueListingRating
+{
+	margin: 0 10px 0 0;
+}
+
+.foundListingInfo .fieldValueSold
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.warning
+{
+    background:#FFFF00;
+    color:black;
+    text-align:center;
+}
+
+.error
+{
+    color:red;
+    clear: both;
+    padding: 5px;
+}
+
+.success
+{
+    color: green;
+    clear: both;
+}
+
+.success a,
+.success a:visited
+{
+    color: green;
+}
+
+.success span
+{
+	padding: 5px;
+	display: inline-block;
+}
+
+.notice
+{
+	color: blue;
+}
+
+.messagesWrapper
+{
+    clear: both;
+    border: 1px solid rgb(204, 204, 184);
+    border-radius: 5px;
+    background: #ffffff no-repeat 13px 13px;
+    min-height: 32px;
+    padding: 15px 10px 5px 60px;
+    margin-bottom: 10px;
+}
+
+.messagesWrapper > ul,
+.messagesWrapper a,
+.messagesWrapper a:visited
+{
+    color: black;
+}
+
+.messagesWrapper > ul li
+{
+	padding: 1px 0;
+}
+
+.messagesWrapper.success
+{
+    background-image: url("icons/success.png");
+}
+
+.messagesWrapper.warning
+{
+    background-image: url("icons/warning.png");
+}
+
+.messagesWrapper.error
+{
+    background-image: url("icons/error.png");
+}
+
+.asterisk
+{
+    color: red;
+}
+
+input.maxlength
+{
+    float: left;
+    position: relative;
+}
+
+.chararactersLeftNumber
+{
+	margin: 0 0 0 5px;
+    background: #999;
+    color: white;
+    text-align: center;
+    width: 40px;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+
+.savedListings
+{
+    font-weight: bold;
+}
+
+.contactFormName,
+.contactFormEmail
+{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.contactFormComments
+{
+	clear: both;
+}
+
+.contactFormName input,
+.contactFormEmail input
+{
+    width:99%;
+}
+
+.contactFormComments textarea
+{
+    width:99%;
+}
+
+.pollDiagramDescription
+{
+    margin: 100px 0 0 0;
+    text-align: right;
+}
+
+.pollDiagramDescription table tr td
+{
+    padding-right:5px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.prinArticleData
+{
+    text-align: right;
+}
+
+span.gallery a img
+{
+    background:#ccc;
+    padding: 3px;
+}
+
+.listingImages,
+.fieldValuePictures
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.listingImages span
+{
+    width:350px;
+    height:350px;
+    border:1px solid #d2d2d2;
+}
+
+.captionBold
+{
+    font-weight: bold;
+}
+
+.listingsPerPageSelector
+{
+    width: 350px;
+    float: left;
+    clear: both;
+    margin: 5px 0;
+}
+
+.listingsSortBy,
+.listingsSortByActivationDate,
+.listingsSortByPrice
+{
+    position: relative;
+    float: right;
+    width: 120px;
+    height:20px;
+    text-align: center;
+    display: block;
+}
+
+.tableListingCheckBox
+{
+    vertical-align: middle;
+    width: 20px;
+}
+
+.savedSearches .name
+{
+    width: 200px;
+    display:block;
+    float:left;
+}
+
+/* jquery ad gallery styles */
+
+.ad-gallery .ad-nav .ad-forward,
+.ad-gallery .ad-nav .ad-back
+{
+	width:13px;
+	height:113px;
+}
+.ad-gallery .ad-nav .ad-back
+{
+	left:0;
+}
+.ad-gallery .ad-nav .ad-forward
+{
+	right:0;
+}
+.ad-gallery .ad-nav .ad-thumbs
+{
+	margin:0 17px;
+	width:auto;
+}
+.ad-gallery .ad-forward {
+    background:transparent url(ad_scroll_forward.png) no-repeat scroll center;
+}
+.ad-gallery .ad-back {
+    background:transparent url(ad_scroll_back.png) no-repeat scroll center;
+}
+
+/* Listing Pictures */
+
+.pictures
+{
+    padding: 5px;
+}
+.pictures .ad-gallery
+{
+	width: 350px; /* Image width */
+}
+.pictures .ad-gallery .ad-image-wrapper
+{
+    height: 350px;  /* Image height */
+}
+.pictures .ad-gallery .ad-image-wrapper
+{
+    border:1px solid #ccc;
+    margin-bottom:5px;
+}
+.pictures .ad-gallery .ad-nav {
+    padding: 3px 0;
+    border:1px solid #ccc;
+}
+
+.allPictures
+{
+    width: 352px; /* Image width */
+}
+.allPictures .imageFrame
+{
+    height: 352px; /* Image height */
+    line-height: 350px;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+}
+.allPictures .imageFrame img
+{
+    vertical-align: middle;
+}
+.allPictures .imageThumbs
+{
+    margin: 5px auto;
+}
+.allPictures .imageThumbs li
+{
+    display: inline;
+}
+
+.allPictures .imageThumbs .thumbnail img
+{
+    border: 1px solid #d2d2d2;
+}
+.allPictures .imageThumbs .selected img
+{
+    border: 1px solid #c00;
+}
+
+/* Slide show styles*/
+
+.slideShowContainer
+{
+}
+.slideShowContainer .ad-gallery
+{
+	width: 350px; /* Image width */
+}
+.slideShowContainer .ad-gallery .ad-image-wrapper
+{
+    height: 350px;  /* Image height */
+}
+.slideShowContainer .ad-gallery .ad-image-wrapper
+{
+    border:1px solid #999;
+}
+.slideShowContainer .ad-gallery .ad-nav
+{
+    padding: 3px 0;
+    border:1px solid #999;
+}
+.slideShowContainer .ad-gallery .ad-controls
+{
+	color: #555;
+}
+
+dl.captions dt
+{
+	clear: left;
+    float: left;
+    width: 120px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+dl.captions dd
+{
+	margin-left: 130px;
+    padding: 5px;
+}
+
+.clearBoth
+{
+	display: block;
+    clear: both;
+	height: 1px;
+	overflow: hidden;
+	line-height:1px;
+	font-size:1px;
+}
+
+/* font styles */
+h1 {font-size:170%;}
+h2 {font-size:170%;}
+h3 {font-size:140%;}
+h4 {font-size:120%;}
+h5 {font-size:110%;}
+h6 {font-size:105%;}
+
+div.replies
+{
+	margin: 5px 0 0 10px;
+}
+
+img.linkIcon
+{
+	vertical-align: middle;
+}
+
+div.comment
+{
+	padding: 20px 5px 0 5px;
+}
+div.comment:last-of-type
+{
+    min-height: 170px;
+}
+
+.comment > *
+{
+	margin-left: 60px;
+}
+.comment .userPicture
+{
+	margin-left: 0px;
+	float: left;
+}
+.comment .userPicture > a
+{
+	display: block;
+}
+.comment .userPicture img
+{
+	width: 50px;
+}
+.comment .commentAuthorUsername
+{
+	font-weight: bold;
+}
+.comment .commentAuthorSays
+{
+	font-style: italic;
+}
+.comment .commentRating
+{
+	float:right;
+}
+.comment .commentPostedDate
+{
+	font-style: italic;
+	color: #888888;
+	padding-bottom: 10px;
+}
+.comment .commentTitle
+{
+	font-weight: bold;
+}
+.comment .userAndCommentActions
+{
+	background: #eee;
+	z-index: 200;
+	padding: 5px;
+}
+.comment .userAndCommentActions a
+{
+	padding: 2px 5px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.comment .userAndCommentActions a:hover
+{
+	text-decoration: underline;
+}
+
+div.replies
+{
+	margin: 5px 0 0 -5px;
+}
+
+.addComment
+{
+    margin-top: 20px;
+    margin-left: 20px;
+	max-width: 535px;
+	width: auto;
+}
+
+.comments .addComment
+{
+    padding: 15px 10px 5px 10px;
+	background-color: #EEEEEE;
+}
+
+div.notPublishedComment .addComment
+{
+	background-color: #fff;
+}
+div.notPublishedComment
+{
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+
+.comment .addComment
+{
+    margin-left: 0;
+}
+
+.addComment .addCommentHeader
+{
+    margin-bottom: 15px;
+}
+
+.addComment .cancelAddComment
+{
+    display: none;
+}
+
+.comments .addComment .cancelAddComment
+{
+    font-weight: normal;
+    margin-left: 10px;
+    display: inline;
+}
+
+.addComment .inputString
+{
+	width: 99%;
+}
+
+.addComment .pageDescription
+{
+	margin: 10px 0;
+}
+
+.addComment .pageDescription .commentTitle
+{
+	font-weight: bold;
+}
+
+.hiddenCommentTooltip
+{
+	margin: 0 0 5px 0;
+	font-size: 90%;
+	color: red;
+}
+
+.featuredItem
+{
+	float: left;
+}
+
+.featuredItem .fieldValuePictures
+{
+	text-align: center;
+}
+
+.featuredItem .fieldValue
+{
+	display: block;
+}
+
+.listingDetails .searchResultsControls
+{
+	float: right;
+}
+
+.listingDetailsTop
+{
+	clear: both;
+}
+
+.listingDetailsPictures
+{
+	float: left;
+	width: 350px;
+    text-align:center;
+}
+
+.listingDetailsSellerInfo
+{
+	float: right;
+	width: 190px;
+}
+
+.listingDetailsDescription
+{
+	margin: 0 200px 0 360px;
+}
+
+#TopMenu
+{
+	text-align:center;
+}
+
+#TopMenu ul
+{
+	text-align:center;
+}
+
+#TopMenu ul li
+{
+	display:inline;
+	position:relative;
+	z-index:100;
+}
+
+#TopMenu ul li a
+{
+	text-decoration:none;
+	padding: 0 10px;
+	z-index:100;
+}
+
+.businessCatalogItem
+{
+	border-top:outset 1px steelblue;
+	padding-bottom: 10px;
+}
+
+.businessCatalogProfileLink
+{
+	clear: both;
+	padding-left: 5px;
+}
+
+/* search results block */
+
+.viewListingPage .searchControls
+{
+    float: right;
+}
+
+.viewListingPage .searchControls li
+{
+    margin: 0 0 0 10px;
+    float: left;
+    white-space: nowrap;
+}
+
+.viewListingPage .searchControls .backToResults img.linkIcon {
+    margin-top: 1px;
+}
+
+.searchResults
+{
+	clear: both;
+	float: left;
+	width: 100%;
+}
+.searchResultItem
+{
+	float: left;
+    clear: both;
+    width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+
+.searchControls .backToResults img.linkIcon
+{
+    vertical-align: top;
+}
+
+.searchControls .backToResults a
+{
+    text-decoration: none;
+}
+
+.searchControls li.backToResults
+{
+    margin-right: 15px;
+}
+
+.searchControls .previous a
+{
+    background: url(icons/previous.png) no-repeat left 3px;
+    padding-left: 13px;
+    text-decoration: none;
+}
+
+.searchControls .next a
+{
+    background: url(icons/next.png) no-repeat right 3px;
+    padding-right: 13px;
+    text-decoration: none;
+}
+
+.userSearchResultsPage .searchResultItem
+{
+	border-bottom: 1px solid #ccc;
+}
+
+.last .searchResultItem
+{
+    margin-bottom: 15px;
+}
+
+.searchResultItem .pictures
+{
+	padding: 3px 0;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+.searchResultItem .additionalDetailWrapper
+{
+	float: right;
+	width: 230px;
+	text-align: right;
+	margin: 0 10px 0 0;
+}
+.searchResultItem .additionalDetailWrapper span.fieldValue
+{
+	display: block;
+	text-align: right;
+}
+.searchResultItem .details
+{
+	margin: 0 260px 0 120px;
+	width: auto;
+	min-height: 80px;
+}
+.searchResultItem .listingControls
+{
+	margin: 0 0 0 120px;
+}
+.searchResultItem .listingControls input[type="checkbox"]
+{
+	vertical-align: middle;
+}
+.searchResultItem .listingControls ul
+{
+	float: left;
+}
+.searchResultItem .listingControls ul li
+{
+	margin: 0 10px 0 0;
+	padding: 0;
+	float: left;
+}
+
+/* end of search results block */
+
+/* my listings */
+
+.searchResultItemsControls
+{
+	clear: both;
+	margin: 0 0 5px 0;
+}
+.itemsSelectorAndSearchResultItemWrapper
+{
+	float: left;
+	clear: both;
+	width: 100%;
+
+}
+.myListingsPage .itemsSelector,
+.savedListingsPage .itemsSelector
+{
+	position: absolute;
+	top: 40px;
+}
+
+.searchResultItemWrapper
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.myListingsPage .searchResultItemWrapper,
+.savedListingsPage .searchResultItemWrapper
+{
+	padding-left: 20px;
+}
+.myListingsPage .searchResults,
+.savedListingsPage .searchResults
+{
+	float: right; /* for ie7 */
+}
+
+/* end my listings */
+
+/* saved listings page */
+
+.numberOfObjectsFoundInfoAndPageSelectorWrapper
+{
+	margin: 0 0 10px 0;
+	width: 100%;
+	clear: both;
+	float: left;
+}
+.searchResultItemsControls .actionLabel
+{
+	margin-left: 10px;
+}
+
+/* end of saved listings page */
+
+/* view listing page */
+
+.viewListingPage .breadcrumbs,
+.viewListingPage .searchResultControls
+{
+	margin: 0 0 10px 0;	
+}
+.viewListingPage .fieldValueListingRatingAndFieldValueCommentsWrapper
+{
+	margin: 0 0 5px 0;	
+}
+.viewListingPage .pictures
+{
+	margin: 0 5px 10px 0;
+	float: left;
+	z-index: 10;
+}
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper
+{
+	margin: 0 0 0 20px;
+	width: 200px;
+	float: right;
+	z-index: 10;
+}
+.viewListingPage .listingControls,
+.viewListingPage .ownerInfo,
+.viewListingPage .fieldValueListingRating
+{
+	margin: 0 0 15px 0;
+    display: block;
+}
+.viewListingPage .map,
+.viewListingPage .youTubeVideo,
+.viewListingPage .comments
+{
+	clear: both;
+}
+.overview dt
+{
+	margin: 0 3px 0 0;
+	float: left;
+	font-weight: bold;
+}
+.galleryControls
+{
+	text-align: center;
+    margin-top: 15px;
+}
+.galleryControls span
+{
+    margin: 0 0 0 50px;
+}
+.galleryControls span:first-child
+{
+    margin: 0;
+}
+
+.slideShowContainer div
+{
+	position: static;
+}
+
+#Map
+{
+	width: 500px;
+	height: 300px;
+}
+
+/* end of view listing page */
+
+/* user search results page */
+
+.userSearchPage input[type="submit"]
+{
+	margin: 10px 0 0 0;
+}
+
+.userSearchResultsPage
+{
+	float: left;
+	width: 100%;
+}
+
+.userSearchResultsPage .searchResultHeader
+{
+	float: left;
+	width: 100%;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.userSearchResultsPage .pageSelector
+{
+	margin: 20px 20px 0 0;
+}
+.userSearchResultsPage .searchResultItem
+{
+	padding: 10px 0;
+}
+.searchResultItem .fieldValueProfilePicture
+{
+	width: 125px;
+	float: left;
+}
+.searchResultItem .fieldValueProfilePicture img
+{
+	width: 100px;
+}
+.searchResultItem .detailsAndUserProfileControlsWrapper
+{
+	margin: 0 0 0 125px;
+}
+.userSearchResultsPage .details
+{
+	margin: 0;
+	float: left;
+}
+.userSearchResultsPage .searchResultItem dl dt
+{
+	margin: 0 5px 0 0;
+	width: 180px;
+	float: left;
+	clear: left;
+	font-weight: bold;
+}
+.userSearchResultsPage .searchResultItem dl dd
+{
+	float: left;
+}
+.searchResultItem .userProfileControls
+{
+	margin: 1.5em 0 0 0;
+	float: right;
+}
+.searchResultItem .userProfileControls li
+{
+	text-align: right;
+}
+.searchResultItem .fieldValueDealershipName
+{
+	font-weight: bold;
+}
+
+.dealer-profile-logo{
+	float: right;
+}
+
+.dealer-logo{
+	display: block;
+	margin: 10px;
+}
+/* end of user search results page */
+
+/* view user profile page */
+
+.viewUserProfilePage dt
+{
+	margin: 0 5px 2px 0;
+	float: left;
+	clear: left;
+	font-weight: bold;
+	width: 180px;
+}
+.viewUserProfilePage dd
+{
+	margin: 0 5px 2px 0;
+}
+
+.viewUserProfilePage
+{
+	margin: 0 0 20px 0;
+}
+.viewUserProfilePage .fieldValueProfilePicture
+{
+	margin: 0 20px 0 0;
+}
+.viewUserProfilePage .fieldValueProfilePicture,
+.viewUserProfilePage .details
+{
+	float: left;
+}
+
+/* end of view user profile page */
+
+/* subscription page */
+
+
+.expirationAndAutoExtensionWrapper
+{
+    margin: 5px 0 10px;
+    float: left;
+	width: 100%;
+}
+.expirationAndAutoExtensionWrapper .expiration
+{
+	width: 50%;
+	float: left;
+	margin-top: 5px;
+}
+.expirationAndAutoExtensionWrapper .expiration h3
+{
+	margin: 0;
+}
+
+.expirationAndAutoExtensionWrapper .autoExtension
+{
+    margin-top: 5px;
+	width: 50%;
+	float: left;
+}
+.expirationAndAutoExtensionWrapper .autoExtension .state
+{
+	font-weight: bold;
+}
+.expirationAndAutoExtensionWrapper .hint
+{
+	font-size: 85%;
+}
+
+.currentSubscriptionInfo h3
+{
+	clear: both;
+}
+.currentSubscriptionInfo .description
+{
+	float: left;
+	width: 50%;
+}
+.currentSubscriptionInfo .details
+{
+	float: left;
+	width: 50%;
+}
+
+.packages
+{
+	clear: both;
+}
+.packages .item
+{
+	margin-left: 10%;
+	padding: 5px 0;
+	width: 95%;
+	clear: left;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.availabelMembershipPlans > div.item:last-child .packages .item
+{
+	border-bottom: none;
+}
+.packages h4
+{
+	clear: both;
+}
+.packages .nameAndDescriptionWrapper
+{
+	width: 40%;
+	float: left;
+	clear: left;
+}
+.packages .details
+{
+	width: 50%;
+	float: left;
+}
+.packages .details .fieldCaption
+{
+	padding: 0 20px 0 0;
+}
+
+.availabelMembershipPlans h2
+{
+	padding: 1em 0 0.1em 0;
+}
+.availabelMembershipPlans
+{
+	clear: both;
+}
+.availabelMembershipPlans .item
+{
+	clear: both;
+}
+.availabelMembershipPlans .description
+{
+	width: 50%;
+	float: left;
+	clear: both;
+}
+.availabelMembershipPlans .description p
+{
+	padding: 0 10px 0 0;
+}
+.availabelMembershipPlans .details
+{
+	width: 50%;
+	float: left;
+}
+
+.currentSubscriptionInfo,
+.availabelMembershipPlans
+{
+	max-width: 700px;
+}
+
+.currentSubscriptionInfo .packages .item .nameAndDescriptionWrapper p,
+.availabelMembershipPlans .packages .item .nameAndDescriptionWrapper p
+{
+	padding-right: 10px;
+}
+
+/* end of subscription page */
+
+/* My Transactions page*/
+
+.transactionsPage
+{
+	max-width: 750px;
+}
+.transactionsPage .fieldCaption,
+.transactionsPage .fieldFormElement
+{
+	margin: 0 5px 0 0;
+	display: inline-block;
+	float: left;
+    line-height:30px;
+}
+.transactionsPage .fieldFormElementFilter
+{
+	float: right;
+}
+.transactionsPage .fieldFormElementId input
+{
+	width: 50px;
+}
+.transactionsPage .fieldFormElementCreationDate input,
+.transactionsPage .fieldFormElementPeriod input
+{
+	width: 85px;
+}
+.transactionsPage .payments
+{
+	padding: 20px 0 0 0;
+	clear: both;
+	width: 100%;
+}
+.transactionsPage .paymentsForm
+{
+    background: #f2f2f2;
+    overflow: hidden;
+    padding: 20px 10px 10px;
+}
+
+.payments .fieldCaptionId
+{
+	width: 40px;
+}
+.payments .fieldCaptionDate
+{
+	width: 130px;
+}
+.creditTransactions .payments .fieldCaptionDate
+{
+	width: 150px;
+}
+.payments .fieldCaptionAmount
+{
+	width: 100px;
+}
+.payments table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.payments table td,
+.payments table th
+{
+	padding: 3px;
+	border: 1px solid #ddd;
+}
+.payments table th
+{
+	font-weight: bold;
+}
+.payments .paymentStatus
+{
+    white-space: nowrap;
+}
+.paymentInfo table td
+{
+	padding: 0 10px 5px 0;
+}
+.paymentConfirmationPage .notification
+{
+	padding-bottom: 10px;
+}
+
+/* menu */
+
+.loggedInUserInfo > img
+{
+	height: 30px;
+	vertical-align: middle;
+}
+
+/* end of menu */
+
+/* news Block */
+
+.newsBlock 
+{
+	margin: 10px 0 0 0;
+}
+.newsBlock .newsTitle
+{
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+}
+
+/* end of news Block */
+ul.multi-list {
+    padding: 0;
+}
+.list1Columns,
+.list2Columns,
+.list3Columns,
+.list4Columns,
+.list5Columns,
+.list6Columns,
+.list7Columns,
+.list8Columns
+{
+	width: 100%;
+}
+.list1Columns > ul > li,
+.list2Columns > ul > li,
+.list3Columns > ul > li,
+.list4Columns > ul > li,
+.list5Columns > ul > li,
+.list6Columns > ul > li,
+.list7Columns > ul > li,
+.list8Columns > ul > li
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: none;
+}
+.list1Columns > ul > li
+{
+	width: 100%;
+}
+.list2Columns > ul > li
+{
+	width: 50%;
+}
+.list3Columns > ul > li
+{
+	width: 33.3%;
+}
+.list4Columns > ul > li
+{
+	width: 25%;
+}
+.list5Columns > ul > li
+{
+	width: 20%;
+}
+.list6Columns > ul > li
+{
+	width: 16.6%;
+}
+.list7Columns > ul > li
+{
+	width: 14.2%;
+}
+.list8Columns > ul > li
+{
+	width: 12.5%;
+}
+
+.soldListingEn
+{
+	background: url(sold_background_en.png);
+}
+.soldListingRu
+{
+	background: url(sold_background_ru.png);
+}
+.viewListingPage .fieldValueSold
+{
+	margin: 0 10px 0 0;
+	color: #f00;
+}
+.viewListingPage .map,
+.viewListingPage .youTubeVideo
+{
+	margin: 0 0 10px;
+}
+.viewListingPage .ownerInfo h2,
+.viewListingPage .comments h2
+{
+	font-size: 120%;
+	font-weight: bold;
+}
+.viewListingPage .ownerInfo .fieldValueFirstName,
+.viewListingPage .ownerInfo .fieldValueLastName
+{
+    font-weight: bold;
+}
+.fieldValueListingRating img
+{
+	vertical-align: middle;
+}
+.contactForm input[type="submit"]
+{
+	margin: 10px 0 0 0;
+}
+
+.savedSearches .item
+{
+	clear: left;
+	float: left;
+	margin: 5px 0;
+}
+
+.myNotifications input[type="submit"]
+{
+	margin: 10px 0 0 0;
+}
+.passwordConfirmText
+{
+	font-size: 80%;
+	display: block;
+	margin: 0 0 5px 0;
+}
+
+a.emptyLink,
+a.emptyLink:visited,
+a.emptyLink:hover
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* This will set zero margin for the first heading on the page's main content */
+
+.viewListingPage>h1:first-child,
+.viewListingPage>*:first-child h1
+{
+    margin-bottom: 20px;
+}
+
+.viewListingPage>h2:first-child,
+.viewListingPage>*:first-child h2
+{
+    margin-bottom: 20px;
+}
+
+.pageDescription .commentPosted
+{
+	font-family: monospace;
+	font-size: 110%;
+}
+.pageDescription blockquote
+{
+	border-left: 1px solid #DDDDDD;
+	margin: 5px 0 0 10px;
+	padding-left: 10px;
+}
+.fieldValue.price,
+.fieldValuePrice,
+.fieldValuePrice a,
+.fieldValuePrice a:visited
+{
+	color: #f00;
+}
+
+.viewListingPage h1,
+.viewListingPage h2
+{
+	clear: both;
+}
+
+.searchResultItem
+{
+	padding: 5px 0;
+}
+
+.authorizationControls
+{
+	font-weight: bold;
+}
+
+.manageCalendarPage .reservationGrid th
+{
+    font-weight: bold;
+    border-bottom: 1px solid #CED7E0;
+}
+.manageCalendarPage .reservationGrid th,
+.manageCalendarPage .reservationGrid td
+{
+    padding: 2px 20px 2px 0;
+}
+
+/* forms basen on tables*/
+.form
+{
+    clear:both;
+}
+.form td
+{
+	padding: 2px 20px 2px 0;
+}
+.form input[type="password"]
+{
+	margin-bottom: 5px;
+}
+.featuresAndRepostTable
+{
+	clear: both;
+	width: 60%;
+}
+.editListing .form .inputFormCaption
+{
+	width: 150px;
+}
+.editListing .checkBoxField td
+{
+	width: 200px;
+}
+
+/* Edit listing */
+.editListing .mandatoryNote
+{
+/*	margin: 10px 0;
+	float: left;
+	width: 100%;*/
+}
+
+a:visited
+{
+    color: #551A8B;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a.emptyLink:hover
+{
+    color: #00f;
+}
+
+.managePictures tr td
+{
+	padding: 2px 5px;
+}
+
+.managePictures .pictures
+{
+	width: auto;
+	padding: 10px 0 0 0;
+	border-collapse: collapse;
+}
+.managePictures .pictures th
+{
+	text-align: center;
+	padding-right: 20px;
+}
+.managePictures .pictures td
+{
+	padding: 2px 5px;
+	vertical-align: middle;
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+.managePictures .delete img
+{
+    margin-top: 4px;
+}
+
+.sortDirectionArrow
+{
+    color: #999;
+}
+
+.homepageMainContent .featuredListingsWrapper
+{
+	width: 170px;
+	float: right;
+}
+.homepageMainContent .centerBlockWrapper
+{
+	margin: 0 215px 0 0;
+}
+
+/* Online poll results page */
+.pollResultsPage .poll
+{
+    overflow: auto;
+}
+.pollResultsPage .poll h3
+{
+    clear:left;
+}
+.pollResultsPage .poll .pollDescription
+{
+    float: left;
+}
+.pollResultsPage .poll .pollDescription .answerInfo
+{
+    border-top: 1px solid #ccc;
+    padding: 1px 5px 1px 5px;
+}
+.pollResultsPage .poll .pollDescription .answerInfo .answerTitle,
+.pollResultsPage .poll .pollDescription .answerInfo .answerRate,
+.pollResultsPage .poll .pollDescription .answerInfo .answerVotes
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.pollResultsPage .poll .pollDescription .answerInfo .answerTitle
+{
+    width: 200px;
+}
+.pollResultsPage .poll .pollDescription .answerInfo .answerRate
+{
+    width: 50px;
+    border: 1px solid #000;
+    text-align: right;
+    padding-right:5px;
+}
+.pollResultsPage .poll .pollDescription .answerInfo .answerVotes
+{
+    width: 80px;
+    text-align: right;
+}
+.pollResultsPage .poll .pollDescription .answerTotalVotes
+{
+    display: block;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+    padding: 1px 5px 1px 5px;
+}
+
+.pollResultsPage .poll .pollDiagram
+{
+    float: left;
+    margin: 0 0 0 25px;
+    height: 160px;
+    overflow: hidden;
+}
+.pollResultsPage .poll .pollDiagram img
+{
+    margin-top: -20px;
+}
+
+/* end of online poll results page */
+
+/* Compare Listings */
+
+body.classifieds.compared_listings
+{
+	background: #999;
+}
+
+.compareListingsPage
+{
+	display: table;
+	margin: 0 auto;
+	padding: 0px 10px;
+	height: 100%;
+	min-width: 1000px;
+	background: #fff;
+}
+.compareListingsPage h1
+{
+	margin: 10px 0;
+}
+.compareListingsPage table
+{
+	min-width: 1000px;
+	margin: 20px 0 40px;
+}
+.compareListingsPage table .evenrow
+{
+    background: #fff;
+}
+.compareListingsPage table .oddrow
+{
+    background: #eee;
+}
+.compareListingsPage table tr:hover
+{
+    background: #ffedc7;
+}
+.compareListingsPage table tr td
+{
+    padding: 1px 10px 1px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.compareListingsPage .fieldCaption
+{
+	width: 200px;
+	font-weight: bold;
+}
+.compareListingsPage .fieldValue
+{
+	width: 200px;
+	color: inherit;
+}
+.compareListingsPage .fieldValue .notApplicable
+{
+    font-family: monospace;
+    color: #666;
+}
+.compareListingsPage .fieldValuePictures
+{
+    padding-top: 5px;
+}
+.compareListingsPage .controls
+{
+	font-size: 80%;
+}
+.compareListingsPage .controls .remove,
+.compareListingsPage .controls .clear
+{
+	padding-left: 15px;
+	color: #666;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/cross.png);
+	text-decoration: none;
+}
+.compareListingsPage .controls .remove:hover,
+.compareListingsPage .controls .clear:hover
+{
+	text-decoration: underline;
+}
+.compareListingsPage .fieldValueCaption span
+{
+    font-weight: inherit;
+    color: inherit;
+}
+
+
+.quickSearch .fieldCaption
+{
+    width: 45px;
+}
+
+@media print
+{
+	body
+	{
+		color : #000000;
+		background : #ffffff;
+	}
+	#SiteFrame
+	{
+		width: 100% !important;
+	}
+	.leftmenu .mainContent
+	{
+		margin: 0 !important;
+	}
+	#PageHeader,
+	.header,
+	.leftBlock
+	{
+		display: none;
+	}
+}
+
+body.print
+{
+	color : #000000;
+	background : #ffffff;
+}
+.print .searchResultControls,
+.print .searchControls,
+.print .listingControls,
+.print .fieldValueListingRating,
+.print .slideShow,
+.print .youTubeVideo,
+.print .availabilityCalendar,
+.print .fieldValueAvailabilityCalendar,
+.print .fieldValueVideo,
+.print .comments,
+.print .ownerInfo .fieldValueEmail,
+.print .listingOwnerControls,
+.print .galleryControls,
+.print .linkToMobileSite
+{
+	display: none;
+}
+.print #PageFooter
+{
+	margin-top: 0;
+	background: none;
+	border: none;
+}
+
+.makeListingFeatured .success,
+.requestFeature .success
+{
+	margin: 0 0 10px 0;
+}
+
+.errorNotification
+{
+	padding: 15px;
+	position: absolute;
+	background: #fff;
+	border: 1px outset #ccc;
+	z-index: 10;
+	-moz-box-shadow: 2px 2px 5px #000;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	box-shadow: 2px 2px 5px #000;
+}
+
+.saveSearchFormDialog .ui-dialog-titlebar,
+.changeUsernameFormDialog .ui-dialog-titlebar
+{
+	display: none;
+}
+
+.changeUsernameFormDialog .error
+{
+    font-size: 90%;
+}
+
+.changeUsernameFormDialog .form
+{
+    float:left;
+}
+
+.saveSearchForm input[type=text]
+{
+	width: 160px;
+}
+*[lang="ru"] .saveSearchForm input[type=text]
+{
+	width: 145px;
+}
+*[lang="ru"] .error.emptySearchName
+{
+	padding: 0 0 5px 0;
+	font-size: 90%;
+}
+
+.loanCalculator table td
+{
+	padding: 4px;
+	border-bottom: 1px solid #ccc;
+}
+
+.sortingFieldValues .fieldValuePrice
+{
+	white-space: nowrap;
+}
+
+/* Default styles for WYSIWYG editor */
+.fieldValue ol,
+.fieldValue ul,
+.listingField ol,
+.listingField ul
+{
+	list-style-position: inside;
+    display:block;
+    margin:1em 0;
+    padding:0;
+    position:relative;
+}
+.fieldValue ol,
+.listingField ol
+{
+	list-style-type:decimal;
+}
+.fieldValue ul,
+.listingField ul
+{
+	list-style-type:disc;
+    margin: 0;
+    padding-left: 15px;
+}
+.fieldValue ol li,
+.fieldValue ul li,
+.listingField ol li,
+.listingField ul li
+{
+    padding:0;
+	display:list-item;
+}
+.fieldValue em,
+.listingField em
+{
+	font-style:italic;
+}
+
+.fieldValue ul li ul,
+.listingField ul li ul
+{
+    list-style-type: circle;
+}
+
+.fieldValue ul li ul li ul,
+.listingField ul li ul li ul
+{
+    list-style-type: square;
+}
+
+.viewUserProfilePage .viewAllListings
+{
+	margin: 5px 0;
+	display: block;
+}
+
+.featureActivatedNotification small,
+.listingActivatedNotification small,
+.listingDeactivatedNotification small
+{
+	font-size: 80%;
+}
+.featureActivatedNotification,
+.listingActivatedNotification,
+.listingDeactivatedNotification
+{
+	padding:3px 5px;
+	position:absolute;
+	right:5px;
+	top:3px;
+	z-index:10;
+	text-align:center;
+	font-size: 120%;
+	cursor: pointer;
+	color: #000000;
+	background: #ffc500;
+	border:1px solid #ccc;
+	box-shadow:2px 2px 5px #000;
+	-webkit-box-shadow:2px 2px 5px #000;
+	-moz-box-shadow:2px 2px 5px #000;
+}
+
+li.userGroupInfo
+{
+	list-style-type: disc;
+}
+ul.userGroupInfo
+{
+	padding: 0px 0px 0px 20px;
+}
+.hint.fieldTypeHint
+{
+	clear: both;
+	font-size: 80%;
+}
+*[lang="ru"] .hint.youtubeVideoId
+{
+	width: 260px;
+}
+
+.loginPage .thirdPartyAuth,
+.loginMenuWrapper .thirdPartyAuth
+{
+	padding-top: 10px;
+}
+.loginPage .thirdPartyAuth .providerLinks,
+.loginMenuWrapper .thirdPartyAuth .providerLinks
+{
+	padding-top: 5px;
+}
+.loginPage .thirdPartyAuth .openIdProviderForm,
+.login .thirdPartyAuth .openIdProviderForm,
+.loginMenuWrapper .thirdPartyAuth .openIdProviderForm
+{
+	display: none;
+}
+.loginPage .thirdPartyAuth a,
+.loginPage .thirdPartyAuth a:hover,
+.loginPage .thirdPartyAuth a:visited,
+.loginMenuWrapper .thirdPartyAuth a,
+.loginMenuWrapper .thirdPartyAuth a:hover,
+.loginMenuWrapper .thirdPartyAuth a:visited
+{
+	text-decoration: none;
+}
+.loginRequest
+{
+	padding: 0 0 10px 0;
+}
+
+.listingRepostSettings td
+{
+	padding: 5px 10px 5px 0;
+}
+
+.changeUserGroupForm .properties tr td
+{
+	padding: 3px 0;
+}
+.changeUserGroupForm .properties .hint,
+.userNotifications .hint
+{
+    background-color: #FFFF99;
+    border: 1px solid #FF9900;
+    color: #000000;
+    margin: 5px 0;
+    padding: 5px;
+	text-align: left;
+}
+.changeUserGroupForm .dialogFormMessage
+{
+	padding: 10px 0 10px 0;
+}
+
+.editProfilePage .form
+{
+	float: left;
+}
+
+.editProfilePage .listingRepostSettings
+{
+	background-color: #FFFF99;
+}
+
+.editProfilePage .listingRepostSettings
+{
+    background-color: #EEE;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+	max-width: 320px;
+}
+.editProfilePage .listingRepostSettings h3
+{
+	margin-top: 5px;
+}
+
+.socialNetworkLikeButtonWrapper .facebook
+{
+	margin-bottom:5px;
+}
+.socialNetworkLikeButtonWrapper .twitter
+{
+	margin-bottom:5px;
+}
+
+.listingSearchResultsPage
+{
+	clear: both;
+}
+
+/* chrome file element width fix */
+input[type="file"] {
+	-webkit-box-align: baseline;
+	max-width: 220px;
+	margin-bottom: 3px;
+}
+
+.contactFormPage form
+{
+	margin-top: 10px;
+}
+
+.reportImproperContentPage .description
+{
+	margin: 15px 0;
+}
+
+.searchControls.actionSelector .caption .linkIcon
+{
+	background-color: #666666;
+	padding: 1px;
+}
+.searchControls.actionSelector .caption.collapsed .linkIcon.expanded,
+.searchControls.actionSelector .caption.expanded .linkIcon.collapsed
+{
+	display: none;
+}
+
+.hint
+{
+	margin: 3px 0 10px 0;
+	padding: 5px 10px;
+	background: #FFFFB0;
+	border: 1px solid #F0F0F0;
+}
+.tellFriendHeader
+{
+    float: left;
+}
+
+.ui-helper-hidden-accessible
+{
+	position: absolute;
+	left: -9999999px
+}
+
+#ui-datepicker-div {
+  z-index: 9999999!important;
+}
+
+.goToManageListingLink {
+    margin-bottom: 10px;
+}
+
+.paymentText table td {
+    padding-right: 5px;
+}
+
+.hint.youtubeVideoId {
+    margin-top: 8px;
+    float: left;
+}
+
+.myBasket .submitButtonWrapper {
+	margin-top: 15px;
+    width:465px;
+}
+
+.myBasket .submit {
+    float: right;
+}
+
+.manageListingOptions input[type="submit"],
+.listingPackgeChoice input[type="submit"]
+{
+    margin-top: 20px;
+}
+.listingPackgeChoice .hint
+{
+    margin-bottom: 15px;
+}
+
+.listingPackgeChoiceHeader
+{
+    margin-bottom: 10px;
+}
+
+.listingPackgeChoice .listingPackageDescription
+{
+    display: block;
+    margin-left: 25px;
+}
+
+.myListingsPage .messagesWrapper.success > ul,
+.myListingsPage .messagesWrapper.warning > ul
+{
+    display: block;
+}
+
+.myListingsPage .messagesWrapper.success > ul > li > ul >li,
+.myListingsPage .messagesWrapper.warning > ul > li > ul >li
+{
+    list-style-type: disc;
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+.myListingsPage .messagesWrapper.warning .viewMyBasketLink
+{
+    margin-top: 10px;
+}
+
+.myBasket .removeOptionLink
+{
+    width: 16px;
+    height:16px;
+    display:inline-block;
+    position: relative;
+    top:3px;
+    background:transparent url(icons/cross.png)  scroll center no-repeat;
+}
+.myBasket .removeOptionLink:hover
+{
+    background-image:url(icons/cross_red.png);
+}
+
+.manageListingOptions.reactivation .featureTotals
+{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.success ul>li span
+{
+    padding: 0px;
+}
+
+.success ul>li a span
+{
+    display: inline;
+}
+
+.currentSubscriptionInfo .message
+{
+    margin-top: 4px;
+}
+.changeSubscriptionRequest.message
+{
+    margin-bottom: 5px;
+
+}
+
+.listingForm .category
+{
+    margin: 10px 0;
+}
+
+.noPaddingLeft
+{
+    padding-left: 0 !important;
+}
+
+.listingPackageChoice .packageDescription
+{
+    margin-left: 25px;
+}
+.listingPackageChoice .packageOption
+{
+    margin-bottom: 10px;
+}
+
+.listingPackageChoice
+{
+    margin-top: 10px;
+}
+
+.subscriptionForm .caption
+{
+    white-space: nowrap;
+}
+
+.membershipPlanContent
+{
+    margin-bottom: 20px;
+}
+
+.ui-widget {
+    font-size: 100%;
+	font-family: inherit;
+}
+
+.myListingsPage .searchForm h1
+{
+	padding: 0 0 0 15px;
+	background: url(menu_caption_arrow.png) left center no-repeat;
+	cursor: pointer;
+}
+.myListingsPage .searchForm h1.active
+{
+	background: url(active_menu_caption_arrow.png) left center no-repeat;
+}
+
+.menu.accordion .tab a,
+.menu.accordion .header
+{
+	background: url("gradient_line.png") no-repeat scroll left bottom #EFEFEF;
+	display: block;
+	margin-bottom: 1px;
+	padding: 5px;
+	color: inherit;
+	text-decoration: none;
+}
+.menu.accordion .header
+{
+	padding-left: 20px;
+}
+.menu.accordion .content
+{
+	padding: 5px 5px 5px 15px;
+}
+
+.menu.accordion .tab .iconMenuTriangle
+{
+    display: inline-block;
+    height: 18px;
+    line-height: 1em;
+    margin: 0;
+    vertical-align: bottom;
+    width: 32px;
+	background: url("right_triangle_black.png") no-repeat scroll 15px center transparent;
+}
+.menu.accordion .tab.opened .iconMenuTriangle
+{
+	background: url("down_triangle_black.png") no-repeat scroll 15px center transparent;
+}
+
+.menu.accordion .tab .iconMenuTriangle.white
+{
+	background-image: url("right_triangle_white.png");
+}
+.menu.accordion .tab.opened .iconMenuTriangle.white
+{
+	background-image: url("down_triangle_white.png");
+}
+
+.refineSearchForm
+{
+	margin: 0 !important;
+}
+.refineSearchForm .menu.accordion .content.ManageSearch
+{
+    padding: 8px 5px 10px 25px;
+}
+.refineSearchForm .menu.accordion .content .ui-slider
+{
+    height: 4px;
+    border-radius: 0;
+    background: #999999;
+    border: none;
+	margin: 10px 5px 2px 5px;
+}
+.refineSearchForm .menu.accordion .content .sliderContainer
+{
+    clear: both;
+}
+.refineSearchForm .menu.accordion .content .ui-slider-handle
+{
+    background: url("circle.png") no-repeat;
+    border: none;
+    height: 15px;
+    width: 15px;
+    top: -5px;
+}
+.refineSearchForm .menu.accordion .content .ui-slider-handle.ui-state-hover
+{
+    border: none;
+}
+.refineSearchForm .menu.accordion .content .ui-slider-range
+{
+    background: #90d1ff
+}
+.refineSearchForm .menu.accordion .content .integerField
+{
+    margin-bottom: 25px;
+}
+.refineSearchForm .menu.accordion .content .integerField .captions
+{
+    color: #999999;
+}
+.refineSearchForm .menu.accordion .content .integerField .captions .minRange,
+.refineSearchForm .menu.accordion .content .integerField .captions .maxRange
+{
+    margin-bottom: 7px;
+}
+.refineSearchForm .menu.accordion .content .integerField .minRange
+{
+    float: left;
+}
+.refineSearchForm .menu.accordion .content .integerField .maxRange
+{
+    float: right;
+    text-align: right;
+}
+.refineSearchForm .menu.accordion .content .integerField input[type="text"]
+{
+    width: 70px;
+    border: none;
+    background: transparent;
+}
+.refineSearchForm .menu.accordion .content .integerField .maxRange input[type="text"]
+{
+    text-align: right;
+}
+.refineSearchForm .menu.accordion .content .treeField .selectedFamily
+{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: smaller;
+}
+.refineSearchForm .menu.accordion .content .treeField .caption
+{
+    float: left;
+    padding-right: 5px;
+}
+.refineSearchForm .menu.accordion .content .treeField .removeLinkContainer
+{
+    float:right;
+}
+.refineSearchForm .menu.accordion .content .treeField .removable
+{
+    overflow:hidden;
+    height: 15px;
+}
+.refineSearchForm .menu.accordion .content .treeField .hovered
+{
+    background: url("dot_blue.png") repeat-x 0 7px;
+}
+.refineSearchForm .menu.accordion .content .treeField .removeAction
+{
+    width: 16px;
+    height:16px;
+    display:inline-block;
+    position: relative;
+    top:3px;
+    background:transparent url(icons/cross_grey.png) scroll 0 -5px no-repeat;
+}
+.refineSearchForm .menu.accordion .content .treeField .removeAction:hover
+{
+    background:transparent url(icons/cross_blue.png) scroll 0 -5px no-repeat;
+}
+.refineSearchForm .menu.accordion .content .treeField .caption.parent
+{
+    font-weight: bold;
+}
+.refineSearchForm .menu.accordion .content .keywordField input[type="text"]
+{
+    height: 25px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+.refineSearchForm .menu.accordion .content .keywordField input[type="text"].hintText
+{
+    color: #999999;
+}
+
+.refineSearchForm .menu.accordion .content .optionDisplayModeSwitch
+{
+	margin: 0 0 0 23px;
+}
+
+.ui-dialog
+{
+    z-index: 1000;
+}
+
+.ui-dialog .ui-dialog-buttonpane
+{
+    border:none;
+}
+
+.loadingAnimation {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    height: 48px;
+    width: 48px;
+    background: url('ajax-loader.gif') no-repeat;
+}
+
+.loadingWithOverlay{
+    position: fixed;
+    opacity: 0.5;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ajax-loader2.gif') no-repeat 50% 50% rgba(0, 0, 0, 0.8);
+}
+
+.listingSearchResultHeader,
+.searchResultHeader
+{
+    height: 35px;
+    color: #ffffff;
+    background-color: #666;
+}
+
+.listingSearchResultHeader a,
+.listingSearchResultHeader a:visited,
+.searchResultHeader a,
+.searchResultHeader a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.listingSearchResultHeader a:hover,
+.searchResultHeader a:hover
+{
+    text-decoration: underline;
+}
+.listingSearchResultHeader > *
+{
+    float: left;
+}
+.listingSearchResultHeader .serachResultViewTypeSwitch
+{
+	margin: 7px 10px 0 5px;
+}
+.listingSearchResultHeader .numberOfObjectsFoundInfo
+{
+    font-size: 100%;
+    margin: 8px 0 0 0;
+}
+.listingSearchResultHeader .searchControls,
+.userSearchResultsPage .searchControls
+{
+    float: right;
+    margin: 0 5px 0 0;
+}
+.listingSearchResultHeader .searchControls > li,
+.userSearchResultsPage .searchControls > li
+{
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+.listingSearchResultHeader .searchControls > li > a,
+.searchResultHeader .searchControls > li > a,
+.userSearchResultsPage .searchControls > li > a
+{
+    display: inline-block;
+    line-height: 35px;
+    background: url("right_triangle_white.png") no-repeat scroll 5px center transparent;
+    padding: 0 10px 0 20px;
+}
+.listingSearchResultHeader .searchControls > li.active > a,
+.searchResultHeader .searchControls > li.active > a,
+.userSearchResultsPage .searchControls > li.active > a
+{
+    background: url("down_triangle_white.png") no-repeat scroll 5px center #80A0B0;
+}
+
+.userSearchResultsPage .pageSelectorAndObjectsPerPageSelectorWrapper 
+{ 
+	float: left; 
+} 
+
+.searchControls.multilevelMenu li > ul
+{
+    min-width: 100%;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    z-index: 700;
+    background: #80A0B0;
+    padding-bottom: 5px;
+}
+.searchControls.multilevelMenu li > ul > li
+{
+    float: none;
+    padding: 2px 5px 2px 19px;
+}
+
+.pageSelector
+{
+    float: right;
+    color: #000;
+    margin-right: 10px;
+}
+
+.pageSelector > *
+{
+    display: inline-block;
+    padding: 0 3px;
+}
+.pageSelector .prevPageSelector,
+.pageSelector .nextPageSelector
+{
+    background: #333333;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 3px 10px;
+}
+.pageSelector .prevPageSelector img,
+.pageSelector .nextPageSelector img
+{
+    padding-bottom: 2px;
+}
+
+.myListingsPage .massActionControls
+{
+    margin-top: 8px;
+	width: 105px;
+}
+
+.myListingsPage .massActionControls input[type="checkbox"],
+.savedListingsPage .massActionControls input[type="checkbox"]
+{
+    vertical-align: top;
+}
+
+.savedListingsPage .massActionControls
+{
+    margin-top: 8px;
+    width: 65px;
+}
+
+.leftBlock > div.refineSearch
+{
+    margin-top: 0;
+	padding-bottom: 10px;
+}
+
+.refineSearchForm .menu.accordion .content .searchControls li
+{
+    padding-bottom: 3px;
+}
+.refineSearchForm .menu.accordion .content .searchControls li a
+{
+    color:#000000;
+    text-decoration: none;
+}
+.refineSearchForm .menu.accordion .content .searchControls li a:hover
+{
+    text-decoration: underline;
+}
+
+.refineSearchHeader
+{
+    background: #666;
+    height: 35px;
+    color: #fff;
+}
+.refineSearchHeader span:first-child
+{
+    display: inline-block;
+    font-size: 140%;
+    padding: 3px 0 0 20px;
+}
+
+.inputFormValueCaptcha input[name="security_code"]
+{
+    margin-top: 5px;
+}
+
+.refineSearch .head
+{
+    clear: both;
+}
+
+.searchControls .counter
+{
+    color: #4271D7;
+    font-weight: bold;
+}
+
+.contactFormPage .contactFormComments
+{
+	padding-top: 10px;
+}
+.contactFormPage .contactFormCaptcha
+{
+	padding-top: 10px;
+}
+
+.ratingValueAndControl img
+{
+	max-width: 18px;
+}
+.ratingReportToolTip
+{
+	display: inline-block;
+	line-height: 20px;
+	position: relative;
+	padding: 0 0 0 3px;
+}
+.ratingReportToolTip .toolTipTail
+{
+	background: url("rating_tooltip_tail.png") no-repeat scroll center center transparent;
+    display: block;
+    height: 21px;
+    left: 0;
+    position: absolute;
+    width: 4px;
+}
+.ratingReportToolTip .toolTipBody
+{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px 4px 4px 4px;
+    padding: 0 3px;
+	display: inline-block;
+	background: #fff;
+	font-size: 95%;
+}
+
+.form .field.youtubeVideoId
+{
+	overflow: hidden;
+}
+
+.ui-datepicker td
+{
+    padding: 1px;
+}
+
+.itemControls.watch
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/play_button.png);
+	padding-left: 20px;
+}
+.itemControls.upload
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/upload.png);
+	padding-left: 20px;
+}
+.itemControls.download
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/download.png);
+	padding-left: 20px;
+}
+.itemControls.delete.bin
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/bin.png);
+	padding-left: 18px;
+}
+.itemControls.modify
+{
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(icons/edit.png);
+	padding-left: 21px;
+}
+div.searchResultItemsControls div.massActionControls input.deactivateIcon
+{
+	background: url('icons/eye_close.png') no-repeat transparent;
+	border: 0px;
+	color: transparent;
+	width: 23px;
+	height: 18px;
+	margin: 0px;
+	padding: 0px 6px;
+	cursor: pointer;
+	border-radius: 0px;
+}
+div.searchResultItemsControls div.massActionControls ul li input.deleteIcon
+{
+	background: url('icons/search_results_header_bin.png') no-repeat transparent;
+	border: 0px;
+	color: transparent;
+	width: 14px;
+	height: 18px;
+	margin: 0px;
+	padding: 0px 6px;
+	cursor: pointer;
+	border-radius: 0px;
+}
+.searchControls.multilevelMenu li > ul > li > span.fieldCaption,
+.searchControls.multilevelMenu li > ul > li span.sortingLinks > span.selected
+{
+	color: #fff;
+}
+.searchControls.multilevelMenu li > ul > li > span.sortingLinks a
+{
+	color: #cfcfcf;
+}
+.contactForm
+{
+	float: left;
+	width: 50%;
+}
+.contactFormName,
+.contactFormEmail
+{
+	width: 100%;
+	position: relative;
+}
+.contactFormEmail
+{
+	padding-top: 10px;
+}
+.contactDetailsWrapper
+{
+	float: right;
+	top: 27px;
+	width: 370px;
+}
+.contactDetails
+{
+	min-height: 300px;
+	padding: 5px 5px 5px 10px;
+	border: 0px;
+	background-color: #eee;
+	position: relative;
+}
+.contactDetails h3,
+.secondary
+{
+	font-size: 150%;
+	line-height: 32.4px;
+	margin-bottom: 8px;
+	margin: 0;
+	font-weight: 700;
+	color: inherit;
+	text-transform: uppercase;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+}
+.contactDetails hr
+{
+	margin: 0;
+	padding: 0;
+}
+.contactDetails hr.soften
+{
+	height: 1px;
+	margin: 10px 0 10px 0;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.1),rgba(0,0,0,.5),rgba(0,0,0,.1));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,.1),rgba(0,0,0,.5),rgba(0,0,0,.1));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,.1),rgba(0,0,0,.5),rgba(0,0,0,.1));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.1),rgba(0,0,0,.5),rgba(0,0,0,.1));
+	border: 0;
+}
+.contactDetails hr
+{
+	margin: 18px 0;
+	border: 0;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #fff;
+}
+.contactDetails address
+{
+	padding-top: 3px;
+	right: 20px;
+	position: static;
+	top: 40px;
+	display: block;
+	font-style: normal;
+	text-align: center;
+}
+.contactDetails address .telephone
+{
+	color: #727272;
+	font-size: 250%;
+	line-height: 40%;
+	display: block;
+	padding: 20px 0 10px 40px;
+	position: relative;
+}
+.contactDetails address .email
+{
+	display: block;
+	padding: 5px 0 15px 40px;
+	font-size: 140%;
+	position: relative;
+	font-weight: 400;
+	color: #333;
+	font-size: 13px;
+}
+.contactDetails a
+{
+	font-weight: 700;
+	color: #0086cf;
+	text-decoration: underline;
+}
+.contactDetails address .telephone span
+{
+	height: 44px;
+	margin-top: -19px;
+	width: 28px;
+}
+.contactDetails address .telephone span
+{
+	background-image: url(icons/mobilephone.png);
+	background-repeat: no-repeat;
+	left: 0;
+	top: 70%;
+	position: absolute;
+}
+.contactDetails address .email
+{
+	display: block;
+	padding: 5px 0 15px 40px;
+	font-size: 140%;
+	position: relative;
+	font-weight: 400;
+	color: #333;
+	font-weight: 700;
+	color: #0086cf;
+	text-decoration: none;
+}
+.contactDetails address .email span
+{
+	height: 28px;
+	margin-top: -10px;
+	width: 28px;
+	background-image: url(icons/envelope.png);
+	background-repeat: no-repeat;
+	left: 0;
+	top: 50%;
+	position: absolute;
+}
+.openingTimes caption
+{
+	color: #727272;
+	font-weight: 700;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 150%;
+}
+.openingTimes
+{
+	width: 100%;
+}
+.openingTimes th,
+.openingTimes td {
+	border: 0;
+	color: #0086cf;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 3px 0;
+	text-transform: uppercase;
+}
+.openingTimes td.time
+{
+	width: 40%;
+	font-variant: small-caps;
+	text-transform: none;
+}
+*[lang="ru"] .openingTimes td.time
+{
+	padding-left: 10px;
+}
+*[lang="ru"] .listingSearchResultHeader .searchControls > li > a, .searchResultHeader .searchControls > li > a, .userSearchResultsPage .searchControls > li > a
+{
+	padding: 0 2px 0 20px;
+}
+
+*[lang="ru"] li.objectsPerPageSelector,
+*[lang="ru"] li.sortBySelector
+{
+	font-size:10px;
+	letter-spacing: -1px;
+}
+.addCriteriaFields li
+{
+	float: left;
+	width: 30%;
+}
+.addCriteriaFields .addCriteriaFieldContainer
+{
+	text-align: left;
+}
+.centerButton
+{
+	left: -120px;
+}
+
+.leftBlock > div.refineSearch
+{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.leftUserMenu.menu.accordion .tab
+{
+}
+.leftUserMenu.menu.accordion .tab img
+{
+	height: 16px;
+	position: relative;
+	top: 3px;
+}
+.leftUserMenu.menu.accordion .content ul
+{
+	list-style: disc inside none;
+    margin: 0 0 0 8px;
+}
+
+.closeButton
+{
+	position: absolute;
+	right: 5px;
+	top: 3px;
+}
+.ManageSearch .searchControls .savedSearchesLink,
+.ManageSearch .searchControls .savedListingsLink,
+.ManageSearch .searchControls .listingsInComparisonLink
+{
+	display: none;
+}
+.calendarDescription
+{
+	clear: both;
+}
+.calendarWrapper
+{
+	display: inline-block;
+	vertical-align: top;
+}
+.bookListingForm
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+}
+.bookListingForm .inputFormValue.inputFormValuecomment textarea
+{
+    height: 72px;
+}
+.manageCalendarPage .form
+{
+	background-color: #ddd;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-radius: 7px;
+}
+form.bookListingForm .form input[type="submit"]
+{
+	margin-top: 10px;
+}
+form.bookListingForm .form td
+{
+	padding: 2px 5px 2px 0;
+    text-align: right;
+}
+form.bookListingForm .form .inputFormValuecomment
+{
+    height: 78px;
+}
+form.bookListingForm .form tr
+{
+	height: 35px;
+}
+.manageCalendarPage .form-control
+{
+	width: 100%;
+}
+.manageCalendarPage .bookingRoster
+{
+	clear: both;
+}
+.manageCalendarPage .bookListingFormWrapper
+{
+	margin-left: 10px;
+	width: 285px;
+
+}
+.manageCalendarPage .bookingRoster,
+.manageCalendarPage .bookListingFormWrapper,
+.manageCalendarPage .availabilityCalendarWrapper
+{
+	float: left;
+}
+.manageCalendarPage h1
+{
+	margin: 0;
+}
+.manageCalendarPage h3
+{
+    margin: 20px 0 5px 0;
+}
+.manageCalendarPage .multiActionControls
+{
+    padding-top: 15px;
+}
+
+.form-horizontal legend
+{
+    padding: 15px 0 5px 0;
+    clear: both;
+    font-size: 140%;
+}
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 6px;
+}
+
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    display: table;
+    content: " ";
+}
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-horizontal * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input.form-control.searchText {
+    width: 324px;
+}
+.form-horizontal .form-group ul{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+@media (min-width: 768px){
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+    }
+
+    .col-sm-2 {
+        width: 16.66666667%;
+    }
+
+    form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+    .col-sm-10 {
+        width: 83.33333333%;
+    }
+
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+    }
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    fieldset {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+
+
+.navbar-demo-patch{
+	padding: 10px;
+}
+
+.navbar-demo-patch ul > li{
+	display: inline;
+}
+
+.navbar-demo-patch .navbar-header{
+	float: left;
+}
+
+.navbar-demo-patch .navbar-header .navbar-toggle{
+	display: none;
+}
+
+.navbar-demo-patch .navbar-collapse{
+	float: right;
+}
+
+.navbar-demo-patch .navbar-collapse li > a{
+	background-position: 0 17px;
+	background-size: auto auto;
+	font-size: 12px;
+	padding-left: 27px;
+	padding-top: 20px;
+}
+
+/*articles*/
+.newsPage .item {
+    clear: both;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #dadada;
+}
+
+.newsPage dd {
+    margin-top: 10px;
+}
+
+.newsPage .picture {
+    float: left;
+    margin-right: 10px;
+    padding: 3px;
+    border: 1px solid #dadada;
+    text-align: center;
+}
+.newsPage .picture img {
+    max-width: 100%;
+}
+
+.listingFields dd
+{
+    margin-left: 140px;
+}

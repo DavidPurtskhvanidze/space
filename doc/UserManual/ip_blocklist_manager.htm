@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>IP Blocklist Manager</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="403 Custom Page,Blacklist,Blocklist,IP Blocklist Manager,IPv4,IPv6" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?ip_blocklist_manager.htm"; }
+  else { parent.quicksync('a9.19'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IP Blocklist Manager</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="image_slideshow.htm">Previous</a>&nbsp;
+     <a href="listing_caption.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="ip-blocklist-manager-page.zoom66.png" width="408" height="424" border="0" alt="IP-blocklist-manager-page"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Description</span></p>
+<p>IP Blocklist Manager allows site administrator to add IP or IP range to the blocklist thus the visitors from the listed IPs cannot view normal site.</p>
+<p>&nbsp;</p>
+<p>IPs are recorded to the database and the .htaccess file (if it has permissions to write) when user creates or edits his listing, or add a comment or reply to a comment. Database and .htaccess store the IP from the last handling only.</p>
+<p>&nbsp;</p>
+<p>In case visitor's IP is in the blocklist, the visitor sees either a <a href="http://en.wikipedia.org/wiki/HTTP_403" target="_blank" class="weblink">403 Forbidden page</a> — in case blocked IPs are stored in the .htaccess file and in the database, or they see the notice, if visitor's IP is recorded to the database <span style="font-weight: bold;">only</span>:</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 15px;"><img src="ip-is-blocked-notice.png" width="491" height="78" border="0" alt="IP-is-blocked-notice"></p>
+<p>&nbsp;</p>
+<p>Site administrator can create a custom 403 page: this custom error page can be configured with a single line in the .htaccess &nbsp;file as shown below:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">ErrorDocument&nbsp;403&nbsp;/403.html</span></p>
+<p> &nbsp; &nbsp;  </p>
+<p>The custom error document itself (403.html) should be a standard formatted HTML document and must be placed to your server at the directory where root .htaccess file is located.</p>
+<p>&nbsp;</p>
+<p>IPs are visible for the site administrator only on the pages of listing/comments displaying and listing editing. These pages have the link "Add this IP to Blocklist" (you should put the mouse on a listing record or comment to see the link), which allows administrator to quickly add this IP to the Blocklist through the pop-up window without re-loading of the current page. After the IP was added to the Blocklist, the administrator will see the confirmation saying "The IP $IP has been added to the IP Blocklist."</p>
+<p><a href="block-ip-from-comments.png"><img id="TOGGLE0186A1" class="image-toggle" src="block-ip-from-comments.zoom56.png" border="0" alt="block-ip-from-comments.zoom56"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="block-ip-from-display-listing.zoom70.png" width="454" height="186" border="0" alt="block-IP-from-display-listing"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="block-ip-from-edit-listing.zoom78.png" width="461" height="339" border="0" alt="block-IP-from-edit-listing"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Add IP or IP Range</span></p>
+<p>Administrator can add IP or IP range in the section "IP Blocklist" in Admin Panel following the link "Add a New IP / IP range".</p>
+<p>The supported formats of single IP and IP ranges are standard for the Apache server v.2.2 and IPv4 addresses. You can learn more about this at the <a href="http://httpd.apache.org/docs/2.2/mod/mod_authz_host.html#allow" target="_blank" class="weblink">official Apache page about the 'allow' directive</a>. In case a visitor comes from an IPv6 address, iLister will let him enter the website in any case.</p>
+<p><img src="add-ip.zoom58.png" width="412" height="298" border="0" alt="add-IP"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Administrator cannot block his current IP. He will see the warning notice if he tried to block himself.</p>
+<p><img src="block-admin-ip-warning.zoom67.png" width="470" height="349" border="0" alt="block-admin-IP-warning"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="ipimportexport"></a><span class="f_Heading3">Import and Export of IP Blocklist</span></p>
+<p>There is a very useful function of importing IP list from another source to your website in CSV or Excel format and the ability to export the list of IPs.</p>
+<p>&nbsp;</p>
+<p>Import works pretty much like the import of users or listings.</p>
+<p><img src="ip-import.zoom76.png" width="452" height="467" border="0" alt="IP-import"></p>
+<p>&nbsp;</p>
+<p>The file with records for import should look as follows:</p>
+<p><img src="ip-import-file.zoom84.png" width="294" height="64" border="0" alt="IP-import-file"></p>
+<p>&nbsp;</p>
+<p>You can omit the columns 'added' and 'comment'.</p>
+<p>&nbsp;</p>
+<p>As the result of export, administrator gets Excel file with data which were exported: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>IP — single IP or IP range as they were added by administrator;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Date added — the date when IP range was added;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Comment — comment for the IP record.</td></tr></table></div><p><img src="ip-export.zoom73.png" width="435" height="411" border="0" alt="IP-export"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">IP Search Form</span></p>
+<p>Administrator can easily find necessary IP blocking record to edit it or remove from the IP Blocklist. The page with search results of IPs:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>displays total number of IP records;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>provides bulk deletion of IP records;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>represents search results page--by-page, facilitating viewing of records and reducing page loading.</td></tr></table></div><p>&nbsp;</p>
+<p><img src="ip-search-results.zoom75.png" width="443" height="242" border="0" alt="IP-search-results"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><OBJECT id="mediaPlayer" width="640" height="390"
+        classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95"
+        codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+        standby="Loading //www.youtube.com/v/5dayft8q0pu..."
+        type="application/x-oleobject">
+        <param name="fileName" value="//www.youtube.com/v/5dayft8q0pu">
+        <param name="autoStart" value="True">
+        <param name="showControls" value="False">
+        <param name="loop" value="False">
+        <EMBED type="application/x-mplayer2"
+               pluginspage="http://microsoft.com/windows/mediaplayer/en/download/"
+               id="mediaPlayer" name="mediaPlayer" displaysize="4" autosize="-1"
+               bgcolor="#FFFFFF" showtracker="-1"
+               showdisplay="0" showstatusbar="-1" videoborder3d="-1" width="640" height="390"
+               src="//www.youtube.com/v/5dayft8q0pu" autostart="1" showcontrols="0" loop="0">
+        </EMBED>
+</OBJECT></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','block-ip-from-comments.zoom56.png','hm.src1','block-ip-from-comments.png');
+</script>
+</body>
+</html>

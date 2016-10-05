@@ -1,0 +1,30 @@
+.twitterList li
+{
+	margin: 0 0 20px 0;
+}
+
+.twitterList li .twitterTextUrl
+{
+	display: block;
+}
+
+.twitterList li .tweetPostedDateWrapper
+{
+	margin: 5px 0 0 0;
+}
+.twitterList li .tweetPostedDateWrapper .tweetImage
+{
+	display: inline-block;
+    background: url("tweet.png") no-repeat scroll left center transparent;
+	line-height: 40px;
+	padding: 0 20px;
+}
+.twitterList li .tweetPostedDateWrapper .tweetImage:hover
+{
+	text-decoration: none;
+}
+.twitterList li .tweetPostedDateWrapper .tweetPostedDate
+{
+	display: inline-block;
+	margin: 0 0 0 0;
+}

@@ -1,0 +1,1 @@
+<span class="currencySign">{$GLOBALS.custom_settings.transaction_currency}</span><span class="value">{$amount|number_format:2:"{i18n->getCurrentLanguageDecimalSeparator}":"{i18n->getCurrentLanguageThousandsSeparator}"}</span>

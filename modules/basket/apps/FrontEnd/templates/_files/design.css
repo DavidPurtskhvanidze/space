@@ -1,0 +1,168 @@
+.listingOptionsContents .searchResultItem .details,
+.myBasket .searchResultItem .details
+{
+    margin: 0 0 0 120px;
+    float: none;
+    width: auto;
+}
+
+.myBasket .caption
+{
+    display: inline-block;
+    width: 180px;
+}
+
+.myBasket .amount
+{
+    display: inline-block;
+    margin-right: 5px;
+    width: 150px;
+    text-align: right;
+}
+
+.myBasket .subtotal
+{
+    margin-top: 4px;
+}
+
+.myBasket .subtotal .caption,
+.myBasket .subtotal .amount
+{
+    font-weight: bold;
+}
+
+.myBasket .total
+{
+    margin-left: 130px;
+    padding-top: 20px;
+    clear: both;
+
+    font-weight: bolder;
+    font-size: 130%;
+}
+
+.listingOptionsContents .caption
+{
+    display: inline-block;
+    width: 150px;
+}
+
+.listingOptionsContents .amount
+{
+    display: inline-block;
+    margin-right: 5px;
+    width: 100px;
+    text-align: right;
+}
+
+.listingOptionsContents .subtotal
+{
+    margin-top: 10px;
+}
+
+.listingOptionsContents .subtotal .caption,
+.listingOptionsContents .subtotal .amount
+{
+    font-weight: bold;
+}
+
+.listingOptionsContents .total
+{
+    margin-left: 120px;
+    padding-top: 20px;
+    clear: both;
+
+    font-weight: bolder;
+    font-size: 130%;
+}
+
+.addOptions input[type="submit"]
+{
+    margin-top: 10px;
+}
+
+.payments .viewContentsLink
+{
+    display: inline-block;
+}
+
+.listingOptions,
+.listingOptions .listingOptionsCaption,
+.listingOptions .viewContentsLink
+{
+    display: inline-block;
+}
+
+.payments .listingOptionsCaption
+{
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.myBasket .searchResultItem .linksSection
+{
+    margin-left: 10px;
+    clear: both;
+}
+
+.myBasket .searchResultItem .picturesAndLinksWrapper
+{
+    float: left;
+}
+
+.myBasket .searchResultItem .listingCaption
+{
+    text-decoration: none;
+}
+
+.myBasket .searchResultItem .fieldValueTitle
+{
+    font-size: 90%;
+}
+
+.myBasket h1,
+.myBasket h2
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.myBasket .searchResultItem .listingOption
+{
+    margin-bottom: 2px;
+}
+
+.myBasket .basketIsFilteredMessage
+{
+    margin-bottom: 15px;
+}
+
+.messagesWrapper .fieldValue.fieldValueTitle
+{
+	padding: 0;
+}
+
+.listingOptionsContents .first .searchResultItem
+{
+    border-top: none;
+}
+.basketTopMenuItem
+{
+	float: left;
+	margin: 6px 0 0 10px;
+}
+.headerMenuBlock .basketTopMenuItem a.basketItem:hover
+{
+	text-decoration: none;
+}
+.headerMenuBlock .basketTopMenuItem a.basketItem span
+{
+	font-size: 160%;
+	color: #5dcddb;
+	position: relative;
+	top: -2px;
+}
+
+.searchResultItemWrapper {
+	clear: both;
+}

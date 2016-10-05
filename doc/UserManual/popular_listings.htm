@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Popular listings</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?popular_listings.htm"; }
+  else { parent.quicksync('a10.13'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Popular listings</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="pdf_export.htm">Previous</a>&nbsp;
+     <a href="sitemap.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Caution" style="line-height: 1.50;"><span class="f_Caution">The Popular listings is an add-on and is </span><span class="f_Caution" style="font-weight: bold;">not</span><span class="f_Caution"> a part of iLister default package for distribution. It can be </span><span class="f_Caution" style="font-weight: bold;">installed separately</span><span class="f_Caution"> for your iLister-based website. </span><span class="f_Caution">Please <a href="http://www.worksforweb.com/company/contact-us/pre-sales-inquiry/" target="_blank" class="weblink">request the installation conditions</a> from</span><span class="f_Caution"> our Sales Dept.</span></p>
+<p class="p_Caution" style="line-height: 1.50;"><span class="f_Caution">&nbsp;</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Overview</span></p>
+<p>Popular listings addon allows website administrator to display the most popular listings depend on number of views.</p>
+<p>&nbsp;</p>
+<p><img src="popular-listings-display.zoom75.png" width="707" height="471" border="0" alt="popular-listings-display"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Popular Listings Settings</span></p>
+<p>Website administrator can set the following settings for Popular Listings addon:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">popular_listings_template</span> - the template that will display the popular listings block (by default it's popular_listings.tpl)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">number_of_rows</span> - &nbsp;the number of rows that you want to display (works only in non-responsive themes)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">number_of_cols</span> - the number of columns that you want to display (works only in non-responsive themes)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">category_id</span> - if specified, the listings will be displayed from specified category (by default it's root category)</td></tr></table></div><p>&nbsp;</p>
+<p><img src="popular-listings-settings.png" width="361" height="296" border="0" alt="popular-listings-settings"></p>
+<p>&nbsp;</p>
+<p>For <span style="font-weight: bold;">responsive themes</span> you can specify number of displayed listings in the block by setting number_of_rows and number_of_cols:</p>
+<p>number_of_rows * number_of_cols = number of displayed listings</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In order to insert the Popular Listings block to a page (template), please use the code as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="popular_listings"&nbsp;function="display_popular_listings"&nbsp;number_of_rows="2"&nbsp;number_of_cols="4"}</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

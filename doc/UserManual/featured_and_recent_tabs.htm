@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Featured Listings And Recent Ads Tabs</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Featured Listings,Recent Listings" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?featured_and_recent_tabs.htm"; }
+  else { parent.quicksync('a11.2.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Featured Listings And Recent Ads Tabs</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="quick_search_form.htm">Previous</a>&nbsp;
+     <a href="browse_by_sections.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="featured-section-squared.png" width="556" height="275" border="0" alt="featured-section-squared" style="margin:10px;"></p>
+<p>In order to edit the look of the Featured Listings section you need to edit the template featured_listings.tpl in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Featured Listing (<span class="f_Components">\modules\theme_iauto_tabs_blue\listing_feature_featured\featured_listings.tpl</span>).</p>
+<p>&nbsp;</p>
+<p>The way how featured ads are displayed can be specified by the code in homepage_main_content.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="listing_feature_featured"&nbsp;function="featured_listings"&nbsp;featured_listings_template="featured_listings.tpl"&nbsp;number_of_rows="2"&nbsp;number_of_cols="2"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>For the <a href="recent_listings.htm">Recent Ads</a> the code is similar:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="2"&nbsp;number_of_cols="2"}</span></p>
+<p>&nbsp;</p>
+<p>You need to place this code to the template of the page where you would like to see the Featured Ads section.</p>
+<p>&nbsp;</p>
+<p>You can change the number of rows and number of columns in the code to display as many ads as you wish. </p>
+<p><span class="f_CodeExample">{module name="listing_feature_featured" function="featured_listings" featured_listings_template="featured_listings.tpl" number_of_rows="1" number_of_cols="4"}</span></p>
+<p>will display</p>
+<p><a href="featured-section-horizontal.png"><img id="TOGGLE0186A1" class="image-toggle" src="featured-section-horizontal.zoom70.png" border="0" alt="featured-section-horizontal.zoom70" style="padding:10px"></a></p>
+<p>&nbsp;</p>
+<p>Please note that it's available for non-responsive themes only.</p>
+<p>In responsive themes the number of rows and number of columns are calculated automatically depending on screen resolution. </p>
+<p>&nbsp;</p>
+<p>Also you can specify the category for Featured Listings and Recent Listings blocks by setting "category_id":</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="listing_feature_featured"&nbsp;function="featured_listings"&nbsp;featured_listings_template="featured_listings.tpl"&nbsp;number_of_rows="2"&nbsp;number_of_cols="2"&nbsp;category_id="Jobs"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="2"&nbsp;number_of_cols="2"&nbsp;category_id="Jobs"}</span></p>
+<p>&nbsp;</p>
+<p>The related styles are listed in <span class="f_Components">/modules/theme_ilister_tabs_blue/main/_files/design.css</span>:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.AdsAndFacebookWrapper&nbsp;.featuredAndRecentListingTabs,&nbsp;.BrowsingTabsWrapper&nbsp;.browseByMakeModelAndStateTabs</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;left;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;550px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.featuredAndRecentListingTabs&nbsp;.item</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;overflow:&nbsp;hidden;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;5px&nbsp;0&nbsp;5px&nbsp;5px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>and their child styles.</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','featured-section-horizontal.zoom70.png','hm.src1','featured-section-horizontal.png');
+</script>
+</body>
+</html>

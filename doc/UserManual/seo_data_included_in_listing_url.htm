@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>SEO Data Included in Listing URL</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Listing,Listing Details,Listing URL,SEO" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?seo_data_included_in_listing_url.htm"; }
+  else { parent.quicksync('a9.29'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">SEO Data Included in Listing URL</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="new_ad_based_on_an_existing_listing.htm">Previous</a>&nbsp;
+     <a href="smarty_and_block_cache.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading2"><span class="f_Heading2">Description</span></p>
+<p>iLister provides administrator the ability to specify data for search engine optimization for each category. This setting is called "SEO Data Included in Listing URL" and can be found on the configuration page of a category.</p>
+<p><a href="seo-data-category-settings.png"><img id="TOGGLE0186A1" class="image-toggle" src="seo-data-category-settings.zoom80.png" border="0" alt="seo-data-category-settings.zoom80"></a></p>
+<p>&nbsp;</p>
+<p>This setting is inherited by child categories. This means that site administrator can define one SEO Data Included in Listing URL for a parent category which will be inherited by all sub-categories; and re-declare the URL SEO Data for child categories which demand different data for a better SEO results.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">How to use SEO Data Included in Listing URL</span></p>
+<p>Site administrator can use it for the link which leads to the Listing Details page for a better SEO results. For example, you can see such a link on the search results and browsing results pages.</p>
+<p>&nbsp;</p>
+<p>In order to do so, the administrator should use the variable {$listing.urlData} in the template which displays the page with these links (please refer to the section <a href="template_system_and_theme_management.htm#templateidentification">"Template Identification"</a>).</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{capture&nbsp;assign="listingUrl"}{$GLOBALS.site_url}/listing/{$listing.id}/{$listing.urlData|escape:"urlpathinfo"}.html?searchId={$listing_search.id}{/capture}</span></p>
+<p>&nbsp;</p>
+<p>The {$listing.urlData} variable will form the link to the Listing Details page in accordance to the configuration of "SEO Data Included in Listing URL" setting in the properties of listing category.</p>
+<p><img src="seo-data-link-composition.png" width="807" height="365" border="0" alt="seo-data-link-composition"></p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','seo-data-category-settings.zoom80.png','hm.src1','seo-data-category-settings.png');
+</script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+.paidFeaturesActivation
+{
+	margin-top: 10px;
+}
+
+.manageListingOptions h3
+{
+	margin-top: 10px;
+}
+
+.manageListingOptions .activatedFeatures li
+{
+	margin-top: 5px;
+}
+
+.manageListingOptions ul li
+{
+	margin-top: 3px;
+}
+
+.manageListingOptions input[type="submit"]
+{
+	margin-top: 20px !important;
+}
+
+.manageListing ul
+{
+	margin: 15px 0;
+}
+
+.manageListing li
+{
+	margin: 5px 0;
+}
+
+.compareListingsPage .info
+{
+	padding-top: 20%;
+	text-align: center;
+	font-size: 120%;
+}
+
+.massActionControls
+{
+	float: left;
+}
+.massActionControls ul
+{
+	display: inline-block;
+}
+.massActionControls ul > li
+{
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+}
+
+.listingForm .steps li
+{
+	display: inline-block;
+	margin: 0 15px 0 0;
+	line-height: 40px;
+	font-size: 130%;
+}
+.listingForm .steps li.active
+{
+	font-weight: bold;
+}
+.listingForm .steps li a
+{
+	display: inline-block;
+}
+
+.searchResultItem .soldLabel
+{
+    background: url("sold_label_bg.png");
+    height: 25px;
+    left: 10px;
+    position: absolute;
+    top: 7px;
+    width: 100px;
+    z-index: 10;
+	text-align: center;
+}
+.searchResultItem .soldLabel span
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+.serachResultViewTypeSwitch li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.serachResultViewTypeSwitch li img
+{
+	margin-right: 6px;
+}
+
+.searchResultGalleryItemWrapper
+{
+	display: inline-block;
+	margin: 5px 0px;
+	vertical-align: top;
+}
+.searchResultGalleryItem
+{
+}
+.searchResultGalleryItem .pictureFrame
+{
+	display: inline-block;
+	line-height: 183px;
+	text-align: center;
+	background: #ddd;
+  width: 240px;
+	margin-bottom: 3px;
+}
+.searchResultGalleryItem .pictureFrame img
+{
+	max-width: 240px;
+	max-height: 180px;
+	vertical-align: middle;
+}
+.searchResultGalleryItem .listingTitle
+{
+	width: 240px;
+	height: 60px;
+	background-color: #666;
+	font-size: 140%;
+}
+.searchResultGalleryItem .listingTitle a
+{
+	display: inline-block;
+	margin: 0 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.searchResultGalleryItem .listingTitle .fieldValuePrice
+{
+	color: #fff;
+}
+.searchResultGalleryItem .soldLabel
+{
+    position: absolute;
+    background: url("sold_label_bg.png");
+    line-height: 2em;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+.searchResultGalleryItem .listingTitle.highlighted
+{
+	background: #333;
+}
+
+.managePictures ul.pictures
+{
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.managePictures .pictures li
+{
+	width: 220px;
+	height: 250px;
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 1px solid #d3d3d3;
+	background: #fff;
+}
+/*for spinner*/
+.managePictures img.imgLoading
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.managePictures .pictures div.picture
+{
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+}
+
+.managePictures .pictures div.picture img
+{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+.managePictures .pictures .controls
+{
+	padding: 2px 5px;
+	border-top: 1px solid #d3d3d3;
+	/*line-height: 30px;*/
+}
+
+.managePictures .pictures .controls .caption
+{
+	float: left;
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.managePictures .pictures .controls .deleteWrapper
+{
+	float: right;
+}
+
+.managePictures .pictures li.addPictureForm
+{
+	border: 2px #ccc dashed;
+	width: 218px;
+	height: 248px;
+}
+
+.managePictures .fileInputButton {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 230px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("plus.png");
+}
+
+.managePictures .uploading .fileInputButton {
+	background-image: url("loading.gif");
+}
+
+.managePictures .addPictureForm .error
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.managePictures .fileInputButton input {
+	bottom: 0;
+	cursor: inherit;
+	font-size: 1000px !important;
+	height: 300px;
+	margin: 0;
+	opacity: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	padding: 0;
+	position: absolute;
+	right: 0;
+	max-width: none !important;
+}
+
+.managePictures .emptyCaption:hover,
+.managePictures .emptyCaption:visited,
+.managePictures .emptyCaption
+{
+	color: #666;
+	font-style: italic;
+}
+
+.managePictures
+{
+	overflow: auto;
+}
+
+.form.inputForm
+{
+	overflow: auto;
+}
+
+.serachResultViewTypeSwitch .icon
+{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+.serachResultViewTypeSwitch .icon.searchResultsList
+{
+    background: url("search_results_list.png") no-repeat center center transparent;
+}
+.serachResultViewTypeSwitch .icon.searchResultsGallery
+{
+    background: url("search_results_gallery.png") no-repeat center center transparent;
+}
+.serachResultViewTypeSwitch .link
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.browsePage .breadcrumbs
+{
+	display: block;
+	margin-bottom: 2px;
+}
+.browsePage .breadcrumbs li
+{
+	background: url("tab_bg.png") no-repeat scroll left center #efefef;
+	display: inline-block;
+	line-height: 31px;
+	font-size: 110%;	
+	padding: 0 0 0 16px;
+	margin: 0;
+}
+.browsePage .breadcrumbs li:last-child
+{
+	background: url("tab_bg_active.png") no-repeat scroll left center #666666;
+}
+.browsePage .breadcrumbs li:first-child
+{
+	background-image: none;
+	padding-left: 0;
+}
+
+.browsePage .breadcrumbs li a,
+.browsePage .breadcrumbs li span
+{
+	display: inline-block;
+	color: #000;
+	font-weight: normal;
+	padding: 0 10px;
+}
+.browsePage .breadcrumbs li:last-child a,
+.browsePage .breadcrumbs li:last-child span
+{
+	color: #fff;
+	background: url("tab_bg_last_node.png") no-repeat scroll right center transparent;
+	padding-right: 25px;
+}
+.browsePage .viewAllBrosingItemsLink
+{
+	display: block;
+	margin: 15px 0 10px 10px;
+}
+.browsePage .browseItems 
+{
+	margin-left: 10px;
+}
+.listingControls .compareListingsDelim,
+.listingControls .compareListingsLink
+{
+	display: none;
+}
+
+.categoriesList ul
+{
+	margin-left: 35px;
+}
+
+.categoriesList > ul
+{
+	margin-left: 0;
+}
+
+.categoriesList > ul
+{
+	margin-top: 10px;
+}
+.categoriesList > ul > li > ul
+{
+	font-size: 90%;
+}
+.categoriesList > ul > li
+{
+	font-size: 110%;
+	margin-bottom: 10px;
+}
+
+.loadingAnimationModalLayer
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #bbb;
+	opacity: .30;
+	-webkit-opacity: .3;
+	-moz-opacity: .3;
+	filter: alpha(opacity=30);
+	z-index: 9999;
+}
+
+.calendarDescriptionReserved,
+.ui-datepicker-calendar td.ui-state-active a {
+	background: #cccccc;
+}
+
+.calendarDescriptionFree {
+	background: #eee;
+}
+
+.calendarDescriptionReserved, .calendarDescriptionFree {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+.calendarDescription div {
+	float: left;
+	position: relative;
+	margin: 0 5px;
+}

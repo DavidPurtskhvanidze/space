@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Browsing</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Browsing" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?browsing.htm"; }
+  else { parent.quicksync('a9.7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Browsing</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="block_search_indexing.htm">Previous</a>&nbsp;
+     <a href="captcha.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span class="f_Heading3">General Information</span></p>
+<p>&nbsp;</p>
+<p>The browsing feature allows your visitors to browse listings within a particular listing category or listing field. Browsing offers the following functionality:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Administrator can specify <a href="browsing.htm#categorybrowsingsettings">Browsing Settings</a> for each category, including root category.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Administrator can set up <a href="browsing.htm#browsingpage">browsing pages</a>, configure browsing levels: which category should be displayed and what listing fields are available for browsing.</td></tr></table></div><p class="p_Notice"><span class="f_Notice">Note: for browsing you can use the fields of string, list, integer, geo and tree types </span><span class="f_Notice" style="font-weight: bold;">only</span><span class="f_Notice">.</span></p>
+<p>You can use the fields of tree-type <span style="font-weight: bold;">several times</span> - in accordance to the number of levels of the specific tree-type field. When you specify it for the first time, iLister will browse by the 1st level of this field.</p>
+<p>For example, you can specify: State, MakeModel, Condition, MakeModel. In fact it will browse and display by State, Make, Condition, Model.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Administrator can display browsing section in templates using the following code construction:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="browse"&nbsp;category_id="root"&nbsp;fields="State"&nbsp;browse_template="browse_by_state.tpl"}</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Visitors are able to browse within specified browsing levels as set up by the administrator. </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Browsing results are a list or listings found with brief descriptions (additional details can be added by the administrator via templates)</td></tr></table></div><p>&nbsp;</p>
+<p><a name="categorybrowsingsettings"></a>Each category has Browsing Setting which can be specified by the administrator in Admin Panel -&gt; Categories -&gt; edit a category -&gt; follow the link "Edit Category Settings".</p>
+<p>&nbsp;</p>
+<p><a name="forsalecategorybrowsingsettings"></a><img src="category-browsing-settings.png" width="724" height="1646" border="0" alt="category-browsing-settings"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>When <span style="font-weight: bold;">configuring Browse Settings for a category</span>, please be aware of the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>You can use category fields or the fields of parent category(categories) as well as sub-categories of the current category for setting browsing levels. The field for sub-categories is <span class="f_CodeExample">category_sid</span>.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>You can add levels to the "Browsing Settings" form by clicking the button "Add browsing level". All available fields for the current category will be listed in the form "Available browsing fields" along with <span class="f_CodeExample">category_sid</span> field for sub-categories. Then you'll be able to change the order for browsing levels using navigation buttons Up ↑ and Down ↓, or you can delete excess levels.</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="browsingpage"></a>Administrator can set up as many browsing pages as desired. In order to create a browsing page, create a new <a href="managing_site_pages.htm">Site Page</a> with a <span class="f_CodeExample">"browse"</span> function of the <span class="f_CodeExample">"classifieds"</span> module.</p>
+<p>&nbsp;</p>
+<p><img src="site-page-browsing-parameters.png" width="719" height="988" border="0" alt="site-page-browsing-parameters"></p>
+<p>&nbsp;</p>
+<p>When <span style="font-weight: bold;">setting up a browsing page</span>, please pay attention to the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>The browsing category is set up in the parameter <span class="f_CodeExample">"category_id"</span>. In order to browse within all top-level categories, you need to place "root" to the <span class="f_CodeExample">category_id</span> parameter.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>The levels for browsing are specified in the parameter <span class="f_CodeExample">"fields"</span> and delimited by comma ",". You can use either listing fields available for this category or its parent categories, or a subcategory which defines as <span class="f_CodeExample">category_sid</span> among <span class="f_CodeExample">fields</span> for browsing. For example, you can put the following:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>category_id: For-Sale</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>fields: State, category_sid, NewUsed</td></tr></table></div><p style="margin: 0px 0px 0px 15px;">In the above example visitors will see:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 30px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1)</span></td><td>browsing page with list of States. Clicking on a State, visitor will see...</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 30px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2)</span></td><td>browsing page with sub-categories of the "For Sale" category. When visitor clicks a link with sub-category (e.g. Books), he will see...</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 30px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3)</span></td><td>a page with browsing by "NewUsed" listing field. Following one of the links, a visitor can see either browsing results (listings) or next browsing level based on the Browsing Settings of the selected category (i.e. Books from the above example).</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>You can also specify the <span class="f_CodeExample">browse_template</span> which will be used to display browsing items.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>Another important parameter is <span class="f_CodeExample">number_of_levels</span> which specifies the maximum number of browsing levels visitors will see. When this level is reached visitors will see browsing results (i.e. listings). If you leave this setting blank, browsing results will be displayed when all browsing levels (from Browsing Page and category Browsing Settings) are exhausted.</td></tr></table></div><p>&nbsp;</p>
+<p>The layout of the browsing search results page is configured in the settings for each category in the parameter "Search Results Template" (by default iLister uses the template called “<span class="f_Components">default_search_result_item.tpl</span>” located at <span class="f_Components">/modules/classifieds/apps/FrontEnd/templates/$ThemeName/category_templates/display</span>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Components"><span class="f_Heading3">Site&nbsp;Visitor&nbsp;Experience</span></p>
+<p>Visitor opens your iLister-based website and see the homepage with browsing block (or several blocks).</p>
+<p>&nbsp;</p>
+<p>Usually there is a section "Browse By State", "Browse By Category" or "Browse By..." specific field (like MakeModel).</p>
+<p>&nbsp;</p>
+<p><img src="browse-sections.png" width="1008" height="448" border="0" alt="browse-sections"></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

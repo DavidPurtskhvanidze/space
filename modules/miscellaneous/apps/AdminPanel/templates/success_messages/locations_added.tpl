@@ -1,0 +1,1 @@
+[[$count locations were added.]]

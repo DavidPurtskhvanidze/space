@@ -1,0 +1,1256 @@
+a,
+a:visited
+{
+	color: #444444;
+}
+input[type="submit"]
+{
+    background-color: #212121;
+    border: 0 outset;
+    color: #FFFFFF;
+    font-size: 110%;
+    margin: 0;
+    padding: 2px 10px;
+}
+
+body
+{
+	background-color: #e9e5da;
+	font-family: 'Trebuchet MS',Helvetica,sans-serif;
+	color: #000;
+}
+
+.fullWidthBlock
+{
+	width: 100%;
+	min-width: 1000px;
+}
+.fixedWidthBlock
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* headerMenuBlock */
+.headerMenuBlock
+{
+	background-color: #212121;
+	color: #fff;
+	height:39px;
+	z-index: 900;
+}
+.headerMenuBlock a,
+.headerMenuBlock a:visited
+{
+	color:#fff;
+	text-decoration: none;
+}
+.headerMenuBlock a:hover
+{
+	text-decoration: underline;
+}
+.headerMenuWrapper
+{
+	float: left;
+}
+.headerMenu > li
+{
+	float: left;
+	display: block;
+	margin-top: 9px;
+	margin-right: 30px;
+}
+
+.loginMenuWrapper
+{
+    float: right;
+    display: inline;
+}
+.loginMenu
+{
+	float: left;
+}
+.loginMenu > li
+{
+	float: left;
+	font-size: 130%;
+}
+.loginMenu > li > a,
+.loginMenu > li > a:visited,
+.loginMenu > li > span
+{
+	display: inline-block;
+	color: #fff;
+	line-height: 39px;
+	text-decoration: none;
+	padding: 0 15px;
+}
+.loginMenu > li > a.expanded
+{
+	background-color: #80A0B0;
+}
+.loginMenu > li > a:hover
+{
+}
+.loginDialogWrapper
+{
+    position: absolute;
+	z-index: 1000;
+	top: 39px;
+	left: 0
+}
+.loginDialogWrapper .login
+{
+	background-color: #80A0B0;
+    padding: 10px;
+	width: 170px;
+}
+.loginDialogWrapper .login input[type="submit"]
+{
+	color: #000;
+	background-color: #fff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.userGreeting
+{
+	float: left;
+}
+.userGreeting .myAccount
+{
+	display: block;
+	padding: 3px 10px;
+}
+.userGreeting .myAccount:hover
+{
+	text-decoration: none;
+}
+.userGreeting .myAccount.expanded
+{
+	background-color: #80a0b0;
+}
+.userGreeting .myAccount .profilePicture
+{
+	height: 33px;
+	vertical-align: middle;
+}
+.userGreeting .myAccount .labelUserName
+{
+	display: inline-block;
+	padding: 0 15px 0 5px;
+	background: url("down_triangle_white.png") no-repeat scroll right center transparent;
+}
+.userGreeting .myAccountDialogWrapper
+{
+    position: absolute;
+	z-index: 1000;
+}
+.userGreeting .myAccountDialogWrapper .userMenu
+{
+	min-width: 150px;
+	background-color: #80A0B0;
+	margin:0;
+}
+.userGreeting .myAccountDialogWrapper .userMenu a,
+.userGreeting .myAccountDialogWrapper .userMenu a:visited
+{
+	display: inline;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: none;	
+}
+.userGreeting .myAccountDialogWrapper .userMenu a:hover
+{
+	color: #fff;
+	text-decoration: underline;
+	background: none;
+}
+.userGreeting .myAccountDialogWrapper .userMenu ul
+{
+	margin: 0;
+	padding: 5px 0 10px 0;
+}
+.userGreeting .myAccountDialogWrapper .userMenu ul li
+{
+	padding: 5px 10px 5px 10px;
+}
+.userGreeting .myAccountDialogWrapper .userMenu h2
+{
+	display: none;
+}
+
+.languageSelector
+{
+	float:left;
+	font-size: 120%;
+	margin: 7px 0 0 40px;
+}
+.languageSelector .language
+{
+	padding: 3px;
+}
+.languageSelector .language.current
+{
+	background-color: #fff;
+	color: #000;
+}
+
+/* sloganBlock */
+.sloganBlock
+{
+	z-index: 800;
+	height: auto;
+}
+.sloganBlock .slogan
+{
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	letter-spacing: -2px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 39px;
+	position: relative;
+	display: inline-block;
+    margin: 7px 0 7px 20px;
+	left: 0;
+	top: 0;
+}
+.sloganBlock .slogan a
+{
+    color: #000;
+    text-decoration: none;
+}
+.sloganBlock .slogan a .firstWord
+{
+	margin-right: 10px;
+}
+.sloganBlock .slogan a .secondWord
+{
+	margin-right: 10px;
+	color: #999;
+}
+
+/* menuAndCarouselBlock */
+.menuAndCarouselBlock
+{
+	z-index: 700;
+	margin-bottom: 5px;
+}
+.menuAndCarouselBlock .menuWrapper
+{
+	float: left;
+	width: 150px;
+	max-width: 150px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #212121;
+}
+.menuAndCarouselBlock,
+.menuAndCarouselBlock .menuWrapper
+{
+	height: 255px;
+}
+.menuAndCarouselBlock .carouselWrapper
+{
+	padding: 0;
+	overflow: hidden;
+}
+
+/* quickSearchBlock */
+.quickSearchBlock
+{
+	background-color: #f2f2f2;
+	color: #000;
+	margin-bottom: 5px;
+	clear: both;
+}
+.quickSearchBlock .quickSearchForm
+{
+	font-size: 125%;
+	padding: 15px;
+}
+.quickSearchBlock .quickSearchForm .searchKeywordsInputbox,
+.quickSearchBlock .quickSearchForm .stringWithAutocomplete,
+.quickSearchBlock .quickSearchForm .searchCategorySelectbox
+{
+	font-size: 100%;
+	border: 1px solid #999;
+}
+.quickSearchBlock .quickSearchForm .searchKeywordsInputbox,
+.quickSearchBlock .quickSearchForm .stringWithAutocomplete
+{
+	padding: 3px 5px 3px 10px;
+	width: 350px;
+}
+[lang="ru"] .quickSearchBlock .quickSearchForm .searchKeywordsInputbox,
+[lang="ru"] .quickSearchBlock .quickSearchForm .stringWithAutocomplete
+{
+	width: 260px;
+}
+.quickSearchBlock .quickSearchForm .searchCategorySelectbox
+{
+	padding: 2px 2px 2px 10px;
+}
+.quickSearchBlock .quickSearchForm input[type="submit"]
+{
+    font-size: 95%;
+    padding: 3px 15px;
+}
+
+/* featuredListingsBlock */
+.featuredListingsBlock
+{
+	background-color: #212121;
+	color: #fff;
+	float: left;
+	margin-bottom: 5px;
+}
+.featuredListingsBlock a,
+.featuredListingsBlock a:visited
+{
+	color: #ccc;
+}
+.featuredListingsBlock .featuredListings
+{
+	margin: 10px 0 0 15px;
+}
+.featuredListingsBlock .featuredListings > h2
+{
+	display: none;
+}
+.featuredListingsBlock .featuredListings .item
+{
+	border: none;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+.featuredListingsBlock .featuredListings .item .fieldValuePictures,
+.featuredListingsBlock .featuredListings .item .details
+{
+    float: none;
+    text-align: left;
+
+}
+.featuredListingsBlock .featuredListings .item .details .fieldValue.fieldValuePrice,
+.featuredListingsBlock .featuredListings .item .details .fieldValue.fieldValueRent
+{
+	display: block;
+}
+.featuredListingsBlock .featuredListings .item .details .fieldValue.fieldValuePrice > a,
+.featuredListingsBlock .featuredListings .item .details .fieldValue.fieldValueRent > a
+{
+	font-size: 130%;
+	text-decoration: none;
+}
+
+/* footerBlock */
+.footerBlock
+{
+	clear: both;
+	background-color: #212121;
+	color: #fff;
+}
+.footerBlock a,
+.footerBlock a:visited
+{
+	color: #80A0B0;
+}
+.footerBlock h2
+{
+	font-size: 140%;
+	font-weight: normal;
+	line-height: 1.8em;
+}
+.footerBlock .footerCell
+{
+	width:25%;
+	float:left;
+	padding: 0;
+	margin: 0;
+}
+.footerBlock .footerCell .readMore
+{
+    display: block;
+    margin-top: 20px;
+}
+.footerBlock .footerCell > div
+{
+	
+	padding: 20px 0 50px 20px;
+}
+.footerBlock .fixedWidthBlock > div
+{
+	clear: both;
+}
+.footerBlock .footerCell.footerCellAboutUs > div > img
+{
+	display: block;
+	margin: 10px 0 10px;
+}
+
+.footerBlock .newsBlock,
+.footerBlock .pollBlock
+{
+	margin: 0;
+}
+.footerBlock .newsBlock .newsTitle
+{
+    margin-bottom: 20px;
+}
+.footerBlock .newsBlock .newsTitle a
+{
+	text-decoration: none;
+}
+
+.footerBlock .pollBlock .longButton
+{
+	background-color: #fff;
+	color: #000;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-top: 20px;
+	display: block;
+}
+.footerBlock .pollBlock .viewResults
+{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.footerBlock .twitterList a
+{
+	text-decoration: none;
+}
+.footerBlock .twitterList a:hover
+{
+	text-decoration: underline;
+}
+
+.footerBlock .copyrightAndShareBoxWrapper
+{
+	height: 30px;
+}
+.footerBlock .copyrightAndShareBoxWrapper .copyright
+{
+	position: absolute;
+	left: 20px;
+}
+.footerBlock .copyrightAndShareBoxWrapper .copyright a
+{
+	color: #fff;
+}
+.footerBlock .copyrightAndShareBoxWrapper .shareBox
+{
+	position: absolute;
+	right: 10px;
+}
+.print .footerBlock
+{
+	display: none;
+}
+
+/* homepageMainContent */
+.leftmenu .mainContent {
+    margin: 0 10px 0 210px;
+}
+
+body.search_results .leftmenu .mainContent,
+body.search_listings_on_map .leftmenu .mainContent
+{
+    margin: 0 0 0 205px;
+}
+
+.searchOnMap
+{
+    margin-left: 0;
+}
+
+.homepageMainContent
+{
+	float: left;
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.colmask
+{
+	padding-bottom: 5px;
+}
+
+.homepageMainContent .browsingTabs .browseByState,
+.homepageMainContent .browsingTabs .browseByCategories
+{
+	padding: 0 0 10px 10px;
+	margin: 0;
+	clear: both;
+}
+.homepageMainContent .browsingTabs .browseByState > h2,
+.homepageMainContent .browsingTabs .browseByCategories > h2
+{
+	display: none;
+}
+.homepageMainContent .browsingTabs .browseByState ul li a,
+.homepageMainContent .browsingTabs .browseByCategories ul li a
+{
+	line-height: 1.8em;
+}
+
+.recentListingsBlock .recentListings,
+.popularListingsBlock .popularListings
+{
+	background-color: #f2f2f2;
+	color: #fff;
+	clear: both;
+	margin: 0 0 5px;
+}
+.recentListingsBlock .recentListings > h2,
+.popularListingsBlock .popularListings > h2
+{
+	color: #888;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 10px 0 5px 23px;
+}
+.recentListingsBlock .recentListings > ul,
+.popularListingsBlock .popularListings > h2
+ > ul
+{
+	padding: 0 0 0 15px;
+}
+.recentListingsBlock .recentListings .item,
+.popularListingsBlock .popularListings .item
+{
+	border: none;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+.recentListingsBlock .recentListings .item .fieldValue.fieldValuePictures
+.popularListingsBlock .popularListings .item .fieldValue.fieldValuePictures
+{
+	text-align: left;
+}
+.recentListingsBlock .recentListings .item .details .fieldValue.fieldValuePrice,
+.recentListingsBlock .recentListings .item .details .fieldValue.fieldValueRent,
+.popularListingsBlock .popularListings .item .details .fieldValue.fieldValuePrice,
+.popularListingsBlock .popularListings .item .details .fieldValue.fieldValueRent
+{
+	display: block;
+}
+.recentListingsBlock .recentListings .item .details .fieldValue.fieldValuePrice > a,
+.popularListingsBlock .popularListings .item .details .fieldValue.fieldValuePrice > a
+{
+	color: #555;
+	font-size: 130%;
+	text-decoration: none;
+}
+.popularListingsBlock .popularListings
+{
+    float: left;
+}
+.popularListingsBlock .popularListings .details,
+.popularListingsBlock .popularListings .item .details .fieldValue.fieldValuePrice
+{
+  text-align: center;
+}
+
+/* twoColumnMainBlock */
+.leftmenu .colright
+{
+	left: 205px;
+}
+.leftmenu .leftBlockWrap
+{
+	right: 205px;
+}
+.twoColumnMainBlock .leftBlock
+{
+	right: 205px;
+	width: 200px;
+}
+.twoColumnMainBlock
+{
+	clear: both;
+}
+.leftBlock > div {
+    margin: 0;
+}
+.leftBlock label{
+    color: #CFCFCF;
+    font-weight: normal;
+}
+.userMenu
+{
+	background-color: #212121;
+	padding: 0 0 10px 0;
+}
+.userMenu:first-child
+{
+	padding-top: 10px;
+}
+.userMenu > ul
+{
+	margin: 0;
+	padding: 0;
+}
+.userMenu > ul > li
+{
+	margin: 1px 0 0 0;
+	padding: 0;
+}
+.userMenu > ul > li > a,
+.userMenu > ul > li > a:visited
+{
+	display: block;
+	padding: 5px 5px 5px 30px;
+	margin: 0;
+	color: #CFCFCF;
+	text-decoration: none;
+	background: url("menu_item_arrow.png") no-repeat scroll 17px 11px #333;
+}
+.userMenu > ul > li > a:hover
+{
+	color: #CFCFCF;
+	background-color: #4e4e4e;
+}
+
+.viewListingPage
+{
+	color: #444444;
+}
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper
+{
+    background-color: #EEEEEE;
+    font-size: 90%;
+    padding: 10px;
+    width: 170px;
+}
+.viewListingPage .overview ul li
+{
+	margin-bottom: 10px;
+}
+.viewListingPage .overview .fieldCaption.fieldCaptionDescription,
+.viewListingPage .overview .fieldValue 
+{
+	font-weight: bold;
+}
+.viewListingPage .overview .fieldValue.fieldValueDescription
+{
+	font-weight: normal;
+}
+.viewListingPage .listingFeatures ul li
+{
+	margin-left: 0px;
+	list-style: none;
+	background: url("list_item_bullet_disc.png") no-repeat left center transparent;
+	padding-left: 15px;
+}
+.listingFeatures .fieldCaption
+{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.viewListingPage .locationOnMap .fieldCaption,
+.viewListingPage .availabilityCalendar .fieldCaption
+{
+    font-size: 120%;
+    font-weight: bold;
+}
+.viewListingPage .locationOnMap .fieldValue,
+.viewListingPage .availabilityCalendar .fieldValue
+{
+	padding: 5px 0;
+}
+.viewListingPage .availabilityCalendar .calendarControls
+{
+	margin-top: 2px;
+}
+.viewListingPage .youTubeVideo
+{
+	padding-top: 20px;
+}
+
+#Map
+{
+	width:170px;
+	height:170px;
+}
+.viewListingPage .youTubeVideo
+{
+	display: inline-block;
+	margin: 35px 0 20px 0 !important;
+	padding: 0px !important;
+}
+
+.listingControlsAndOwnerInfoAndAdditionalInfoWrapper .listingControls ul li
+{
+    margin: 0 0 2px 0;
+}
+
+.viewAllBrosingItemsLink
+{
+	display: block;
+    margin: 0 0 10px;
+}
+
+.searchForm input[type="submit"]
+{
+	margin-top: 20px;
+}
+
+.login input
+{
+	margin-bottom: 5px;
+}
+.login .formFields.formFieldUsername,
+.login .formFields.formFieldPassword
+{
+	width: 160px;
+}
+.login input[type="submit"]
+{
+	margin: 10px 0;
+}
+.login .thirdPartyAuth
+{
+	margin: 10px 0 0 0;
+}
+.login .thirdPartyAuth .openIdProviderForm
+{
+    display: none;
+}
+
+.listingSearchResultsPage .numberOfObjectsFoundInfoAndPageSelectorAndSearchControlsWrapper
+{
+	z-index: 590
+}
+.listingSearchResultsPage .objectsPerPageSelectorAndSortingFieldSelectorWrapper
+{
+	z-index: 580
+}
+.listingSearchResultsPage .searchResults
+{
+	z-index: 570
+}
+.listingSearchResultsPage .numberOfObjectsFoundInfoAndPageSelectorWrapper
+{
+	z-index: 560
+}
+
+.browsingTabs > ul > li
+{
+	float: left;
+}
+.browsingTabs > ul > li > span,
+.browsingTabs > ul > li > a
+{
+	color: #999;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 40px;
+	background-color: #fff;
+	padding: 0 10px;
+}
+.browsingTabs > ul > li > span
+{
+	font-size: 150%;
+	font-weight: bold;
+	color: #80A0B0;
+}
+.browsingTabs > ul > li > a.selected
+{
+	color: #444;
+}
+
+.browsingTabs > ul > li > a h2
+{
+	font-size: 130%;
+	text-decoration: none;
+	margin: 0;
+}
+
+.googleAdSenseTabWrapper
+{
+	clear: both;
+	float: left;
+	background-color: #fff9f4;
+}
+.googleAdSenseTabWrapper img
+{
+	float: left;
+	padding: 3px;
+}
+
+.contactFormCaptcha,
+input[name="security_code"]
+{
+	margin-top: 5px;
+}
+
+.paymentConfirmationPage .confirmPaymentForm
+{
+	margin-top: 15px;
+}
+
+.userSearchPage
+{
+	margin-bottom: 30px; 
+}
+
+.mainContent input[type="submit"]
+{
+    margin: 20px 0 10px 0;
+    background-color: #666;
+}
+
+.newsPage dl dd
+{
+	margin-bottom: 10px;
+}
+
+.sortingFieldSelector
+{
+	padding-top: 10px;
+}
+.sortingFieldSelector .sortBy
+{
+    padding: 0;
+}
+
+.searchResults .searchResultItem h2
+{
+    font-size: 130%;
+}
+.searchResults .searchResultItem .fieldValuePrice,
+.searchResults .searchResultItem .fieldValueRent
+{
+	color: #FF8600;
+	font-size: 120%;
+}
+
+.searchResultItem .details
+{
+    margin-right: 160px;
+}
+.searchResultItem .additionalDetailWrapper
+{
+    width: 140px;
+}
+
+.savedListingsPage .searchResultItemsControls a:last-child
+{
+	color:red;
+}
+
+.banners
+{
+	background-color: #212121;
+	padding: 0 0 10px 0;
+}
+.banners h2
+{
+    color: #CFCFCF;
+    font-size: 135%;
+    line-height: normal;
+	font-weight: normal;
+    padding: 10px 0 7px 30px;
+}
+.banners .bannerContent
+{
+	padding-left: 25px;
+	background-color: #333;
+}
+
+.pictures .ad-gallery .ad-image-wrapper
+{
+	border: none;
+	background-color: #f1f1f1;
+}
+.pictures .ad-gallery .ad-nav
+{
+	border: none;
+}
+
+.leftBlock .recentListings
+{
+	background-color: #212121;
+	color: #CFCFCF;
+	padding-bottom: 10px;
+}
+.leftBlock .recentListings h2
+{
+    color: #CFCFCF;
+    font-size: 135%;
+    line-height: normal;
+	font-weight: normal;
+    padding: 10px 0 7px 30px;
+}
+.leftBlock .recentListings .item
+{
+    margin-bottom: 1px;
+	padding: 10px 10px 5px 10px;
+	background-color: #333;
+	border: none;
+}
+.leftBlock .recentListings .item .details,
+.leftBlock .recentListings .item .fieldValue.fieldValuePictures
+{
+	text-align: center;
+}
+.leftBlock .recentListings .item .details a
+{
+	color: #CFCFCF;
+	text-decoration: none;
+}
+.leftBlock .recentListings .item .details a:hover
+{
+	text-decoration: underline;
+}
+.leftBlock .recentListings .item .fieldValue.fieldValuePrice
+{
+	font-size: 130%;
+}
+
+.currencySelector > a
+{
+	margin-left: 3px;
+	font-size: 130%;
+	line-height: 39px;
+	background-image: url(down_triangle_white.png);
+}
+
+.currencySelector > ul
+{
+	top: 39px;
+}
+
+.currencySelector > a.active,
+.currencySelector > ul
+{
+	background-color: #80A0B0;
+}
+
+.currencySelector > ul > li > a,
+.currencySelector > ul > li > a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+.currencySelector > ul > li > a.selected,
+.currencySelector > ul > li > a:hover
+{
+	background-color: #4e4e4e;
+}
+
+.leftBlock
+{
+	background: #212121;
+}
+.menu.accordion .tab a,
+.menu.accordion .header
+{
+    color: #CFCFCF;
+    background: #333333 url(gradient_line_grey.png) no-repeat;
+    background-position: left bottom;
+}
+.menu.accordion .tab .iconMenuTriangle
+{
+ 	background: url("right_triangle.png") no-repeat scroll 15px center transparent;
+}
+.menu.accordion .tab.opened .iconMenuTriangle
+{
+	background: url("down_triangle.png") no-repeat scroll 15px center transparent;
+}
+.menu.accordion .header a,
+.refineSearchForm .menu.accordion .content .searchControls li a
+{
+    color: #CFCFCF;
+}
+.refineSearchForm .menu.accordion .content .caption
+{
+    background: #212121;
+    color: #CFCFCF;
+}
+.refineSearchForm .menu.accordion .content .treeField .removeAction
+{
+    background:transparent url(icons/cross_grey.png) scroll 0 -5px no-repeat;
+}
+.refineSearchForm .menu.accordion .content .treeField .removeAction:hover
+{
+    background:transparent url(icons/cross_white.png) scroll 0 -5px no-repeat;
+}
+.refineSearchForm .menu.accordion .content .treeField .hovered
+{
+    background: url("dot_grey.png") repeat-x 0 7px;
+}
+.refineSearchForm .menu.accordion .content .keywordField input[type="text"].hintText
+{
+    padding-left: 10px;
+}
+.refineSearchForm .integerInputs input[type="text"],
+.refineSearchForm .option label,
+.refineSearchForm .optionDisplayModeSwitch a,
+.refineSearchForm .showAddMoreOptionsPopUp
+{
+    color: #ccc;
+}
+.refineSearchForm .menu.accordion .content input[type="text"],
+.refineSearchForm .menu.accordion .content select
+{
+    width: 170px;
+}
+
+.userSearchPage .formFields,
+.userSearchPage .formControls
+{
+	background: #f2f2f2;
+	padding-left: 15px;
+}
+.userSearchPage .formFields
+{
+	padding-top: 10px;
+}
+.userSearchPage .formControls
+{
+	padding-bottom: 20px;
+}
+.userSearchPage .fieldControl
+{
+	padding-bottom: 10px;
+}
+.userSearchPage .fieldControl.DealershipName label
+{
+	color: #555555;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+.userSearchPage .fieldGroupCaption.Location
+{
+	color: #555555;
+	font-weight: bold;
+	margin: 15px 0 5px;
+}
+.userSearchPage .formControls input[type="submit"]
+{
+    background: url("icons/magnifier_white.png") no-repeat scroll 7px center #666666;
+    border: medium none;
+    color: #FFFFFF;
+    padding: 3px 5px 3px 20px;
+	margin: 10px 0 0 114px;
+}
+
+.listingSearchResultHeader .searchControls > li > a,
+.searchResultHeader .searchControls > li > a1
+{
+    color: #cfcfcf;
+    background-image: url("right_triangle.png");
+}
+
+.listingSearchResultHeader .searchControls > li.active  a,
+.searchResultHeader .searchControls > li.active  a
+{
+    color: #ffffff;
+}
+
+.listingSearchResultHeader a,
+.listingSearchResultHeader a:visited,
+.searchResultHeader a,
+.searchResultHeader a:visited,
+.refineSearchForm .searchControls li a
+{
+    color: #cfcfcf;
+}
+
+.refineSearchHeader,
+.listingSearchResultHeader,
+.searchResultHeader
+{
+    background: #111;
+    color: #cfcfcf;
+}
+
+.searchControls .counter
+{
+    color: #eee;
+}
+
+.listingForm
+{
+	margin: 10px 0 0 10px;
+}
+.listingForm .steps
+{
+	margin-bottom: 10px;
+}
+.listingForm .steps li
+{
+	background: #333;
+	background: url("tab_bg.png") no-repeat scroll left center #333;
+	line-height: 31px;
+	font-size: 110%;	
+	padding: 0 0 0 16px;
+	margin: 0;
+}
+.listingForm .steps li:first-child
+{
+	background: #333;
+	padding-left: 0;
+}
+.listingForm .steps li.active
+{
+	background: url("tab_bg_active.png") no-repeat scroll left center #80a0b0;
+}
+.listingForm .steps li.active:first-child
+{
+	background: #80a0b0;
+}
+.listingForm .steps li.active + li
+{
+	background: url("tab_bg_after_active.png") no-repeat scroll left center #333;
+}
+.listingForm .steps li a,
+.listingForm .steps li span
+{
+	display: inline-block;
+	color: #cfcfcf;
+	font-weight: normal;
+	padding: 0 10px;
+}
+.listingForm .steps li:last-child a,
+.listingForm .steps li:last-child span
+{
+	background: url("tab_bg_last_node.png") no-repeat scroll right center transparent;
+	padding-right: 25px;
+}
+.listingForm .steps li.active a,
+.listingForm .steps li.active span
+{
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.listingForm .mandatoryFieldsMessage
+{
+	margin-bottom: 0;
+}
+.listingForm h3
+{
+	margin-top: 15px;
+}
+.listingForm .form.inputForm > .step
+{
+	padding-left: 5px;
+}
+#step2
+{
+	padding-left: 0;
+}
+.listingForm .managePictures .hint
+{
+	margin-top: 10px;
+}
+.listingForm .formConrols
+{
+	padding: 20px 0 0 5px;
+}
+.listingForm .formConrols input[type="submit"]
+{
+	margin-right: 100px;
+}
+
+.leftBlock > div.refineSearch
+{
+    padding-bottom: 20px;
+}
+
+.serachResultViewTypeSwitch .icon.searchResultsList
+{
+    background: url("icons/search_results_list.png") no-repeat center center transparent;
+}
+
+.serachResultViewTypeSwitch .icon.searchResultsGallery
+{
+    background: url("icons/search_results_gallery.png") no-repeat center center transparent;
+}
+
+.serachResultViewTypeSwitch .icon.searchResultsMap
+{
+    background: url("icons/search_results_map.png") no-repeat center center transparent;
+}
+
+div.searchResultItemsControls div.massActionControls input.deactivateIcon
+{
+    background: url('icons/eye_close.png') no-repeat transparent;
+}
+
+div.searchResultItemsControls div.massActionControls ul li input.deleteIcon
+{
+    background: url('icons/search_results_header_bin.png') no-repeat transparent;
+}
+.contactDetails
+{
+min-height: 365px;
+background-color: #f2f2f2;
+}
+[lang="ru"] div.userSearchPage li.fieldControl.DealershipName label
+{
+	width: 163px;
+}
+[lang="ru"] .userSearchPage .fieldControl.DealershipName input
+{
+	width: 390px;
+}
+.userSearchPage .fieldControl.DealershipName input
+{
+	width: 450px;
+}
+[lang="ru"] .userSearchPage .fieldControl:nth-child(2n+1) label
+{
+	width: 170px;
+}
+.leftUserMenu.menu.accordion .content ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.leftUserMenu.menu.accordion .content .userMenu
+{
+	padding: 0;
+}
+.leftBlock ul:first-child.leftUserMenu
+{
+	margin-top: 10px;
+}
+
+.browsePage .breadcrumbs li
+{
+	background: url("tab_bg.png") no-repeat scroll left center #333;
+}
+.browsePage .breadcrumbs li:last-child
+{
+	background: url("tab_bg_active.png") no-repeat scroll left center #80a0b0;
+}
+.browsePage .breadcrumbs li:first-child
+{
+	background-image: none;
+}
+
+.browsePage .breadcrumbs li a,
+.browsePage .breadcrumbs li span
+{
+	color: #cfcfcf;
+}
+.browsePage .breadcrumbs li:last-child a,
+.browsePage .breadcrumbs li:last-child span
+{
+	color: #f2f2f2;
+	background: url("tab_bg_last_node.png") no-repeat scroll right center transparent;
+}

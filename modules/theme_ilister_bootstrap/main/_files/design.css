@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+    .gallery-view .thumbnail {
+        min-height: 295px;
+    }
+}
+
+/*servise provider page begin*/
+.businessCatalogCaptions {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #693D3E;
+}
+/*servise provider page end*/
+.businessCatalogItem .businessCatalogCaptions dt {
+    float:left;
+    margin-right:30px;
+}
+.businessCatalogCaptions {
+    border: medium none;
+    padding: 0;
+}

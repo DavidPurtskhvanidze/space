@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Modify Secondary Pages Template</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="default.tpl,Secondary Pages Template" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?ilisterpets_modify_secondary_pages_template.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Modify Secondary Pages Template</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Secondary pages are all pages excepting the homepage.</p>
+<p>&nbsp;</p>
+<p>In accordance with default iLister Site Pages settings, almost all secondary pages use default.tpl as a template, which surrounds the content of a secondary page.</p>
+<p>&nbsp;</p>
+<p>For example, the "Browse By State" page is a typical secondary page.</p>
+<p>&nbsp;</p>
+<p>In Admin Panel -&gt; Site Pages -&gt; /browse-by-state/ you can check that it uses default.tpl as a template:</p>
+<p><img src="secondary-page-template.png" width="1066" height="621" border="0" alt="secondary-page-template"></p>
+<p>Please note that if there was no file specified in the "Template" parameter, then default.tpl is used.</p>
+<p>&nbsp;</p>
+<p>Below you can see how the page is built on the front-end of the site. Default.tpl includes:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><a href="ilisterpets_header.htm">PageHeader div</a> &nbsp;with logo, slogan, language selector, the "quickSearchForm" div with the Quick Search form and the top menu</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>headerImageAndHeaderMenuWrapper div with <a href="ilisterpets_header.htm">header menu</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>leftBlock div including <a href="ilisterpets_left_menu_section.htm">left_block.tpl</a> with left menu, <a href="ilisterpets_news_poll_share_your_site_sections.htm">News box and Poll and Share</a> sections</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mainContent div including:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>browse_items_and_results.tpl - the template file which displays the browsing results. </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>module is 'classifieds'</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>function is 'browse'</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 29px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>browse_template is 'browse_items_and_results.tpl' — it is the default template for browsing results.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><a href="ilisterpets_footer_and_copyright.htm">footer_block.tpl with copyright</a></td></tr></table></div><p>&nbsp;</p>
+<p><a href="secondary-page-building.png"><img id="TOGGLE0186A1" class="image-toggle" src="secondary-page-building.zoom60.png" border="0" alt="secondary-page-building.zoom60"></a></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can learn more on how iLister builds pages in the "<a href="template_system_and_theme_management.htm#pagebuilding">Page Building</a>" section.</span></p>
+<p class="p_ReferenceBlock"><span class="f_ReferenceBlock">The "<a href="template_system_and_theme_management.htm#templateidentification">Template Identification</a>" feature will help you to find out which template is used to display the parts of any iLister page.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','secondary-page-building.zoom60.png','hm.src1','secondary-page-building.png');
+</script>
+</body>
+</html>

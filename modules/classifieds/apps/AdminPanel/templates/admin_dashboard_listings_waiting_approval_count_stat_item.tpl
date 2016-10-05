@@ -1,0 +1,1 @@
+<span class="statCount">{if $listingsWaitingApprovalCount == 0}0{else}<a href="{$GLOBALS.site_url}/manage_listings/?action=search&moderation_status[equal]=PENDING">{$listingsWaitingApprovalCount}</a>{/if}</span>

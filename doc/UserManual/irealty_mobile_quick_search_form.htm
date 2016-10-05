@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Quick Search Form</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Quick Search Form" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?irealty_mobile_quick_search_form.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>The Quick Search form allows visitors to find listings with desired criteria with one click from your homepage by specifying desired parameters.</p>
+<p>&nbsp;</p>
+<p><img src="mobile-quick-search-form.png" width="605" height="394" border="0" alt="mobile-quick-search-form"></p>
+<p>&nbsp;</p>
+<p>The template for Quick Search form is located in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; quick_search.tpl.</p>
+<p>There you can modify the components of the Quick Search form.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Criterion / Field</span></p>
+<p>You can add as many fields on the search form as you wish. All you need to do is to follow the rules when adding a new field. You can use the code of existing fields as an example of how to add more fields/criteria.</p>
+<p>&nbsp;</p>
+<p>For example, the code for zip radius search is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;td&gt;[[FormFieldCaptions!Search&nbsp;Within]]:&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;caption&nbsp;for&nbsp;the&nbsp;field</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;td&gt;{search&nbsp;property=ZipCode}&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;ID&nbsp;of&nbsp;the&nbsp;field</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can find the templates for all field types in the <a href="field_types.htm">Field Types</a> section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_Heading3">New&nbsp;Search&nbsp;Form</span></p>
+<p>In order to create a new Search Form you need to do the following main steps:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>create new template with Search Form components in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/search/;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>create new Mobile Site Page which will display a new Search Form in Admin Panel -&gt; Mobile Site Layout -&gt; Site Pages -&gt; Add a New Site Page;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>create new template with Search Results components in Admin Panel -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>create new Mobile Site Page which will display a new Search Results form in Admin Panel -&gt; Mobile Site Layout -&gt; Site Pages -&gt; Add a New Site Page.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock" style="background-color: #ffff80;">Please refer to the main article about&nbsp;<a href="irealty_new_search_form.htm">new iRealty search form</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

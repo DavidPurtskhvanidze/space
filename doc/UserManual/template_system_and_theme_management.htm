@@ -1,0 +1,197 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Template System and Theme Management</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="$DESCRIPTION,$GLOBALS,$KEYWORDS,$TITLE,Base Templates,Global Variables,Images,Site Page,Smarty Functions,Style Sheets,Template Identification,Theme Inheritance" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?template_system_and_theme_management.htm"; }
+  else { parent.quicksync('a4.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Template System and Theme Management</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="engine_modules_functions.htm">Previous</a>&nbsp;
+     <a href="search_criteria.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>iLister uses Smarty v.3 as a template engine to display HTML content. Smarty facilitates a manageable way to separate application logic and content from its presentation. You can learn more about Smarty on its <a href="http://www.smarty.net/manual/en/what.is.smarty.php" target="_blank" class="weblink" title="Smarty website">official website</a>.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Smarty Functions</span></p>
+<p>iLister uses the following Smarty functions:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">url - </span>specifies path to files. iLister uses it to connect to CSS files and display images. If the file does not exist in the current theme, the system takes it in a parent theme.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Parameters:</td></tr></table></div><p style="margin: 0px 0px 0px 29px;"><span class="f_Components">file</span> - the name of the file and the path from the root of a theme to the file</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Examples of use:</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 30px;"><span class="f_CodeExample">&lt;img&nbsp;src="{url&nbsp;file='main^logo.png'}"&nbsp;alt="Your&nbsp;Logo&nbsp;Here"&nbsp;/&gt;</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">require</span> - connects external component in templates.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Parameters:</td></tr></table></div><p style="margin: 0px 0px 0px 29px;"><span class="f_Components">component - </span>the id of external component (the name of the folder in the directory of external components; by default it is <span class="f_Components">system/ext</span> - you can change it in default.ini EXT_LIBRARY_DIR)</p>
+<p style="margin: 0px 0px 0px 29px;"><span class="f_Components">file - </span>the file for connection (a relative path from the root of external component to the file) </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Examples of use:</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 29px;"><span class="f_CodeExample">{require&nbsp;component='jquery'&nbsp;file='jquery.js'}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 29px;"><span class="f_CodeExample">{require&nbsp;component='jquery'&nbsp;file='css/basic.css'}</span><span style="color: #0000ff;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 28px;">When you connect a component which depends on another component you first need to connect a "parent" component. This is also fair for jquery plugins: you first need to connect jquery.js library before connecting a plugin.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">module</span> - launches module function in templates.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Parameters:</td></tr></table></div><p style="margin: 0px 0px 0px 27px;"><span class="f_Components">name</span> - module name</p>
+<p style="margin: 0px 0px 0px 27px;"><span class="f_Components">function</span> - function name</p>
+<p style="margin: 0px 0px 0px 27px;"><span class="f_Components"><a href="engine_modules_functions.htm#querystring">QUERY_STRING</a></span> - parameters in QUERY_STRING</p>
+<p style="margin: 0px 0px 0px 27px;">additional parameters processed by function (e.g. <span class="f_Components">form_template</span> parameter for <span class="f_Components">classifieds:search_form</span> function) </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>Examples of use:</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 28px;"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="search_form"&nbsp;form_template="quick_search.tpl"&nbsp;category_id="HomesForSale"}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 28px;"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="browse"&nbsp;level1Field='State'&nbsp;browse_template='browse_homes_by_state.tpl'&nbsp;category_id='HomesForSale'}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 28px;"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="search_results"&nbsp;action="search"&nbsp;QUERY_STRING="username[equal]="|cat:$user.username}</span><span style="color: #0000ff;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="smartyblocks"></a><span class="f_Heading3">Smarty Blocks</span></p>
+<p>You can see the following Smarty blocks in iLister:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>title</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>keywords</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>description</td></tr></table></div><p>&nbsp;</p>
+<p>They corresponds with HTML tags <a href="http://www.w3schools.com/TAGS/tag_title.asp" target="_blank" class="weblink">&lt;title&gt;</a> and <a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank" class="weblink">&lt;meta&gt;</a>'s elements "description" and "keywords".</p>
+<p>&nbsp;</p>
+<p>They are specified in the settings of <a href="managing_site_pages.htm">Site Pages</a> in Title, Description and Keywords parameters.</p>
+<p>&nbsp;</p>
+<p>You can use them as follows in templates:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="keywords"&nbsp;content="{$KEYWORDS}"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="description"&nbsp;content="{$DESCRIPTION}"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;title&gt;My&nbsp;iLister&nbsp;site{if&nbsp;$TITLE&nbsp;ne&nbsp;""}:&amp;nbsp;&amp;nbsp;{$TITLE}&nbsp;{/if}&lt;/title&gt;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading3">Smarty Global Variables</span></p>
+<p>Global variables are available for any page and can be used in any template.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>$GLOBALS - associative massive containing:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>site_url - the URL of site specified in the constant "SITE_URL" in apps\FrontEnd\config\local.ini and apps\AdminPanel\config\local.ini</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>user_page_uri - uri of the current page</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>current_user - current user information</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 28px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#9642;</span></td><td>logged_in keys defines is a user is authorized and in this case you can also use the data like username, email etc.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>themeInheritanceBranch - hierarchy of current theme inheritance. It is used to connect CSS files of the whole inheritance branch.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td><a href="system_settings.htm#radiussearchunit">radius_search_unit</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td><a href="system_settings.htm#googlemapsapikey">google_maps_API_key</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td><a href="system_settings.htm#notificationsettings">notification_email</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td><a href="system_settings.htm#wysiwygeditorsetting">enable_wysiwyg_editor</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>custom_settings - array containing all settings from Admin Panel -&gt; Custom Settings.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>$TITLE</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>$DESCRIPTION</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>$KEYWORDS</td></tr></table></div><p>&nbsp;</p>
+<p>You can use global variables as follows in templates:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$GLOBALS.current_user.logged_in}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="LoginBlock"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;b&gt;[[Welcome]],&nbsp;{$GLOBALS.current_user.user_name}&lt;/b&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{else}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="LoginBlock"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;a&nbsp;href="{$GLOBALS.site_url}/login/"&gt;[[Sign&nbsp;in]]&lt;/a&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&gt;|&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;a&nbsp;href="{$GLOBALS.site_url}/registration/"&gt;[[Register]]&lt;/a&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Other Smarty Variables</span></p>
+<p>Each page has more variables available other than global variables. You can easily learn them using Smarty <span class="f_Components">{debug}</span> tag: insert it to a desired template in the very beginning and save it, and then open the page which uses this template in a browser.</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p class="p_Heading2"><a name="pagebuilding"></a><span class="f_Heading2">Page Building</span></p>
+<p>Using Site Page configuration, iLister:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>launches Site Page function and passes parameters to it (e.g. title, template, module, function and its parameters, keywords, description).</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>finds a template for this Site Page and inserts to the mainContent div the data from module, function and its parameters, which specified is the settings of the Site Page;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>starts the calls of Smarty variables, blocks, modules and functions. </td></tr></table></div><p>&nbsp;</p>
+<p style="text-indent: 359px;"><span style="font-weight: bold;">Site Page </span>uses</p>
+<p><img src="page-building.zoom73.png" width="626" height="913" border="0" alt="page-building"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><a name="themes"></a><span class="f_Heading2">Themes</span></p>
+<p>A theme defines the look of iLister-based website. Theme is a directory containing a set of files - templates, images, css files and configuration file.</p>
+<p>In fact, themes are <a href="engine_modules_functions.htm#module">modules</a>. </p>
+<p>The version of a custom theme module equals to the current product version plus module version, e.g. "6.0.0-1".</p>
+<p>You can find theme module folders at <span class="f_Components">/module/theme_$themeName</span>.</p>
+<p>These theme subfolders contain only those modules, which templates are redefined by the current theme.</p>
+<p>&nbsp;</p>
+<p>iLister system uses the name of theme's directory as theme's name which is displayed in Admin Panel -&gt; Themes.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="themeinheritance"></a><span class="f_Heading3">Theme Inheritance</span></p>
+<p>In order to get rid of file duplication iLister uses theme inheritance system; thus, you can create a theme based on one of existing themes.</p>
+<p>&nbsp;</p>
+<p>The inherited theme called "parent", which also can be inherited from a third theme (hierarchic inheritance).</p>
+<p>The inheriting theme called "child".</p>
+<p>&nbsp;</p>
+<p>In order to change a part of a child theme you need to make a copy of corresponding template from the parent theme and modify it. The same works with images: if you want to use another image (logo, icons etc.) in a child theme you need to place this image file to the child theme directory. A relative path from the root of child theme to the template or image must be the same as used in the parent theme.</p>
+<p>&nbsp;</p>
+<p>In order to manually change theme inheritance you need to specify its name in the "parent" field in the database table <span class="f_Components">core_themes</span> for a child theme record and also in the file <span class="f_Components">/modules/$childTheme/config.ini</span> by changing the parameter "inherits".</p>
+<p>&nbsp;</p>
+<p><a name="basetemplates"></a><span class="f_Heading3">Base Templates</span></p>
+<p>The base templates used for inheritance by all themes are located in the /templates folder of each module, e.g. </p>
+<p><span class="f_Components">/modules/listing_comments/apps/FrontEnd/templates</span>.</p>
+<p>&nbsp;</p>
+<p>This folder has all templates and images necessary for iLister operating. Also the iLister product has its own product-specific base theme called "<span class="f_Components">iLister_base</span>" which can override base templates of a module, if necessary.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="thememanagement"></a><span class="f_Heading3">Theme Management</span></p>
+<p>You can create themes based on existing "<span class="f_Components">base</span>" themes.</p>
+<p>&nbsp;</p>
+<p>You need to follow the below steps in order to create a new theme:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>go to Admin Panel -&gt; Site Layout -&gt; Themes</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>define which of the existing themes will be used as a parent theme;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>create a new theme using the provided form.</td></tr></table></div><p>&nbsp;</p>
+<p>Afterwards you can use child theme and it will repeat the look of parent theme.</p>
+<p>&nbsp;</p>
+<p>In order to change a part of the content (text or image) you need to <a href="template_system_and_theme_management.htm#templateidentification">define which template provides it</a>. Then copy this template or image from parent theme to child theme leaving a relative path intact and afterwards modify template or image as desired.</p>
+<p>&nbsp;</p>
+<p><OBJECT id="mediaPlayer" width="640" height="390"
+        classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95"
+        codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+        standby="Loading //www.youtube.com/v/-ad5ruqz12s..."
+        type="application/x-oleobject">
+        <param name="fileName" value="//www.youtube.com/v/-ad5ruqz12s">
+        <param name="autoStart" value="True">
+        <param name="showControls" value="False">
+        <param name="loop" value="False">
+        <EMBED type="application/x-mplayer2"
+               pluginspage="http://microsoft.com/windows/mediaplayer/en/download/"
+               id="mediaPlayer" name="mediaPlayer" displaysize="4" autosize="-1"
+               bgcolor="#FFFFFF" showtracker="-1"
+               showdisplay="0" showstatusbar="-1" videoborder3d="-1" width="640" height="390"
+               src="//www.youtube.com/v/-ad5ruqz12s" autostart="1" showcontrols="0" loop="0">
+        </EMBED>
+</OBJECT></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="templateidentification"></a><span class="f_Heading3">Template Identification</span></p>
+<p>&nbsp;</p>
+<p>In order to identify the template which provides a content for a page:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>open the source code of the page;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>find there the content which you want to change;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>find the comments that specify the beginning and the end of the template which provides this content:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">&lt;!--&nbsp;START&nbsp;$moduleName:$themeName/$templateName&nbsp;--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">...&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;!--&nbsp;END&nbsp;$moduleName:$themeName/$templateName&nbsp;--&gt;</span></p>
+<p>&nbsp;</p>
+<p>where:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Components">$moduleName</span> - directory name in the theme</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Components">$themeName</span> - theme name</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Components">$templateName</span> - template file name</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="imagesandstylesheets"></a><span class="f_Heading3">Images and Style Sheets</span></p>
+<p>Images and style sheet files are stored at the module-related folder like <span class="f_Components">/module/$ModuleName/apps/FrontEnd/files/$ThemeName</span></p>
+<p>For example, /<span class="f_Components">modules/main/apps/FrontEnd/files/iLister_base</span></p>
+<p>&nbsp;</p>
+<p>Some modules do not have the folder <span class="f_Components">/file</span>, and you can create it yourself if you need to add new custom image or style sheet there.</p>
+<p>&nbsp;</p>
+<p>You can use the following construction in template files to display an image:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;img&nbsp;src="{url&nbsp;file='main^logo.png'}"&nbsp;alt="Your&nbsp;Logo&nbsp;Here"&nbsp;/&gt;</span></p>
+<p>Please note how the path to an image is specified for the <span class="f_Components">&lt;img&gt;</span> tag.</p>
+<p>&nbsp;</p>
+<p>You can connect a CSS file to a template as follows:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>use the <span class="f_Components">@import</span> rule which allows you to include another style sheets to your default CSS file (design.css):</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 17px;"><span class="f_CodeExample">@import&nbsp;url("new-css-file.css");</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>connect a CSS file with HTML's "link" element:</td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 14px;"><span class="f_CodeExample">&lt;link&nbsp;rel=StyleSheet&nbsp;href="style.css"&nbsp;type="text/css"&nbsp;media="screen,&nbsp;print"&gt;</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,835 @@
+body
+{
+	font-family: "Lucida Grande","Lucida Sans Unicode",Sans-serif;
+}
+
+a,
+a:visited
+{
+	color: #333333;
+}
+h1,
+h2
+{
+	font-size: 150%;
+	margin-bottom: 5px;
+}
+
+input[type="submit"]
+{
+	margin: 10px 0;
+	border: 0 outset;
+	background-color: #e97c03;
+	color: #ffffff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	height: 25px;
+	padding: 0 10px 2px 10px;
+	font-weight: bold;
+}
+
+.homepageMainContent .centerBlockWrapper,
+.browseByStateAndCategories .centerBlockWrapper
+{
+	margin: 0 140px 0 0;
+}
+
+.colmask
+{
+	padding-bottom: 30px;
+}
+
+#SiteFrame
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#PageFooter
+{
+	height: 40px;
+	margin-top: -20px;
+	font-size: 90%;
+	background-color: #eeeeee;
+}
+#PageFooter .linkToMobileSite
+{
+	left: 15px;
+	top: 10px;
+	z-index: 1;
+}
+#PageFooter .shareBox
+{
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+#PageFooter .shareBox h2
+{
+	display: none;
+}
+#PageFooter .copyrights
+{
+	padding-top: 10px;
+}
+
+.header
+{
+	height: 60px;
+}
+
+.header .slogan
+{
+	position: relative;
+	left: auto;
+	top: auto;
+	margin: 10px 0 0 0;
+	float: left;
+	font-size: 180%;
+	line-height: 85%;
+	font-weight: 500;
+	font-family: Impact,Charcoal,sans-serif;
+}
+.header .slogan a
+{
+	color: #014b91;
+	text-decoration: none;
+}
+.header .slogan .downWord
+{
+	color: #e97c03;
+}
+
+.header .quickSearchForm
+{
+	background: #146eb4;
+	float: right;
+	margin-top: 10px;
+	padding: 0 20px;
+	width: 730px;
+	display: inline-block;
+	line-height: 45px;
+	vertical-align: middle;
+}
+.header .quickSearchForm,
+.header .quickSearchForm a
+{
+	color: #ffffff;
+}
+.header .quickSearchForm input[type="text"],
+.header .quickSearchForm select
+{
+	width: 200px;
+}
+.header .quickSearchForm input[type="submit"]
+{
+	font-size: 130%;
+}
+
+.fieldValue.price,
+.fieldValuePrice,
+.fieldValuePrice a
+{
+	color: #e97c03;
+}
+
+.leftmenu .mainContent
+{
+	margin: 10px 0 0 230px;
+}
+.leftmenu .colright
+{
+	background: none;
+}
+.leftmenu .leftBlock
+{
+	width: 200px;
+	right: 200px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.leftBlock .languageSelector
+{
+	float: left;
+	margin: 15px 0 0 0px;
+}
+.leftBlock .languageSelector a
+{
+	text-decoration: none;
+}
+.leftBlock .languageSelector .current
+{
+	color: #014b91;
+}
+
+.leftBlock .authorizationControls
+{
+	display: none;
+}
+.leftUserMenu.menu.accordion .content .menu a
+{
+}
+.leftUserMenu.menu.accordion .content .menu ul li
+{
+	line-height: 25px;
+	background: url(left_menu_bullet.png) no-repeat left;
+	padding-left: 20px;
+}
+.leftUserMenu.menu.accordion .content  .menu a
+{
+	text-decoration: none;
+}
+.leftUserMenu.menu.accordion .content  .menu a:hover
+{
+	text-decoration: underline;
+}
+.leftUserMenu.menu.accordion .content .menu,
+.leftUserMenu.menu.accordion .content .menu
+{}
+.leftBlock .login
+{
+	padding: 10px;
+	background-color: #a4b344;
+	margin: 0;
+	color: #ffffff;
+	width: auto;
+}
+.leftUserMenu.menu.accordion .content .menu a
+{
+	/*color: #ffffff;*/
+}
+.leftUserMenu.menu.accordion.userLoggedIn .content .menu li
+{
+	background: url(left_user_menu_bullet.png) no-repeat left 10px;
+}
+.leftBlock .welcomeMessage
+{
+	padding: 10px 0 0 10px;
+	margin: 0;
+}
+.leftBlock .login .formFields
+{
+	width: 96%;
+}
+.leftBlock .login input[type="submit"]
+{
+	background: #ffffff;
+	color: #000000;
+}
+.leftBlock .login .openIdProviderForm input[type="submit"]
+{
+	margin: 10px 0 0 0;
+}
+.leftBlock .login a
+{
+	color: #ffffff;
+	font-size: 90%;
+}
+.leftBlock .login .thirdPartyAuth
+{
+	margin-top: 10px;
+	font-size: 90%;
+}
+.leftBlock .login .thirdPartyAuth .providerLinks
+{
+	margin-top: 5px;
+}
+.leftBlock .loggedInUserInfo
+{
+    background-color: #A4B344;
+    margin-top: 0;
+    padding: 5px 0 5px 31px;
+	color: #fff;
+	border-bottom: 1px dashed #fff; 
+}
+.leftBlock .loggedInUserInfo > img
+{
+	height: 30px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#PrivateSellerMenu
+{
+	padding-top: 0;
+}
+.login
+{
+	width: 230px;
+	margin-top: 10px;
+}
+.login .thirdPartyAuth .openIdProviderForm
+{
+	display: none;
+}
+.login .formFields
+{
+	margin: 0 0 5px 0;
+	width: 150px;
+}
+
+.pollBlock h2,
+.newsBlock h2
+{
+	font-size: 100%;
+	margin-bottom: 5px;
+	color: #014b91;
+}
+.newsBlock h2
+{
+	font-size: 130%;
+}
+
+.leftBlock .newsBlock
+{
+	margin: 20px 0 0 10px;
+}
+
+.newsPage dd
+{
+	margin-bottom: 10px;
+}
+
+.pollBlock
+{
+	margin: 10px 0 0 10px;
+}
+.pollBlock input[type="submit"]
+{
+	display: block;
+	margin: 5px;
+}
+.pollBlock a
+{
+	margin-left: 5px;
+}
+
+.featuredListings
+{
+	overflow: auto;
+	margin: 5px 0 20px 0;
+}
+.recentListings
+{
+	overflow: auto;
+	margin: 20px 0 20px 0;
+}
+.googleAdSenseTabWrapper
+{
+	float: left;
+	margin: 20px 0 20px 0;
+	background-color: #fff9f4;
+}
+.featuredListings .details,
+.recentListings .details
+{
+	min-height: 80px;
+}
+.featuredListings .details > a,
+.recentListings .details > a
+{
+	color: #666666;
+}
+.recentListings .item,
+.featuredListings .item
+{
+	padding-right: 10px;
+}
+
+.browseByState h2,
+.browseByCategories h2,
+.featuredListings h2
+{
+	display: none;
+}
+
+.browseByStateWrapper
+{
+    width: 130px;
+    float: right;
+}
+.browseByState
+{
+	font-size: 90%;
+	margin-top: 0;
+}
+.browseByState a,
+.browseByCategories a
+{
+	color: #014b91;
+	text-decoration: none;
+}
+.browseByState a.emptyLink
+{
+	color: #999999;
+}
+.browseByState .selected
+{
+	font-weight: bold;
+}
+
+.browseByCategories h3
+{
+	font-size: 120%;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.searchResults .searchResultItem h2
+{
+	font-size: 130%;
+}
+.searchResults .searchResultItem a
+{
+	color: #014b91;
+}
+
+.searchResults .searchResultItem .fieldValuePrice
+{
+	font-size: 120%;
+}
+.searchResultItem .details
+{
+    margin-right: 160px;
+}
+.searchResultItem .additionalDetailWrapper
+{
+    width: 140px;
+}
+
+.viewListingPage h1,
+.viewListingPage h2
+{
+	margin-bottom: 5px;
+}
+.viewListingPage a
+{
+	color: #666666;
+}
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper
+{
+	background-color: #EEEEEE;
+	padding: 10px 0 10px 10px;;
+	width: 170px;
+	font-size: 90%;
+}
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper a
+{
+	color: #333333;
+}
+
+.viewListingPage .listingControlsAndOwnerInfoAndAdditionalInfoWrapper .listingControls li
+{
+	margin-bottom: 3px;
+}
+.viewListingPage .overview li
+{
+	margin-bottom: 3px;
+}
+.viewListingPage .overview .fieldValueDescription
+{
+	margin-bottom: 15px;
+}
+.viewListingPage h1 .fieldValue,
+.viewListingPage .locationOnMap .fieldValue
+{
+	font-weight: normal;
+	margin-left: 0;
+}
+.viewListingPage .fieldCaption
+{
+	font-weight: bold;
+	/*margin-left: 3px;*/
+}
+.viewListingPage .pictures
+{
+	margin-right: 10px;
+	padding-left: 0;
+}
+.viewListingPage .listingFeatures,
+.viewListingPage .locationOnMap
+{
+	margin-top: 10px;
+}
+.viewListingPage .listingFeatures li
+{
+	color: #333;
+}
+
+.addComment input[type="submit"]
+{
+	width: 200px;
+}
+
+.chooseCategoryPage a
+{
+	color: #666666;
+}
+
+.transactionsPage input[type="submit"]
+{
+	width: auto;
+	padding: 0 15px;
+}
+*[lang="ru"] .transactionsPage input[type="submit"]
+{
+	font-size: 11px;
+}
+.myListingsPage .pageSelector
+{
+	clear: left;
+}
+.leftBlock .currencySelector
+{
+    float: right;
+    margin-top: 12px;
+}
+
+.currencySelector > ul
+{
+    left: auto;
+	right: 0;
+    padding-right: 5px;
+}
+.currencySelector > a
+{
+    float: left;
+}
+
+.currencySelector > ul .code {
+    display: inline-block;
+    width: 37px;
+}
+
+.userSearchPage .formFields,
+.userSearchPage .formControls
+{
+	background: #f2f2f2;
+	padding-left: 15px;
+}
+.userSearchPage .formFields
+{
+	padding-top: 10px;
+}
+.userSearchPage .formControls
+{
+	padding-bottom: 20px;
+}
+.userSearchPage .fieldControl
+{
+	padding-bottom: 10px;
+}
+.userSearchPage .fieldControl.DealershipName label
+{
+	color: #555555;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+.userSearchPage .fieldGroupCaption.Location
+{
+	color: #555555;
+	font-weight: bold;
+	margin: 15px 0 5px;
+}
+.userSearchPage .formControls input[type="submit"]
+{
+	margin: 10px 0 0 114px;
+}
+
+.listingSearchResultHeader .searchControls > li.active > a,
+.searchResultHeader .searchControls > li.active > a
+{
+    background-color: #efefef;
+}
+
+.listingSearchResultHeader .searchControls.multilevelMenu li > ul,
+.searchResultHeader .searchControls.multilevelMenu li > ul
+{
+    background: #efefef;
+}
+
+.listingSearchResultHeader .linksToSearches > ul > li a
+{
+    color: #333;
+}
+
+.listingSearchResultHeader .searchControls > li.active > a,
+.searchResultHeader .searchControls > li.active > a
+{
+    background-image: url("down_triangle_grey.png");
+}
+
+.searchResultGalleryItem .listingTitle.highlighted
+{
+    background: #A4B344;
+}
+
+.leftBlock > div.refineSearch {
+    margin-top: 10px;
+}
+
+.listingSearchResultHeader .searchControls > li > a,
+.searchResultHeader .searchControls > li > a
+{
+    color: #ffffff;
+}
+
+.listingSearchResultHeader .searchControls > li.active  a,
+.searchResultHeader .searchControls > li.active  a
+{
+    color: #000000;
+}
+
+.listingSearchResultHeader a,
+.listingSearchResultHeader a:visited,
+.searchResultHeader a,
+.searchResultHeader a:visited
+{
+    color: #ffffff;
+}
+
+.refineSearchHeader,
+.listingSearchResultHeader,
+.searchResultHeader
+{
+    background: #146eb4;
+    color: #ffffff;
+}
+
+.ratingReportToolTip .toolTipBody 
+{
+	font-size: 95%;
+}
+
+.listingForm .steps
+{
+	margin-bottom: 10px;
+}
+.listingForm .steps li
+{
+	background: url("tab_bg.png") no-repeat scroll left center #146eb4;
+	line-height: 31px;
+	font-size: 110%;	
+	padding: 0 0 0 16px;
+	margin: 0;
+}
+.listingForm .steps li:first-child
+{
+	background: #146eb4;
+	padding-left: 0;
+}
+.listingForm .steps li.active
+{
+	background: url("tab_bg_active.png") no-repeat scroll left center #e97c03;
+}
+.listingForm .steps li.active:first-child
+{
+	background: #e97c03;
+}
+.listingForm .steps li.active + li
+{
+	background: url("tab_bg_after_active.png") no-repeat scroll left center #146eb4;
+}
+.listingForm .steps li a,
+.listingForm .steps li span
+{
+	display: inline-block;
+	color: #fff;
+	font-weight: normal;
+	padding: 0 10px;
+}
+.listingForm .steps li:last-child a,
+.listingForm .steps li:last-child span
+{
+	background: url("tab_bg_last_node.png") no-repeat scroll right center transparent;
+	padding-right: 25px;
+}
+.listingForm .steps li.active a,
+.listingForm .steps li.active span
+{
+	color: #fff;
+	text-decoration: none;
+}
+.listingForm .mandatoryFieldsMessage
+{
+	margin-bottom: 0;
+}
+.listingForm h3
+{
+	margin-top: 15px;
+}
+.listingForm .form.inputForm > .step
+{
+	padding-left: 5px;
+}
+#step2,
+#step2
+{
+	padding-left: 0;
+}
+.listingForm .formConrols
+{
+	padding: 20px 0 0 5px;
+}
+.listingForm .formConrols input[type="submit"]
+{
+	margin-right: 100px;
+}
+.listingForm .managePictures .hint
+{
+	margin-top: 10px;
+}
+.searchOnMap 
+{
+    margin-left: 0;
+}
+.searchControls.multilevelMenu li > ul > li > span.fieldCaption,
+.searchControls.multilevelMenu li > ul > li span.sortingLinks > span.selected
+{
+	color: #000;
+}
+.searchControls.multilevelMenu li > ul > li > span.sortingLinks a
+{
+	color: #555;
+}
+.contactDetails
+{
+min-height: 365px;
+border: 0px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+background-color: #eee;
+background-image: none;
+background-repeat: no-repeat;
+filter: none;
+}
+.contactDetails h3,
+.secondary,
+.openingTimes caption
+{
+	color: #333;
+}
+
+*[lang='ru'] .searchResultItem .sponsoredLabel span {
+    letter-spacing: 0;
+}
+[lang="ru"] div.userSearchPage li.fieldControl.DealershipName label
+{
+	width: 193px;
+}
+[lang="ru"] .userSearchPage .fieldControl:nth-child(2n+1) label
+{
+	width: 200px;
+}
+.userSearchPage .formFields ul
+{
+	width: 700px;
+	max-width: 700px;
+}
+[lang="ru"] .userSearchPage .fieldControl:nth-child(2n+1)
+{
+	width: 380px;
+}
+[lang="ru"] .userSearchPage .fieldControl.DealershipName input
+{
+	width: 410px;
+}
+.userSearchPage .fieldControl:nth-child(2n+1) label
+{
+	width: 135px;
+}
+.userSearchPage .fieldControl.DealershipName input
+{
+	width: 420px;
+}
+div.userSearchPage li.fieldControl.DealershipName label
+{
+	width: 130px;
+}
+
+.leftUserMenu.menu
+{
+	clear: both;
+	padding: 10px 0 10px 0;
+}
+.leftUserMenu.menu.accordion .content .menu
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.leftUserMenu.menu.accordion .content ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu.accordion .header
+{
+	height: auto;
+}
+.sortingLinks
+{
+	color: #000;
+}
+[lang="ru"] .serachResultViewTypeSwitch
+{
+	font-size: 80%;
+}
+.refineSearchForm
+{
+	width: 220px;
+}
+.leftUserMenu.classifieds.search_results,
+.leftUserMenu.classifieds.browse,
+.leftUserMenu.ads_on_map.search_listings_on_map
+{
+	width: 220px;
+}
+.leftUserMenu.classifieds.search_results + script + .login,
+.leftUserMenu.classifieds.browse + script + .login,
+.leftUserMenu.ads_on_map.search_listings_on_map + script +.login
+{
+	width: 200px;
+}
+
+.browsePage .breadcrumbs li
+{
+	background: url("tab_bg.png") no-repeat scroll left center #146EB4;
+}
+.browsePage .breadcrumbs li:last-child
+{
+	background: url("tab_bg_active.png") no-repeat scroll left center #E97C03;
+}
+.browsePage .breadcrumbs li:first-child
+{
+	background-image: none;
+}
+
+.browsePage .breadcrumbs li a,
+.browsePage .breadcrumbs li span
+{
+	color: #fff;
+}
+.browsePage .breadcrumbs li:last-child a,
+.browsePage .breadcrumbs li:last-child span
+{
+	color: #fff;
+	background: url("tab_bg_last_node.png") no-repeat scroll right center transparent;
+}
+
+.leftUserMenu.menu.userLoggedIn .content,
+.leftUserMenu.menu.accordion .tab a
+{
+	background: #a4b344;
+	color: #ffffff;
+}
+
+.leftUserMenu.menu.userLoggedIn a
+{
+	color: #ffffff;
+}

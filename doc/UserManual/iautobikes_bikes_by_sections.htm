@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Bikes By... Sections</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Bikes By Type,Browsing Bicycles,Browsing Bikes,Browsing Motorcycles" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iautobikes_bikes_by_sections.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Bikes By... Sections</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="browse-sections.png" width="1008" height="448" border="0" alt="browse-sections"></p>
+<p>&nbsp;</p>
+<p>The 'Motorcycles By Make' and 'Motorcycles By Body Style' sections are <a href="browsing.htm">browsing</a> sections.</p>
+<p>&nbsp;</p>
+<p>Administrator can display browsing section in templates using the following code construction:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="browse"&nbsp;category_id="Motorcycle"&nbsp;fields="State"&nbsp;number_of_cols="4"&nbsp;browse_template="browse_motorcycles_by_state.tpl"}</span></p>
+<p>&nbsp;</p>
+<p>In the theme iauto_bikes_green browsing sections are shown in tabs:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="browsingTabs"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;ul&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#BrowseMotorcycleTab"&gt;[[Motorcycle&nbsp;by&nbsp;State]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#BrowseBicycleTab"&gt;[[Bicycle&nbsp;by&nbsp;State]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/ul&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="BrowseMotorcycleTab"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="browse"&nbsp;category_id="Motorcycle"&nbsp;fields="State"&nbsp;number_of_cols="4"&nbsp;browse_template="browse_motorcycles_by_state.tpl"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="BrowseBicycleTab"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="browse"&nbsp;category_id="Bicycle"&nbsp;fields="State"&nbsp;number_of_cols="4"&nbsp;browse_template="browse_bicycles_by_state.tpl"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p><span class="f_Heading3">How to Edit the Browsing Sections</span></p>
+<p>In order to edit the design of these section, you need to edit the files browse_motorcycles_by_state.tpl and browse_bicycles_by_state.tpl, which you can find in </p>
+<p>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine.</p>
+<p>You can also refer to the CSS styles which are specified in the template files for browsing.</p>
+<p>&nbsp;</p>
+<p>The captions of the browsing blocks are translatable and can be modified in the template homepage_main_content.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#BrowseMotorcycleTab"&gt;[[Motorcycle&nbsp;by&nbsp;State]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#BrowseBicycleTab"&gt;[[Bicycle&nbsp;by&nbsp;State]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can learn more about <a href="browsing.htm#browsingpage">how to create a browsing page</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

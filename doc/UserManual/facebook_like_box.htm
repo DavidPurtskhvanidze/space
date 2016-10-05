@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Facebook Like Box</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Facebook,Like Box,Social Plugin" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?facebook_like_box.htm"; }
+  else { parent.quicksync('a9.13'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Facebook Like Box</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="email_templates.htm">Previous</a>&nbsp;
+     <a href="facebook_twitter_and_openid_login.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>iLister has integrated Facebook Social Plugin — <a href="http://developers.facebook.com/docs/reference/plugins/like-box/" target="_blank" class="weblink">Like Box</a>, that enables <a href="https://www.facebook.com/help/174987089221178/" target="_blank" class="weblink">Facebook Page</a> owners to attract and gain likes from their own website.</p>
+<p>&nbsp;</p>
+<p>The like box enables people using your website to do the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>See how many people like the Page, and which of their friends like it, too.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Read recent posts from the Page.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Like the Page with one click, without needing to visit the Page.</td></tr></table></div><p>&nbsp;</p>
+<p>Please refer to the <a href="http://developers.facebook.com/docs/reference/plugins/like-box/" target="_blank" class="weblink">official Facebook Like Box</a> page to get the most recent information on Like Box features and options. There you can learn how to change the width and height of the FB Like Box section, as well as how to change other parameters.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">How To Manage The Like Box Section</span></p>
+<p>By default, the Like Box block is visible in the iLister_tabs_blue theme only.</p>
+<p>&nbsp;</p>
+<p><img src="facebook-like-box.png" width="444" height="276" border="0" alt="facebook-like-box" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>However, you can insert the section with FB Like Box to any other theme.</p>
+<p>&nbsp;</p>
+<p>First, you need to open the file <span class="f_Components">/modules/theme_iauto_tabs_blue/main/homepage_main_content.tpl</span> and copy the whole FB Like Box code to a desired template:<br>
+<span class="f_CodeExample">&lt;div id="fb-root"&gt;&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;script&gt;(function(d,&nbsp;s,&nbsp;id)&nbsp;{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;var&nbsp;js,&nbsp;fjs&nbsp;=&nbsp;d.getElementsByTagName(s)[0];</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;if&nbsp;(d.getElementById(id))&nbsp;return;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;js&nbsp;=&nbsp;d.createElement(s);&nbsp;js.id&nbsp;=&nbsp;id;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;js.src&nbsp;=&nbsp;"//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=195402287233378";</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&nbsp;&nbsp;fjs.parentNode.insertBefore(js,&nbsp;fjs);</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">}(document,&nbsp;'script',&nbsp;'facebook-jssdk'));&lt;/script&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="fb-like-box"&nbsp;data-href="http://www.facebook.com/worksforweb.classifieds"&nbsp;data-width="395"&nbsp;data-height="250"&nbsp;data-show-faces="true"&nbsp;data-stream="false"&nbsp;data-show-border="false"&nbsp;data-header="false"&gt;&lt;/div&gt;</span></p>
+<p>&nbsp;</p>
+<p>Then you should find the code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="fb-like-box"&nbsp;data-href="http://www.facebook.com/worksforweb.classifieds"&nbsp;data-width="395"&nbsp;data-height="250"&nbsp;data-show-faces="true"&nbsp;data-stream="false"&nbsp;data-show-border="false"&nbsp;data-header="false"&gt;</span></p>
+<p>&nbsp;</p>
+<p>and replace the URL <span class="f_CodeExample"><a href="http://www.facebook.com/worksforweb.classifieds" target="_blank" class="weblink">http://www.facebook.com/worksforweb.classifieds</a></span> with the URL of your Facebook page.<br>
+&nbsp;</p>
+<p>Afterwards you may need to add some styles to arrange the look of the Like Box in your theme and that's all — it will work.</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

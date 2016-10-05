@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Logo and Slogan</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Logo,Slogan" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?ilisterpets_logo_and_slogan.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Logo and Slogan</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="logo.png" width="1000" height="104" border="0" alt="logo"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3"><a href="configuration_wizard.htm">Logo</a></span></p>
+<p>The logo of iLister-based website is located in the header of each page.</p>
+<p>&nbsp;</p>
+<p>The file name for logotype is logo.png and it is located on your server at the iLister installation folder </p>
+<p><span class="f_Components">/modules/main/apps/FrontEnd/templates/_files/logo.png</span> </p>
+<p>Please note that different themes can use different logo files and thus you need to make sure that your {theme_name} folder correlates with the theme which logo should be changed.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="1" style="background-color: #ffff99; border: solid 1px #808080; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" style="border: none"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can learn more about themes and templates in the <a href="template_system_and_theme_management.htm#themes">Template System and Theme Management</a> section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>You can design your own logo file and upload it to the location specified above, under the same name, i.e. logo.png.</p>
+<p>&nbsp;</p>
+<p>In order to upload your own logo.png, you need to connect to your server via <a href="http://customers.worksforweb.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=77" target="_blank" class="weblink" title="FTP protocol and FTP clients">FTP</a> or via Control Panel (please ask your hosting administrator if your Control Panel has the option to work with file transferring).</p>
+<p>&nbsp;</p>
+<p>The position of logo file is specified by CSS style, like the following example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.pageHeaderLogo</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;inline-block;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin-left:&nbsp;20px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin-top:&nbsp;10px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>You can find the CSS file for your theme at <span class="f_Components">/modules/main/apps/FrontEnd/files/{theme_name}/design.css</span></p>
+<p>Please remember, that CSS styles are inherited from the parent theme and current theme of your site can use parent style which is not specified in its CSS file.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Slogan</span></p>
+<p>You can change the slogan text in <span class="f_ReferenceBlock">Admin Panel -&gt; Site Layout -&gt; Page Templates -&gt; page_parts/header_block.tpl.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="slogan"&gt;[[Pet&nbsp;Classifieds&nbsp;Demo&nbsp;Site]]&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>The properties of the slogan are specified as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.slogan</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">font-size:120%;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">font-weight:bold;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">left:250px;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">top:33px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

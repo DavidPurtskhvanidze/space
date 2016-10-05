@@ -1,0 +1,1 @@
+<input type="text" class="searchGeoLocation form-control" name="{$id}[geo][location]" value="{if isset($value.geo.location)}{$value.geo.location|escape}{/if}" {$parameters} placeholder="{$placeholder}" />

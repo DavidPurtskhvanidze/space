@@ -1,0 +1,33 @@
+.subscriptionPage .membershipPlanList li h3
+{
+	margin: 0;
+}
+
+.subscriptionPage .membershipPlanList li
+{
+	padding: 10px;
+	margin: 0 0 10px 0;
+	background: #eee;
+}
+
+.subscriptionPage .description
+{
+	margin: 10px 0;
+}
+
+.subscriptionPage .button
+{
+	margin: 10px 0 0 0;
+}
+
+.subscriptionPage .priceSubscriptionPeriodWrapper
+{
+	background: #f6f6f6;
+	padding: 10px;
+}
+
+.subscriptionPage .price
+{
+	font-size: 110%;
+	color: #17c917;
+}

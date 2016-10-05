@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Featured Listings Section</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Featured Listings Section" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?irealty_mobile_featured_listings_section.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Featured Listings Section</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="mobile-featured-section-horizontal.png" width="493" height="388" border="0" alt="mobile-featured-section-horizontal"></p>
+<p>&nbsp;</p>
+<p>In order to edit the look of the Featured Listings section you need to edit the template featured_listings.tpl in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine.</p>
+<p>&nbsp;</p>
+<p>The way how featured ads are displayed can be specified by the code in homepage.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="listing_feature_featured"&nbsp;function="featured_listings"&nbsp;featured_listings_template="featured_listings.tpl"&nbsp;number_of_rows="1"&nbsp;number_of_cols="3"}</span></p>
+<p>&nbsp;</p>
+<p>You need to place this code to the template of the page where you would like to see the Featured Ads section.</p>
+<p>&nbsp;</p>
+<p>You can change the number of rows and number of columns in the code to display as many ads as you wish.</p>
+<p><span class="f_CodeExample">{module name="listing_feature_featured" function="featured_listings" featured_listings_template="featured_listings.tpl" number_of_rows="3" number_of_cols="1"}</span></p>
+<p>will display</p>
+<p><img src="mobile-featured-section-vertical.png" width="160" height="458" border="0" alt="mobile-featured-section-vertical"></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

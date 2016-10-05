@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Manage Tree-type List</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Create Tree Field,Tree Field Import" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?manage_tree_list.htm"; }
+  else { parent.quicksync('a11.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Manage Tree-type List</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="add_new_category.htm">Previous</a>&nbsp;
+     <a href="edit_state_list.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>By default, iLister does not have a <a href="field_types.htm#tree">tree-type</a> field. However, you can easily create a tree-type filed, for example, StateProvince. This field can be either common field, or category specific for one category. Let's make it common in our example.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Add a New Tree Level</span></p>
+<p>&nbsp;</p>
+<p>Please go to Admin Panel -&gt; Categories -&gt; Edit Common Fields -&gt; Add a New Common Field -&gt; edit StateProvince.</p>
+<p><img src="add-tree-field.png" width="704" height="383" border="0" alt="add-tree-field"></p>
+<p>&nbsp;</p>
+<p>When you created the field clicking on the button "Add", you need to edit the field in order to complete the parameters for tree levels.</p>
+<p><img src="edit-tree-field.png" width="996" height="36" border="0" alt="edit-tree-field"></p>
+<p>&nbsp;</p>
+<p><img src="tree-field-parameters.png" width="596" height="528" border="0" alt="tree-field-parameters"></p>
+<p>When you saved the settings for levels, please edit the field again and follow the link "Edit Tree Values" in order to manage tree levels data.</p>
+<p>&nbsp;</p>
+<p>You can add data to tree-type field in two ways:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>you can <span style="font-weight: bold;">manually</span> fill in the form "Add a new Value"</td></tr></table></div><p><img src="manage-tree-field.png" width="791" height="796" border="0" alt="manage-tree-field"></p>
+<p>&nbsp;</p>
+<p>In addition, you can sort the values in <span style="font-weight: bold;">all</span> tree levels alphabetically ascending, or sort the values within the current tree level in ABC order ascending or descending.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>you can <span style="font-weight: bold;">import</span> the file with all data following the link "Import data from file". File can be either in CSV or XLS format.</td></tr></table></div><p><img src="import-tree-values.png" width="353" height="194" border="0" alt="import-tree-values"></p>
+<p>&nbsp;</p>
+<p>Here is how looks a sample import file:</p>
+<p><img src="tree_field_import.png" width="234" height="113" border="0" alt="tree_field_import"></p>
+<p>&nbsp;</p>
+<p>In the above case you need to specify the Starting Line as "2". Two States will be added to your database: California and Nevada; each of them will have 2 Provinces.</p>
+<p>&nbsp;</p>
+<p class="p_Caution"><span class="f_Caution">Note that the columns must be named StateProvince[1] and StateProvince[2] - depending on the number of tree levels which you have.</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

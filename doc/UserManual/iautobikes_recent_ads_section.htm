@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Recent Ads Section</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iautobikes_recent_ads_section.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Recent Ads Section</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="recent-ads-section-vertical.png" width="552" height="325" border="0" alt="recent-ads-section-vertical" style="margin:5px;"><span class="f_ImageCaption"> </span></p>
+<p>&nbsp;</p>
+<p>In order to edit the look of the Recent Ads section you need to edit the template recent_listings.tpl in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Recent Listings.</p>
+<p>&nbsp;</p>
+<p>The way how recent listings are displayed can be specified by the code in page_parts\left_block.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="recent_listings"&nbsp;recent_listings_template="recent_listings.tpl"&nbsp;number_of_rows="4"&nbsp;number_of_cols="1"}</span></p>
+<p>&nbsp;</p>
+<p>You need to place this code to the template of the page where you would like to see the Recent Ads section.</p>
+<p>&nbsp;</p>
+<p>You can change the number of rows and number of columns in the code to display as many ads as you wish.</p>
+<p><span class="f_CodeExample">{module name="recent_listings" function="recent_listings" recent_listings_template="recent_listings.tpl" number_of_rows="2" number_of_cols="3"}</span></p>
+<p>will display</p>
+<p><img src="recent-ads-section-horizontal.png" width="558" height="204" border="0" alt="recent-ads-section-horizontal" style="margin:5px;"></p>
+<p>&nbsp;</p>
+<p>Please note that it's available for non-responsive themes only.</p>
+<p>In responsive themes the number of rows and number of columns are calculated automatically depending on screen resolution. </p>
+<p>&nbsp;</p>
+<p>Also you can specify the category for Featured Listings and Recent Listings blocks by setting "category_id":</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="2"&nbsp;number_of_cols="2"&nbsp;category_id="Bikes"}</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

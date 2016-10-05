@@ -1,0 +1,66 @@
+.settingPropertiesWrapper.ui-accordion
+{
+	width: 900px;
+}
+.settingPropertiesWrapper.ui-accordion .ui-accordion-header
+{
+	background: #F9F9F9;
+	border-color: #1772DA;
+}
+.settingPropertiesWrapper.ui-accordion .ui-accordion-header.ui-state-active
+{
+	color: #fff;
+	background: url("active_menu_item_bg.png") repeat-x scroll left top #1772DA;
+}
+.settingPropertiesWrapper.ui-accordion .ui-accordion-header.ui-state-active a:link,
+.settingPropertiesWrapper.ui-accordion .ui-accordion-header.ui-state-active a:visited
+{
+	color: #fff;
+}
+
+.settingPropertiesWrapper .hint
+{
+	width: auto;
+}
+.settingPropertiesWrapper table.properties
+{
+	margin: 0;
+}
+.settingPropertiesWrapper table.properties th
+{
+	padding: 15px 0 5px 0;
+	border-bottom: 1px solid #999;
+}
+.settingPropertiesWrapper table.properties td:first-child
+{
+	padding-left: 10px;
+	width: 50%;
+	max-width: 200px;
+}
+.closeButton
+{
+	position: absolute;
+	right: 5px;
+	top: 3px;
+}
+
+.settingPropertiesWrapper input[type="submit"]
+{
+	margin: 10px 0 10px 0;
+}
+
+#stepsLinks li.list-group-item:hover
+{
+	cursor: pointer;
+	background-color: #D9EDF7;
+} 
+
+#stepsLinks li.list-group-item.active
+{
+	background-color: #438EB9;
+} 
+
+#stepsContent
+{
+	display: none;
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>SmsCoin Payment Gateway</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Payment Gateway,Sms Billing,SmsCoin" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?smscoin_payment_gateway.htm"; }
+  else { parent.quicksync('a10.15'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">SmsCoin Payment Gateway</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="sitemap.htm">Previous</a>&nbsp;
+     <a href="sub_administrator_accounts.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Caution"><span class="f_Caution">The SmsCoin Payment Gateway is an add-on and is </span><span class="f_Caution" style="font-weight: bold;">not</span><span class="f_Caution"> a part of iLister default package for distribution. It can be </span><span class="f_Caution" style="font-weight: bold;">installed separately</span><span class="f_Caution"> for your iLister-based website. </span><span class="f_Caution">Please <a href="http://www.worksforweb.com/company/contact-us/pre-sales-inquiry/" target="_blank" class="weblink">request the installation conditions</a> from</span><span class="f_Caution"> our Sales Dept.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Overview</span></p>
+<p>SmsCoin is a micro-payment system that provides easily accessible payments through SMS billing for online services.</p>
+<p>&nbsp;</p>
+<p>Currently an SMS aggregator SmsCoin provides premium SMS payment solutions across <a href="http://smscoin.com/en/info/worldwide/" target="_blank" class="weblink">98 countries</a> supporting hundreds of <a href="http://smscoin.com/en/info/sms-operators/" target="_blank" class="weblink">mobile carriers</a> worldwide. There is a choice of several short codes operating with different SMS cost in each country. In vast majority of the countries connection of mobile payments does not require any additional approval, short codes become available for your project immediately following an SMS payment service set up.</p>
+<p>&nbsp;</p>
+<p>SmsCoin is called a micro-payment system due to the fact that it allows making payments of a limited value amount for each transaction. This limitation relates to different SMS payment policies of mobile providers. Please learn more about <a href="http://smscoin.com/en/info/worldwide/" target="_blank" class="weblink">tariff rates</a> at SmsCoin website. You can also contact SmsCoin support service to find out how to correctly configure chargers on your website to stay within allowed transaction value.</p>
+<p>&nbsp;</p>
+<p>You can learn more about SmsCoin on their official website at <a href="http://smscoin.com/en/" target="_blank" class="weblink">http://smscoin.com/en/</a>. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Configuring sms:bank Interface</span></p>
+<p>Although SmsCoin provides several services, we've integrated the <a href="http://smscoin.com/en/info/smsbank/" target="_blank" class="weblink">sms:bank service</a> with iLister.</p>
+<p>&nbsp;</p>
+<p>In order to use sms:bank on your website you need to have a valid SmsCoin account. You can learn how to register an account on the <a href="https://smscoin.com/en/account/register/" target="_blank" class="weblink">SmsCoin Registration Page</a>.</p>
+<p>&nbsp;</p>
+<p>When the account is registered, you need to create a bank on the <a href="https://smscoin.com/en/purses/" target="_blank" class="weblink">Purses Page</a>.</p>
+<p>&nbsp;</p>
+<p>After login and proceeding to the "Purses" page please click the link "Add". You will be redirected to the "Add sms:bank" page.</p>
+<p><img src="smscoin-bank-configuration-page.zoom80.png" width="967" height="326" border="0" alt="smscoin-bank-configuration-page" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>Please fill in the following fields:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Name</span><span class="f_List"> — a desired name for the bank.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Secret code</span><span class="f_List"> — the secret key which you should specify for this bank.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Countries</span><span class="f_List"> — please select the countries available for your payments.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Success URL</span><span class="f_List"> — the URL on your website where SmsCoin redirects users in case of successful payment. Please insert there </span><span class="f_Components">http://www.yourwebsite.com/system/payment/callback/smscoin/</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Success URL method</span><span class="f_List"> — select "Post"</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Fail URL</span><span class="f_List"> — the URL on your website where SmsCoin redirects users in case of payment cancellation. Please insert there </span><span class="f_Components">http://www.yourwebsite.com/system/payment/callback/smscoin/</span><span class="f_List"> </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Fail URL method</span><span class="f_List"> — select "Post"</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Result URL</span><span class="f_List"> — SmsCoin payment processor URL on your website. Please insert there </span><span class="f_Components">http://www.yourwebsite.com/system/payment/callback/smscoin/result</span><span class="f_List"> </span>(please note that there is no / at the end)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Result URL method</span><span class="f_List"> — select "Post"</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Timeout </span><span class="f_List">— 0</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Active </span><span class="f_List">— check the option to make the bank active.</span></td></tr></table></div><p>&nbsp;</p>
+<p>After the form is completed, please click the button "Save".</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><a name="webmoneypaymentgatewayconfiguration"></a><span class="f_Heading3">SmsCoin Payment Gateway Configuration</span></p>
+<p>The SmsCoin Payment Gateway can be configured in the Admin Panel -&gt; Payment Management -&gt; Payment Gateways -&gt; SmsCoin -&gt; Configure</p>
+<p>&nbsp;</p>
+<p><img src="smscoin-configuration-link.png" width="292" height="441" border="0" alt="smscoin-configuration-link" style="margin:5px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="smscoin-configuration-form.png" width="311" height="215" border="0" alt="smscoin-configuration-form" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>Please fill in the configuration form with the following data:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">SmsCoin Bank ID</span><span class="f_List"> — the number of your bank, which you can see in your bank settings at the SmsCoin "Manage sms:bank" page.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">SmsCoin Bank Secret</span><span class="f_List"> — the secret code which you specified in your bank settings.</span></td></tr></table></div><p>&nbsp;</p>
+<p class="p_Caution"><span class="f_Caution">Please keep in mind that there is no testing mode in SmsCoin. For testing transaction please contact SmsCoin technical support service.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

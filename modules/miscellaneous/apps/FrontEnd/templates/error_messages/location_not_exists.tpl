@@ -1,0 +1,1 @@
+[[The name of the location entered in]] '[[$fieldCaption]]' [[cannot be found within known geographic locations. If you are sure that there is no typo in the name, please ask the website administrator to add this location on the 'Geographical Locations' page.]]

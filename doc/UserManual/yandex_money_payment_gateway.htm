@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Yandex Money Payment Gateway</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Payment Gateways,Yandex Money" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?yandex_money_payment_gateway.htm"; }
+  else { parent.quicksync('a10.17'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Yandex Money Payment Gateway</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="sub_administrator_accounts.htm">Previous</a>&nbsp;
+     <a href="webmoney_payment_gateway.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Caution"><span class="f_Caution">The Yandex Money Payment Gateway is an add-on and is </span><span class="f_Caution" style="font-weight: bold;">not</span><span class="f_Caution"> a part of iLister default package for distribution. It can be </span><span class="f_Caution" style="font-weight: bold;">installed separately</span><span class="f_Caution"> for your iLister-based website. </span><span class="f_Caution">Please <a href="http://www.worksforweb.com/company/contact-us/pre-sales-inquiry/" target="_blank" class="weblink">request the installation conditions</a> from</span><span class="f_Caution"> our Sales Dept.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Overview</span></p>
+<p>Yandex.Money is a convenient and safe payment system that allows users to make purchases securely online.</p>
+<p>Since it was developed primarily for the operating on the territory of the Russian Federation, Yandex Money does not provide the option for currency conversion, and all sums are considered to be in Russian Rubles (RUR).</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Obtaining Yandex Money API</span></p>
+<p>In order to use the Yandex Money Gateway on your iLister-based website, you need to have a valid Yandex Money account and add there the application based on the Yandex Money API.</p>
+<p>&nbsp;</p>
+<p>You can do this at the <a href="https://money.yandex.ru/" target="_blank" class="weblink" title="https://money.yandex.ru">Yandex Money website</a> -&gt; Логин (Login) -&gt; Управление счетом (Manage Account) -&gt; click on the "Внешние приложения" header (External Applications) -&gt; Подробнее (Read More) -&gt; API для управления счетом (Account Management API) -&gt; Использовать API для управления счетом (Use API to manage account) -&gt; follow the link "<a href="https://sp-money.yandex.ru/myservices/new.xml" target="_blank" class="weblink">Получите</a> уникальный идентификатор своего сервиса" and complete the form:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Название вашего приложения — API name</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Адрес вашего сайта — the URL of your website</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Redirect URI — http://your-website-url.com/system/payment_gateway_yandex_money/proceed_payment</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Использовать проверку подлинности приложения — we recommend to check this option.</td></tr></table></div><p>&nbsp;</p>
+<p>After the form is completed, please click the button "Подтвердить" (Confirm).</p>
+<p>&nbsp;</p>
+<p>You will see the data with:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Идентификатор приложения — application identifier</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>OAuth2 client_secret — secret word</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Yandex Money Payment Gateway Configuration</span></p>
+<p>The Yandex Money Payment Gateway can be configured in the Admin Panel -&gt; Payment Management -&gt; Payment Gateways -&gt; Yandex Money -&gt; Configure</p>
+<p>&nbsp;</p>
+<p><img src="yandex-money-configuration-link.png" width="723" height="498" border="0" alt="yandex-money-configuration-link" style="margin:5px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="yandex-money-configuration-form.png" width="890" height="504" border="0" alt="yandex-money-configuration-form" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>Please fill in the configuration form with the following data:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Account Number — the number of your Yandex Money account</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Client ID — paste the application identifier ("Идентификатор приложения")</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Secret Word — paste the "OAuth2 client_secret"</td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

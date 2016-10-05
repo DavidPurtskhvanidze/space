@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Content Management</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Business Catalog,Content Management,Online Polls,Publications,Site Pages,Static Content" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?content_management.htm"; }
+  else { parent.quicksync('a4.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Content Management</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="managing_site_pages.htm">Previous</a>&nbsp;
+     <a href="listing_management.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Besides listings and listing-related functions and pages, iLister provides the ability for the administrator to add another type of content to your site.</p>
+<p>&nbsp;</p>
+<p>You can find the sections to manage this content in Admin Panel -&gt; Content Management:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Business Catalog</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Online Polls</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>Publications</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>Static Content</td></tr></table></div><p>&nbsp;</p>
+<p>You can use HTML format for these pages or format them with a WYSIWYG editor. You can also add images and embedded objects in these pages.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="businesscatalog"></a><span class="f_Heading3">Business Catalog</span></p>
+<p>Business catalog is the list of your partners, affiliates or other companies which you want to represent on your site. Using the <a href="business_catalog.htm">Business Catalog module</a> you can join similar companies or individuals to a category (e.g. Dealerships, Realtors, Agencies, Affiliates, etc.) and create as many categories as you wish.</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption" style="margin: 0px 0px 0px 11px;"><span class="f_ImageCaption">Admin Panel</span></p>
+<p><img src="business-catalog-admin-panel.png" width="626" height="725" border="0" alt="business-catalog-admin-panel"></p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption" style="margin: 0px 0px 0px 1px;"><span class="f_ImageCaption">Front-end</span></p>
+<p><img src="business-catalog-front-end.png" width="802" height="367" border="0" alt="business-catalog-front-end"></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How to use it in templates</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="business_catalog"&nbsp;function="show_business_catalog"&nbsp;category_id="Dealerships"&nbsp;record_id="1"}</span></p>
+<p>You can place this code in any template (like default.tpl or default_view.tpl) and it will display the information of the company "WorksForWeb" (or other company which you add, its record_id is "1", you can see it when you put your mouse over the "Edit" button next to WorksForWeb caption) of the Dealerships category. You can omit <span class="f_Components">category_id</span> and <span class="f_Components">record_id</span> parameters.</p>
+<p>&nbsp;</p>
+<p>You can use the same parameters if you like to create a separate <a href="managing_site_pages.htm">Site Page</a> for Business Catalog section.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="onlinepolls"></a><span class="f_Heading3">Online Polls</span></p>
+<p>You can gather visitor opinions or perform other type of research by creating polls.</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Admin Panel</span></p>
+<p class="p_ImageCaption"><img src="online-poll-admin-panel.png" width="379" height="652" border="0" alt="online-poll-admin-panel"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Front-End</span></p>
+<p><img src="online-poll-front-end.png" width="694" height="625" border="0" alt="online-poll-front-end"></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How to use it in templates</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="poll"&nbsp;function="poll_form"}</span></p>
+<p>There are more functions of the <a href="poll.htm">module "poll"</a>, and they can have more parameters which you can also use.</p>
+<p>&nbsp;</p>
+<p>You can place this code in any template (like homepage_main_content.tpl or quick_search.tpl) and you can use the same parameters if you like to create a separate <a href="managing_site_pages.htm">Site Page</a> for Online Poll section.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="publications"></a><span class="f_Heading3">Publications</span></p>
+<p>The <a href="publications.htm">Publications module</a> makes a content available to visitors and users. You can publish periodic articles, news, reviews and announcements.</p>
+<p>Also, you can add the picture to every publication in Admin Panel -&gt; Content Management -&gt; Publications that will be displayed in the list of publications:  </p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Front-End</span></p>
+<p><img src="publications-front-end.zoom94.png" width="1108" height="384" border="0" alt="publications-front-end"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Admin Panel</span></p>
+<p><img src="publications-admin-panel.png" width="707" height="1067" border="0" alt="publications-admin-panel"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How to use it in templates</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="publications"&nbsp;function="show_publications"&nbsp;category_id="News"&nbsp;article_id="7"}</span></p>
+<p>You can place this code in a template and it will display the article "11 Nov - Our redesigned corporate website released" (its ID is "7", you can see it when you put your mouse over the "Edit" button next to article's caption) of the News category. You can omit <span class="f_Components">category_id</span> and <span class="f_Components">article_id</span> parameters.</p>
+<p>&nbsp;</p>
+<p>You can use the same parameters if you like to create a separate <a href="managing_site_pages.htm">Site Page</a> for Publications section.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="staticcontent"></a><span class="f_Heading3">Static Content</span></p>
+<p><a href="static_content.htm">Static Content module</a> can be used for the information that is rarely modified like the "About Us" page or "Contact Us".</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Front-End</span></p>
+<p><img src="static-content-front-end.png" width="1005" height="178" border="0" alt="static-content-front-end"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption">Admin Panel</span></p>
+<p><img src="static-content-admin-panel.png" width="844" height="706" border="0" alt="static-content-admin-panel"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How to use it in templates</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="static_content"&nbsp;function="show_static_content"&nbsp;pageid="About"}</span></p>
+<p>You can place this code in template and you can use the same parameters if you like to create a separate <a href="managing_site_pages.htm">Site Page</a> for a Static Content page.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><OBJECT id="mediaPlayer" width="640" height="390"
+        classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95"
+        codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+        standby="Loading //www.youtube.com/v/3u-x_euoxpk..."
+        type="application/x-oleobject">
+        <param name="fileName" value="//www.youtube.com/v/3u-x_euoxpk">
+        <param name="autoStart" value="True">
+        <param name="showControls" value="False">
+        <param name="loop" value="False">
+        <EMBED type="application/x-mplayer2"
+               pluginspage="http://microsoft.com/windows/mediaplayer/en/download/"
+               id="mediaPlayer" name="mediaPlayer" displaysize="4" autosize="-1"
+               bgcolor="#FFFFFF" showtracker="-1"
+               showdisplay="0" showstatusbar="-1" videoborder3d="-1" width="640" height="390"
+               src="//www.youtube.com/v/3u-x_euoxpk" autostart="1" showcontrols="0" loop="0">
+        </EMBED>
+</OBJECT></p>
+
+</td></tr></table>
+
+</body>
+</html>

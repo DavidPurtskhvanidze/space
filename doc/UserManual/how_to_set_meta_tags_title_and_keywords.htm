@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>How to set TITLE and KEYWORDS meta tags</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Keywords,Meta Tags,Title" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?how_to_set_meta_tags_title_and_keywords.htm"; }
+  else { parent.quicksync('a13.11'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">How to set TITLE and KEYWORDS meta tags</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="how_to_translate_the_field_description.htm">Previous</a>&nbsp;
+     <a href="the_poll_block_is_not_displayed.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>In templates you have a code like the following in listing_details.tpl or default_view.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{title}[[$listing.PropertyName:raw]],&nbsp;[[$listing.City:raw]],&nbsp;[[$listing.type.caption:raw]],&nbsp;[[$listing.PropertyType:raw]]{/title}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{keywords}[[$listing.PropertyName:raw]],&nbsp;[[$listing.City:raw]],&nbsp;[[$listing.District:raw]],&nbsp;[[$listing.type.caption:raw]],&nbsp;[[$listing.PropertyType:raw]]{/keywords}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{description}[[$listing.PropertyName:raw]],&nbsp;[[$listing.type.caption:raw]],&nbsp;[[$listing.City:raw]],&nbsp;[[$listing.PropertyType:raw]],&nbsp;[[$listing.nearestMRT:raw]]&nbsp;{/description}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Or if you want your /browse_by_state/ Site Page to display the "State" field value in these tags, you need to do the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>Add the following code in browse_homes_by_state.tpl:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">{title}[[$listing.State:raw]]{/title}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{keywords}[[$listing.State:raw]]{/keywords}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{description}[[$listing.State:raw]]{/description}</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Here at http://yoursite.com/admin/site_pages/?action=edit_page&amp;uri=/browse_homes_by_state/</td></tr></table></div><p style="margin: 0px 0px 0px 15px;">in the Keywords and Description fields add:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Browse&nbsp;Homes&nbsp;by&nbsp;State</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>If you like to display title and keywords in html for search robots, you need to put the following code into the &lt;head&gt; container of homepage_main_content.tpl, default.tpl and blank.tpl:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="keywords"&nbsp;content="{$KEYWORDS}"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="description"&nbsp;content="{$DESCRIPTION}"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;title&gt;{$TITLE}&lt;/title&gt;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The page source will display:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;head&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="keywords"&nbsp;content="Browse&nbsp;Homes&nbsp;by&nbsp;State&nbsp;Louisiana"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;meta&nbsp;name="description"&nbsp;content="Browse&nbsp;Homes&nbsp;by&nbsp;State&nbsp;Louisiana"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;title&gt;Browse&nbsp;Homes&nbsp;by&nbsp;State&nbsp;Louisiana&lt;/title&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/head&gt;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

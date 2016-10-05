@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Logo, Slogan and Keyword Search</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Keyword Search,Logo,Slogan" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iautobikes_logo_and_slogan.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Logo, Slogan and Keyword Search</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><a href="logo.png"><img id="TOGGLE0186A1" class="image-toggle" src="logo.zoom90.png" border="0" alt="logo.zoom90"></a></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3"><a href="configuration_wizard.htm">Logo</a></span></p>
+<p>The logo of iLister-based website is located in the header of each page.</p>
+<p>&nbsp;</p>
+<p>The file name for logotype is logo.png and it is located on your server at the iLister installation folder </p>
+<p><span class="f_Components">/modules/main/apps/FrontEnd/templates/_files/logo.png</span></p>
+<p>Please note that different themes can use different logo files and thus you need to make sure that your {theme_name} folder correlates with the theme which logo should be changed.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="1" style="background-color: #ffff99; border: solid 1px #808080; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:middle;">
+<td valign="middle" style="border: none"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can learn more about themes and templates in the <a href="template_system_and_theme_management.htm#themes">Template System and Theme Management</a> section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>You can design your own logo file and upload it to the location specified above, under the same name, i.e. logo.png.</p>
+<p>&nbsp;</p>
+<p>In order to upload your own logo.png, you need to connect to your server via <a href="http://customers.worksforweb.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=77" target="_blank" class="weblink" title="FTP protocol and FTP clients">FTP</a> or via Control Panel (please ask your hosting administrator if your Control Panel has the option to work with file transferring).</p>
+<p>&nbsp;</p>
+<p>The position of logo file is specified by CSS style, like the following example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.logo</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;35px&nbsp;0&nbsp;0&nbsp;10px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>You can find the CSS file for your theme at <span class="f_Components">/modules/main/apps/FrontEnd/files/{theme_name}/design.css</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Slogan</span></p>
+<p>You can change the slogan text in <span class="f_ReferenceBlock">Admin Panel -&gt; Site Layout -&gt; Page Templates -&gt; page_parts/header_block.tpl.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="slogan"&nbsp;&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">[[Bike&nbsp;Classifieds&nbsp;Demo&nbsp;Site]]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>The properties of the slogan are specified as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.slogan</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;170%;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#ddd;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;top:&nbsp;80px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;left:&nbsp;10px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_Heading3">Keyword&nbsp;Search</span></p>
+<p>The Keyword Search form allows visitors to find listings with desired criteria with one click from your homepage by specifying desired keywords.</p>
+<p>&nbsp;</p>
+<p>The template for Keyword Search form is located in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; keyword_search.tpl.</p>
+<p>There you can modify the components of the Keyword Search form.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Criterion / Field</span></p>
+<p>You can add as many fields on the search form as you wish. All you need to do is to follow the rules when adding a new field. You can use the code of existing fields as an example of how to add more fields/criteria.</p>
+<p>&nbsp;</p>
+<p>For example, the code for zip radius search is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;td&gt;[[FormFieldCaptions!Search&nbsp;Within]]:&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;caption&nbsp;for&nbsp;the&nbsp;field</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;td&gt;{search&nbsp;property=ZipCode}&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;ID&nbsp;of&nbsp;the&nbsp;field</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can find the templates for all field types in the <a href="field_types.htm">Field Types</a> section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','logo.zoom90.png','hm.src1','logo.png');
+</script>
+</body>
+</html>

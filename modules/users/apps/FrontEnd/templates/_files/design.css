@@ -1,0 +1,102 @@
+.userSearchPage .formFields ul
+{
+	max-width: 600px;
+}
+.userSearchPage .fieldControl,
+.userSearchPage .fieldControl label
+{
+	display: inline-block;
+}
+.userSearchPage .fieldControl:nth-child(odd)
+{
+	width: 340px;
+}
+*[lang="ru"] .userSearchPage .fieldControl:nth-child(odd)
+{
+	width: 330px;
+}
+.userSearchPage .fieldControl:nth-child(odd) label
+{
+	width: 110px;
+}
+*[lang="ru"] .userSearchPage .fieldControl:nth-child(odd) label
+{
+	width: 120px;
+}
+.userSearchPage .fieldControl:nth-child(even) label
+{
+	width: 70px;
+}
+*[lang="ru"] .userSearchPage .fieldControl:nth-child(even) label
+{
+	width: 80px;
+}
+.userSearchPage .fieldControl input
+{
+	width: 150px;
+}
+.userSearchPage .fieldControl select
+{
+	width: 155px;
+}
+.userSearchPage .fieldControl.DealershipName label,
+.userSearchPage .fieldControl.AgencyName label
+{
+	display: block;
+	width: auto;
+}
+.userSearchPage .fieldControl.DealershipName input,
+.userSearchPage .fieldControl.AgencyName input,
+.userSearchPage .fieldControl.keywordField input
+{
+	width: 570px;
+}
+.labelDealershipName,
+.fieldDealershipNameContainer,
+.labelAgencyName,
+.fieldAgencyNameContainer
+{
+	float: left;
+}
+
+div.userSearchPage li.fieldControl.DealershipName label,
+div.userSearchPage li.fieldControl.AgencyName label
+{
+	margin: 0 11px 10px 0px;
+}
+div.userSearchPage li.fieldControl.AgencyName label
+{
+	width: 110px;
+}
+*[lang="ru"] div.userSearchPage li.fieldControl.DealershipName label,
+*[lang="ru"] div.userSearchPage li.fieldControl.AgencyName label
+{
+	width: 114px;
+}
+
+div.userSearchPage li.fieldControl.DealershipName,
+div.userSearchPage li.fieldControl.AgencyName
+{
+	width: 100%;
+}
+*[lang="ru"] div.userSearchPage li.fieldControl.DealershipName,
+*[lang="ru"] div.userSearchPage li.fieldControl.AgencyName
+{
+	width: 100%;
+}
+
+.userSearchPage .fieldControl.DealershipName input,
+.userSearchPage .fieldControl.AgencyName input
+{
+	width: 455px;
+}
+*[lang="ru"] .userSearchPage .fieldControl.DealershipName input,
+*[lang="ru"] .userSearchPage .fieldControl.AgencyName input
+{
+	width: 440px;
+}
+
+div.userSearchPage .fieldGroupCaption.Location
+{
+	margin: 0px 0 5px
+}

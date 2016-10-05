@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Initial Software Configuration</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?initial_software_configuration.htm"; }
+  else { parent.quicksync('a3.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Initial Software Configuration</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="manual_installation.htm">Previous</a>&nbsp;
+     <a href="installation_troubleshooting.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>When you start working on your site, its content, look and add listings there, please configure the following <a href="system_settings.htm#generalsettings">general settings</a> in Admin Panel:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td><a href="system_settings.htm#listingpicturessize">Listing Picture Width</a></td></tr></table></div><p style="margin: 0px 0px 0px 14px;"><a href="system_settings.htm#listingpicturessize">Listing Picture Height</a></p>
+<p style="margin: 0px 0px 0px 14px;"><a href="system_settings.htm#listingpicturessize">Listing Thumbnail Width</a></p>
+<p style="margin: 0px 0px 0px 14px;"><a href="system_settings.htm#listingpicturessize">Listing Thumbnail Height</a></p>
+<p>You need to specify the size for images and thumbnails because iLister system resizes images when they are uploaded to a listing. In case you created listings and uploaded images there and THEN change the size for pictures and thumbnails, these new sizes will not be applied to existing images. You will have to re-upload all existing images in order to get pictures and thumbnails of a new sizing.</p>
+<p>&nbsp;</p>
+<p>In case you changed the size of Listing Picture Width and Listing Picture Height, you need to change the size of a Slideshow player so it can accommodate listing images. You can adjust the player size in /vendor/jquery/css/basic.css:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">#simplemodal-container&nbsp;{background-color:#fff;&nbsp;border:3px&nbsp;solid&nbsp;#ccc;&nbsp;margin:&nbsp;10px&nbsp;0&nbsp;10px&nbsp;0;&nbsp;height:&nbsp;440px;&nbsp;width:440px&nbsp;}</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td><a href="system_settings.htm#listingpicturesstoragemethod">Listing Picture Storage Method</a></td></tr></table></div><p style="margin: 0px 0px 0px 15px;">It is better to keep all images in one place: either to store them in the File System, or save them in the Database. When you switch the method of picture storage, old images do not migrate to a new location.</p>
+<p style="margin: 0px 0px 0px 15px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td><a href="system_settings.htm#watermarksetting">Watermark image &amp; Watermark opacity</a></td></tr></table></div><p style="margin: 0px 0px 0px 16px;">You need to upload a desired image for watermark and configure its opacity before uploading pictures to listings. The watermark image is applied to a picture when it is uploaded to a listing. Thus when you change the watermark image, a new watermark will not be applied to existing listing pictures and you will need to re-upload them in order to the changes took an effect.</p>
+<p style="margin: 0px 0px 0px 16px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>Specify the <a href="system_settings.htm#numberofdayspriortoexpiration">number of days</a> between listing or subscription expiration and the date of related notifications sent.</td></tr></table></div><p style="margin: 0px 0px 0px 16px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">5.</span></td><td>Create a <a href="template_system_and_theme_management.htm#thememanagement">custom theme</a> for your site</td></tr></table></div><p style="margin: 0px 0px 0px 16px;">This will help you to avoid problems with future iLister upgrades and customizations. Please read all articles in the "Basic Concepts" section to understand how iLister works and how to use it well:</p>
+<p style="margin: 0px 0px 0px 16px;"><a href="template_system_and_theme_management.htm#themes">Themes</a></p>
+<p style="margin: 0px 0px 0px 16px;"><a href="template_system_and_theme_management.htm#templateidentification">Templates</a></p>
+<p style="margin: 0px 0px 0px 16px;"><a href="template_system_and_theme_management.htm#imagesandstylesheets">Images and Styles</a></p>
+<p style="margin: 0px 0px 0px 16px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">6.</span></td><td>Edit the content of Static Pages "About Us" and "Contact Us". To change their texts go to the Admin Panel, then click "Content Management" then "Static Content" and then click on the "Edit" button across the relevant page item in the table (either "About" or "Contact").</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">7.</span></td><td>Configure the Payment Gateways in Admin Panel -&gt; Payment Management -&gt; Payment Gateways.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">8.</span></td><td>Specify the content of the "Wire Transfer Payment" page. You can do this through Admin Panel selecting the section "Module Templates", then "Payment" and clicking the "Edit" button for the "wire_transfer.tpl" template.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">9.</span></td><td>Define the <a href="seo_data_included_in_listing_url.htm">SEO Data Included in Listing URL</a> and <a href="listing_caption.htm">Listing Caption</a> for each category of your site.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">10.</span></td><td>Get the <a href="google_maps_api_key.htm">Google Maps API key</a> to enable map display on the Listing Details page.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">11.</span></td><td>Set up <a href="facebook_twitter_and_openid_login.htm">Facebook and Twitter connection</a> setting in order your visitors can use their Facebook and Twitter accounts to sign in to your website.</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">12.</span></td><td> Enable <a href="repost_listings_and_publications_in_facebook_and_twitter.htm">repost of listings and publication</a> from your website on Facebook and Twitter.</td></tr></table></div>
+</td></tr></table>
+
+</body>
+</html>

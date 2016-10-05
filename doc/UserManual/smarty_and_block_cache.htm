@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Smarty and Block cache</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?smarty_and_block_cache.htm"; }
+  else { parent.quicksync('a9.30'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Smarty and Block cache</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="seo_data_included_in_listing_url.htm">Previous</a>&nbsp;
+     <a href="recent_listings.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading2"><span class="f_Heading2">Smarty Cache</span></p>
+<p style="line-height: 1.15;">Smarty caches the information, which is often displayed, in order to reduce the time required for displaying the site page.</p>
+<p style="line-height: 1.15;">It has the link "Clear Cache" which deletes temporary cache files of Smarty template processor. </p>
+<p style="line-height: 1.15;">You may need to use this feature when you suspect that the changes which you made in templates are not actually displayed on your website. </p>
+<p style="line-height: 1.15;">When you modified a template, Smarty should update related caching file, but sometimes it does not. In this case you see an old file, and not an actual new version of the file. That is why you can clear cache and this will resolve the conflict between the real file and its old cached version.</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Block Cache</span></p>
+<p style="line-height: 1.15;">The Block Cache option is designed to speed up loading of the front page. </p>
+<p style="line-height: 1.15;">The contents of various blocks on the front page is cached (e.g. Recent Ads, Browse by block, etc.). </p>
+<p style="line-height: 1.15;">When the cache option is ON, data in those blocks is cached and the homepage load speed increases.</p>
+<p style="line-height: 1.15;">You can set cache refresh intervals independently for each block in the relevant templates.</p>
+<p style="line-height: 1.15;">If you want to add cache to block, you need to add <span class="f_CodeExample">cached=true cacheLifeTime='1D' </span>where</p>
+<p style="line-height: 1.15;">1M - 1 month</p>
+<p style="line-height: 1.15;">1D - 1 day</p>
+<p style="line-height: 1.15;">1H - 1 hour</p>
+<p style="line-height: 1.15;">1 - 1 minute</p>
+<p style="line-height: 1.15;">The result will look like </p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;cached=true&nbsp;cacheLifeTime='60'&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="1"&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">number_of_cols="4"&nbsp;do_not_modify_meta_data=true}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>There is also an ability to turn on/off the block cache of homepage by clicking on "Block cache on the main page".</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">The Administrator can clear cache and turn on/off the homepage block cache in Admin Panel &gt; System Configuration &gt; System Settings &gt; Cache</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p><img src="block-cache.zoom82.png" width="600" height="522" border="0" alt="block-cache"></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

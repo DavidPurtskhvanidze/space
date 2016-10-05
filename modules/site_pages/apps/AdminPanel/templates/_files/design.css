@@ -1,0 +1,52 @@
+.sitePages label {
+    display: block;
+    float: left;
+    padding: 0pt 1em .5em 0pt;
+    padding-top: 0pt;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0pt;
+}
+.columnSelectionCheckboxes{
+    position: relative;
+}
+
+.button{
+    display: block;
+    clear: both;
+}
+
+.filterForm h2
+{
+    margin-top: 10px;
+    padding: 0 0 0 15px;
+    background: url('menu_caption_arrow.png') left center no-repeat;
+    color: #1772DA;
+    cursor: pointer;
+}
+.filterForm h2.active
+{
+    background: url('active_menu_caption_arrow.png') left center no-repeat;
+}
+
+.columnSorted
+{
+    padding: 0 0 0 15px;
+    color: #1772DA;
+}
+
+.columnSorted.asc
+{
+    background: url('menu_caption_arrow_light_down.png') left center no-repeat;
+}
+
+.columnSorted.desc
+{
+    background: url('menu_caption_arrow_light_up.png') left center no-repeat;
+}
+
+.addNewSitePage
+{
+    padding-bottom: 10px;
+    display: block;
+}

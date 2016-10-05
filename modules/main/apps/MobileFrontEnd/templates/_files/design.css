@@ -1,0 +1,599 @@
+/* Sticky footer */
+.wrap
+{
+	min-height: 100%;
+}
+.main
+{
+	overflow:auto;
+}
+.main.long
+{
+	padding-bottom: 96px;
+}
+
+/* footer */
+.authorizationControls
+{
+	color: #bbb;
+	font-size: 90%;
+}
+.authorizationControls a
+{
+	color: #fff;
+}
+.authorizationControls .delimiter,
+.footerRedirectLinks .delimiter
+{
+	text-align: center;
+	width: 6%;
+	float: left;
+}
+.authorizationControls .user,
+.footerRedirectLinks .mobileWebsite
+{
+	width: 47%;
+	text-align: right;
+	float: left;
+}
+.authorizationControls .logout,
+.footerRedirectLinks .mainWebsite
+{
+	width: 47%;
+	text-align: left;
+	float: left;
+}
+.authorizationControls .user .userNameWithLogo
+{
+	background: url(user.gif) no-repeat left;
+	padding: 0 0 0 14px;
+}
+.copyrights
+{
+	margin-left: 10px;
+	font-size: 70%;
+	text-align: center;
+	line-height: 20px;
+	clear: both;
+}
+.copyrights,
+.copyrights a,
+.copyrights a:visited,
+.copyrights a:hover
+{
+	color: #bbb;
+}
+.footerRedirectLinks
+{
+	font-size: 90%;
+	color: #bbb;
+}
+.footerRedirectLinks a
+{
+	color: white;
+}
+
+/*Login page*/
+.loginPage fieldset .formFieldkeep label
+{
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+/* Menu */
+.menu
+{
+    float: left;
+    width: 100%;
+}
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.menu ul li
+{
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+
+.bullet
+{
+	float: right;
+	padding-right: 10px;
+}
+
+/* Success messages */
+.success
+{
+	color: #008000;
+}
+.tellFriendPage .success
+{
+	padding-bottom: 10px;
+}
+
+/* quick search */
+.quickSearchForm fieldset .keywords input
+{
+    width: 100%;
+}
+.quickSearchForm fieldset .category_sid
+{
+    text-align: right;
+}
+.quickSearchForm fieldset .category_sid select
+{
+    width: 90%;
+}
+
+/* content */
+.content
+{
+    clear: both;
+	overflow: hidden;
+}
+
+/* browsing */
+.browseItemsAndResultsPage
+{
+    width: 100%;
+    float:left;
+}
+
+
+/* page, sorting filed field selecotrs */
+.sortingFieldSelector
+{
+	
+}
+.sortingFieldSelector .sortingFields
+{
+	list-style: none;
+	display: inline;
+}
+.sortingFieldSelector .sortingFields li
+{
+	display: inline;
+	margin: 0 0 0 10px;
+}
+.searchResultsPageSelector,
+.pictures .pictureSelector
+{
+    clear: both;
+    text-align: center;
+    background-color: #ddd;
+	margin-left: -5px;
+}
+.searchResultsPageSelector .prevPageSelector,
+.pictures .prevPictureSelector
+{
+    float: left;
+}
+.searchResultsPageSelector .nextPageSelector,
+.pictures .nextPictureSelector
+{
+    float: right;
+}
+.searchResultsPageSelector .prevPageSelector span,
+.searchResultsPageSelector .nextPageSelector span,
+.pictures .prevPictureSelector span,
+.pictures .nextPictureSelector span
+{
+    color: #999;
+}
+
+.pictures .pictureSelector
+{
+    margin-bottom: 10px;
+}
+.listingDetails .searchResultsControls .searchResultsPageSelector
+{
+    margin-top: 20px;
+}
+
+/* search results */
+.searchResults .numberOfObjectsFoundInfo,
+.savedListingsPage .numberOfObjectsFoundInfo
+{
+	float: left;
+	margin-right: 10px;
+}
+.searchResults .searchResultItem,
+.savedListingsPage .searchResultItem
+{
+	width: 100%;
+	float: left;
+	clear: both;
+	border-top: 1px dotted gray;
+}
+.searchResults .searchResultItem.lastItem
+{
+	border-bottom: 1px dotted gray;
+}
+
+.searchResultItem .itemPicture
+{
+    float: left;
+    padding: 3px 0;
+    text-align: center;
+    width: 100px;
+}
+
+.searchResultItem .itemPicture img
+{
+    width: 100%;
+}
+
+.searchResultItem .detailsAndItemControlsWrapper,
+.searchResultItem .savedListingControls
+{
+    margin-left: 105px;
+}
+.searchResultItem .detailsAndItemControlsWrapper .details
+{
+    margin: 0;
+}
+.searchResultItem .detailsAndItemControlsWrapper .details h1
+{
+    font-size: 100%;
+    font-weight: normal;
+}
+.searchResultItem .detailsAndItemControlsWrapper .details h1 a
+{
+	text-decoration: none;
+}
+.searchResultItem .detailsAndItemControlsWrapper .details ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.searchResultItem .detailsAndItemControlsWrapper .details .fieldValuePrice,
+.searchResultItem .detailsAndItemControlsWrapper .details .fieldValueSold
+{
+    display: block;
+}
+
+.searchResultItem .detailsAndItemControlsWrapper .itemControls
+{
+    float:left;
+    width:100%;
+    padding-bottom: 5px;
+}
+.searchResultItem .detailsAndItemControlsWrapper .itemControls ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.searchResultItem .detailsAndItemControlsWrapper .itemControls li
+{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.searchResultsLinks
+{
+	clear: both;
+	margin: 10px 0 0 0;
+    text-align: center;
+}
+
+/* Listing details */
+.listingDetails .summary .fieldCaption
+{
+	font-weight: bolder;
+}
+.listingDetails .summary .fieldValuePictures
+{
+	display: block;
+	margin: 0 0 2px 0;
+    text-align: center;
+}
+.listingDetails .summary .fieldValuePictures span
+{
+    display: block;
+    text-align: center;
+}
+.listingDetails .summary .fieldValueSold
+{
+    color: #f00;
+}
+
+.listingDetails .sellerInfo .fieldValue
+{
+    display: block;
+}
+
+.listingDetails .subpagesLinks,
+.mainPageSubLinks
+{
+	clear: both;
+	padding: 10px 0 0 0;
+}
+.listingDetails .subpagesLinks ul,
+.mainPageSubLinks ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listingDetails .subpagesLinks a,
+.mainPageSubLinks a,
+.subpagesLinks span
+{
+    display: block;
+	border-bottom: 1px solid #ccc;
+	background-color: #F8F6F6;
+	line-height: 35px;
+	text-decoration: none;
+}
+.listingDetails .subpagesLinks ul li:first-child a,
+.mainPageSubLinks ul li:first-child a,
+.listingDetails .subpagesLinks ul li:first-child span
+{
+	border-top: 1px solid #ccc;
+}
+.subpagesLinks .listingIsSaved
+{
+	color: #666;
+}
+
+.comments .comment
+{
+	padding: 3px;
+	border-top: 1px solid lightgray;
+	font-size: 80%
+}
+.comments .comment .comment
+{
+	font-size: 100%
+}
+.comments .replies
+{
+	margin: 0 0 0 20px;
+}
+.addComment .pageDescription
+{
+	font-size: 80%;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+.addComment .pageDescription blockquote
+{
+	border-left: 1px solid #DDD;
+	margin: 5px 0 0 10px;
+	padding-left: 10px;
+}
+.addComment .pageDescription .commentTitle
+{
+	font-weight: bold;
+}
+.addComment .pageDescription .commentPosted
+{
+	/*font-family: monospace;*/
+	padding-top: 10px;
+	font-style: italic;
+	font-size: 110%;
+}
+
+.pictures .picturesContainer,
+.pictures .pictureContainer
+{
+    text-align: center;
+    margin-top: 5px;
+}
+.pictures .pictureContainer .pictureResizer
+{
+    margin: 0 auto;
+}
+.pictures .pictureSelector .currPictureInfoAndControlsWrapper,
+.pictures .pictureSelector .currPictureInfoAndControlsWrapper .pictureInfo,
+.pictures .pictureSelector .currPictureInfoAndControlsWrapper .pictureControls
+{
+    display: inline;
+    text-align: center;
+}
+.pictures .pictureSelector .currPictureInfoAndControlsWrapper .controlsSeparator
+{
+    padding: 0 10px;
+}
+
+a img
+{
+    border: none;
+}
+h1, h2
+{
+	padding: 0;
+    font-size: 110%;
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+}
+
+.clearBoth
+{
+    clear: both;
+}
+.error
+{
+	color: red;
+	font-size: 80%;
+	margin-top: 10px;
+	line-height: 20px;
+}
+
+fieldset
+{
+	max-width: 500px;
+	width: 98%;
+}
+fieldset .captchaSecurityCode span,
+fieldset .captchaSecurityCode img
+{
+	display: block;
+}
+fieldset .captchaSecurityCode img
+{
+	float: left;
+	padding: 0 10px 10px 0;
+}
+fieldset .formField label
+{
+	display: block;
+}
+fieldset small
+{
+	/*line-height: 10px;*/
+    font-size: 70%;
+	line-height: 100%;
+	margin: 5px 0 10px 0;
+	display: block;
+}
+fieldset.formControls
+{
+    padding: 10px 0 0 0;
+}
+.contactUsFormPage fieldset .security_code
+{
+	margin-top: 10px;
+}
+.contactUsFormPage fieldset .formField input,
+.contactUsFormPage fieldset .formField textarea
+{
+	width: 95%;
+}
+.mandatoryMarkNotification
+{
+	font-size: 80%;
+}
+
+
+
+.featuredListings {
+    top: 15px;
+}
+
+.list1Columns,
+.list2Columns,
+.list3Columns,
+.list4Columns,
+.list5Columns,
+.list6Columns,
+.list7Columns,
+.list8Columns
+{
+	width: 100%;
+}
+.list1Columns > ul > li,
+.list2Columns > ul > li,
+.list3Columns > ul > li,
+.list4Columns > ul > li,
+.list5Columns > ul > li,
+.list6Columns > ul > li,
+.list7Columns > ul > li,
+.list8Columns > ul > li
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: none;
+}
+.list1Columns > ul > li
+{
+	width: 100%;
+}
+.list2Columns > ul > li
+{
+	width: 50%;
+}
+.list3Columns > ul > li
+{
+	width: 33.3%;
+}
+.list4Columns > ul > li
+{
+	width: 25%;
+}
+.list5Columns > ul > li
+{
+	width: 20%;
+}
+.list6Columns > ul > li
+{
+	width: 16.6%;
+}
+.list7Columns > ul > li
+{
+	width: 14.2%;
+}
+.list8Columns > ul > li
+{
+	width: 12.5%;
+}
+
+.listingDetails .map
+{
+	padding-top: 10px;
+	text-align: center;
+}
+.listingDetails .map .mapControls
+{
+	text-align: center;
+}
+.listingDetails .map .mapControls span
+{
+    color: #999;
+}
+.featuredListings a{
+    display: block;
+    text-align: center;
+    width: 95%;
+    text-decoration: none;
+}
+@media only screen and (max-device-width: 320px)
+{
+	body
+	{
+		font-size: 12pt;
+	}
+}
+
+.loginPage .thirdPartyAuth
+{
+	padding-top: 10px;
+}
+.loginPage .thirdPartyAuth .providerLinks
+{
+	padding-top: 5px;
+}
+.loginPage .thirdPartyAuth .openIdProviderForm
+{
+	display: none;
+}
+.loginPage .thirdPartyAuth a,
+.loginPage .thirdPartyAuth a:hover,
+.loginPage .thirdPartyAuth a:visited
+{
+	text-decoration: none;
+}
+
+.socialNetworkLikeButtonWrapper
+{
+    overflow: auto;
+}
+.socialNetworkLikeButtonWrapper .twitter,
+.socialNetworkLikeButtonWrapper .facebook
+{
+	float:left;
+}
+.tellFriendHeader
+{
+    float: left;
+}

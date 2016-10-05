@@ -1,0 +1,1 @@
+[['$relocatingCategoryId' cannot be moved to the chosen destination because '$destinationCategoryId' has one or more field with the same ID as in '$relocatingCategoryId'. Please choose another parent category or rename/delete redundant fields.]]

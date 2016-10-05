@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Autocomplete and Partial Match</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?autocomplete.htm"; }
+  else { parent.quicksync('a9.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Autocomplete and Partial Match</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="all_users_listings_page.htm">Previous</a>&nbsp;
+     <a href="availability_calendar.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">Autocomplete</span></p>
+<p>The autocomplete allows visitors, users and the administrator to quickly find and select from a pre-populated list of values as they type, immediately examining the proposed search results and modifying current request.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">How It Works</span></p>
+<p>The autocomplete works on different search forms; it is implemented for such a fields as keywords, title, username and email.</p>
+<p>&nbsp;</p>
+<p>The below example demonstrates how autocomplete works on the Seller Search form.</p>
+<p><img src="autocomplete-on-search-sellers.png" width="793" height="281" border="0" alt="autocomplete-on-search-sellers" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>By default, the autocomplete displays up to 10 records, matching search criteria. This number is specified in the templates:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Components">/modules/field_types/apps/FrontEnd/templates/search/string_with_autocomplete.tpl</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Components">/modules/field_types/apps/AdminPanel/templates/search/string_with_autocomplete.tpl</span></td></tr></table></div><p>&nbsp;</p>
+<p>However, the administrator can change this number for the exact search form. For example, you can open a listing search form and find the line with the autocomplete search enabled:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{search&nbsp;property=keywords&nbsp;template="string_with_autocomplete.tpl"&nbsp;parameters=['element_id_prefix'=&gt;'advancedSearch','preselection_fields'=&gt;['category_sid']]}</span></p>
+<p>&nbsp;</p>
+<p>You can change the parameters and add there the code <span class="f_CodeExample">'max_items'=&gt;20</span>, so it will look like:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{search&nbsp;property=keywords&nbsp;template="string_with_autocomplete.tpl"&nbsp;parameters=['max_items'=&gt;20,'element_id_prefix'=&gt;'advancedSearch','preselection_fields'=&gt;['category_sid']]}</span></p>
+<p>&nbsp;</p>
+<p>Thus the autocomplete on this search form will show up to 20 records instead of the default 10.</p>
+<p>&nbsp;</p>
+<p>Other parameters can be found in string_with_autocomplete.tpl.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Autocomplete Setting</span></p>
+<p>The website administrator can turn on/off the autocomplete for keyword search by checking the option "Enable autocomplete for keyword search" in the Admin Panel -&gt; System Settings -&gt; General.</p>
+<p><a href="autocomplete-setting.png"><img id="TOGGLE0186A1" class="image-toggle" src="autocomplete-setting.zoom70.png" border="0" alt="autocomplete-setting.zoom70" style="padding:10px"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading1">Partial Match</span></p>
+<p>The partial match allows visitors, users and the administrator to quickly find listings by typing part of word.</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">How It Works</span></p>
+<p>The partial match works on different search forms.</p>
+<p>&nbsp;</p>
+<p>In order to insert it you need to specify "<span class="f_CodeExample">string.like.tpl</span>" template for desired field:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{search&nbsp;property=keywords&nbsp;template="string.like.tpl"}</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','autocomplete-setting.zoom70.png','hm.src1','autocomplete-setting.png');
+</script>
+</body>
+</html>

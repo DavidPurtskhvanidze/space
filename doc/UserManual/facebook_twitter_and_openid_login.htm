@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Facebook, Twitter, Google and OpenID Login</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Application ID for Facebook,Application Secret for Facebook,Consumer Key for Twitter,Consumer Secret for Twitter,Facebook,Login,oAuth,OpenID,Sign In,Twitter" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?facebook_twitter_and_openid_login.htm"; }
+  else { parent.quicksync('a9.14'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Facebook, Twitter, Google and OpenID Login</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="facebook_like_box.htm">Previous</a>&nbsp;
+     <a href="google_adsense.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span class="f_Heading3">Overview</span></p>
+<p>Visitors can log in to iLister-based website with their Facebook, Twitter, Google or OpenID account and get instant access to the features of the website.</p>
+<p><img src="openid-oauth-login.png" width="187" height="267" border="0" alt="openid-oauth-login"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">What is OpenID</span></p>
+<p>OpenID is an open standard that describes how users can be authenticated in a decentralized manner, avoiding the need for services to provide their own systems and allowing users to consolidate their digital identities. You can learn more about OpenID on the <a href="http://openid.net/" target="_blank" class="weblink" title="OpenID official website">official website</a> or <a href="http://en.wikipedia.org/wiki/OpenID" target="_blank" class="weblink" title="OpenID Wikipedia page">Wikipedia page</a>.</p>
+<p>&nbsp;</p>
+<p>OpenID authentication is now used and provided by several large websites. Providers include AOL, BBC, Blogger, WordPress, IBM, MySpace, PayPal, VeriSign, LiveJournal, Yahoo! and others.</p>
+<p>&nbsp;</p>
+<p>Thus a person with existing Yahoo! account can easily log in to any iLister-based website which has this feature.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3"><a href="configuration_wizard.htm">Facebook, Twitter and Google</a></span></p>
+<p>Facebook, Twitter and Google use OAuth (Open Authentication) — the service that is complementary to, but distinct from OpenID. You can learn more about OAuth on the <a href="http://oauth.net/" target="_blank" class="weblink" title="OAuth official website">official website</a> or <a href="http://en.wikipedia.org/wiki/OAuth" target="_blank" class="weblink" title="OAuth Wikipedia page">Wikipedia page</a>.</p>
+<p>&nbsp;</p>
+<p>OAuth — an open standard for authentication. It allows users to share their private resources (e.g. photos, videos, contact lists) stored on one site with another site without having to hand out their credentials, typically username and password.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Turn On Facebook Login</span></p>
+<p><a name="facebookappplocationidandsecret"></a>In order to enable Facebook login, site administrator should register his site (so called "Create App") on Facebook and get facebook application ID and application secret.</p>
+<p>&nbsp;</p>
+<p>One can do this at <a href="https://developers.facebook.com/" target="_blank" class="weblink">https://developers.facebook.com/</a> following the steps specified there. </p>
+<p><img src="facebook-create-app.zoom52.png" width="291" height="40" border="0" alt="facebook-create-app"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="facebook-app-registration.zoom64.png" width="454" height="219" border="0" alt="facebook-app-registration"></p>
+<p>&nbsp;</p>
+<p>When the app is created and the site has been registered, you need to "Add Platform" in Settings:</p>
+<p>&nbsp;</p>
+<p><img src="facebook-app-add-platform.zoom57.png" width="534" height="190" border="0" alt="facebook-app-add-platform"></p>
+<p>&nbsp;</p>
+<p><img src="facebook-app-select-platform.zoom75.png" width="505" height="301" border="0" alt="facebook-app-select-platform"></p>
+<p>Then you need to specify the URL of your website:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>site URL is the full URL of your iLister-based website (e.g. http://www.my-site.com);</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Mobile Site URL is the full Mobile URL of your iLister-based website (e.g. <a href="http://www.my-site.com/m)" target="_blank" class="weblink">http://www.my-site.com/m)</a>;</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="facebook-app-settings.zoom72.png" width="675" height="347" border="0" alt="facebook-app-settings"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Turn On Twitter Login</span></p>
+<p><a name="twitterconsumerkeyandsecret"></a>In order to enable Twitter login, site administrator should register his site ("Register an Application") on Twitter and get twitter consumer key and consumer secret.</p>
+<p>&nbsp;</p>
+<p>You can register the website at <a href="https://apps.twitter.com/" target="_blank" class="weblink">https://apps.twitter.com/</a> following the steps specified there.</p>
+<p><img src="twitter-app-create.zoom65.png" width="448" height="131" border="0" alt="twitter-app-create"></p>
+<p>&nbsp;</p>
+<p><img src="twitter-app-registration.zoom79.png" width="726" height="399" border="0" alt="twitter-app-registration"></p>
+<p>&nbsp;</p>
+<p>Please specify the the "Callback URL" parameter: your website URL + /user/openid_oauth_login/</p>
+<p>e.g. http://www.my-site.com + /user/openid_oauth_login/ = http://www.my-site.com/user/openid_oauth_login/</p>
+<p>&nbsp;</p>
+<p>When the application is created and the site has been registered, you are redirected to the twitter application page of your website where you can get twitter Consumer Key, Consumer Secret and Access Tokens.(API key = Consumer Key, API Secret =Consumer Secret)</p>
+<p><img src="twitter-app-settings.zoom77.png" width="684" height="391" border="0" alt="twitter-app-settings"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Then you need to check if your type of access is "Read and Write".</p>
+<p>&nbsp;</p>
+<p><img src="twitter-app-access.zoom68.png" width="656" height="337" border="0" alt="twitter-app-access"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Turn On Google Login</span></p>
+<p><a name="googleclientid"></a>In order to enable Google login, site administrator should register his site ("Create Project") on Google and get Google Client ID and Google Client secret.</p>
+<p>You can register the website at <a href="https://console.developers.google.com" target="_blank" class="weblink">https://console.developers.google.com</a> following the steps specified there.</p>
+<p><img src="google-create-project.zoom84.png" width="470" height="235" border="0" alt="google-create-project"></p>
+<p>&nbsp;</p>
+<p><img src="google-new-project.zoom77.png" width="404" height="222" border="0" alt="google-new-project"></p>
+<p>&nbsp;</p>
+<p>In the left sidebar, select APIs &amp; auth. A list of Google web services appears. In the sidebar, select Credentials. </p>
+<p>In the OAuth section of the page, select Create New Client ID. </p>
+<p><img src="google-new-client-id.zoom92.png" width="503" height="580" border="0" alt="google-new-client-id"></p>
+<p>&nbsp;</p>
+<p>Please specify the the "Authorized Redirect URI" parameter: your website URL + /user/openid_oauth_login/</p>
+<p>e.g. http://www.yourwebsite.com + /user/openid_oauth_login/ = http://www.yourwebsite.com/user/openid_oauth_login/</p>
+<p><img src="google-create-client-id.zoom91.png" width="427" height="524" border="0" alt="google-create-client-id"></p>
+<p>&nbsp;</p>
+<p>In the sidebar, select Consent screen. </p>
+<p><img src="google-consent-screen.zoom70.png" width="698" height="582" border="0" alt="google-consent-screen"></p>
+<p>&nbsp;</p>
+<p>In the resulting <span style="font-weight: bold;">Credentials</span> section, copy the Client ID and Client secret that your app will need to use to access the APIs. </p>
+<p><img src="google-credentials.zoom60.png" width="718" height="200" border="0" alt="google-credentials"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">OpenID and OAuth Settings in Admin Panel</span></p>
+<p>Site administrator should complete the OpenID and OAuth settings in Admin Panel -&gt; System Settings.</p>
+<p><img src="oauth-openid-login-settings.zoom92.png" width="747" height="826" border="0" alt="oauth-openid-login-settings" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p><a name="thirdpartydefaultusergroup"></a>Default User Group — is the User Group for the users who are signed in with OpenID or OAuth providers. The User Group "Buyers" has no Membership Plan, and thus their users can search listings, setup notifications, add listing comments and cannot post ads. Later these users can change their User Group if they want to post listings.</p>
+<p>&nbsp;</p>
+<p>If no User Group was selected for the third-party login, the website would not display the third-party login section in the Front-End (please refer to the screenshot below to see the section under the usual "Sign In" form).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How It Works for Users</span></p>
+<p>Everywhere a visitor needs to become a user, i.e. log in to the iLister-based website to post a listing or add comments, a visitor prompted to login using third-party accounts of OpenID or OAuth providers.</p>
+<p><img src="openid-oauth-login.png" width="187" height="267" border="0" alt="openid-oauth-login"></p>
+<p>&nbsp;</p>
+<p>When visitor allows your website to use the OpenID or OAuth account information, the website creates a real user in the User Group specified in the Default User Group parameter in Admin Panel -&gt; System Settings -&gt; OpenID &amp; OAuth.</p>
+<p>&nbsp;</p>
+<p>The username for third-party registration is configured with the prefix "ext_" and 8-symbol alpha-numeric part.</p>
+<p><img src="openid-oauth-username.png" width="149" height="197" border="0" alt="openid-oauth-username"></p>
+<p>&nbsp;</p>
+<p>Users can change this auto-generated username and create a password on the My Profile page.</p>
+<p><img src="user-profile.png" width="311" height="453" border="0" alt="user-profile"></p>
+<p>&nbsp;</p>
+<p>After the registration, users are able to log in using both: their OpenID / OAuth accounts and the internal website username (auto-generated or already changed username).</p>
+
+</td></tr></table>
+
+</body>
+</html>

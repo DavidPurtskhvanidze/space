@@ -1,0 +1,140 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>New Search Form</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Add New Field to Search Form,Add Search Form,Add Search Page,Search Form to Create" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?irealty_new_search_form.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">New Search Form</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><a name="standardsearchform"></a>In order to create/modify the <span style="font-weight: bold;">standard Search Form</span> you need to do the following:</p>
+<p>1. Go to Admin Panel &gt; Site Layout &gt; Manage Forms</p>
+<p>2. Add new form</p>
+<p>3. Specify the ID of your search(for example, HomesForSaleSearch)</p>
+<p>4. Select the Category(for ex. HomesForSale)</p>
+<p>5. Add the fields that you want to be displayed on the Search form for this Category</p>
+<p> &nbsp; In order to divide your fields by subcategories(for ex. Basic Information, Features), you can add the <a href="new_search_form.htm#howtocreateandusefieldset">FieldSet</a>.</p>
+<p>6. Create <a href="new_search_form.htm#sitepage">new Site Page</a> that will display the new form (for ex. /search/HomesForSale)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In order to create a new <span style="font-weight: bold;">self-designed Search Form</span> you need to do the following main steps:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>create new template with Search Form components;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>specify a new template in the settings of a category, in case you want this search form to be default search form for this category;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>create new Site Page which will display a new Search Form;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>create new template with Search Results components;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">5.</span></td><td>specify a new template in the Search Results template setting of a category, in case you want this search results template to be default search results look for this category;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">6.</span></td><td>create new Site Page which will display a new Search Results form.</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Create New Template for a Search Form</span></p>
+<p>You can take one of the existing search forms in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/search/searchFormHomesForRent.tpl as a basis to create new search form.</p>
+<p>&nbsp;</p>
+<p>Here is a part of code which you need to modify:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;h1&gt;[[Find&nbsp;a&nbsp;Rental]]&lt;/h1&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;caption&nbsp;for&nbsp;the&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;form&nbsp;action="{$GLOBALS.site_url}/search-results-rentals/"&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;path&nbsp;to&nbsp;the&nbsp;page&nbsp;with&nbsp;search&nbsp;results&nbsp;for&nbsp;this&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;table&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldCaption"&gt;[[$form_fields.State.caption]]&lt;/span&gt;&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;set&nbsp;of&nbsp;fields,&nbsp;specific&nbsp;for&nbsp;this&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldControl"&gt;{search&nbsp;property=State}&lt;/span&gt;&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;set&nbsp;of&nbsp;fields,&nbsp;specific&nbsp;for&nbsp;this&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Let's say, we want to make a search form for a new category "RoomsForRent" that will be a child category for "HomesForRent". The modified code of the template which we will name <span style="font-weight: bold;">searchFormRoom.tpl</span> will look as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;h1&gt;[[Find&nbsp;a&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">Room</span><span class="f_CodeExample">]]&lt;/h1&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;caption&nbsp;for&nbsp;the&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;form&nbsp;action="{$GLOBALS.site_url}/search-results-</span><span class="f_CodeExample" style="font-weight: bold;">rooms</span><span class="f_CodeExample">/"&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;path&nbsp;to&nbsp;the&nbsp;page&nbsp;with&nbsp;search&nbsp;results&nbsp;for&nbsp;this&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;table&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldCaption"&gt;[[$form_fields.State.caption]]:&lt;/td&gt;&nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;set&nbsp;of&nbsp;fields,&nbsp;specific&nbsp;for&nbsp;this&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldControl"&gt;{search&nbsp;property=StateProvince&nbsp;template=tree_level_1.tpl}&lt;/td&gt;&nbsp;</span><span class="f_Notice">//&nbsp;The&nbsp;set&nbsp;of&nbsp;fields,&nbsp;specific&nbsp;for&nbsp;this&nbsp;search&nbsp;form</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p>&nbsp;</p>
+<p>When you finished the template, please connect to your server via <a href="http://customers.worksforweb.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=77" target="_blank" class="weblink" title="FTP protocol and FTP clients">FTP</a> or via Control Panel (please ask your hosting administrator if your Control Panel has the option to work with file transferring) and upload the template to your server to the folder <span class="f_Components">/modules/classifieds/apps/FrontEnd/templates/{theme_name}/category_templates/search</span>.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Specify New Search Form for a Category</span></p>
+<p>Go to Admin Panel -&gt; Listing Management -&gt; Categories -&gt; click 'HomesForRent' -&gt; edit 'RoomsForRent' -&gt; Edit 'RoomsForRent' Category Settings</p>
+<p><img src="set-search-form-for-category.png" width="724" height="774" border="0" alt="set-search-form-for-category"></p>
+<p>&nbsp;</p>
+<p><a name="sitepage"></a><span class="f_Heading3">How to Create a Site Page for New Search Form</span></p>
+<p>In order to create a Site Page for this search form, you need to do the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>go to Admin Panel -&gt; Site Layout -&gt; Site Pages -&gt; Add a New Site Page</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>fill in all necessary fields in the Site Page form;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td><span style="font-weight: bold;">for Standard Form</span>: choose <span class="f_Components">form_manager</span> in the "Module" field</td></tr></table></div><p> &nbsp;  <span style="font-weight: bold;">for self-designed Form</span>: choose <span class="f_Components">classifieds</span> in the "Module" field</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td><span style="font-weight: bold;">for Standard Form: </span>select <span class="f_Components">display_search_form</span> in the "Function" parameter;</td></tr></table></div><p> &nbsp;  <span style="font-weight: bold;">for self-designed Form: </span>select <span class="f_Components">search_form</span> in the "Function" parameter;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">5.</span></td><td>specify additional parameters like <span class="f_Components">category_id</span> and <span class="f_Components">form_template</span>;</td></tr></table></div><p> &nbsp; &nbsp;(<span style="font-weight: bold;">for Standard Form </span>you need to specify form_id (for ex.  HomesForSaleSearch))</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">6.</span></td><td>click the button "Save".</td></tr></table></div><p><img src="search-form-site-page.png" width="894" height="748" border="0" alt="search-form-site-page"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Create New Template with Search Results</span></p>
+<p>You can take one of the existing search results forms in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/searchResultHome.tpl as a basis to create new search results form.</p>
+<p>&nbsp;</p>
+<p>Here is a part of code which you need to modify:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.Beds}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaptionBedrooms"&gt;[[FormFieldCaptions!Bedrooms]]:&lt;/span&gt;&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueBedrooms"&gt;{$listing.Bedroomss}&lt;/span&gt;&amp;nbsp;|&amp;nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//&nbsp;Set&nbsp;of&nbsp;fields&nbsp;which&nbsp;must&nbsp;be&nbsp;displayed&nbsp;on&nbsp;the&nbsp;search&nbsp;results&nbsp;page</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>We need to make a search results form for the new category "RoomsForRent". The modified code of the template which we will name <span style="font-weight: bold;">searchResultRooms.tpl</span> will look as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.Beds}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaptionBeds"&gt;[[FormFieldCaptions!</span><span class="f_CodeExample" style="font-weight: bold;">Beds</span><span class="f_CodeExample">]]:&lt;/span&gt;&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueBeds"&gt;{$listing.</span><span class="f_CodeExample" style="font-weight: bold;">Beds</span><span class="f_CodeExample">}&lt;/span&gt;&amp;nbsp;|&amp;nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>When you finished the template, please upload the template to your server to the folder </p>
+<p><span class="f_Components">/modules/classifieds/apps/FrontEnd/templates/{theme_name}/category_templates/display/</span>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Specify New Search Results for a Category</span></p>
+<p>Go to &nbsp;Admin Panel -&gt; Listing Management -&gt; Categories -&gt; click 'HomesForRent' -&gt; edit 'RoomsForRent' -&gt; Edit 'RoomsForRent' Category Settings</p>
+<p><img src="set-search-results-form-for-category.png" width="724" height="774" border="0" alt="set-search-results-form-for-category"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Create Site Page for a New Search Results Form</span></p>
+<p>In order to create a Site Page for this search results form, you need to do the following:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>go to Admin Panel -&gt; Site Layout -&gt; Site Pages -&gt; Add a New Site Page</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>fill in all necessary fields in the Site Page form;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>the URI parameter must match the URI specified in the searchFormRoomsForRent.tpl template:</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">&lt;form&nbsp;action="{$GLOBALS.site_url}/search-results</span><span class="f_CodeExample" style="font-weight: bold;">-rooms</span><span class="f_CodeExample">/"&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">4.</span></td><td>choose <span class="f_Components">classifieds</span> in the "Module" field</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">5.</span></td><td>select <span class="f_Components">search_results</span> in the "Function" parameter;</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">6.</span></td><td>specify additional parameters like:</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>default_sorting_field</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>default_sorting_order</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>default_listings_per_page</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>results_template</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 15px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>advanced_search_form_uri — it must match the URI of the Site Page for the search form <span style="font-weight: bold;">searchFormRoomsForRent.tpl</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">7.</span></td><td>click the button "Add".</td></tr></table></div><p>&nbsp;</p>
+<p><img src="search-results-form-site-page.png" width="773" height="871" border="0" alt="search-results-form-site-page"></p>
+<p>&nbsp;</p>
+<p><a name="howtocreateandusefieldset"></a><span class="f_Heading3">How to Create and Use FieldSet </span></p>
+<p>In order to create a FieldSet, you need to do the following:</p>
+<p>1. Go to Admin Panel &gt; Site Layout &gt; Manage Forms &gt; Edit Form</p>
+<p> &nbsp; &nbsp;If you don't have any forms yet, you need to create <span style="font-weight: bold;"><a href="new_search_form.htm#standardsearchform">standard Search Form</a></span></p>
+<p>2. In "Edit Details" choose "FieldSet" and specify the Title. (For ex. Basic Information)</p>
+<p>&nbsp;</p>
+<p>The FieldSet will automatically divide your search form into subcategories. You need just to put it before the fields.</p>
+<p><img src="fieldset-admin.zoom81.png" width="887" height="425" border="0" alt="fieldset-admin"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_ImageCaption"><span class="f_ImageCaption" style="font-size: 10pt;">How it will look at Front-End:</span></p>
+<p class="p_ImageCaption"><img src="fieldset-front.png" width="705" height="444" border="0" alt="fieldset-front"></p>
+
+</td></tr></table>
+
+</body>
+</html>

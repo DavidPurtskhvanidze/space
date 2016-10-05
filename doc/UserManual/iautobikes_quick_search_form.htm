@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Quick Search Forms</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Quick Search Form" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iautobikes_quick_search_form.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Quick Search Forms</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><a href="quick-search-form.png"><img id="TOGGLE0186A1" class="image-toggle" src="quick-search-form.png" border="0" alt="quick-search-form"></a></p>
+<p>&nbsp;</p>
+<p>The templates for Quick Listing Search forms are located in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>quick_search_motorcycle.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>quick_search_bicycles.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>quick_search_accessories.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>quick_search_parts.tpl</td></tr></table></div><p>&nbsp;</p>
+<p>There you can modify the components of the Quick Search forms.</p>
+<p>&nbsp;</p>
+<p>The code in homepage_main_content.tpl which displays Quick Search form on the homepage is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="quickSearchesTabs"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;ul&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindMotorcycleTab"&gt;[[Find&nbsp;a&nbsp;Motorcycle]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindBicycleTab"&gt;[[Find&nbsp;a&nbsp;Bicycle]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindAccessoriesTab"&gt;[[Find&nbsp;Accessories]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindPartsTab"&gt;[[Find&nbsp;Parts]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/ul&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="FindMotorcycleTab"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="search_form"&nbsp;form_template="quick_search_motorcycle.tpl"&nbsp;category_id="Motorcycle"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="FindBicycleTab"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="search_form"&nbsp;form_template="quick_search_bicycles.tpl"&nbsp;category_id="Bicycle"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="FindAccessoriesTab"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="search_form"&nbsp;form_template="quick_search_accessories.tpl"&nbsp;category_id="Accessories"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;div&nbsp;id="FindPartsTab"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{module&nbsp;name="classifieds"&nbsp;function="search_form"&nbsp;form_template="quick_search_parts.tpl"&nbsp;category_id="Parts"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Image</span></p>
+<p>The image files for each tab are specified in the CSS styles:</p>
+<p>.quickSearchesTabs .MotorcycleQuickSearch</p>
+<p>{</p>
+<p> &nbsp; &nbsp;background:url(quick_search_motorcycle.png) scroll 0 0;</p>
+<p>}</p>
+<p>.quickSearchesTabs .BicycleQuickSearch</p>
+<p>{</p>
+<p> &nbsp; &nbsp;background:url(quick_search_bicycle.png) scroll 0 0;</p>
+<p>}</p>
+<p>.quickSearchesTabs .AccessoriesQuickSearch</p>
+<p>{</p>
+<p> &nbsp; &nbsp;background:url(quick_search_accessories.png) scroll 0 0;</p>
+<p>}</p>
+<p>.quickSearchesTabs .PartsQuickSearch</p>
+<p>{</p>
+<p> &nbsp; &nbsp;background:url(quick_search_parts.png) scroll 0 0;</p>
+<p>}</p>
+<p>.quickSearchesTabs .MotorcycleQuickSearch,</p>
+<p>.quickSearchesTabs .BicycleQuickSearch,</p>
+<p>.quickSearchesTabs .AccessoriesQuickSearch,</p>
+<p>.quickSearchesTabs .PartsQuickSearch</p>
+<p>{</p>
+<p> &nbsp; &nbsp;background-position: left;</p>
+<p> &nbsp; &nbsp;background-repeat: no-repeat;</p>
+<p> &nbsp; &nbsp;padding-left:340px;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>The files are located on your server in the folder <span class="f_Components">/modules/main/apps/FrontEnd/files/{theme_name}/</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Caption</span></p>
+<p>The form captions are specified in homepage_main_content.tpl in the double square brackets to give the administrator the ability to <a href="integration_with_templates.htm">translate</a> it.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindMotorcycleTab"&gt;[[Find&nbsp;a&nbsp;Motorcycle]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindBicycleTab"&gt;[[Find&nbsp;a&nbsp;Bicycle]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindAccessoriesTab"&gt;[[Find&nbsp;Accessories]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="#FindPartsTab"&gt;[[Find&nbsp;Parts]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Criterion / Field</span></p>
+<p>You can add as many fields on the search form as you wish. All you need to do is to follow the rules when adding a new field. You can use the code of existing fields as an example of how to add more fields/criteria.</p>
+<p>&nbsp;</p>
+<p>For example, the code for list-type field is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaptionState"&gt;[[$form_fields.State.caption]]:&lt;/span&gt;&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;caption&nbsp;for&nbsp;the&nbsp;field</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldControl&nbsp;fieldControlState"&gt;{search&nbsp;property=State}&lt;/span&gt;&lt;/td&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//displays&nbsp;the&nbsp;area&nbsp;with&nbsp;value&nbsp;types&nbsp;(i.e.&nbsp;tree,&nbsp;list,&nbsp;integer,&nbsp;string&nbsp;etc.&nbsp;which&nbsp;are&nbsp;described&nbsp;&nbsp;<a href="field_types.htm">here</a>.)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>You can add a new field, for example, Condition, as shown below:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaptionCondition"&gt;[[$form_fields.Condition.caption]]:&lt;/span&gt;&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;td&gt;&lt;span&nbsp;class="fieldControl&nbsp;fieldControlCondition"&gt;{search&nbsp;property=Condition&nbsp;template=list.tpl}&lt;/span&gt;&lt;/td&gt;</span></p>
+<p>&nbsp;</p>
+<p><span class="f_CodeExample">property=Condition </span>specifies the ID of the field;</p>
+<p><span class="f_CodeExample">template=list.tpl </span>the template which defines the way how field values are displayed on the form.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" bgcolor="#ffff99" border="0" style="background-color: #ffff99; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p class="p_ReferenceBlock"><span class="f_ReferenceBlock">You can find the templates for all field types in the <a href="field_types.htm">Field Types</a> section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Link to the Advanced Search Form</span></p>
+<p>You can specify a path to a desired search form and the translatable text as a caption for the link:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;a&nbsp;class="searchTypeSwitch"&nbsp;href="{$GLOBALS.site_url}/search/motorcycles/"&gt;[[Advanced&nbsp;Search]]&lt;/a&gt;</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','quick-search-form.png','hm.src1','quick-search-form.png');
+</script>
+</body>
+</html>

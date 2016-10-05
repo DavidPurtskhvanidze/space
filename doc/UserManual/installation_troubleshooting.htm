@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Troubleshooting</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="issue,problem,solution,troubleshooting" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?installation_troubleshooting.htm"; }
+  else { parent.quicksync('a3.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Troubleshooting</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="initial_software_configuration.htm">Previous</a>&nbsp;
+     <a href="configuration_wizard.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-size: 12pt; font-weight: bold;">DURING INSTALLATION</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Imagick library was not found. You can lose some functionality.</p>
+<p><span style="font-weight: bold;">Solution</span>: Without Imagick lib you will be unable to upload pictures to listings. You need to contact your hosting and ask them to recompile PHP with the "Imagick" lib.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Iconv extension is not found. Import from MS Excel files will not be available.</p>
+<p><span style="font-weight: bold;">Solution</span>: You need to contact your hosting and ask them to recompile PHP with the "iconv" lib.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: CURL extension is not found. PayPal payment functionality will not work.</p>
+<p><span style="font-weight: bold;">Solution</span>: You need to contact your hosting and ask them to recompile PHP with the "curl" lib.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Database configuration is invalid. Cannot establish connection to MySQL server:</p>
+<p><span style="font-weight: bold;">Solution</span>: You need to check what is the host of your MySQL server and indicate it in the installation script.</p>
+<p>Another reason can be that your MySQL server is stopped or glitches, in this case you need to contact your hosting and ask them for help.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Database configuration is invalid. Cannot find DB.</p>
+<p><span style="font-weight: bold;">Solution</span>: The DB does not exist. You need to create it in your Control Panel.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Cannot establish MySQL connection.</p>
+<p><span style="font-weight: bold;">Solution</span>: The access to the DB is incorrect. You need to check the correspondence of the DB name, DB user and DB password in your Control Panel.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Cannot execute MySQL query</p>
+<p><span style="font-weight: bold;">Solution</span>: The versions of MySQL server on your hosting can not be compatible with the MySQL version of the DB dump, which is used by installation script. As it is stated on our official site in the System Requirements section, our script needs MySQL 4.1 or higher.</p>
+<p>The DB user does not have all privileges for the DB. You need to grant all privileges for the user in your Control Panel.</p>
+<p>Settings of the buffer on your server can not accept the whole query. You need to contact your hosting and ask them to resolve this issue.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Cannot read SQL dump: 'db.sql'</p>
+<p><span style="font-weight: bold;">Solution</span>: The db.sql file does not exist. You need to contact our Support and we'll send you the file.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: The installation has stopped at:</p>
+<p style="text-indent: 15px; margin: 0px 0px 0px 24px;"><span style="color: #0000ff;">Checking mode of directories...</span></p>
+<p style="text-indent: 15px; margin: 0px 0px 0px 24px;"><span style="color: #0000ff;">Setting character set...</span></p>
+<p style="text-indent: 15px; margin: 0px 0px 0px 24px;"><span style="color: #0000ff;">Creating base tables...</span></p>
+<p>and does not proceed any further.</p>
+<p><span style="font-weight: bold;">Solution</span>: Most likely, the reason for this issue is with your hosting settings or MySQL client. The fastest and easiest way to fix it is to contact our Support and we'll upload a database to your server.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-weight: bold;">AFTER INSTALLATION</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: Any link on the front page results in a 404 error.</p>
+<p><span style="font-weight: bold;">Solution</span>: The .htaccess file does not have a correct RewriteBase instruction. You need to contact our Support Dept. and we'll help you.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: "The software is not configured to respond to requests of the following host:"</p>
+<p><span style="font-weight: bold;">Solution</span>: In case you installed the software from <a href="http://www.yoursite.com" target="_blank" class="weblink">http://www.yoursite.com</a>, the software will not work for <a href="http://yoursite.com" target="_blank" class="weblink">http://yoursite.com</a>. You can fix this by setting a redirect procedure from <a href="http://yoursite.com" target="_blank" class="weblink">http://yoursite.com</a> to <a href="http://www.yoursite.com" target="_blank" class="weblink">http://www.yoursite.com</a>. You can learn how to do this on our forum at <a href="http://forum.iautosoftware.com/index.php/topic,11.0.html" target="_blank" class="weblink">http://forum.iautosoftware.com/index.php/topic,11.0.html</a>.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: "The software license is expired"</p>
+<p><span style="font-weight: bold;">Solution</span>: Your license is expired. You can check it at the /license URL. (<a href="http://www.yoursite.com/license" target="_blank" class="weblink">http://www.yoursite.com/license</a> or <a href="http://www.yoursite.com/subfolder/license" target="_blank" class="weblink">http://www.yoursite.com/subfolder/license</a>) You need to contact our Support or Sales Depts. to investigate this issue.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Issue</span>: "The software license is invalid"</p>
+<p><span style="font-weight: bold;">Solution</span>: Your license was generated incorrectly. You need to contact our Support to investigate this issue.</p>
+
+</td></tr></table>
+
+</body>
+</html>

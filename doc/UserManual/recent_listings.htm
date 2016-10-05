@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Recent Listings</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Recent Listings" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?recent_listings.htm"; }
+  else { parent.quicksync('a9.31'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Recent Listings</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="smarty_and_block_cache.htm">Previous</a>&nbsp;
+     <a href="recent_tweets.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>The section with recent listings is made to demonstrates the activity of your iLister-based website. It is located on the main page, and you can easily change its look, location and other parameters. You can learn more about this section in the User Manual article at iLister Site Customization -&gt; Recent Ads Section.</p>
+<p>&nbsp;</p>
+<p><img src="recent-ads-section-horizontal.png" width="558" height="204" border="0" alt="recent-ads-section-horizontal" style="margin:5px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">The Recent Listings Module</span></p>
+<p>The look of the recent listing section can be easily changed in the design.css file related to a theme like <span class="f_Components">/application/modules/{theme_name}/main/_files/design.css</span></p>
+<p>The styles can be the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;&gt;&nbsp;h1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;&gt;&nbsp;ul</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;.item</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;.item&nbsp;.fieldValue.fieldValuePictures</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;.item&nbsp;.details&nbsp;.fieldValue.fieldValuePrice,</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;.item&nbsp;.details&nbsp;.fieldValue.fieldValueRent</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.homepageMainContent&nbsp;.recentListings&nbsp;.item&nbsp;.details&nbsp;.fieldValue.fieldValuePrice&nbsp;&gt;&nbsp;a</span></p>
+<p>&nbsp;</p>
+<p>You can find the module at Admin Panel -&gt; System Configuration -&gt; Module Manager among other modules. There you can disable the Recent Listings module if you do not want to use it.</p>
+<p>&nbsp;</p>
+<p>In order to insert the recent listing section to a page (template), please use the following code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="1"&nbsp;number_of_cols="4"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Also you can specify the category for Recent Listings block:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="recent_listings"&nbsp;function="display_recent_listings"&nbsp;number_of_rows="1"&nbsp;number_of_cols="4"&nbsp;category_id="Car"}</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

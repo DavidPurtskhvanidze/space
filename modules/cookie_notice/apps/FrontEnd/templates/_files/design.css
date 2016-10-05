@@ -1,0 +1,51 @@
+.cookieNoticeBalloon
+{
+	display: none;
+	position: absolute;
+/*	width: 120px;*/
+	top: 10px;
+	right: 10px;
+	z-index: 10000;
+}
+.cookieNoticeBalloonBody
+{
+	display: inline-block;
+	padding: 5px 10px 10px 10px;
+	color: #333333;
+	background-color: #eee; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF', GradientType=1); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#FFFFFF)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #EEEEEE,  #FFFFFF); /* for firefox 3.6+ */
+	background: -o-linear-gradient(top, #EEEEEE, #FFFFFF); /* for opera 11.10+ */
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-moz-box-shadow: 2px 4px 8px #666666;
+	-webkit-box-shadow: 2px 4px 8px #666666;
+	box-shadow: 2px 4px 8px #666666;
+}
+.cookieNoticeBalloon .noticeText
+{
+	margin: 10px 0 0 0;
+}
+.cookieNoticeBalloon .acceptCookies
+{
+	color: #212121;
+	background: none;
+	background-color: #DDD;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #fff;
+	border-style: outset;
+	margin: 12px 10px 0 0 !important;
+}
+.cookieNoticeBalloon .noticeLink
+{
+	display: block;
+	margin: 5px 0 5px 2px;
+}
+.cookieNoticeBalloon .noticeLink a
+{
+	color: #212121;
+}

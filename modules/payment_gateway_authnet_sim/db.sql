@@ -1,0 +1,1 @@
+INSERT INTO `payment_gateways` (`id`, `serialized_extra_info`) VALUES ('authnet_sim', 'a:5:{s:20:"authnet_api_login_id";s:10:"2yhKmVQ75n";s:27:"authnet_api_transaction_key";s:16:"8pN4GJ8xw87Vj5KH";s:26:"authnet_api_md5_hash_value";s:5:"first";s:13:"currency_code";s:3:"USD";s:24:"authnet_use_test_account";s:1:"1";}');

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /cache/
+Disallow: /files/
+Disallow: /modules/
+Disallow: /vendor/
+Disallow: /system/
+Disallow: /*?

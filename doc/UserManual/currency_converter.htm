@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Currency Converter</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?currency_converter.htm"; }
+  else { parent.quicksync('a10.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Currency Converter</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="credit_system.htm">Previous</a>&nbsp;
+     <a href="facebook_comments.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Caution"><span class="f_Caution">The Listing Currency Converter module is an add-on and is </span><span class="f_Caution" style="font-weight: bold;">not</span><span class="f_Caution"> a part of iLister default package for distribution. It can be </span><span class="f_Caution" style="font-weight: bold;">installed separately</span><span class="f_Caution"> for your iLister-based website. </span><span class="f_Caution">Please <a href="http://www.worksforweb.com/company/contact-us/pre-sales-inquiry/" target="_blank" class="weblink">request the installation conditions</a> from</span><span class="f_Caution"> our Sales Dept.</span></p>
+<p class="p_Heading3"><span class="f_Heading3">&nbsp;</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Overview</span></p>
+<p>Listing Currency Converter gives the ability website visitors to view listings with selected currency. The administrator can specify currencies which can be selected by visitors.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3"><a href="configuration_wizard.htm">Currency Converter Settings</a></span></p>
+<p>The conversion service is provided by <a href="https://openexchangerates.org" target="_blank" class="weblink">https://openexchangerates.org</a></p>
+<p>&nbsp;</p>
+<p>In order to use the Currency Converter module, the website administrator should create an account at  <a href="https://openexchangerates.org/signup/free" target="_blank" class="weblink">https://openexchangerates.org/signup/free</a>. This service allows to get a free account for all currencies available on the service with the limit of 1000 requests per month. Please check the actual service conditions at the official Open Exchange Rates <a href="https://openexchangerates.org" target="_blank" class="weblink">website</a>.</p>
+<p>&nbsp;</p>
+<p>After you created an account and specified the website where you plan to use rate service, you'll be given the application ID.<br>
+<a href="currency-converter-api-code.png"><img id="TOGGLE0186A1" class="image-toggle" src="currency-converter-api-code.zoom58.png" border="0" alt="currency-converter-api-code.zoom58" style="padding:10px"></a></p>
+<p>&nbsp;</p>
+<p>You should insert it to the Admin Panel -&gt; System Configuration -&gt; System Settings -&gt; Listing Currency Converter -&gt; API Code</p>
+<p><a href="currency-converter-settings.png"><img id="TOGGLE0186A2" class="image-toggle" src="currency-converter-settings.zoom66.png" border="0" alt="currency-converter-settings.zoom66" style="padding:10px"></a></p>
+<p>Also you need to specify:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Listing Main Currency</span> — the currency which is used by users when they create listings on the website.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">List Of Available Currencies</span> — the list of currencies which are available for conversion and their rate to listing main currency. Please note that currency rates are reloaded once an hour. Administrator can see all currencies, but only active ones will be visible to the website visitors in the Front-End.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">Show Decimal Part For Converted Money-type Fields</span> — when enabled, it shows decimal separator and decimal part for all prices in accordance to <a href="internationalization_and_languages.htm#languagesettings">language settings</a>.</td></tr></table></div><p>&nbsp;</p>
+<p>If you plan to activate the currency which has a high rate to a main listing currency, you can face the situation when converted prices are too large and do not fit into default design of your website. Here is what you can do:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>disable the option "Show decimal part for converted money-type fields" — this will cut off the decimal separator and decimal part for all prices, and thus will save you some space.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>adjust the styles in related <span class="f_Components">design.css</span> files, related to the section which displays a price, or the style of a money-type filed itself. For example, you can edit the size of the font (<span class="f_CodeExample">font-size</span>) and its weight (<span class="f_CodeExample">font-weight</span>), and instead use another color (<span class="f_CodeExample">color</span>) to highlight the price information among other fields.</td></tr></table></div><p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">How It Works For Visitors</span></p>
+<p>Website visitors can choose current listing currency among active currencies specified by the administrator.</p>
+<p><img src="choose-current-currency.zoom71.png" width="273" height="227" border="0" alt="choose-current-currency" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>After it was saved, a new listing currency will be applied to every <a href="field_types.htm#money">money-type</a> listing field.</p>
+<p>&nbsp;</p>
+<p>Search forms will display two price-related fields: the active one (Price EUR) will relate to selected currency, while inactive (Price) will automatically calculate price from visitor currency to main listing currency.</p>
+<p><img src="converted-price-on-search-form.zoom74.png" width="360" height="310" border="0" alt="converted-price-on-search-form" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p>Search results will display price in selected currency, but the Listing Details page will show both prices: in main currency and the converted one.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><OBJECT id="mediaPlayer" width="640" height="390"
+        classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95"
+        codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+        standby="Loading //www.youtube.com/v/xs-puba66by..."
+        type="application/x-oleobject">
+        <param name="fileName" value="//www.youtube.com/v/xs-puba66by">
+        <param name="autoStart" value="True">
+        <param name="showControls" value="False">
+        <param name="loop" value="False">
+        <EMBED type="application/x-mplayer2"
+               pluginspage="http://microsoft.com/windows/mediaplayer/en/download/"
+               id="mediaPlayer" name="mediaPlayer" displaysize="4" autosize="-1"
+               bgcolor="#FFFFFF" showtracker="-1"
+               showdisplay="0" showstatusbar="-1" videoborder3d="-1" width="640" height="390"
+               src="//www.youtube.com/v/xs-puba66by" autostart="1" showcontrols="0" loop="0">
+        </EMBED>
+</OBJECT></p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','currency-converter-api-code.zoom58.png','hm.src1','currency-converter-api-code.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','currency-converter-settings.zoom66.png','hm.src1','currency-converter-settings.png');
+</script>
+</body>
+</html>

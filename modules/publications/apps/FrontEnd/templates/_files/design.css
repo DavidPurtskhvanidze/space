@@ -1,0 +1,21 @@
+.publicationArticle p
+{
+	margin: 1em 0;
+}
+.publicationArticle .timestamp
+{
+	margin: 0;
+}
+.publicationArticle .timestamp .fieldValue.fieldValueTimestamp
+{
+	display: block;
+	color: #666666;
+	text-align: right;
+	font-family: monospace;
+	font-size: 110%;
+}
+.publicationArticle ul
+{
+	padding: 0 2em;
+	list-style-type: disc;
+}

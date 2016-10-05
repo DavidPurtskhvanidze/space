@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>User Search</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Common User Profile Fields,Search Users,Specific User Profile Fields,User Search" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?user_search.htm"; }
+  else { parent.quicksync('a9.42'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">User Search</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="user_profile_page.htm">Previous</a>&nbsp;
+     <a href="watermark.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span class="f_Heading3">General Information</span></p>
+<p>&nbsp;</p>
+<p>The user search feature allows your visitor to search for a particular user or user group. User search offers the following functionality:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Administrator can set up user search pages, configure which user group (or all of them) can be searched and which user profile fields (<a href="user_groups.htm#commonuserprofilefields">common</a> or <a href="user_groups.htm#specificuserprofilefields">specific</a>) are available for search; </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Visitors are able to search within user groups as set up by the administrator; </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Search results are a list or users found with brief descriptions (additional details can be added by the administrator via templates)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Each search result item provides links to the complete user profile, all listing by this user and a contact user page (can be modified via templates) </td></tr></table></div><p>&nbsp;</p>
+<p>Administrator can set up as many user search pages as desired. In order to create a user search page, create a new <a href="managing_site_pages.htm">Site Page</a> with a<span class="f_Components">"search_users</span>” function of the <span class="f_Components">“users”</span> module.</p>
+<p>&nbsp;</p>
+<p>When <span style="font-weight: bold;">setting up a user search page</span>, please keep the following in mind:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>The list of fields in the “fields” parameter is used inside the default search form template (<span class="f_Components">user_search_form.tpl</span>). If you use a different template for user search form (by setting a value to the <span class="f_Components">search_form_template</span> parameter) the list in “fields” parameter may be disregarded by the creator of the search form template. Creator of the search template has the choice either to disregard the list from the “fields” parameter or use it.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>Only those fields that are available in the profile of the user group “<span class="f_Components">user_group_id</span>” make sense as a search criteria. For example if site visitor is looking for the company named “Alpha” in user search, but the group within which search is done does not have the “company name” field no users will be found (empty result). Please keep this consideration in mind when setting up user search page and creating a custom search form template.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td><a name="allusergroupssearch"></a>Administrator can leave the parameter "user_group_id" blank and specify only <a href="user_groups.htm#commonuserprofilefields">common user profile fields</a> (like First Name or State). In this case the user search will be performed among all User Groups by specified fields of the user search form. Specific user profile fields will be ignored if the parameter "user_group_id" is blank.</td></tr></table></div><p>&nbsp;</p>
+<p>The layout of the search results page is configured via the search results template (by default called “user_search_results.tpl” or custom template(s) that contain the <span class="f_Components">result_template</span> parameter). &nbsp;By editing this template, the administrator sets user profile fields to be displayed and configures field positions and layouts. Please refer to the default template for examples of the user search results layout.</p>
+<p>&nbsp;</p>
+<p class="p_Components"><span class="f_Heading3">Site&nbsp;Visitor&nbsp;Experience</span></p>
+<p>&nbsp;</p>
+<p>When a visitor opens the search user page, he/she will see a search form. Visitor enters search criteria to the form fields and clicks the “Search” button. Following that, search results are displayed below. If no search criteria are entered, all users will appear in the search.</p>
+<p>&nbsp;</p>
+<p><img src="search-users-results.png" width="773" height="548" border="0" alt="search-users-results"></p>
+<p>Search result page contains brief information about the users found (pretty much like listing search results page). </p>
+<p>&nbsp;</p>
+<p>User search results are paginated, with controls to flip pages and set a total number of results per page located above and underneath the results block. To switch pages, click on the page number or on the “Next” or “Previous” links on the page. To change a number or results per page, select the desired number in the drop-down box labeled “Number of records per page”.</p>
+<p>&nbsp;</p>
+<p>By default, there are three links below each result: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>“View All Listings” — links to a page where all listings of the user are displayed, </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>“Contact User” — links to a page with contact from, </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>“View Full Profile”— links to a page with <a href="user_profile_page.htm">user’s profile information</a>.</td></tr></table></div><p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Left Menu</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Left Menu" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iautobikes_left_menu_section.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Left Menu</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="left-menu.png" width="190" height="260" border="0" alt="left-menu"></p>
+<p>&nbsp;</p>
+<p>Left menu is divided into two parts - left menu for visitors (guests) and a User Group specific left menu.</p>
+<p>&nbsp;</p>
+<p>The template for the left menu for a User Group is specified in its properties in Admin Panel -&gt; User Groups -&gt; edit a group. By default, iLister has a specific left menu for the User Group "PrivateSeller". In case there is no user menu specified in the settings of a User Group, iLister displays common user menu which template is user_menu.tpl</p>
+<p>&nbsp;</p>
+<p><img src="user-menu-template.png" width="853" height="138" border="0" alt="user-menu-template"></p>
+<p>&nbsp;</p>
+<p>A User Group menu is displayed under the common left menu if a user of this group is logged in.</p>
+<p><img src="user-menu.png" width="167" height="486" border="0" alt="user-menu"></p>
+<p>&nbsp;</p>
+<p>In case there is no user menu specified in the settings of a User Group, iLister displays common user menu which template is user_menu.tpl</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Edit a Menu Item</span></p>
+<p>You can remove or add a menu item in menu templates:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>common left menu — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; left_menu.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>visitor (guest) left menu — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; guest_menu.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>common user menu — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Menu -&gt; user_menu.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>User Group specific menus are also there, you can check the name of the template file for a User Group menu in the settings of the Group.</td></tr></table></div><p>&nbsp;</p>
+<p>In order to add a new item, please use the below code as an example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;&lt;a&nbsp;href="{$GLOBALS.site_url}/newpage/"&gt;[[New&nbsp;Page]]&lt;/a&gt;&lt;/li&gt;</span></p>
+<p>&nbsp;</p>
+<p>When you add a new item to the menu, please make sure that you have the page where this item leads, like the /newpage/ <a href="managing_site_pages.htm">Site Page</a> in the above example.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">How to Add a Menu Template</span></p>
+<p>You may need to have a different menu for different User Groups. To do so, you need to create a new menu template for a Group.</p>
+<p>&nbsp;</p>
+<p>You can copy the code from one of the existing user menu templates like user_menu.tpl, and upload this file to your server at </p>
+<p><span class="f_Components">/modules/menu/apps/FrontEnd/templates/{theme_name}/new_usergroup_menu.tpl.</span></p>
+<p>Afterwards you need to specify this file new_usergroup_menu.tpl in the settings of the User Group.</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

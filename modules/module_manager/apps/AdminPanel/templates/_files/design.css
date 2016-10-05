@@ -1,0 +1,25 @@
+.moduleManager .fieldValue.status.ENABLED
+{
+	color: #0A0;
+}
+.moduleManager .fieldValue.status.DISABLED
+{
+	color: #F60;
+}
+.moduleManager .fieldValue.status.NO_LICENSE
+{
+	color: red;
+}
+
+.dependencyAction
+{
+	margin-top: 10px;
+}
+.dependencyAction form
+{
+	display: inline;
+}
+.dependencyAction input[type=submit]
+{
+	margin-right: 10px;
+}

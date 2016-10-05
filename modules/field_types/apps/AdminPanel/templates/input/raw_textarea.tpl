@@ -1,0 +1,1 @@
+<textarea class="form-control {if $hasError}has-error tooltip-error{/if} {if $maxlength > 0}maxlength{/if}" name="{$id}" {if $hasError}data-rel="tooltip" data-placement="top" title="{$error}"{/if} {if $maxlength > 0} maxlength={$maxlength}{/if}{$id_attribute}>{$value}</textarea>

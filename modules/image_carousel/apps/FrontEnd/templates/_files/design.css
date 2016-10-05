@@ -1,0 +1,145 @@
+#slider
+{
+	/*IE bugfix*/
+	padding: 0;
+	margin: 0;
+}
+
+#slider img
+{
+	max-height: 100%;
+	max-width: 100%
+}
+
+#slider li
+{
+	list-style: none;
+	text-align: center;
+}
+
+.rhino-btn
+{
+	background:url(arrows.png) 0 0 no-repeat;
+	z-index: 10;
+	width: 39px;
+	height: 50px;
+	display: block;
+	text-indent:-999%;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+}
+
+.rhino-prev,
+.rhino-next
+{
+	top: 50%;
+	margin-top: -25px;
+}
+
+.rhino-prev,
+.rhino-prev:hover
+{
+	left: 0;
+	background-position: 0 0;
+}
+
+.rhino-next,
+.rhino-next:hover
+{
+	right:0;
+	background-position: 100% 0;
+}
+
+.rhino-container { position:relative; }
+
+.rhino-caption {
+	position:absolute;
+	background: #000;
+	display:none;
+	left:0;
+	right:0;
+	top:0;
+	color:#fff;
+	padding:10px;
+	text-align:right;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+}
+
+.bulletsWrapper
+{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+
+.rhino-bullets
+{
+	position: relative;
+	left: -50%;
+	z-index: 10;
+	padding:0;
+}
+
+.rhino-bullets li
+{
+	float:left;
+	display:inline;
+	margin:0 3px;
+}
+
+.rhino-bullets li a.rhino-bullet
+{
+	display: block;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	padding: 0;
+	border: 1px solid #D6D6D6;
+	text-decoration:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+}
+
+.rhino-bullets li a.rhino-bullet span
+{
+	display: none;
+}
+
+.rhino-bullets li a.rhino-bullet:hover, .rhino-bullets li a.rhino-bullet:focus
+{
+	background:#eee;
+}
+
+.rhino-bullets li a.rhino-bullet.rhino-active-bullet
+{
+	background: #ccc;
+}
+
+.carousel.withNumbers .rhino-bullets li a.rhino-bullet
+{
+	width: 15px;
+	height: 15px;
+	background: #999;
+	color: #000;
+	font-size: 10px;
+	text-align: center;
+}
+
+.carousel.withNumbers .rhino-bullets li a.rhino-bullet:hover, .rhino-bullets li a.rhino-bullet:focus
+{
+	background:#eee;
+}
+
+.carousel.withNumbers .rhino-bullets li a.rhino-bullet.rhino-active-bullet
+{
+	background: #fff;
+}
+
+.carousel.withNumbers .rhino-bullets li a.rhino-bullet span
+{
+	display: inline;
+}

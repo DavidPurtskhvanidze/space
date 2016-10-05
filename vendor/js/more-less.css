@@ -1,0 +1,23 @@
+.more-less .items > *:nth-child(1n+4) {
+	display: none;
+}
+
+.more-less .show-more {
+	display: block;
+}
+
+.more-less .show-less {
+	display: none;
+}
+
+.more-less.open .items > *:nth-child(1n+4) {
+	display: block;
+}
+
+.more-less.open .show-more {
+	display: none;
+}
+
+.more-less.open .show-less {
+	display: block;
+}

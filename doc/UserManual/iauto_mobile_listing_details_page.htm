@@ -1,0 +1,144 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Listing Details Page</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Add New Field to Listing Details Page,Comments Links,Comments Section,Google Map Details,Listing Caption,Listing Controls,Listing Images,Rating,Seller Information" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?iauto_mobile_listing_details_page.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Listing Details Page</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>The template which displays Listing Details information is viewListingCar.tpl which can be found in </p>
+<p>Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/viewListingCar.tpl</p>
+<p>&nbsp;</p>
+<p><img src="mobile-listing-details-modification-screen-1.png" width="638" height="641" border="0" alt="mobile-listing-details-modification-screen-1"></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Caption</span></p>
+<p>Listing caption (<span class="f_CodeExample">{$listing}</span>) is built from the <a href="listing_caption.htm">"Listing Caption" category setting</a> and the listing fields specified in the following code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;h1&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.Sold.isTrue}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueSold"&gt;[[SOLD]]!&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{$listing}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/h1&gt;</span></p>
+<p>&nbsp;</p>
+<p>You can specify any listing field to compose a caption which helps you to create a SEO-friendly title for this page.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Rating</span></p>
+<p>Rating is displayed by the code</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueListingRating"&gt;{display&nbsp;property="ListingRating"}&lt;/span&gt;&lt;br&nbsp;/&gt;&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>The template which is used for rating-type fields is rating.tpl in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine. There you can see the images that are used for rating stars, and you can easily change them.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Image</span></p>
+<p>In order to change the section with the first listing image, you need to modify the file category_templates/display/viewListingCar.tpl in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine. The CSS style that defines the look of the image section is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.listingDetails&nbsp;.summary&nbsp;.fieldValuePictures</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;block;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0&nbsp;0&nbsp;2px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="margin: 0px 0px 0px 0px;"><span class="f_Heading3">How to Add a New Field</span></p>
+<p>You may want to add a new field to the "Car Details" section or "Car Features" block.</p>
+<p>&nbsp;</p>
+<p>The code which displays a field information in the section "Car Details" is the following:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaptionMileage"&gt;[[FormFieldCaptions!Mileage]]:&nbsp;&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueMileage"&gt;[[$listing.Mileage]]&lt;/span&gt;&lt;br&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>You need to change "Mileage" to the ID of your new listing field.</p>
+<p>&nbsp;</p>
+<p><img src="mobile-listing-details-modification-screen-2.png" width="514" height="642" border="0" alt="mobile-listing-details-modification-screen-2"></p>
+<p>&nbsp;</p>
+<p>In order to add a field to the block "Car Features", please use the code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.DriverAirBag.isTrue}&lt;li&nbsp;class="fieldValueDriverAirBag"&gt;[[$form_fields.DriverAirBag.caption]]&lt;/li&gt;{/if}</span></p>
+<p>You should replace "DriverAirBag" with the ID of the listing field which you would like to display.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Listing Details Sublinks</span></p>
+<p>Listing Details sublinks direct site visitor to the pages with additional listing information such as pictures, map, seller information and others.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Pictures</span></p>
+<p>In order to change the page with all listing pictures, you need to modify the file category_templates/display/display_pictures.tpl in Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine. The CSS styles that define the look of the image section, are specified in the display_pictures.tpl file.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">.pictures&nbsp;.picturesContainer,&nbsp;.pictures&nbsp;.pictureContainer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin-top:&nbsp;5px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_Heading3">Larger&nbsp;Image</span></p>
+<p>When visitor clicks on a thumbnail image on the Listing Pictures page, he/she is redirected to the page with the larger image for the selected picture.</p>
+<p>The page contains picture controls which allow visitor to page pictures or to come back to the page with all listing pictures.</p>
+<p>&nbsp;</p>
+<p><img src="mobile-listing-details-larger-image-modification.png" width="538" height="639" border="0" alt="mobile-listing-details-larger-image-modification"></p>
+<p>&nbsp;</p>
+<p>In order to change the look of this page, please modify the template category_templates/display/display_picture.tpl in &nbsp;Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine. There you can find all CSS styles regulating this section.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Google Map Details</span></p>
+<p>The Google Map details are retrieved from the following data:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{getCoordsByAddress&nbsp;address=$listing.Address|cat:",&nbsp;"|cat:$listing.City|cat:",&nbsp;"|cat:$listing.State&nbsp;assign=geoData}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;empty($geoData)&nbsp;&amp;&amp;&nbsp;!empty($listing.ZipCode)}{assign&nbsp;var=geoData&nbsp;value=$listing.ZipCode}{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;!empty($geoData)}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;img&nbsp;src="http://maps.google.com/maps/api/staticmap?size=300x300&amp;markers={$geoData.latitude},{$geoData.longitude}&amp;sensor=false"&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>Here is what is happening:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">1.</span></td><td><span class="f_CodeExample">{getCoordsByAddress address=$listing.Address|cat:", "|cat:$listing.City|cat:", "|cat:$listing.State assign=geoData}</span></td></tr></table></div><p style="margin: 0px 0px 0px 16px;">iLister creates the variable geoData with the data from listing fields Address, City and State. You can change this set of fields to your own.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">2.</span></td><td><span class="f_CodeExample">{if empty($geoData) &amp;&amp; !empty($listing.ZipCode)}{assign var=geoData value=$listing.ZipCode}{/if}</span></td></tr></table></div><p style="margin: 0px 0px 0px 14px;">In case geoData is empty (i.e. Address, City and State were not filled for this listing) and there is a ZipCode for this listing, then the ZipCode value is passed to geoData.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">3.</span></td><td><span class="f_CodeExample">{if&nbsp;!empty($geoData)}</span></td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">{include&nbsp;file="category_templates/display/listing_details_googlemap.tpl"&nbsp;geoData=$geoData}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">{/if}</span></p>
+<p style="margin: 0px 0px 0px 16px;">Then, if there is any information in geoData (either from Address, City and State or from the ZipCode), iLister displays the block with the map which shows the location based on the data from geoData.</p>
+<p>&nbsp;</p>
+<p>The map div for Google Map section in specified in the file category_templates/display/display_map.tpl in &nbsp;Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Comments Section</span></p>
+<p>Comments section is connected to the listing details page through display_comments.tpl that can be found in </p>
+<p>Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/display_comments.tpl</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="classifieds"&nbsp;function="display_comments"&nbsp;limit=3&nbsp;results_template="comments.tpl"&nbsp;QUERY_STRING="listing_sid[equal]="|cat:$listing.sid}</span></p>
+<p>&nbsp;</p>
+<p>The CSS style for the comments section is <span class="f_Components">&lt;div class="comments"&gt;</span>.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Seller Information</span></p>
+<p>The seller block starts with the code <span class="f_CodeExample">&lt;div class="sellerInfo"&gt;</span></p>
+<p>You can add more information about the seller to this section from User Profile fields of the User Group. Afterwards you need to add new fields to the file category_templates/display/display_seller_info.tpl in &nbsp;Admin Panel -&gt; Mobile Site Layout -&gt; Module Templates -&gt; Classifieds Engine.</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

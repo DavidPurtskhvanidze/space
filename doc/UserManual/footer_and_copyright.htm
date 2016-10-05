@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Footer, Copyright and Others</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="About Us,Copyright,Footer,Poll,Recent Tweets,Share Your Site" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?footer_and_copyright.htm"; }
+  else { parent.quicksync('a11.2.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Footer, Copyright and Others</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="browse_by_sections.htm">Previous</a>&nbsp;
+     <a href="modify_secondary_pages_template.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="footer.zoom79.png" width="771" height="378" border="0" alt="footer"></p>
+<p>&nbsp;</p>
+<p>The template which displays the footer part, a small "About Us" section, news, <a href="recent_tweets.htm">Recent Tweets</a>, poll and the copyright information is <span class="f_Components">page_parts/footer_block.tpl</span>, and you can find it in Admin Panel -&gt; Site Layout -&gt; Page Templates.</p>
+<p>&nbsp;</p>
+<p>The CSS styles for these blocks are specified in the template.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">footer&nbsp;{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;none&nbsp;repeat&nbsp;scroll&nbsp;0%&nbsp;0%&nbsp;#3A3A3A;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;30px&nbsp;0px&nbsp;0px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;0px&nbsp;0px&nbsp;30px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#AAA;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">.copyright-share&nbsp;{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;margin-top:&nbsp;30px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;padding-top:&nbsp;20px;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;border-top:&nbsp;1px&nbsp;solid&nbsp;#999;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>You can easily change the <span style="font-weight: bold;"><a href="configuration_wizard.htm">copyright text</a></span> shown below:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="copyright"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{include&nbsp;file="miscellaneous^powered.tpl"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;br&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&amp;copy;&nbsp;2006&amp;ndash;2014&nbsp;&lt;a&nbsp;href="http://www.worksforweb.com/"&gt;WorksForWeb&lt;/a&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>The "Powered By" text can be modified in Admin Panel -&gt; Site layout -&gt; Module Templates -&gt; Miscellaneous -&gt; powered.tpl</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">About Us</span></p>
+<p>The About Us text and the image can be also adjusted in <span class="f_Components">page_parts/footer_block.tpl:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="about-us"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;h2&gt;[[About&nbsp;Us]]&lt;/h2&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;img&nbsp;src="{url&nbsp;file='main^about_us.png'}"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;p&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[[You&nbsp;can&nbsp;change&nbsp;this&nbsp;text&nbsp;to&nbsp;any&nbsp;desired&nbsp;wording.&nbsp;In&nbsp;order&nbsp;to&nbsp;do&nbsp;so&nbsp;please&nbsp;go&nbsp;to&nbsp;the&nbsp;Admin&nbsp;Panel,&nbsp;then&nbsp;click&nbsp;"Site&nbsp;Layout"&nbsp;then&nbsp;"Page&nbsp;Templates"&nbsp;and&nbsp;then&nbsp;click&nbsp;on&nbsp;the&nbsp;"Edit"&nbsp;button&nbsp;across&nbsp;the&nbsp;"page_parts\footer_block.tpl"&nbsp;item&nbsp;in&nbsp;the&nbsp;table.]]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/p&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="readMore"&gt;&lt;a&nbsp;href="{$GLOBALS.site_url}/about/"&gt;[[Read&nbsp;more]]&lt;/a&gt;&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Please put a new image to <span class="f_Components">/modules/theme_boostrap_base/main/_files/about_us.png</span>.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Heading3"><span class="f_Heading3">News, Poll and Share Your Site Sections</span></p>
+<p>If you like to change the look of these blocks, you need the following templates:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>for News — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Publication System-&gt; print_news_box_articles.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>for Poll — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Poll -&gt; poll_block.tpl</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>for the Share section — Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Miscellaneous -&gt; share_section.tpl</td></tr></table></div><p>&nbsp;</p>
+<p>Here is the code which displays these sections:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="publications"&nbsp;function="show_publications"&nbsp;passed_parameters_via_uri=""&nbsp;category_id="News"&nbsp;number_of_publications="2"&nbsp;publications_template="print_news_box_articles.tpl"}</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 13px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000000;">o</span></td><td>In order to change a number of news displayed at the footer, please go to Admin Panel -&gt; Site Layout -&gt; Page Templates -&gt; page_parts/footer_block.tpl and change the parameter 'number_of_publications'.</td></tr></table></div><p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="poll"&nbsp;function="poll_form"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{include&nbsp;file="miscellaneous^share_section.tpl"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>For the section with share buttons we use the <a href="https://www.addthis.com" target="_blank" class="weblink">AddThis</a> tool. In order to learn how to customize the buttons and change other settings, please refer to the <a href="http://www.addthis.com/help" target="_blank" class="weblink">official AddThis help topics</a>.</p>
+<p><img src="addthis-tool.png" width="388" height="453" border="0" alt="addthis-tool" style="margin:10px;"></p>
+<p>&nbsp;</p>
+<p class="p_Caution"><span class="f_Caution">Please note that your copy of iLister must be eligible for <a href="http://www.worksforweb.com/classifieds-software/terms-of-sale/" target="_blank" class="weblink">un-branding</a> in order to have the right to change the copyright info.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

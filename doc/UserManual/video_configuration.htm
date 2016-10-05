@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Video Configuration</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?video_configuration.htm"; }
+  else { parent.quicksync('a13.16'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Video Configuration</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="deleting_field_errors.htm">Previous</a>&nbsp;
+     <a href="reference.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="line-height: 1.15;">In order to be able to upload videos to listings, the site Administrator needs to configure Google Developers Console and Admin Panel.</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;"><span class="f_Heading3">In Google Developers Console:</span> <a href="https://console.developers.google.com/" target="_blank" class="weblink">https://console.developers.google.com/</a> </p>
+<p style="line-height: 1.15;">1. Create new project </p>
+<p style="line-height: 1.15;">2. Enable YouTube Data API v3 in APIs &amp; auth &gt; APIs </p>
+<p style="line-height: 1.15;"><img src="youtube-enable-api.zoom78.png" width="502" height="253" border="0" alt="youtube-enable-api"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">3. Set a Product name in APIs &amp; auth &gt; Credentials &gt; OAuth consent screen  </p>
+<p style="line-height: 1.15;"><img src="youtube-product-name.zoom76.png" width="552" height="272" border="0" alt="youtube-product-name"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">4. Add OAuth 2.0 client ID in APIs &amp; auth &gt; Credentials &gt; Credentials </p>
+<p style="line-height: 1.15;"><img src="youtube-add-oauth.zoom74.png" width="817" height="397" border="0" alt="youtube-add-oauth"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">5. Set the following:</p>
+<p style="line-height: 1.15;">Application type - Web application </p>
+<p style="line-height: 1.15;">Authorized redirect URIs - http://YOU_SITE_URL/user/openid_oauth_login/</p>
+<p style="line-height: 1.15;">http://YOU_SITE_URL/admin/system/field_types/google_auth/</p>
+<p style="line-height: 1.15;"><img src="youtube-add-oauth.zoom67.png" width="736" height="357" border="0" alt="youtube-add-oauth"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">You'll get client ID and client secret. We'll use this information in Admin Panel.</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">In Admin Panel: </span></p>
+<p style="line-height: 1.15;">1. In System Configuration &gt; System Settings &gt; OAuth &amp; OpenID you need to set the following:</p>
+<p style="line-height: 1.15;">- <span style="font-weight: bold;">Client ID for Google</span> = client ID that was generated earlier</p>
+<p style="line-height: 1.15;">- <span style="font-weight: bold;">Client secret for Google</span> = client secret that was generated earlier</p>
+<p style="line-height: 1.15;">- <span style="font-weight: bold;">Google app name</span> = Google Project name</p>
+<p style="line-height: 1.15;">2. Click on "<span style="font-weight: bold;">Get Access Token</span>" in Admin Panel &gt; System Configuration &gt; System Settings &gt; Social Networks &gt; Upload Video to YouTube &gt; Upload Video Status disabled.</p>
+<p style="line-height: 1.15;">3. Click on "<span style="font-weight: bold;">Accept</span>" button </p>
+<p style="line-height: 1.15;"><img src="youtube-accept-app.zoom71.png" width="357" height="324" border="0" alt="youtube-accept-app"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">All videos will be uploaded to YouTube by <a href="task_scheduler.htm">task scheduler</a>.  </p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;">&nbsp;</p>
+<p style="line-height: 1.15;"><span style="font-weight: bold; color: #ff0000;">NOTE: You need to enable "Is Video Allowed" in Admin Panel &gt; User Management &gt; Membership Plans &gt; Plan &gt; Edit Package.</span></p>
+<p style="line-height: 1.15;"><img src="youtube-video-allowed.zoom73.png" width="749" height="480" border="0" alt="youtube-video-allowed"></p>
+<p style="line-height: 1.15;">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

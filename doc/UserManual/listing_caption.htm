@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Listing Caption</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Listing,Listing Caption,Listing Details" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?listing_caption.htm"; }
+  else { parent.quicksync('a9.20'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Listing Caption</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="ip_blocklist_manager.htm">Previous</a>&nbsp;
+     <a href="listing_comments.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading2"><span class="f_Heading2">Description</span></p>
+<p>iLister provides administrator the ability to specify the caption of a listing for each category. Specified listing caption is displayed on the Listing Details page. The setting is called "Listing Caption" and can be found on the configuration page of a category.</p>
+<p><a href="listing-caption-category-settings.png"><img id="TOGGLE0186A1" class="image-toggle" src="listing-caption-category-settings.zoom90.png" border="0" alt="listing-caption-category-settings.zoom90"></a></p>
+<p>&nbsp;</p>
+<p>This setting is inherited by child categories. This means that site administrator can define one Listing Caption for a parent category which will be inherited by all sub-categories; and re-declare the Caption for child categories which demand different Listing Caption.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">How to use Listing Caption</span></p>
+<p>The administrator can use the variable {$listing} in the template which displays the Listing Details page (please refer to the section <a href="template_system_and_theme_management.htm#templateidentification">"Template Identification"</a>).</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{title}{$listing|cat:""|strip_tags:false},&nbsp;[[$listing.type.caption:raw]]{/title}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{keywords}{$listing|cat:""|strip_tags:false},&nbsp;[[$listing.type.caption:raw]]{/keywords}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{description}{$listing|cat:""|strip_tags:false},&nbsp;[[$listing.type.caption:raw]]{/description}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;h1&gt;{$listing}&lt;/h1&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>The {$listing} variable will be displayed on the Listing Details page in accordance to the configuration of "Listing Caption" setting in the properties of listing category.</p>
+<p><a href="listing-caption-in-browser.png"><img id="TOGGLE0186A2" class="image-toggle" src="listing-caption-in-browser.zoom80.png" border="0" alt="listing-caption-in-browser.zoom80"></a></p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','listing-caption-category-settings.zoom90.png','hm.src1','listing-caption-category-settings.png');
+HMInitToggle('TOGGLE0186A2','hm.type','picture','hm.state','0','hm.src0','listing-caption-in-browser.zoom80.png','hm.src1','listing-caption-in-browser.png');
+</script>
+</body>
+</html>

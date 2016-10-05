@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Listing Details Page</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Add New Field to Listing Details Page,Comments Links,Comments Section,Google Map Details,Listing Caption,Listing Controls,Listing Images,Rating,Seller Information" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?ilisterpets_listing_details_page.htm"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Listing Details Page</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     
+     
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><a href="listing-details-modification.png"><img id="TOGGLE0186A1" class="image-toggle" src="listing-details-modification.zoom70.png" border="0" alt="listing-details-modification.zoom70"></a></p>
+<p>&nbsp;</p>
+<p>The template which displays Listing Details information is default_view.tpl which can be found in </p>
+<p>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/default_view.tpl</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="margin: 0px 0px 0px 0px;"><span class="f_Heading3">How to Add a New Field</span></p>
+<p>By default, iLister displays all fields of the listing category in the <span class="f_Components">foreach</span> cycle:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{foreach&nbsp;from=$form_fields&nbsp;item=form_field}</span></p>
+<p>&nbsp;</p>
+<p>However, you may want to add a new field which will be displayed in a different way. You can do this as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{foreach&nbsp;from=$form_fields&nbsp;item=form_field}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{*&nbsp;The&nbsp;following&nbsp;code&nbsp;excludes&nbsp;some&nbsp;fields&nbsp;from&nbsp;being&nbsp;displayed&nbsp;*}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{if&nbsp;!(</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;$form_field.id&nbsp;==&nbsp;'featured'</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">||&nbsp;$form_field.id&nbsp;==&nbsp;'NewField' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//Exluding&nbsp;your&nbsp;new&nbsp;field&nbsp;from&nbsp;the&nbsp;foreach&nbsp;cycle</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">...</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">)}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaption{$form_field.id}"&gt;[[$form_field.caption]]:&lt;/span&gt;&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValue{$form_field.id}"&gt;{display&nbsp;property=$form_field.id}&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;br&nbsp;/&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/foreach}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.NewField}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;tr&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;span&nbsp;class="fieldCaption&nbsp;fieldCaption{$form_field.id}"&gt;[[$form_field.caption]]:&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValue{$form_field.id}"&gt;[[$listing.NewField]]&lt;/span&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_Notice">//Adding&nbsp;your&nbsp;new&nbsp;field&nbsp;to&nbsp;the&nbsp;Listing&nbsp;Details&nbsp;page</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/td&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/tr&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>You need to change "NewField" to the ID of your new listing field.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Breadcrumbs</span></p>
+<p>Breadcrumbs is the path to the category of the listing. Below you can see the code which displays this section:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="breadcrumbs"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{foreach&nbsp;from=$ancestors&nbsp;item="ancestor"&nbsp;name="ancestors_cycle"}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;a&nbsp;href="{$GLOBALS.site_url}/browse{$ancestor.path}"&gt;[[$ancestor.caption]]&lt;/a&gt;&nbsp;/</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{/foreach}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Caption</span></p>
+<p>Listing caption is built from the <a href="listing_caption.htm">"Listing Caption" category setting</a> and the listing fields specified in the following code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;h1&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{if&nbsp;$listing.Sold.exists&nbsp;&amp;&amp;&nbsp;$listing.Sold.isTrue}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueSold"&gt;[[SOLD]]!&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{/if}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{$listing}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{if&nbsp;$listing.Price.exists}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValuePrice"&gt;{$GLOBALS.custom_settings.listing_currency}[[$listing.Price]]&lt;/span&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/h1&gt;</span></p>
+<p>&nbsp;</p>
+<p>You can specify any listing field to compose a caption which helps you to create a SEO-friendly title for this page.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Controls</span></p>
+<p>The listing controls block represents the visitor and/or user actions related to the listing. This section is included to default_view.tpl in the file listing_details_listing_controls.tpl:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{include&nbsp;file="category_templates/display/listing_details_listing_controls.tpl"}</span></p>
+<p>&nbsp;</p>
+<p>In order to add more controls links or change/remove some of them you need to go to </p>
+<p>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/listing_details_listing_controls.tpl</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;li&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;a&nbsp;target="_blank"&nbsp;href="{$GLOBALS.site_url}/print-listing/?listing_id={$listing.id}"&gt;&lt;img&nbsp;class="linkIcon"&nbsp;src="{url&nbsp;file='_files/icons/print.png'}"&nbsp;alt=""&nbsp;/&gt;&lt;/a&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;a&nbsp;target="_blank"&nbsp;href="{$GLOBALS.site_url}/print-listing/?listing_id={$listing.id}"&gt;[[Print&nbsp;This&nbsp;Ad]]&lt;/a&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/li&gt;</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Rating</span></p>
+<p>Rating is displayed by the code</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;span&nbsp;class="fieldValue&nbsp;fieldValueListingRating"&gt;{display&nbsp;property=ListingRating}&lt;/span&gt;</span></p>
+<p>&nbsp;</p>
+<p>The template which is used for rating-type fields is rating.tpl in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine. There you can see the images that are used for rating stars, and you can easily change them.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Seller Information</span></p>
+<p>The seller block starts with the code shown below:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;div&nbsp;class="ownerInfo"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;h1&gt;[[Seller&nbsp;Info]]&lt;/h1&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{include&nbsp;file="author_info.tpl"&nbsp;listing=$listing}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;/div&gt;</span></p>
+<p>&nbsp;</p>
+<p>The CSS style for the seller info is <span class="f_Components">.ownerInfo.</span></p>
+<p>You can add more information about the seller to this section from User Profile fields of the User Group.</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Listing Images</span></p>
+<p>In order to change the section with listing images, you need to modify the file listing_images.tpl in Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine. The file is connected as follows:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.pictures.numberOfItems&nbsp;&gt;&nbsp;0}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{include&nbsp;file="listing_images.tpl"&nbsp;listing=$listing}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>The CSS styles that define the look of the image section, are specified in the listing_images.tpl file. It includes the file for displaying image slideshow, if this option is enabled for the listing:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;$listing.feature_slideshow.isTrue}</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">{include&nbsp;file='slide_listing_images.tpl'}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Google Map Details</span></p>
+<p>The Google Map details are retrieved from the following data:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{getCoordsByAddress&nbsp;address=$listing.Address|cat:",&nbsp;"|cat:$listing.City|cat:",&nbsp;"|cat:$listing.State&nbsp;assign=geoData}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;empty($geoData)&nbsp;&amp;&amp;&nbsp;!empty($listing.ZipCode)}{assign&nbsp;var=geoData&nbsp;value=$listing.ZipCode}{/if}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{if&nbsp;!empty($geoData)}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{include&nbsp;file="category_templates/display/listing_details_googlemap.tpl"&nbsp;geoData=$geoData}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{/if}</span></p>
+<p>&nbsp;</p>
+<p>Here is what is happening:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">1.</span></td><td><span class="f_CodeExample">{getCoordsByAddress address=$listing.Address|cat:", "|cat:$listing.City|cat:", "|cat:$listing.State assign=geoData}</span></td></tr></table></div><p style="margin: 0px 0px 0px 16px;">iLister creates the variable geoData with the data from listing fields Address, City and State. You can change this set of fields to your own.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">2.</span></td><td><span class="f_CodeExample">{if empty($geoData) &amp;&amp; !empty($listing.ZipCode)}{assign var=geoData value=$listing.ZipCode}{/if}</span></td></tr></table></div><p style="margin: 0px 0px 0px 14px;">In case geoData is empty (i.e. Address, City and State were not filled for this listing) and there is a ZipCode for this listing, then the ZipCode value is passed to geoData.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Courier New'; color: #000080;">3.</span></td><td><span class="f_CodeExample">{if&nbsp;!empty($geoData)}</span></td></tr></table></div><p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">{include&nbsp;file="category_templates/display/listing_details_googlemap.tpl"&nbsp;geoData=$geoData}</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 15px;"><span class="f_CodeExample">{/if}</span></p>
+<p style="margin: 0px 0px 0px 16px;">Then, if there is any information in geoData (either from Address, City and State or from the ZipCode), iLister displays the block with the map which shows the location based on the data from geoData.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading3">Comments Section</span></p>
+<p>Comments section is connected to the listing details page through listing_details_comments.tpl that can be found in </p>
+<p>Admin Panel -&gt; Site Layout -&gt; Module Templates -&gt; Classifieds Engine -&gt; category_templates/display/listing_details_comments.tpl</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{include&nbsp;file="category_templates/display/listing_details_comments.tpl"}</span></p>
+<p>&nbsp;</p>
+<p>The CSS style for the comments section is <span class="f_Components">&lt;div class="comments"&gt;</span>.</p>
+
+</td></tr></table>
+
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','listing-details-modification.zoom70.png','hm.src1','listing-details-modification.png');
+</script>
+</body>
+</html>

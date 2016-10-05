@@ -1,0 +1,67 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Facebook Comments</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?facebook_comments.htm"; }
+  else { parent.quicksync('a10.6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Facebook Comments</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="currency_converter.htm">Previous</a>&nbsp;
+     <a href="featured_ads_slider.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Caution" style="line-height: 1.50;"><span class="f_Caution">The Facebook Comments is an add-on and is </span><span class="f_Caution" style="font-weight: bold;">not</span><span class="f_Caution"> a part of iLister default package for distribution. It can be </span><span class="f_Caution" style="font-weight: bold;">installed separately</span><span class="f_Caution"> for your iLister-based website. </span><span class="f_Caution">Please <a href="http://www.worksforweb.com/company/contact-us/pre-sales-inquiry/" target="_blank" class="weblink">request the installation conditions</a> from</span><span class="f_Caution"> our Sales Dept.</span></p>
+<p class="p_Caution" style="line-height: 1.50;"><span class="f_Caution">&nbsp;</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Overview</span></p>
+<p>iLister has integrated <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank" class="weblink">Facebook Comments Plugin</a> that lets people comment on content of your site(listings, user profiles) using their Facebook account. </p>
+<p>&nbsp;</p>
+<p>Users can also post their comments on Facebook. </p>
+<p>&nbsp;</p>
+<p><img src="facebook-comments-plugin.png" width="764" height="237" border="0" alt="facebook-comments-plugin"></p>
+<p>&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">How To Insert Facebook Comments plugin</span></p>
+<p>&nbsp;</p>
+<p>You can insert the Facebook comments on Listing details page using the following code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="facebook_comments"&nbsp;function="display_comments"&nbsp;url="{page_url&nbsp;id="listing"}|cat:$listing.id"}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>For user profile you can use the following code:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">{module&nbsp;name="facebook_comments"&nbsp;function="display_comments"&nbsp;url="{page_url&nbsp;id='users'}"|cat:$user.id}&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>Please note that you need to set Facebook ID and secret in Admin Panel -&gt; System Settings. You can find more information in <a href="facebook_twitter_and_openid_login.htm#facebookappplocationidandsecret">Facebook, Twitter, Google and OpenID Login</a> section.</p>
+
+</td></tr></table>
+
+</body>
+</html>
