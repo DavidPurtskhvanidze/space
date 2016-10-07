@@ -8,94 +8,95 @@
         </div>
     </div>
 {/function}
-
-<div class="row">
-    <div class="col-md-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">
-                    [[Manage Search]]
-                </h3>
-            </div>
+<div class="searchResultsHeader-item">
+    <div class="dropdown">
+        <a id="ManageSearch" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            [[Manage Search]]<span class="thin-caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="ManageSearch">
             {include file="classifieds^search_controls.tpl"}
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="refineSearchForm">
-            <form method="get" action="{page_path id='search_results'}" role="form" class="refine-search-form">
-                <input type="hidden" name="raw_output" value="true">
-                <input type="hidden" name="searchId" value="{$listing_search.id}">
-                <input type="hidden" name="action" value="refine">
-                <input type="hidden" name="view_all" value="1">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">[[Refine Search]]</h3>
-                    </div>
-
-                    <div class="list-group">
-                        {$dontDisplay = $ignoreFieldIds|array_merge:$additionalCriteria}
-                        {if 'keywords'|in_array:$dontDisplay === false}
-                            {capture assign='title'}{tr domain="FormFieldCaptions"}{$form_fields.keywords.caption}{/tr}{/capture}
-                            {capture assign='body'}{search property='keywords' template='classifieds^refine_search/keywords.tpl'}{/capture}
-                            {display_list_group_item title=$title body=$body id='Keywords'}
-                        {/if}
-                        {if 'State'|in_array:$dontDisplay === false}
-                            {capture assign='title'}{tr domain="FormFieldCaptions"}{$form_fields.State.caption}{/tr}{/capture}
-                            {capture assign='body'}{search property='State'}{/capture}
-                            {display_list_group_item title=$title body=$body id='State'}
-                        {/if}
-
-                        {if 'category_sid'|in_array:$dontDisplay === false}
-                            {capture assign='title'}[[FormFieldCaptions!Category]]{/capture}
-                            {capture assign='body'}{search property=$form_fields.category_sid.id template='classifieds^refine_search/category_tree.tpl'}{/capture}
-                            {display_list_group_item title=$title body=$body id='Category'}
-                        {/if}
-
-                        {foreach from=$form_fields item=form_field}
-                            {if $form_field.id|in_array:$additionalCriteria && $form_field.type != 'boolean'}
-                                {assign var="fieldTemplate" value="classifieds^refine_search/"|cat:$form_field.search_template}
-
-                                {capture assign='title'}[[FormFieldCaptions!{$form_field.caption}]]{/capture}
-                                {capture assign='body'}{search property=$form_field.id template=$fieldTemplate}{/capture}
-                                {display_list_group_item title=$title body=$body id=$form_field.id}
-                            {/if}
-                        {/foreach}
-
-                        {capture assign='title'}{tr domain="FormFieldCaptions"}[[Options]]{/tr}{/capture}
-                        {capture assign='body'}
-                            <div class="more-less">
-                                <div class="items">
-                                    {foreach from=$form_fields item=form_field}
-                                        {if $form_field.id|in_array:$additionalCriteria && $form_field.type == 'boolean'}
-                                            {$fieldTemplate = "classifieds^refine_search/"|cat:$form_field.search_template}
-                                            <div class="checkbox option {$form_field.id}">
-                                                {search property=$form_field.id template=$fieldTemplate}
-                                            </div>
-                                        {/if}
-                                    {/foreach}
-                                </div>
-                                <a href="#" class="show-more">[[Show More Options]]</a>
-                                <a href="#" class="show-less">[[Hide Options]]</a>
-                            </div>
-                        {/capture}
-                        {display_list_group_item title=$title body=$body id='Options'}
-
-                        <div class="list-group-item header AddMoreCriteria">
-                            <a href="#">[[Add/Remove Criteria:raw]]</a>
-                        </div>
-                        <div class="list-group-item">
-                            <a href="#" class="ResetSearchCriteria">[[Reset Search Criteria]]</a>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+        </ul>
     </div>
 </div>
+<div class="searchResultsHeader-item">
+    <div class="dropdown">
+        <a id="RefineSearch" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            [[Refine Search]]<span class="thin-caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="RefineSearch">
+            <div class="refineSearchForm">
+                <form method="get" action="{page_path id='search_results'}" role="form" class="refine-search-form">
+                    <input type="hidden" name="raw_output" value="true">
+                    <input type="hidden" name="searchId" value="{$listing_search.id}">
+                    <input type="hidden" name="action" value="refine">
+                    <input type="hidden" name="view_all" value="1">
 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">[[Refine Search]]</h3>
+                        </div>
 
+                        <div class="list-group">
+                            {$dontDisplay = $ignoreFieldIds|array_merge:$additionalCriteria}
+                            {if 'keywords'|in_array:$dontDisplay === false}
+                                {capture assign='title'}{tr domain="FormFieldCaptions"}{$form_fields.keywords.caption}{/tr}{/capture}
+                                {capture assign='body'}{search property='keywords' template='classifieds^refine_search/keywords.tpl'}{/capture}
+                                {display_list_group_item title=$title body=$body id='Keywords'}
+                            {/if}
+                            {if 'State'|in_array:$dontDisplay === false}
+                                {capture assign='title'}{tr domain="FormFieldCaptions"}{$form_fields.State.caption}{/tr}{/capture}
+                                {capture assign='body'}{search property='State'}{/capture}
+                                {display_list_group_item title=$title body=$body id='State'}
+                            {/if}
 
+                            {if 'category_sid'|in_array:$dontDisplay === false}
+                                {capture assign='title'}[[FormFieldCaptions!Category]]{/capture}
+                                {capture assign='body'}{search property=$form_fields.category_sid.id template='classifieds^refine_search/category_tree.tpl'}{/capture}
+                                {display_list_group_item title=$title body=$body id='Category'}
+                            {/if}
+
+                            {foreach from=$form_fields item=form_field}
+                                {if $form_field.id|in_array:$additionalCriteria && $form_field.type != 'boolean'}
+                                    {assign var="fieldTemplate" value="classifieds^refine_search/"|cat:$form_field.search_template}
+
+                                    {capture assign='title'}[[FormFieldCaptions!{$form_field.caption}]]{/capture}
+                                    {capture assign='body'}{search property=$form_field.id template=$fieldTemplate}{/capture}
+                                    {display_list_group_item title=$title body=$body id=$form_field.id}
+                                {/if}
+                            {/foreach}
+
+                            {capture assign='title'}{tr domain="FormFieldCaptions"}[[Options]]{/tr}{/capture}
+                            {capture assign='body'}
+                                <div class="more-less">
+                                    <div class="items">
+                                        {foreach from=$form_fields item=form_field}
+                                            {if $form_field.id|in_array:$additionalCriteria && $form_field.type == 'boolean'}
+                                                {$fieldTemplate = "classifieds^refine_search/"|cat:$form_field.search_template}
+                                                <div class="checkbox option {$form_field.id}">
+                                                    {search property=$form_field.id template=$fieldTemplate}
+                                                </div>
+                                            {/if}
+                                        {/foreach}
+                                    </div>
+                                    <a href="#" class="show-more">[[Show More Options]]</a>
+                                    <a href="#" class="show-less">[[Hide Options]]</a>
+                                </div>
+                            {/capture}
+                            {display_list_group_item title=$title body=$body id='Options'}
+
+                            <div class="list-group-item header AddMoreCriteria">
+                                <a href="#">[[Add/Remove Criteria:raw]]</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#" class="ResetSearchCriteria">[[Reset Search Criteria]]</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </ul>
+    </div>
+</div>
 
 
 {require component="jquery" file="jquery.js"}

@@ -36,15 +36,20 @@
                     items: 3,
                     nav: true,
                     navText: [
-                        '<div class="hidden-xs hidden-sm hidden-md"><img src="{url file='main^img/slider-arrow-right.png'}"></div>',
-                        '<div class="hidden-xs hidden-sm hidden-md"><img src="{url file='main^img/slider-arrow-left.png'}"></div>'
+                        '<div><img src="{url file='main^img/slider-arrow-right.png'}"></div>',
+                        '<div><img src="{url file='main^img/slider-arrow-left.png'}"></div>'
                     ],
                     responsive:{
                         0:{
-                            items:1
+                            items:1,
+                            nav: false
                         },
-                        600:{
-                            items:3
+                        480: {
+                            items:2,
+                            nav: false
+                        },
+                        768:{
+                            nav: true
                         }
                     }
                 });

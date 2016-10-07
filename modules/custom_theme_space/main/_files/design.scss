@@ -104,6 +104,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 120px;
+  font-family: 'Raleway',sans-serif;
 }
 #footer {
   position: absolute;
@@ -122,8 +123,21 @@ body {
 a {
   color: $sweet-blue;
 }
+.underline-hover-effect {
+  a {
+    position: relative;
+    @include underline-hover ($sweet-blue, $sweet-blue, -5px);
+  }
+}
+.well {
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 15px;
+}
 hr {
   border-top: 1px solid $middle-gray;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .panel {
   border-radius: 0;
@@ -827,7 +841,13 @@ header {
         margin: 0;
       }
     }
+    .news-box-img {
+      .title {
+        margin-bottom: 0;
+      }
+    }
     .news-box-title {
+      margin-top: 0px;
       @include bootstrap-respond-to(medium-dev) {
         margin-top: 15px;
       }
@@ -1098,10 +1118,13 @@ header {
     column-count: 3;
   }
 }
+.users-box {
+  .users-box-item {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+}
 .users-box-item {
-  padding: 15px;
-  margin-bottom: 15px;
-  margin-top: 15px;
   font-family: 'Raleway',sans-serif;
   .users-box-item-head-user-name {
     color: $sweet-blue;
@@ -1253,13 +1276,17 @@ label {
     border-radius: 0;
     box-shadow: none;
     border: 1px solid $middle-gray;
+    padding: 15px;
+    .commentActions {
+      margin-bottom: 0;
+    }
   }
 }
 
 .pictures {
   position: relative;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   &:hover {
     #image-gallery-button {
       opacity: 1;
@@ -1334,6 +1361,10 @@ label {
   position: absolute;
   z-index: 100;
   right: 15px;
+}
+.listing-details-container {
+  border-bottom: 2px solid $gray;
+  padding-bottom: 15px;
 }
 .slider_position {
   margin: 10px 0;
@@ -1418,7 +1449,7 @@ label {
 }
 .listing-details-head-sub-listing-controls {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   input~span.glyphicon {
     color: #fff;
     margin-right: 5px;
@@ -1461,12 +1492,15 @@ label {
   font-size: 26px;
   padding: 15px 0;
   border-bottom: 1px solid $middle-gray;
+  @include bootstrap-respond-to(medium-dev) {
+    font-size: 18px;
+  }
   @include bootstrap-respond-to(small-dev) {
-    font-size: 21px;
+    font-size: 14px;
   }
 }
 .search-controls-next-prew {
-  margin-top: 15px;
+  margin-top: 30px;
   font-family: 'Raleway',sans-serif;
   a {
     color: $sweet-blue;
@@ -1474,9 +1508,32 @@ label {
 }
 .listing-details-info {
   font-family: 'Raleway',sans-serif;
+  .listing-details-info-text {
+    margin-bottom: 15px;
+  }
   .field-caption {
-    color: $gray;
-    font-weight: normal;
+    color: $dark-blue;
+    font-weight: bold;
+  }
+  .listing-details-info-table {
+    background: $sweet-gray;
+    padding: 15px;
+    .table {
+      margin-bottom: 0;
+      & > tbody > tr {
+        & > th {
+          border-top: none;
+          padding: 5px;
+        }
+        & > td {
+          border-top: none;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  @include bootstrap-respond-to(medium-dev) {
+    margin-top: 15px;
   }
 }
 .modal-content {
@@ -1523,7 +1580,6 @@ label {
     }
   }
   .users-box-item-connection-button-block {
-    margin-top: 10px;
     .default-button {
       padding: 8px 0;
       vertical-align: middle;
@@ -1532,6 +1588,9 @@ label {
       &:hover {
         text-decoration: none;
       }
+    }
+    @include bootstrap-respond-to(medium-dev) {
+      margin-top: 10px;
     }
   }
   .users-box-item-control {
@@ -1559,3 +1618,67 @@ label {
   margin-bottom: 20px;
   padding: 0;
 }
+.savedSearches {
+  .list-inline {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.plan-block {
+  outline: 1px solid;
+}
+.packages {
+  margin-top: 40px;
+  .well {
+    display: inline-block;
+    background: #fff;
+    .package-title {
+      background: $sweet-blue;
+      margin: 0;
+      padding: 10px 15px;
+      color: #fff;
+    }
+    .table {
+      margin-bottom: 0;
+    }
+  }
+}
+.searchResultsHeader {
+  padding: 0;
+  display: inline-table;
+  width: 100%;
+  .searchResultsHeader-item {
+    display: table-cell;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

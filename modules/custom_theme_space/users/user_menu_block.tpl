@@ -23,7 +23,7 @@
     <ul class="nav navbar-nav navbar-right nav-user-links">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle  colorize-menu colorize-menu-text" data-toggle="dropdown">
-                <span>{$GLOBALS.current_user.user_name}</span>
+                <span>{$GLOBALS.current_user.user_name}</span><span class="caret"></span>
             </a>
             {module name="users" function="user_menu"}
         </li>
