@@ -1,16 +1,16 @@
-<div class="container">
-    <script>
-        $(function() {
-            $(".select-all").change(function () {
-                $(".massActionForm input[type='checkbox'].item-selector").prop('checked', $(this).prop('checked'));
-            });
-
-            $(".massActionForm input[type='checkbox']").change(function () {
-                var atLeastOneCheckboxChecked = $(".massActionForm input[type='checkbox'].item-selector:checked").length > 0;
-                $(".mass-action-controls button[type='submit']").prop('disabled', !atLeastOneCheckboxChecked);
-            });
+<script>
+    $(function() {
+        $(".select-all").change(function () {
+            $(".massActionForm input[type='checkbox'].item-selector").prop('checked', $(this).prop('checked'));
         });
-    </script>
+
+        $(".massActionForm input[type='checkbox']").change(function () {
+            var atLeastOneCheckboxChecked = $(".massActionForm input[type='checkbox'].item-selector:checked").length > 0;
+            $(".mass-action-controls button[type='submit']").prop('disabled', !atLeastOneCheckboxChecked);
+        });
+    });
+</script>
+<div class="container">
     <div class="savedListingsPage">
         <h1 class="title">[[Saved Listings]]</h1>
         {if $listing_search.total_found == 0}
@@ -31,7 +31,7 @@
                             </li>
                             <li>
                                 <button type="submit" class="btn btn-danger btn-xs" disabled="disabled" name="action_delete" value="Delete">
-                                    <span class="glyphicon glyphicon-remove"></span> [[Delete]]
+                                    <i class="fa fa-times" aria-hidden="true"></i> [[Delete]]
                                 </button>
                             </li>
                         </ul>
@@ -59,9 +59,7 @@
 
                 <div class="searchResults mainContentBlock">
                     {foreach from=$listings item=listing name=listings_block}
-                        <div class="searchResultItemWrapper">
-                            {display_listing listing=$listing listingControlsTemplate="saved_listing_controls.tpl" listing_search=$listing_search}
-                        </div>
+                        {display_listing listing=$listing listingControlsTemplate="saved_listing_controls.tpl" listing_search=$listing_search}
                     {/foreach}
                 </div>
                 {include file="page_selector.tpl" current_page=$listing_search.current_page pages_number=$listing_search.pages_number url=$restore_url}
@@ -105,5 +103,4 @@
             </script>
         {/if}
     </div>
-
 </div>

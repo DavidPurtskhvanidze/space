@@ -5,7 +5,7 @@
 <div class="form-group">
 	{if $center}
 		<div class="col-sm-8 col-sm-offset-2">
-			<div class="text-center input-group">
+			<div class="input-group">
                 {input property=$id placeholder=$placeholder template=$template}
 				<span class="input-group-addon">
                     <span class="asterisk">

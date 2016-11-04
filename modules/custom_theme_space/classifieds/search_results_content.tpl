@@ -5,19 +5,20 @@
 
 	<div class="searchResults">
 		{foreach from=$listings item=listing name=listings}
-			<div class="searchResultItemWrapper{if $listing@last} last{/if}">
-				{display_listing listing=$listing listingControlsTemplate="search_result_listing_controls.tpl" listing_search=$listing_search}
-			</div>
+			{display_listing listing=$listing listingControlsTemplate="search_result_listing_controls.tpl" listing_search=$listing_search}
 		{/foreach}
 	</div>
 	{include file="page_selector.tpl" current_page=$listing_search.current_page pages_number=$listing_search.pages_number url=$restore_url}
 {else}
-	{if !is_null($listing_search.search_form_uri)}
-		{assign var=link value="{$GLOBALS.site_url}{$listing_search.search_form_uri}?action=restore&amp;searchId={$listing_search.id}"}
-		<p class="error">[[There are no listings available that match your search criteria. Please try to <a href="$link">broaden your search criteria</a>.]]</p>
-	{else}
-		<p class="error">[[There are no listings available that match your search criteria. Please try to broaden your search criteria.]]</p>
-	{/if}
+	<br>
+	<div class="well">
+		{if !is_null($listing_search.search_form_uri)}
+			{assign var=link value="{$GLOBALS.site_url}{$listing_search.search_form_uri}?action=restore&amp;searchId={$listing_search.id}"}
+			<p class="error">[[There are no listings available that match your search criteria. Please try to <a href="$link">broaden your search criteria</a>.]]</p>
+		{else}
+			<p class="error">[[There are no listings available that match your search criteria. Please try to broaden your search criteria.]]</p>
+		{/if}
+	</div>
 {/if}
 <script type="text/javascript">
 	var listingsInComparisonCounter = {$listingsCountInComparison};

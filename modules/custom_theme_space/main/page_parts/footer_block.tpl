@@ -13,9 +13,21 @@
     </div>
 </footer>
 <script type="text/javascript">
-    Waves.init();
+//    $(function() {
+//        $('.advanced-search-block input[type="checkbox"]').bootstrapToggle({
+//            on: 'On',
+//            off: 'Off',
+//            size: 'mini'
+//        });
+//    });
     Waves.attach('.wb');
+    Waves.init();
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+    });
+    $(document).ready(function() {
+        $('.navbar-toggle').click(function() {
+            $(this).toggleClass('open-menu');
+        })
     })
 </script>

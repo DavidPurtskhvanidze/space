@@ -131,6 +131,6 @@
 
 		</script>
     {else}
-        <img src="{url file='main^no_image_available_big.png'}" alt="[[No photos:raw]]" class="noImageAvailable" />
+        <img src="{url file='main^no_image_available_big.png'}" alt="[[No photos:raw]]" class="noImageAvailable img-responsive" />
 	{/if}
 </div>

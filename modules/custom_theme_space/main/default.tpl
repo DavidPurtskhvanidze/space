@@ -8,7 +8,9 @@
 		{include file="main^page_parts/header_block.tpl"}
 
 		{block name="mainContent"}
-			{$MAIN_CONTENT}
+			<div class="container">
+				{$MAIN_CONTENT}
+			</div>
 		{/block}
 
 		{include file="main^page_parts/footer_block.tpl"}

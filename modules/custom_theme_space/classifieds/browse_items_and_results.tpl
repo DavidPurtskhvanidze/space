@@ -1,7 +1,6 @@
 
     {set_global_parameter key='browsingFieldIds' value= $browsingFieldIds}
     <div class="browsePage">
-        <div class="container">
         <ul class="breadcrumb no-padding-left">
             {strip}
                 {if $browse_navigation_elements || isset($REQUEST.view_all)}
@@ -24,29 +23,26 @@
             {/strip}
         </ul>
         {include file="errors.tpl"}
-        </div>
         {if $browseItemsGroupedByColumn|@count > 0}
-            <div class="container">
-                {$browseItems = array()}
-                {capture append="browseItems"}
-                    {foreach from=$browseItemsGroupedByColumn item=browseItemsForColumn}
-                        {foreach from=$browseItemsForColumn item=browseItem}
-                            <li class="item">
-                                <a href="{$browseItem.url}/"{if $browseItem.count == 0} class="emptyLink"{/if}>[[$browseItem.caption]] ({$browseItem.count})</a>
-                            </li>
-                        {/foreach}
+            {$browseItems = array()}
+            {capture append="browseItems"}
+                {foreach from=$browseItemsGroupedByColumn item=browseItemsForColumn}
+                    {foreach from=$browseItemsForColumn item=browseItem}
+                        <li class="item">
+                            <a href="{$browseItem.url}/"{if $browseItem.count == 0} class="emptyLink"{/if}>[[$browseItem.caption]] ({$browseItem.count})</a>
+                        </li>
                     {/foreach}
-                {/capture}
-                <a href='?view_all' class="btn btn-link">[[View All Listings]] ({$totalListingsNumber})</a>
+                {/foreach}
+            {/capture}
+            <a href='?view_all' class="btn btn-link">[[View All Listings]] ({$totalListingsNumber})</a>
 
-                <div class="tab-content">
-                    <div class="browseItems list{$number_of_cols}Columns tab-pane fade active in">
-                        <ul class="list-unstyled browsing">
-                            {foreach $browseItems as $item}
-                                {$item}
-                            {/foreach}
-                        </ul>
-                    </div>
+            <div class="tab-content">
+                <div class="browseItems list{$number_of_cols}Columns tab-pane fade active in">
+                    <ul class="list-unstyled browsing">
+                        {foreach $browseItems as $item}
+                            {$item}
+                        {/foreach}
+                    </ul>
                 </div>
             </div>
         {else}

@@ -16,7 +16,7 @@
 <div class="dropdown sortingFieldSelector">
 	<a id="SortingFieldSelector" data-toggle="dropdown" href="#">
 		{if isset($values.$sortedBy)}
-			[[Sorted by]] [[FormFieldCaptions!{$values.$sortedBy}]], [[{$order}]]
+			[[Sorted by]] <span class="hidden-xs">[[FormFieldCaptions!{$values.$sortedBy}]], [[{$order}]]</span>
 		{else}
 			[[Sort by]]
 		{/if}
@@ -44,6 +44,5 @@
 				</li>
 			{/if}
 		{/foreach}
-
 	</ul>
 </div>

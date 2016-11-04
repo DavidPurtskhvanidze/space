@@ -9,7 +9,7 @@
 <div class="comments">
 	<h2>[[Comments]]</h2>
 
-	<ul class="list-inline comments-control">
+	<ul class="list-inline">
 		{if $numberOfComments == 0}
 			<li>[[There are no comments yet.]] {$addCommentLink}</li>
 		{else}

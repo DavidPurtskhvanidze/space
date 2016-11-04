@@ -23,10 +23,10 @@
 	});
 </script>
 <div class="add-listing-box">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
 			<div class="steps-wrap">
-				<ul class="list-unstyled text-center">
+				<ul class="list-unstyled">
 					<li class="first-step">
 						<span class="add-listing-step-title">
 							<a href="{page_path id='listing_add'}?listing_package_sid={$listing_package_sid}">
@@ -64,6 +64,7 @@
 				</ul>
 			</div>
 			<div class="clearfix"></div>
+			<hr class="visible-xs-block">
 
 			{display_error_messages}
 
@@ -142,8 +143,9 @@
 					{/if}
 				</div>
 			</form>
-            <script type="text/javascript" src="{url file="field_types^showInputError.js"}"></script>
-        </div>
-    </div>
+			<script type="text/javascript" src="{url file="field_types^showInputError.js"}"></script>
+		</div>
+	</div>
 </div>
+
 

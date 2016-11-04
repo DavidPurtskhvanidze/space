@@ -8,7 +8,7 @@
                 {if $number_of_pictures > 0}
                     {listing_image pictureInfo=$listing.pictures.collection.0 alt="Listing #"|cat:$listing.id}
                 {else}
-                    <img src="{url file='main^no_image_available_big.png'}" alt="[[No photos:raw]]" class="noImageAvailable"/>
+                    <img src="{url file='main^no_image_available_big.png'}" alt="[[No photos:raw]]" class="noImageAvailable img-responsive"/>
                 {/if}
                 {if $listing.Sold.exists && $listing.Sold.isTrue}
                     <div class="soldLabel overlay top left"><span>[[SOLD]]</span></div>
@@ -57,7 +57,7 @@
                     {/if}
                     {if $listing.user_sid.value != 0}
                         <span class="fieldValue fieldValuePhoneNumber">
-							<span class="glyphicon glyphicon-earphone"></span> {$listing.user.PhoneNumber}
+							<i class="fa fa-phone" aria-hidden="true"></i> {$listing.user.PhoneNumber}
 						</span>
                     {/if}
                 </div>

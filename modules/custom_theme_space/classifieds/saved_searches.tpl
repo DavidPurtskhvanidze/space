@@ -1,18 +1,17 @@
-<div class="container">
-    <h1 class="savedSearchesHeader title">[[Saved Searches]]</h1>
+<h1 class="savedSearchesHeader title">[[Saved Searches]]</h1>
 
-    {foreach from=$errors item=error}
-        <p class="error">
-            {if $error == 'EMPTY_USER_EMAIL'}
-                {capture assign="profilePageLink"}{page_path id='user_profile'}{/capture}
-                [[Your Profile is missing the email address. Notifications require your valid email address in order to work properly. Please <a href="$profilePageLink">update your Profile information</a> by adding your email address.]]
-            {else}
-                [[$error]]
-            {/if}
-        </p>
-    {/foreach}
+{foreach from=$errors item=error}
+    <p class="error">
+        {if $error == 'EMPTY_USER_EMAIL'}
+            {capture assign="profilePageLink"}{page_path id='user_profile'}{/capture}
+            [[Your Profile is missing the email address. Notifications require your valid email address in order to work properly. Please <a href="$profilePageLink">update your Profile information</a> by adding your email address.]]
+        {else}
+            [[$error]]
+        {/if}
+    </p>
+{/foreach}
 
-    <div class="well">
+<div class="well">
     <div class="savedSearches underline-hover-effect">
         {foreach from=$saved_searches item=saved_search}
             <ul class="item list-inline">
@@ -29,10 +28,8 @@
                     {/if}
                 </li>
             </ul>
-        {foreachelse}
+            {foreachelse}
             <p class="error">[[You have not saved any searches yet.]]</p>
         {/foreach}
     </div>
-        </div>
-
 </div>

@@ -1,11 +1,11 @@
-
-    {display_error_messages}
-    {if $responseError}
-        <div class="error">
-            {$responseError}
-        </div>
-    {/if}
-
+    <div class="col-lg-9 col-sm-8">
+        {display_error_messages}
+        {if $responseError}
+            <div class="error">
+                {$responseError}
+            </div>
+        {/if}
+    </div>
     {if !is_null($twitterTimeline)}
         {strip}
             {assign var=link_expr value='/<a(.*)href=\"(.*)\">(.*)<\/a>/uis'}

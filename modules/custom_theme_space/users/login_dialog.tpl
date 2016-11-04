@@ -20,8 +20,12 @@
     </div>
 
     <div class="form-group keep-me custom-form-control">
-        <input id="keep-me" type="checkbox" name="keep" />
-        <label class="checkbox" for="keep-me">[[Keep me signed in]]</label>
+        <label>
+            [[Keep me signed in]]&nbsp;
+            <input id="keep-me" type="checkbox" name="keep" />
+            <label for="keep-me"></label>
+        </label>
+
     </div>
 </form>
 {module name="third_party_login" function="display_form" queryString=$QUERY_STRING httpReferer=$HTTP_REFERER}
