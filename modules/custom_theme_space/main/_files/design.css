@@ -63,6 +63,9 @@ a {
   padding: 15px;
   border: 1px solid #cccccc; }
 
+.w100 {
+  width: 100%; }
+
 label {
   display: inline-block;
   margin-bottom: 0;
@@ -189,8 +192,6 @@ select:not([multiple]) {
   /* Firefox 18- */ }
   .form-control:first-child {
     border-radius: 0 !important; }
-  .form-control.datepicker {
-    border-right: none; }
   .form-control::-webkit-input-placeholder {
     color: #34495e; }
   .form-control::-moz-placeholder {
@@ -1646,6 +1647,8 @@ img.noImageAvailable {
         display: block; } }
     .search-results-header .search-results-header-item .sortingFieldSelector {
       padding: 0; }
+      .search-results-header .search-results-header-item .sortingFieldSelector .dropdown-menu {
+        min-width: 220px; }
 
 .searchResults {
   margin-top: 0; }
@@ -1932,6 +1935,33 @@ img.noImageAvailable {
     width: 100%;
     text-align: center;
     margin-top: 15px; }
+
+.myNotifications [type="checkbox"] {
+  position: relative; }
+  .myNotifications [type="checkbox"]:not(:checked):before {
+    content: "\f096";
+    position: absolute;
+    top: -2px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    color: #6d6d6d; }
+  .myNotifications [type="checkbox"]:checked:before {
+    content: "\f046";
+    position: absolute;
+    top: -2px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    color: #31a8e6; }
 
 .listing-controls-bar {
   font-size: 18px;

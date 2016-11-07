@@ -1,4 +1,7 @@
 {extension_point name='modules\main\apps\FrontEnd\IMyListingsAdditionRenderer'}
+{capture assign="restore_url"}
+    {$GLOBALS.site_url}{$listing_search.search_results_uri}?action=restore&amp;searchId={$listing_search.id}
+{/capture}
 <script>
     $(function() {
 
@@ -44,12 +47,14 @@
             <input type="hidden" name="searchId" value="{$listing_search.id}" />
             <div class="search-results-header">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 search-results-header-ls">
+                    <div class="col-md-5 col-sm-6 search-results-header-ls">
                         <div class="row">
-                            {capture assign="restore_url"}
-                                {$GLOBALS.site_url}{$listing_search.search_results_uri}?action=restore&amp;searchId={$listing_search.id}
-                            {/capture}
-                            <div class="col-md-6 col-sm-8 col-xs-6">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="search-results-header-item">
+                                    {include file="objects_per_page_selector.tpl" listing_search=$listing_search url=$restore_url}
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-6">
                                 <div class="search-results-header-item">
                                     {if !empty($REQUEST.sorting_field_selector_template)}
                                         {$sorting_field_selector_template = $REQUEST.sorting_field_selector_template}
@@ -59,19 +64,11 @@
                                     {include file=$sorting_field_selector_template listing_search=$listing_search url=$restore_url}
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-4 col-xs-6">
-                                <div class="search-results-header-item">
-                                    {include file="objects_per_page_selector.tpl" listing_search=$listing_search url=$restore_url}
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-8 col-sm-6 search-results-header-rs hidden-xs">
+                    <div class="col-md-7 col-sm-6 search-results-header-rs hidden-xs">
                         <div class="row">
-                            {capture assign="restore_url"}
-                                {$GLOBALS.site_url}{$listing_search.search_results_uri}?action=restore&amp;searchId={$listing_search.id}
-                            {/capture}
                             <div class="col-md-4 hidden-sm">
                                 {assign var="listings_number" value=$listing_search.total_found}
                                 [[$listings_number listings found]]
@@ -90,7 +87,7 @@
                                     </li>
                                     <li>
                                         <label>
-                                            <input data-toggle="tooltip" title="Check All" type="checkbox" class="check-all"/>
+                                            <input data-toggle="tooltip" title="All" type="checkbox" class="check-all"/>
                                         </label>
                                     </li>
                                 </ul>

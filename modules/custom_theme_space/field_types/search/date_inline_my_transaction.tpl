@@ -9,11 +9,11 @@
 {/capture}
 
 <div class="form-group full-width-item">
-    <label for="activation_date" class="control-label">[[FormFieldCaptions!Activation Date From]]</label>
+    <label for="activation_date" class="control-label">[[FormFieldCaptions!Period Date From]]</label>
     [[$input_text_field_from]]
 </div>
 <div class="form-group full-width-item">
-    <label for="activation_date" class="control-label">[[FormFieldCaptions!Activation Date To]]</label>
+    <label for="activation_date" class="control-label">[[FormFieldCaptions!Period Date To]]</label>
     [[$input_text_field_to]]
 </div>
 {*<span  class="help-block">[[date format: '$date_format', for example: '$date_format_example']]</span>*}

@@ -10,6 +10,9 @@
         });
     });
 </script>
+{capture assign="restore_url"}
+    {$GLOBALS.site_url}{$listing_search.search_results_uri}?action=restore&amp;searchId={$listing_search.id}
+{/capture}
 <div class="container">
     <div class="savedListingsPage">
         <h1 class="title">[[Saved Listings]]</h1>
@@ -21,39 +24,52 @@
             <form method="post" action="" class="massActionForm">
                 {CSRF_token}
                 <input type="hidden" name="searchId" value="{$listing_search.id}" />
-                <div class="row">
-                    <div class="col-sm-4">
-                        <ul class="mass-action-controls list-inline">
-                            <li>
-                                <label class="btn btn-default btn-xs">
-                                    <input type="checkbox" class="select-all"/>
-                                </label>
-                            </li>
-                            <li>
-                                <button type="submit" class="btn btn-danger btn-xs" disabled="disabled" name="action_delete" value="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i> [[Delete]]
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
 
-                    {capture assign="restore_url"}
-                        {$GLOBALS.site_url}{$listing_search.search_results_uri}?action=restore&amp;searchId={$listing_search.id}
-                    {/capture}
-                    <div class="col-md-2">
-                        {assign var="listings_number" value=$listing_search.total_found}
-                        [[$listings_number found]]
-                    </div>
-                    <div class="col-md-4">
-                        {if !empty($REQUEST.sorting_field_selector_template)}
-                            {$sorting_field_selector_template = $REQUEST.sorting_field_selector_template}
-                        {else}
-                            {$sorting_field_selector_template = "classifieds^sorting_field_selector.tpl"}
-                        {/if}
-                        {include file=$sorting_field_selector_template listing_search=$listing_search url=$restore_url}
-                    </div>
-                    <div class="col-md-2">
-                        {include file="classifieds^objects_per_page_selector.tpl" listing_search=$listing_search url=$restore_url}
+
+                <div class="search-results-header">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 search-results-header-ls">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <div class="search-results-header-item">
+                                        {include file="objects_per_page_selector.tpl" listing_search=$listing_search url=$restore_url}
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                    <div class="search-results-header-item">
+                                        {if !empty($REQUEST.sorting_field_selector_template)}
+                                            {$sorting_field_selector_template = $REQUEST.sorting_field_selector_template}
+                                        {else}
+                                            {$sorting_field_selector_template = "sorting_field_selector.tpl"}
+                                        {/if}
+                                        {include file=$sorting_field_selector_template listing_search=$listing_search url=$restore_url}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-6 search-results-header-rs hidden-xs">
+                            <div class="row">
+                                <div class="col-md-4 hidden-sm">
+                                    {assign var="listings_number" value=$listing_search.total_found}
+                                    [[$listings_number listings found]]
+                                </div>
+                                <div class="col-md-8">
+                                    <ul class="mass-action-controls list-inline">
+                                        <li>
+                                            <button type="submit" class="btn btn-danger btn-xs" disabled="disabled" name="action_delete" value="Delete" onclick="return confirm('[[Are you sure?:raw]]')">
+                                                <i class="fa fa-trash-o" aria-hidden="true"></i> [[Delete]]
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input data-toggle="tooltip" title="All" type="checkbox" class="select-all"/>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

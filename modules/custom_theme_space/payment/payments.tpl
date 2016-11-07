@@ -8,24 +8,26 @@
     <div class="pendingTransactionMessage alert alert-warning">[[Pending transactions are the payments that have not been completed automatically by the payment gateway due to some error and require administrator's endorsement. In certain cases, when you pay in cash or via money transfer, the website administrator needs more time to manually complete your payment. If you think that your pending transaction should have already been completed, please <a href="$url">contact the administrator</a>.]]</div>
 
     <div class="row paymentsForm">
-        <form method="post" action="" class="form-inline" role="form">
+        <form method="post" action="" class="full-width-inline-form" role="form">
 
-            <div class="form-group">
-                <label class="" for="id">[[ID]]:</label>
-                {search property='id'}
+            <div class="form-group full-width-item">
+                <label class="control-label" for="id">[[FormFieldCaptions!ID]]:</label>
+                {search property='id' placeholder="[[FormFieldCaptions!ID]]"}
             </div>
 
-            <div class="form-group">
-                {search property='creation_date' template='date_inline.tpl'}
-            </div>
-            <div class="form-group">
+
+            {search property='creation_date' template='date_inline_my_transaction.tpl'}
+
+            <div class="form-group full-width-item">
+                <label class="control-label" for="status">[[FormFieldCaptions!Status]]:</label>
                 {search property='status'}
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="[[Filter:raw]]" />
-            </div>
-            <input type="hidden" name="action" value="filter" />
 
+            <div class="form-group full-width-item ver-align-bottom">
+                <button type="submit" class="default-button w100 wb">[[Filter:raw]]</button>
+            </div>
+
+            <input type="hidden" name="action" value="filter" />
         </form>
     </div>
 
