@@ -59,6 +59,7 @@
                 <li>
                     <a class="fb-share" href="#" onclick="shareOnFacebook('{page_url id="root"}', '{$listingUrl}', '{$listingTitle}', '{$listingimage}', '{$listingDescription}')" title="[[Share]]">
                         <i data-toggle="tooltip" title="Share" class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <span class="option-title">[[Share]]</span>
                     </a>
                 </li>
             {/if}
@@ -67,6 +68,7 @@
         <li>
             <a href="{page_path id='listing_edit'}{$listing.id}/" title="[[Edit Listing:raw]]">
                 <i data-toggle="tooltip" title="Edit" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <span class="option-title">[[Edit Listing]]</span>
             </a>
         </li>
 
@@ -74,18 +76,21 @@
             <li>
                 <a href="?action_deactivate&amp;listings[{$listing.id}]=1&amp;searchId={$listing_search.id}" onclick="return confirm('[[Are you sure?]]')" title="[[Deactivate Listing:raw]]">
                     <i data-toggle="tooltip" title="Make Enable" class="fa fa-eye-slash" aria-hidden="true"></i>
+                    <span class="option-title">[[Make Enable]]</span>
                 </a>
             </li>
             <li>
                 <a href="{page_path module='classifieds' function='manage_listing_options'}?listing_sid={$listing.id}&amp;searchId={$listing_search.id}"
                    onclick="return openDialogWindow('[[Manage Listing Options]]', this.href, 400, true)" title="[[Manage Listing Options:raw]]">
                     <i data-toggle="tooltip" title="Options" class="fa fa-list-alt" aria-hidden="true"></i>
+                    <span class="option-title">[[Listing Options]]</span>
                 </a>
             </li>
         {elseif $listing.moderation_status.rawValue == '' || strcasecmp($listing.moderation_status.rawValue, 'APPROVED') == 0}
             <li>
                 <a href="{page_path module='classifieds' function='manage_listing_options'}?listing_sid={$listing.id}&amp;searchId={$listing_search.id}" onclick="return openDialogWindow('[[Manage Listing Options]]', this.href, 400, true)" title="[[Activate Listing:raw]]">
                     <i data-toggle="tooltip" title="Make Disable" class="fa fa-eye" aria-hidden="true"></i>
+                    <span class="option-title">[[Make Disable]]</span>
                 </a>
             </li>
         {/if}
@@ -94,6 +99,7 @@
             <li>
                 <a href="{page_path id='basket'}?listing_sid[equal]={$listing.id}">
                     <i data-toggle="tooltip" title="Pay For Listing" class="fa fa-money" aria-hidden="true"></i>
+                    <span class="option-title">[[Pay For Listing]]</span>
                 </a>
             </li>
         {/if}
@@ -101,6 +107,7 @@
         <li>
             <a href="?action_delete&amp;listings[{$listing.id}]=1&amp;searchId={$listing_search.id}" onclick="return confirm('[[Are you sure?]]')" title="[[Delete Listing:raw]]">
                 <i data-toggle="tooltip" title="Delete" class="fa fa-trash-o" aria-hidden="true"></i>
+                <span class="option-title">[[Delete]]</span>
             </a>
         </li>
 

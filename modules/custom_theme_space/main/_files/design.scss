@@ -240,7 +240,7 @@ address {
 }
 .tweet-img {
   display: block;
-  background: url("img/tweet.png") center center;
+  background: url("/img/tweet.png") center center;
   width: 18px;
   height: 16px;
   margin-top: 2px;
@@ -249,7 +249,7 @@ address {
   background: $sweet-gray;
 }
 .thin-caret {
-  background-image: url("img/arrow-select-down.png");
+  background-image: url("/img/arrow-select-down.png");
   display: inline-block;
   width: 18px;
   height: 10px;
@@ -262,7 +262,7 @@ select:not([multiple]) {
   -webkit-border-radius: 0;
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  background-image: url("img/arrow-select-down.png");
+  background-image: url("/img/arrow-select-down.png");
   padding-right: 1.5em;
   padding-left: 0.5em;
   color: $dark-blue;
@@ -534,7 +534,7 @@ header {
   }
 }
 .quick-search-block {
-  background: url("img/quick-bg.jpg") no-repeat center;
+  background: url("/img/quick-bg.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -657,7 +657,7 @@ header {
   }
   .search-img {
     display: block;
-    background: url("img/search-icn.png") center center;
+    background: url("/img/search-icn.png") center center;
     width: 25px;
     height: 24px;
     @include bootstrap-respond-to(small-dev) {
@@ -948,7 +948,7 @@ header {
   }
 }
 .recent-listings-block {
-  background: url("img/black-wood.jpg") repeat center;
+  background: url("/img/black-wood.jpg") repeat center;
   padding: 30px 0;
   .title {
     color: $sweet-blue;
@@ -1515,46 +1515,6 @@ img.noImageAvailable {
       }
     }
   }
-  //.owl-controls {
-  //  margin-top: 0;
-  //  position: absolute;
-  //  //bottom: -45px;
-  //  bottom: 0;
-  //  width: 100%;
-  //  background: rgba(0,0,0,.5);
-  //  height: 45px;
-  //  -webkit-transition: all 0.3s;
-  //  -moz-transition: all 0.3s;
-  //  transition: all 0.3s;
-  //  .owl-nav {
-  //    .owl-next {
-  //      right: 15px;
-  //    }
-  //    .owl-prev {
-  //      left: 15px;
-  //    }
-  //  }
-  //  .owl-nav [class*=owl-] {
-  //    background: transparent;
-  //    position: absolute;
-  //    top: 10px;
-  //    text-shadow: -1px 1px 2px rgba(150,150,150,1);
-  //    font-size: 22px;
-  //    margin: 0;
-  //    padding: 0;
-  //    display: inline-block;
-  //    cursor: pointer;
-  //    -webkit-border-radius: 3px;
-  //    -moz-border-radius: 3px;
-  //    border-radius: 3px;
-  //    color: #fff;
-  //  }
-  //}
-  //&:hover {
-  //  .owl-controls {
-  //    bottom: 0;
-  //  }
-  //}
 }
 #Thumbnails {
   .owl-controls {
@@ -1922,6 +1882,34 @@ img.noImageAvailable {
     background: $sweet-gray;
     outline: 1px solid $gray;
     overflow: hidden;
+    position: relative;
+    .mobile-listing-menu {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      top: 10px;
+      right: 10px;
+      @include bootstrap-respond-to(small-dev) {
+        display: block;
+      }
+      .default-button {
+        padding: 5px 12px;
+        background: #fff;
+        .dot-bar {
+          border-radius: 50%;
+          width: 4px;
+          height: 4px;
+          background: $strong_gray;
+          margin: 3px;
+          display: block;
+        }
+      }
+      .dropdown-menu {
+        right: 0;
+        left: auto;
+        padding: 5px;
+      }
+    }
     .listing-box-image {
       img {
         display: block;
@@ -1967,6 +1955,9 @@ img.noImageAvailable {
         }
       }
       .listing-box-caption-footer {
+        @include bootstrap-respond-to(small-dev) {
+          padding-bottom: 15px;
+        }
         .listing-box-caption-item {
           .fieldValuePhoneNumber {
             font-family: 'Open Sans',sans-serif;
@@ -2001,6 +1992,33 @@ img.noImageAvailable {
 }
 .listing-controls input:checked ~ span.glyphicon.checked {
   display: inline-block;
+}
+.listing-controls {
+  ul {
+    li {
+      display: inline-block;
+      @include bootstrap-respond-to(small-dev) {
+        margin: 4px 6px;
+        display: block;
+      }
+      .glyphicon {
+        @include bootstrap-respond-to(small-dev) {
+          vertical-align: middle;
+          width: 24px;
+        }
+      }
+      .option-title {
+        display: none;
+        font-size: 14px;
+        color: $dark-blue;
+        vertical-align: middle;
+        font-family: 'Raleway',sans-serif;
+        @include bootstrap-respond-to(small-dev) {
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
 .advanced-search-block {
   @include custom-check-box($strong_gray, $sweet-blue, #fff);
@@ -2204,21 +2222,32 @@ img.noImageAvailable {
 .listing-controls-bar {
   font-size: 18px;
   text-align: right;
+  display: inline-block;
+  float: right;
   @include custom-check-box($strong_gray, $sweet-blue, $sweet-gray);
   @include bootstrap-respond-to(small-dev) {
     font-size: 20px;
-    text-align: center;
-    margin-top: 5px;
-    border-top: 1px solid $gray;
-    padding-top: 5px;
+    text-align: left;
+    float: none;
+    display: block;
   }
   ul {
     margin-bottom: 0;
     li {
       display: inline-block;
       margin: 0 4px;
+      .option-title {
+        font-size: 14px;
+        color: $dark-blue;
+        vertical-align: middle;
+        display: none;
+        @include bootstrap-respond-to(small-dev) {
+          display: inline-block;
+        }
+      }
       @include bootstrap-respond-to(small-dev) {
-        margin: 0 6px;
+        margin: 4px 6px;
+        display: block;
       }
       .fa-facebook-official {
         color: #3b5998;
@@ -2241,7 +2270,12 @@ img.noImageAvailable {
       .fa-money {
         color: green;
       }
-
+      .fa {
+        @include bootstrap-respond-to(small-dev) {
+          vertical-align: middle;
+          width: 24px;
+        }
+      }
       .check-btn {
         color: gray;
         vertical-align: top;
@@ -2307,6 +2341,15 @@ img.noImageAvailable {
 .multilist-box {
   padding: 10px 15px 15px;
   border: 1px solid $gray;
+}
+.st-controls {
+  display: inline-block;
+  margin: 4px 7px 0;
+  font-size: 16px;
+  float: right;
+  @include bootstrap-respond-to(small-dev) {
+    float: none;
+  }
 }
 
 @media (min-width: 992px) {

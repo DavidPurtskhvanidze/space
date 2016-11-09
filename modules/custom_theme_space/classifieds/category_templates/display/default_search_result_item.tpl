@@ -11,6 +11,18 @@
 {/capture}
 
 <div class="listing-box" {if $listing.feature_highlighted.exists && $listing.feature_highlighted.isTrue}style="background-color:{get_custom_setting id='color_for_highlighted_listing' theme=$GLOBALS.current_theme}"{/if}>
+	<div class="mobile-listing-menu">
+		<div class="dropdown">
+			<button class="default-button wb" id="option-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="dot-bar"></span>
+				<span class="dot-bar"></span>
+				<span class="dot-bar"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="option-menu">
+				{include file=$listingControlsTemplate listingUrl=$listingUrl}
+			</ul>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-md-3 col-sm-4">
 			<div class="listing-box-image">
@@ -80,7 +92,7 @@
 							</span>
 						{/if}
 					</div>
-					<div class="col-md-4 col-sm-7 col-xs-12 listing-box-caption-item">
+					<div class="col-md-4 col-sm-7 col-xs-12 listing-box-caption-item hidden-xs">
 						{include file=$listingControlsTemplate listingUrl=$listingUrl}
 					</div>
 				</div>

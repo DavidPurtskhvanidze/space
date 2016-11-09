@@ -121,7 +121,7 @@ address {
 
 .tweet-img {
   display: block;
-  background: url("img/tweet.png") center center;
+  background: url("/img/tweet.png") center center;
   width: 18px;
   height: 16px;
   margin-top: 2px; }
@@ -130,7 +130,7 @@ address {
   background: #f3f3f3; }
 
 .thin-caret {
-  background-image: url("img/arrow-select-down.png");
+  background-image: url("/img/arrow-select-down.png");
   display: inline-block;
   width: 18px;
   height: 10px;
@@ -143,7 +143,7 @@ select:not([multiple]) {
   -webkit-border-radius: 0;
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  background-image: url("img/arrow-select-down.png");
+  background-image: url("/img/arrow-select-down.png");
   padding-right: 1.5em;
   padding-left: 0.5em;
   color: #34495e; }
@@ -410,7 +410,7 @@ header {
     color: #31a8e6; }
 
 .quick-search-block {
-  background: url("img/quick-bg.jpg") no-repeat center;
+  background: url("/img/quick-bg.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -550,7 +550,7 @@ header {
         display: block; } }
   .search-button .search-img {
     display: block;
-    background: url("img/search-icn.png") center center;
+    background: url("/img/search-icn.png") center center;
     width: 25px;
     height: 24px; }
     @media only screen and (max-width: 767px) {
@@ -784,7 +784,7 @@ header {
       display: block; }
 
 .recent-listings-block {
-  background: url("img/black-wood.jpg") repeat center;
+  background: url("/img/black-wood.jpg") repeat center;
   padding: 30px 0; }
   .recent-listings-block .title, .recent-listings-block .page-title {
     color: #31a8e6; }
@@ -1656,7 +1656,31 @@ img.noImageAvailable {
     margin-top: 15px;
     background: #f3f3f3;
     outline: 1px solid #cccccc;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .searchResults .listing-box .mobile-listing-menu {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      top: 10px;
+      right: 10px; }
+      @media only screen and (max-width: 767px) {
+        .searchResults .listing-box .mobile-listing-menu {
+          display: block; } }
+      .searchResults .listing-box .mobile-listing-menu .default-button {
+        padding: 5px 12px;
+        background: #fff; }
+        .searchResults .listing-box .mobile-listing-menu .default-button .dot-bar {
+          border-radius: 50%;
+          width: 4px;
+          height: 4px;
+          background: #6d6d6d;
+          margin: 3px;
+          display: block; }
+      .searchResults .listing-box .mobile-listing-menu .dropdown-menu {
+        right: 0;
+        left: auto;
+        padding: 5px; }
     .searchResults .listing-box .listing-box-image img {
       display: block;
       margin-right: auto;
@@ -1707,6 +1731,9 @@ img.noImageAvailable {
       @media only screen and (max-width: 1200px) {
         .searchResults .listing-box .listing-box-caption .listing-box-caption-text h4 {
           padding-bottom: 5px; } }
+      @media only screen and (max-width: 767px) {
+        .searchResults .listing-box .listing-box-caption .listing-box-caption-footer {
+          padding-bottom: 15px; } }
       .searchResults .listing-box .listing-box-caption .listing-box-caption-footer .listing-box-caption-item .fieldValuePhoneNumber {
         font-family: 'Open Sans',sans-serif; }
       .searchResults .listing-box .listing-box-caption .listing-box-caption-footer .listing-box-caption-item .listing-controls {
@@ -1733,6 +1760,26 @@ img.noImageAvailable {
 
 .listing-controls input:checked ~ span.glyphicon.checked {
   display: inline-block; }
+
+.listing-controls ul li {
+  display: inline-block; }
+  @media only screen and (max-width: 767px) {
+    .listing-controls ul li {
+      margin: 4px 6px;
+      display: block; } }
+  @media only screen and (max-width: 767px) {
+    .listing-controls ul li .glyphicon {
+      vertical-align: middle;
+      width: 24px; } }
+  .listing-controls ul li .option-title {
+    display: none;
+    font-size: 14px;
+    color: #34495e;
+    vertical-align: middle;
+    font-family: 'Raleway',sans-serif; }
+    @media only screen and (max-width: 767px) {
+      .listing-controls ul li .option-title {
+        display: inline-block; } }
 
 .advanced-search-block [type="checkbox"] {
   position: relative; }
@@ -1965,7 +2012,9 @@ img.noImageAvailable {
 
 .listing-controls-bar {
   font-size: 18px;
-  text-align: right; }
+  text-align: right;
+  display: inline-block;
+  float: right; }
   .listing-controls-bar [type="checkbox"] {
     position: relative; }
     .listing-controls-bar [type="checkbox"]:not(:checked):before {
@@ -1995,18 +2044,26 @@ img.noImageAvailable {
   @media only screen and (max-width: 767px) {
     .listing-controls-bar {
       font-size: 20px;
-      text-align: center;
-      margin-top: 5px;
-      border-top: 1px solid #cccccc;
-      padding-top: 5px; } }
+      text-align: left;
+      float: none;
+      display: block; } }
   .listing-controls-bar ul {
     margin-bottom: 0; }
     .listing-controls-bar ul li {
       display: inline-block;
       margin: 0 4px; }
+      .listing-controls-bar ul li .option-title {
+        font-size: 14px;
+        color: #34495e;
+        vertical-align: middle;
+        display: none; }
+        @media only screen and (max-width: 767px) {
+          .listing-controls-bar ul li .option-title {
+            display: inline-block; } }
       @media only screen and (max-width: 767px) {
         .listing-controls-bar ul li {
-          margin: 0 6px; } }
+          margin: 4px 6px;
+          display: block; } }
       .listing-controls-bar ul li .fa-facebook-official {
         color: #3b5998; }
       .listing-controls-bar ul li .fa-list-alt {
@@ -2021,6 +2078,10 @@ img.noImageAvailable {
         color: red; }
       .listing-controls-bar ul li .fa-money {
         color: green; }
+      @media only screen and (max-width: 767px) {
+        .listing-controls-bar ul li .fa {
+          vertical-align: middle;
+          width: 24px; } }
       .listing-controls-bar ul li .check-btn {
         color: gray;
         vertical-align: top;
@@ -2082,6 +2143,15 @@ img.noImageAvailable {
 .multilist-box {
   padding: 10px 15px 15px;
   border: 1px solid #cccccc; }
+
+.st-controls {
+  display: inline-block;
+  margin: 4px 7px 0;
+  font-size: 16px;
+  float: right; }
+  @media only screen and (max-width: 767px) {
+    .st-controls {
+      float: none; } }
 
 @media (min-width: 992px) {
   .modal-lg {
